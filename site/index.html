@@ -104,49 +104,51 @@
   .meter > i { display: block; height: 100%; background: var(--accent); border-radius: 0 4px 4px 0; }
 
   .table-scroll { overflow-x: auto; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; }
-  table { border-collapse: collapse; width: 100%; min-width: 940px; }
+  table { border-collapse: collapse; width: 100%; min-width: 700px; }
   th {
     text-align: left; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
-    color: var(--ink-3); padding: 12px 14px 9px; border-bottom: 1px solid var(--hairline); white-space: nowrap;
+    color: var(--ink-3); padding: 12px 12px 9px; border-bottom: 1px solid var(--hairline);
   }
-  td { padding: 12px 14px; border-bottom: 1px solid var(--hairline); vertical-align: middle; }
+  td { padding: 12px; border-bottom: 1px solid var(--hairline); vertical-align: middle; }
   tbody tr:last-child td { border-bottom: none; }
   tbody tr.edition:hover { background: color-mix(in srgb, var(--accent) 4%, transparent); }
   tbody tr.planned { opacity: 0.62; }
 
   tr.group td {
-    background: var(--group-wash); padding: 9px 14px;
+    background: var(--group-wash); padding: 9px 12px;
     border-top: 1px solid var(--hairline);
   }
-  tr.group .repo { font-weight: 650; font-size: 13.5px; }
-  tr.group .series-title { color: var(--ink-2); font-size: 12.5px; margin-left: 10px; }
-  tr.group .meta { float: right; color: var(--ink-3); font-size: 12px; font-variant-numeric: tabular-nums; }
+  tr.group .group-line { display: flex; align-items: baseline; gap: 4px 10px; flex-wrap: wrap; }
+  tr.group .repo { font-weight: 650; font-size: 13.5px; white-space: nowrap; }
+  tr.group .series-title { color: var(--ink-2); font-size: 12.5px; }
+  tr.group .meta { margin-left: auto; color: var(--ink-3); font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
   tr.group .phase {
-    display: inline-block; margin-left: 10px; padding: 0 7px; border-radius: 999px;
-    border: 1px solid var(--border); color: var(--ink-3); font-size: 11px; font-weight: 600;
+    display: inline-block; padding: 0 7px; border-radius: 999px;
+    border: 1px solid var(--border); color: var(--ink-3); font-size: 11px; font-weight: 600; white-space: nowrap;
   }
 
-  .lang-cell { white-space: nowrap; padding-left: 26px !important; }
+  .lang-cell { padding-left: 26px !important; }
   .lang-cell .arrow { color: var(--ink-3); margin-right: 8px; }
-  .lang-cell .lang-name { font-weight: 600; }
-  .lang-cell .target { display: block; font-size: 12px; color: var(--ink-3); margin-left: 21px; }
-  .lang-cell .orphan-note { color: var(--warn-text); }
+  .lang-cell .lang-name { font-weight: 600; white-space: nowrap; }
+  .lang-cell .target { display: block; font-size: 12px; color: var(--ink-3); margin-left: 21px; overflow-wrap: anywhere; }
+  .lang-cell .orphan-note { color: var(--warn-text); white-space: nowrap; }
 
-  .cov { display: flex; align-items: center; gap: 10px; min-width: 185px; }
-  .cov .bar { flex: 1; height: 10px; border-radius: 5px; background: var(--accent-track); min-width: 85px; }
+  .cov { display: flex; align-items: center; gap: 10px; min-width: 140px; }
+  .cov .bar { flex: 1; height: 10px; border-radius: 5px; background: var(--accent-track); min-width: 60px; }
   .cov .bar > i { display: block; height: 100%; background: var(--accent); border-radius: 0 5px 5px 0; }
   .cov .n { font-variant-numeric: tabular-nums; font-size: 13px; white-space: nowrap; color: var(--ink); }
   .cov .n small { color: var(--ink-3); }
 
-  .fresh { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .fresh { font-variant-numeric: tabular-nums; }
   .fresh .ok { color: var(--good-text); font-weight: 600; }
   .fresh .sub { display: block; font-size: 12px; color: var(--ink-3); }
+  .fresh .drift { display: block; margin-top: 5px; }
   .badge { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; }
   .badge.warn { background: var(--warn-wash); color: var(--warn-text); }
   .badge.crit { background: var(--crit-wash); color: var(--crit-text); }
   .badge.good { background: var(--good-wash); color: var(--good-text); }
 
-  .auto { font-size: 13px; white-space: nowrap; }
+  .auto { font-size: 13px; }
   .auto .sub, .note-sub { display: block; font-size: 12px; color: var(--ink-3); }
 
   .chip {
@@ -287,12 +289,12 @@ function render(DATA) {
       <div class="bar" role="img" aria-label="${p}% coverage"><i style="width:${p}%"></i></div>
       <span class="n">${n}<small>/${total}</small></span></div>`;
   };
-  const groupRow = (s) => `<tr class="group"><td colspan="7">
+  const groupRow = (s) => `<tr class="group"><td colspan="6"><div class="group-line">
       <a class="repo" href="${gh(s.repo)}">${esc(s.repo)}</a>
       <span class="series-title">${esc(s.title)}</span>
       ${s.phase ? `<span class="phase">${esc(s.phase)}</span>` : ""}
       <span class="meta">${s.lectures_total} lectures · en source</span>
-    </td></tr>`;
+    </div></td></tr>`;
   const editionRow = (s, e) => {
     const orphanNote = (e.orphans && e.orphans.length)
       ? ` · <span class="orphan-note">${e.orphans.length} orphan files</span>` : "";
@@ -303,20 +305,20 @@ function render(DATA) {
         <td class="lang-cell">${langCell}</td>
         <td>${covCell(0, s.lectures_total)}</td>
         <td class="fresh"><span class="sub">—</span></td>
-        <td><span class="note-sub">—</span></td>
         <td class="auto"><span class="sub">not scaffolded</span></td>
         <td><span class="note-sub">—</span></td>
         <td><span class="chip planned">Planned</span></td>
       </tr>`;
     }
-    const fresh = e.drift_prs === 0
-      ? `${esc(e.last_sync.date)}<span class="sub"><span class="ok">✓ ${esc(e.last_sync.lag)}</span></span>`
-      : `${esc(e.last_sync.date)}<span class="sub">${esc(e.last_sync.lag)}</span>`;
-    const drift = e.drift_prs === 0
-      ? `<span class="badge good">none</span>`
+    const driftBadge = e.drift_prs === 0
+      ? `<span class="badge good">no drift</span>`
       : (e.status === "stalled"
-          ? `<span class="badge crit">${e.drift_prs}${e.drift_plus ? "+" : ""} source PRs</span>`
-          : `<span class="badge warn">~${e.drift_prs} source PRs</span>`);
+          ? `<span class="badge crit">${e.drift_prs}${e.drift_plus ? "+" : ""} PRs behind</span>`
+          : `<span class="badge warn">~${e.drift_prs} PRs behind</span>`);
+    const fresh = (e.drift_prs === 0
+      ? `${esc(e.last_sync.date)}<span class="sub"><span class="ok">✓ ${esc(e.last_sync.lag)}</span></span>`
+      : `${esc(e.last_sync.date)}<span class="sub">${esc(e.last_sync.lag)}</span>`)
+      + `<span class="drift">${driftBadge}</span>`;
     const auto = e.automation.wired
       ? `Full<span class="sub">${esc(e.automation.parts)}</span>`
       : `Not wired<span class="sub">${esc(e.automation.parts)}</span>`;
@@ -328,7 +330,6 @@ function render(DATA) {
       <td class="lang-cell">${langCell}</td>
       <td>${covCell(e.lectures_translated, s.lectures_total)}</td>
       <td class="fresh">${fresh}</td>
-      <td>${drift}</td>
       <td class="auto">${auto}</td>
       <td>${review}</td>
       <td><span class="chip ${chipCls}">${esc(e.status_label)}</span></td>
@@ -339,9 +340,8 @@ function render(DATA) {
     <p class="h2-sub">Grouped by English source series — each edition is a synced subrepo of its source. Coverage says how much of the series is translated; last sync and drift say how current it is — an edition can be complete yet stale. Rollout order follows the <a href="https://github.com/QuantEcon/action-translation/issues/74">Phase 0–3 plan</a>.</p>
     <div class="table-scroll"><table>
       <thead><tr>
-        <th scope="col">Edition</th><th scope="col">Coverage</th><th scope="col">Last sync</th>
-        <th scope="col">Upstream drift</th><th scope="col">Automation</th>
-        <th scope="col">Human review</th><th scope="col">Status</th>
+        <th scope="col">Edition</th><th scope="col">Coverage</th><th scope="col">Freshness</th>
+        <th scope="col">Automation</th><th scope="col">Human review</th><th scope="col">Status</th>
       </tr></thead>
       <tbody>${DATA.sources.map(s => groupRow(s) + s.editions.map(e => editionRow(s, e)).join("")).join("")}</tbody>
     </table></div></section>`;
