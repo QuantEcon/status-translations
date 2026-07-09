@@ -1,0 +1,1102 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-09",
+  "collected_by": "manual-seed (verified against live GitHub state 2026-07-09; per-lecture staleness pending first collector run)",
+  "counting_rule": "lectures/*.md in the source repo, excluding README and status; coverage = files present in both source and edition. Note: program docs historically counted raw .md files (incl. status), hence e.g. 49/52 there vs 48/51 here.",
+  "sources": [
+    {
+      "repo": "lecture-python-programming",
+      "title": "Python Programming for Economics and Finance",
+      "lectures_total": 25,
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "target_repo": "lecture-python-programming.zh-cn",
+          "lectures_translated": 25,
+          "freshness": "verified",
+          "stale": 0,
+          "last_sync": {
+            "date": "2026-06-19",
+            "lag": "same day"
+          },
+          "drift_prs": 0,
+          "automation": {
+            "wired": true,
+            "parts": "sync · AI review · rebase"
+          },
+          "review": {
+            "open": 24,
+            "note": "issues open since 2026-04-11"
+          },
+          "status": "healthy",
+          "status_label": "Reference model",
+          "orphans": [],
+          "lectures": [
+            {
+              "slug": "about_py",
+              "state": "fresh"
+            },
+            {
+              "slug": "autodiff",
+              "state": "fresh"
+            },
+            {
+              "slug": "debugging",
+              "state": "fresh"
+            },
+            {
+              "slug": "functions",
+              "state": "fresh"
+            },
+            {
+              "slug": "getting_started",
+              "state": "fresh"
+            },
+            {
+              "slug": "intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "jax_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "matplotlib",
+              "state": "fresh"
+            },
+            {
+              "slug": "names",
+              "state": "fresh"
+            },
+            {
+              "slug": "need_for_speed",
+              "state": "fresh"
+            },
+            {
+              "slug": "numba",
+              "state": "fresh"
+            },
+            {
+              "slug": "numpy",
+              "state": "fresh"
+            },
+            {
+              "slug": "numpy_vs_numba_vs_jax",
+              "state": "fresh"
+            },
+            {
+              "slug": "oop_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "pandas",
+              "state": "fresh"
+            },
+            {
+              "slug": "pandas_panel",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_advanced_features",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_by_example",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_essentials",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_oop",
+              "state": "fresh"
+            },
+            {
+              "slug": "scipy",
+              "state": "fresh"
+            },
+            {
+              "slug": "sympy",
+              "state": "fresh"
+            },
+            {
+              "slug": "troubleshooting",
+              "state": "fresh"
+            },
+            {
+              "slug": "workspace",
+              "state": "fresh"
+            },
+            {
+              "slug": "writing_good_code",
+              "state": "fresh"
+            }
+          ]
+        },
+        {
+          "lang": "fa",
+          "lang_label": "Farsi",
+          "target_repo": "lecture-python-programming.fa",
+          "lectures_translated": 25,
+          "freshness": "verified",
+          "stale": 0,
+          "last_sync": {
+            "date": "2026-06-19",
+            "lag": "same day"
+          },
+          "drift_prs": 0,
+          "automation": {
+            "wired": true,
+            "parts": "sync · AI review · rebase"
+          },
+          "review": {
+            "open": 0,
+            "note": "pilot reviewer · RTL questions open"
+          },
+          "status": "healthy",
+          "status_label": "Pilot healthy",
+          "orphans": [],
+          "lectures": [
+            {
+              "slug": "about_py",
+              "state": "fresh"
+            },
+            {
+              "slug": "autodiff",
+              "state": "fresh"
+            },
+            {
+              "slug": "debugging",
+              "state": "fresh"
+            },
+            {
+              "slug": "functions",
+              "state": "fresh"
+            },
+            {
+              "slug": "getting_started",
+              "state": "fresh"
+            },
+            {
+              "slug": "intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "jax_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "matplotlib",
+              "state": "fresh"
+            },
+            {
+              "slug": "names",
+              "state": "fresh"
+            },
+            {
+              "slug": "need_for_speed",
+              "state": "fresh"
+            },
+            {
+              "slug": "numba",
+              "state": "fresh"
+            },
+            {
+              "slug": "numpy",
+              "state": "fresh"
+            },
+            {
+              "slug": "numpy_vs_numba_vs_jax",
+              "state": "fresh"
+            },
+            {
+              "slug": "oop_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "pandas",
+              "state": "fresh"
+            },
+            {
+              "slug": "pandas_panel",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_advanced_features",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_by_example",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_essentials",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_oop",
+              "state": "fresh"
+            },
+            {
+              "slug": "scipy",
+              "state": "fresh"
+            },
+            {
+              "slug": "sympy",
+              "state": "fresh"
+            },
+            {
+              "slug": "troubleshooting",
+              "state": "fresh"
+            },
+            {
+              "slug": "workspace",
+              "state": "fresh"
+            },
+            {
+              "slug": "writing_good_code",
+              "state": "fresh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "lecture-python-intro",
+      "title": "A First Course in Quantitative Economics with Python",
+      "lectures_total": 51,
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "target_repo": "lecture-intro.zh-cn",
+          "lectures_translated": 48,
+          "freshness": "pending",
+          "stale": null,
+          "last_sync": {
+            "date": "2026-04-09",
+            "lag": "91 days ago"
+          },
+          "drift_prs": 28,
+          "drift_approx": true,
+          "automation": {
+            "wired": false,
+            "parts": "Phase 0 · Track A"
+          },
+          "review": {
+            "open": 0,
+            "note": "campaign complete (Oct 2024 – Apr 2025)"
+          },
+          "status": "drifting",
+          "status_label": "Drifting",
+          "orphans": [],
+          "lectures": [
+            {
+              "slug": "about",
+              "state": "fresh"
+            },
+            {
+              "slug": "ar1_processes",
+              "state": "fresh"
+            },
+            {
+              "slug": "bayes_intro",
+              "state": "missing"
+            },
+            {
+              "slug": "business_cycle",
+              "state": "fresh"
+            },
+            {
+              "slug": "cagan_adaptive",
+              "state": "fresh"
+            },
+            {
+              "slug": "cagan_ree",
+              "state": "fresh"
+            },
+            {
+              "slug": "cobweb",
+              "state": "fresh"
+            },
+            {
+              "slug": "commod_price",
+              "state": "fresh"
+            },
+            {
+              "slug": "complex_and_trig",
+              "state": "fresh"
+            },
+            {
+              "slug": "cons_smooth",
+              "state": "fresh"
+            },
+            {
+              "slug": "eigen_I",
+              "state": "fresh"
+            },
+            {
+              "slug": "eigen_II",
+              "state": "fresh"
+            },
+            {
+              "slug": "equalizing_difference",
+              "state": "fresh"
+            },
+            {
+              "slug": "french_rev",
+              "state": "fresh"
+            },
+            {
+              "slug": "geom_series",
+              "state": "fresh"
+            },
+            {
+              "slug": "greek_square",
+              "state": "fresh"
+            },
+            {
+              "slug": "heavy_tails",
+              "state": "fresh"
+            },
+            {
+              "slug": "inequality",
+              "state": "fresh"
+            },
+            {
+              "slug": "inflation_history",
+              "state": "fresh"
+            },
+            {
+              "slug": "input_output",
+              "state": "fresh"
+            },
+            {
+              "slug": "intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "intro_supply_demand",
+              "state": "fresh"
+            },
+            {
+              "slug": "laffer_adaptive",
+              "state": "fresh"
+            },
+            {
+              "slug": "lake_model",
+              "state": "fresh"
+            },
+            {
+              "slug": "linear_equations",
+              "state": "fresh"
+            },
+            {
+              "slug": "lln_clt",
+              "state": "fresh"
+            },
+            {
+              "slug": "long_run_growth",
+              "state": "fresh"
+            },
+            {
+              "slug": "lp_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "markov_chains_I",
+              "state": "fresh"
+            },
+            {
+              "slug": "markov_chains_II",
+              "state": "fresh"
+            },
+            {
+              "slug": "mle",
+              "state": "fresh"
+            },
+            {
+              "slug": "money_inflation",
+              "state": "fresh"
+            },
+            {
+              "slug": "money_inflation_nonlinear",
+              "state": "fresh"
+            },
+            {
+              "slug": "monte_carlo",
+              "state": "fresh"
+            },
+            {
+              "slug": "msy_fishery",
+              "state": "missing"
+            },
+            {
+              "slug": "networks",
+              "state": "fresh"
+            },
+            {
+              "slug": "olg",
+              "state": "fresh"
+            },
+            {
+              "slug": "prob_dist",
+              "state": "fresh"
+            },
+            {
+              "slug": "pv",
+              "state": "fresh"
+            },
+            {
+              "slug": "scalar_dynam",
+              "state": "fresh"
+            },
+            {
+              "slug": "schelling",
+              "state": "fresh"
+            },
+            {
+              "slug": "short_path",
+              "state": "fresh"
+            },
+            {
+              "slug": "simple_linear_regression",
+              "state": "fresh"
+            },
+            {
+              "slug": "solow",
+              "state": "fresh"
+            },
+            {
+              "slug": "supply_demand_heterogeneity",
+              "state": "fresh"
+            },
+            {
+              "slug": "supply_demand_multiple_goods",
+              "state": "fresh"
+            },
+            {
+              "slug": "tax_smooth",
+              "state": "missing"
+            },
+            {
+              "slug": "time_series_with_matrices",
+              "state": "fresh"
+            },
+            {
+              "slug": "troubleshooting",
+              "state": "fresh"
+            },
+            {
+              "slug": "unpleasant",
+              "state": "fresh"
+            },
+            {
+              "slug": "zreferences",
+              "state": "fresh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "lecture-python.myst",
+      "title": "Intermediate Quantitative Economics with Python",
+      "lectures_total": 120,
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "target_repo": "lecture-python.zh-cn",
+          "lectures_translated": 78,
+          "freshness": "pending",
+          "stale": null,
+          "last_sync": {
+            "date": "2025-10-22",
+            "lag": "260 days ago"
+          },
+          "drift_prs": 40,
+          "drift_plus": true,
+          "automation": {
+            "wired": false,
+            "parts": "Phase 0 · Track B"
+          },
+          "review": {
+            "open": 0,
+            "note": "campaign stalled Oct 2025"
+          },
+          "status": "stalled",
+          "status_label": "Stalled",
+          "orphans": [
+            "cake_eating_numerical",
+            "cake_eating_problem",
+            "coleman_policy_iter",
+            "egm_policy_iter",
+            "ifp",
+            "mccall_correlated",
+            "optgrowth",
+            "optgrowth_fast"
+          ],
+          "lectures": [
+            {
+              "slug": "affine_risk_prices",
+              "state": "missing"
+            },
+            {
+              "slug": "aiyagari",
+              "state": "fresh"
+            },
+            {
+              "slug": "aiyagari_egm",
+              "state": "missing"
+            },
+            {
+              "slug": "ak_aiyagari",
+              "state": "fresh"
+            },
+            {
+              "slug": "ak2",
+              "state": "fresh"
+            },
+            {
+              "slug": "ar1_bayes",
+              "state": "fresh"
+            },
+            {
+              "slug": "ar1_turningpts",
+              "state": "fresh"
+            },
+            {
+              "slug": "back_prop",
+              "state": "fresh"
+            },
+            {
+              "slug": "bayes_nonconj",
+              "state": "fresh"
+            },
+            {
+              "slug": "blackwell_kihlstrom",
+              "state": "missing"
+            },
+            {
+              "slug": "career",
+              "state": "fresh"
+            },
+            {
+              "slug": "cass_fiscal",
+              "state": "fresh"
+            },
+            {
+              "slug": "cass_fiscal_2",
+              "state": "fresh"
+            },
+            {
+              "slug": "cass_koopmans_1",
+              "state": "fresh"
+            },
+            {
+              "slug": "cass_koopmans_2",
+              "state": "fresh"
+            },
+            {
+              "slug": "chow_business_cycles",
+              "state": "missing"
+            },
+            {
+              "slug": "cross_product_trick",
+              "state": "fresh"
+            },
+            {
+              "slug": "divergence_measures",
+              "state": "fresh"
+            },
+            {
+              "slug": "eig_circulant",
+              "state": "fresh"
+            },
+            {
+              "slug": "endogenous_lake",
+              "state": "missing"
+            },
+            {
+              "slug": "exchangeable",
+              "state": "fresh"
+            },
+            {
+              "slug": "finite_markov",
+              "state": "fresh"
+            },
+            {
+              "slug": "ge_arrow",
+              "state": "fresh"
+            },
+            {
+              "slug": "hansen_singleton_1982",
+              "state": "missing"
+            },
+            {
+              "slug": "hansen_singleton_1983",
+              "state": "missing"
+            },
+            {
+              "slug": "harrison_kreps",
+              "state": "fresh"
+            },
+            {
+              "slug": "hoist_failure",
+              "state": "fresh"
+            },
+            {
+              "slug": "house_auction",
+              "state": "fresh"
+            },
+            {
+              "slug": "ifp_advanced",
+              "state": "fresh"
+            },
+            {
+              "slug": "ifp_discrete",
+              "state": "missing"
+            },
+            {
+              "slug": "ifp_egm",
+              "state": "missing"
+            },
+            {
+              "slug": "ifp_egm_transient_shocks",
+              "state": "missing"
+            },
+            {
+              "slug": "ifp_opi",
+              "state": "missing"
+            },
+            {
+              "slug": "imp_sample",
+              "state": "fresh"
+            },
+            {
+              "slug": "information_market_equilibrium",
+              "state": "missing"
+            },
+            {
+              "slug": "intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "inventory_dynamics",
+              "state": "fresh"
+            },
+            {
+              "slug": "inventory_q",
+              "state": "missing"
+            },
+            {
+              "slug": "jv",
+              "state": "fresh"
+            },
+            {
+              "slug": "kalman",
+              "state": "fresh"
+            },
+            {
+              "slug": "kalman_2",
+              "state": "fresh"
+            },
+            {
+              "slug": "kalman_filter_var",
+              "state": "missing"
+            },
+            {
+              "slug": "kesten_processes",
+              "state": "fresh"
+            },
+            {
+              "slug": "lagrangian_lqdp",
+              "state": "fresh"
+            },
+            {
+              "slug": "lake_model",
+              "state": "fresh"
+            },
+            {
+              "slug": "likelihood_bayes",
+              "state": "fresh"
+            },
+            {
+              "slug": "likelihood_ratio_process",
+              "state": "fresh"
+            },
+            {
+              "slug": "likelihood_ratio_process_2",
+              "state": "fresh"
+            },
+            {
+              "slug": "likelihood_var",
+              "state": "fresh"
+            },
+            {
+              "slug": "linear_algebra",
+              "state": "fresh"
+            },
+            {
+              "slug": "linear_models",
+              "state": "fresh"
+            },
+            {
+              "slug": "lln_clt",
+              "state": "fresh"
+            },
+            {
+              "slug": "long_run_risk_operator",
+              "state": "missing"
+            },
+            {
+              "slug": "lq_bewley_complete_markets",
+              "state": "missing"
+            },
+            {
+              "slug": "lq_inventories",
+              "state": "fresh"
+            },
+            {
+              "slug": "lq_permanent_income",
+              "state": "missing"
+            },
+            {
+              "slug": "lq_robust_smoothing",
+              "state": "missing"
+            },
+            {
+              "slug": "lqcontrol",
+              "state": "fresh"
+            },
+            {
+              "slug": "ls_learning",
+              "state": "missing"
+            },
+            {
+              "slug": "markov_asset",
+              "state": "fresh"
+            },
+            {
+              "slug": "markov_perf",
+              "state": "fresh"
+            },
+            {
+              "slug": "mccall_fitted_vfi",
+              "state": "fresh"
+            },
+            {
+              "slug": "mccall_model",
+              "state": "fresh"
+            },
+            {
+              "slug": "mccall_model_with_sep_markov",
+              "state": "missing"
+            },
+            {
+              "slug": "mccall_model_with_separation",
+              "state": "fresh"
+            },
+            {
+              "slug": "mccall_persist_trans",
+              "state": "missing"
+            },
+            {
+              "slug": "mccall_q",
+              "state": "fresh"
+            },
+            {
+              "slug": "measurement_models",
+              "state": "missing"
+            },
+            {
+              "slug": "merging_of_opinions",
+              "state": "missing"
+            },
+            {
+              "slug": "misspecified_recovery",
+              "state": "missing"
+            },
+            {
+              "slug": "mix_model",
+              "state": "fresh"
+            },
+            {
+              "slug": "mle",
+              "state": "fresh"
+            },
+            {
+              "slug": "morris_learn",
+              "state": "missing"
+            },
+            {
+              "slug": "multi_hyper",
+              "state": "fresh"
+            },
+            {
+              "slug": "multivariate_normal",
+              "state": "fresh"
+            },
+            {
+              "slug": "navy_captain",
+              "state": "fresh"
+            },
+            {
+              "slug": "newton_method",
+              "state": "fresh"
+            },
+            {
+              "slug": "odu",
+              "state": "fresh"
+            },
+            {
+              "slug": "ols",
+              "state": "fresh"
+            },
+            {
+              "slug": "opt_transport",
+              "state": "fresh"
+            },
+            {
+              "slug": "organization_capital",
+              "state": "missing"
+            },
+            {
+              "slug": "os",
+              "state": "missing"
+            },
+            {
+              "slug": "os_egm",
+              "state": "missing"
+            },
+            {
+              "slug": "os_egm_jax",
+              "state": "missing"
+            },
+            {
+              "slug": "os_numerical",
+              "state": "missing"
+            },
+            {
+              "slug": "os_stochastic",
+              "state": "missing"
+            },
+            {
+              "slug": "os_time_iter",
+              "state": "missing"
+            },
+            {
+              "slug": "pandas_panel",
+              "state": "fresh"
+            },
+            {
+              "slug": "perm_income",
+              "state": "fresh"
+            },
+            {
+              "slug": "perm_income_cons",
+              "state": "fresh"
+            },
+            {
+              "slug": "prob_matrix",
+              "state": "fresh"
+            },
+            {
+              "slug": "prob_meaning",
+              "state": "fresh"
+            },
+            {
+              "slug": "qr_decomp",
+              "state": "fresh"
+            },
+            {
+              "slug": "rand_resp",
+              "state": "fresh"
+            },
+            {
+              "slug": "rational_expectations",
+              "state": "fresh"
+            },
+            {
+              "slug": "rational_learning_re",
+              "state": "missing"
+            },
+            {
+              "slug": "re_with_feedback",
+              "state": "fresh"
+            },
+            {
+              "slug": "robust_permanent_income",
+              "state": "missing"
+            },
+            {
+              "slug": "ross_recovery",
+              "state": "missing"
+            },
+            {
+              "slug": "rs_inventory_q",
+              "state": "missing"
+            },
+            {
+              "slug": "samuelson",
+              "state": "fresh"
+            },
+            {
+              "slug": "sir_model",
+              "state": "fresh"
+            },
+            {
+              "slug": "stats_examples",
+              "state": "fresh"
+            },
+            {
+              "slug": "survival_recursive_preferences",
+              "state": "missing"
+            },
+            {
+              "slug": "svd_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "theil_1",
+              "state": "missing"
+            },
+            {
+              "slug": "theil_2",
+              "state": "missing"
+            },
+            {
+              "slug": "troubleshooting",
+              "state": "fresh"
+            },
+            {
+              "slug": "two_auctions",
+              "state": "fresh"
+            },
+            {
+              "slug": "two_computation",
+              "state": "missing"
+            },
+            {
+              "slug": "uncertainty_traps",
+              "state": "fresh"
+            },
+            {
+              "slug": "unemployment_linear",
+              "state": "missing"
+            },
+            {
+              "slug": "unemployment_shocks",
+              "state": "missing"
+            },
+            {
+              "slug": "util_rand_resp",
+              "state": "fresh"
+            },
+            {
+              "slug": "var_dmd",
+              "state": "fresh"
+            },
+            {
+              "slug": "von_neumann_model",
+              "state": "fresh"
+            },
+            {
+              "slug": "wald_friedman",
+              "state": "fresh"
+            },
+            {
+              "slug": "wald_friedman_2",
+              "state": "fresh"
+            },
+            {
+              "slug": "wealth_dynamics",
+              "state": "fresh"
+            },
+            {
+              "slug": "zreferences",
+              "state": "fresh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "lecture-jax",
+      "title": "Quantitative Economics with JAX",
+      "lectures_total": 33,
+      "phase": "Phase 3 · first in queue",
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "planned": true
+        }
+      ]
+    },
+    {
+      "repo": "lecture-python-advanced.myst",
+      "title": "Advanced Quantitative Economics with Python",
+      "lectures_total": 67,
+      "phase": "Phase 3",
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "planned": true
+        }
+      ]
+    },
+    {
+      "repo": "lecture-dp",
+      "title": "Dynamic Programming",
+      "lectures_total": 52,
+      "phase": "Phase 3 · ~75% overlaps catalogue",
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "planned": true
+        }
+      ]
+    }
+  ],
+  "pipeline": [
+    {
+      "stage": "Production",
+      "cls": "live",
+      "langs": [
+        "Chinese · zh-cn"
+      ],
+      "ref": "3 editions live"
+    },
+    {
+      "stage": "Pilot",
+      "cls": "pilot",
+      "langs": [
+        "Farsi · fa"
+      ],
+      "ref": "RTL proving ground"
+    },
+    {
+      "stage": "Glossary review",
+      "cls": "",
+      "langs": [
+        "French · fr",
+        "Japanese · ja"
+      ],
+      "ref": "action-translation #68 · #69"
+    },
+    {
+      "stage": "Research",
+      "cls": "",
+      "langs": [
+        "Malayalam · ml"
+      ],
+      "ref": "action-translation #70 · draft #71"
+    }
+  ]
+}

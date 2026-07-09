@@ -1,0 +1,79 @@
+{
+  "stalled_after_days": 180,
+  "exclude_files": ["README", "status"],
+  "sources": [
+    {
+      "repo": "lecture-python-programming",
+      "title": "Python Programming for Economics and Finance",
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "target_repo": "lecture-python-programming.zh-cn",
+          "status_label_healthy": "Reference model",
+          "review_note": "issues open since 2026-04-11"
+        },
+        {
+          "lang": "fa",
+          "lang_label": "Farsi",
+          "target_repo": "lecture-python-programming.fa",
+          "status_label_healthy": "Pilot healthy",
+          "review_note": "pilot reviewer · RTL questions open"
+        }
+      ]
+    },
+    {
+      "repo": "lecture-python-intro",
+      "title": "A First Course in Quantitative Economics with Python",
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "target_repo": "lecture-intro.zh-cn",
+          "automation_note": "Phase 0 · Track A",
+          "review_note": "campaign complete (Oct 2024 – Apr 2025)"
+        }
+      ]
+    },
+    {
+      "repo": "lecture-python.myst",
+      "title": "Intermediate Quantitative Economics with Python",
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "target_repo": "lecture-python.zh-cn",
+          "automation_note": "Phase 0 · Track B",
+          "review_note": "campaign stalled Oct 2025"
+        }
+      ]
+    },
+    {
+      "repo": "lecture-jax",
+      "title": "Quantitative Economics with JAX",
+      "lectures_total": 33,
+      "phase": "Phase 3 · first in queue",
+      "editions": [{ "lang": "zh-cn", "lang_label": "Chinese", "planned": true }]
+    },
+    {
+      "repo": "lecture-python-advanced.myst",
+      "title": "Advanced Quantitative Economics with Python",
+      "lectures_total": 67,
+      "phase": "Phase 3",
+      "editions": [{ "lang": "zh-cn", "lang_label": "Chinese", "planned": true }]
+    },
+    {
+      "repo": "lecture-dp",
+      "title": "Dynamic Programming",
+      "lectures_total": 52,
+      "phase": "Phase 3 · ~75% overlaps catalogue",
+      "editions": [{ "lang": "zh-cn", "lang_label": "Chinese", "planned": true }]
+    }
+  ],
+  "pipeline": [
+    { "stage": "Production", "cls": "live", "langs": ["Chinese · zh-cn"], "ref": "3 editions live" },
+    { "stage": "Pilot", "cls": "pilot", "langs": ["Farsi · fa"], "ref": "RTL proving ground" },
+    { "stage": "Glossary review", "cls": "", "langs": ["French · fr", "Japanese · ja"], "ref": "action-translation #68 · #69" },
+    { "stage": "Research", "cls": "", "langs": ["Malayalam · ml"], "ref": "action-translation #70 · draft #71" }
+  ]
+}

@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuantEcon Translations — program status</title>
+<meta name="description" content="Translation progress across the QuantEcon lecture series: coverage, freshness, automation and review state for every language edition.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+<style>
+  :root {
+    --plane: #f9f9f7;
+    --surface: #fcfcfb;
+    --ink: #0b0b0b;
+    --ink-2: #52514e;
+    --ink-3: #898781;
+    --hairline: #e1e0d9;
+    --border: rgba(11, 11, 11, 0.10);
+    --accent: #2a78d6;
+    --accent-track: #cde2fb;
+    --good: #0ca30c;
+    --good-text: #006300;
+    --good-wash: rgba(12, 163, 12, 0.10);
+    --warn: #fab219;
+    --warn-text: #7a5200;
+    --warn-wash: rgba(250, 178, 25, 0.14);
+    --crit: #d03b3b;
+    --crit-text: #a02525;
+    --crit-wash: rgba(208, 59, 59, 0.10);
+    --empty-cell: #e7e6df;
+    --group-wash: #f3f2ee;
+    --tooltip-bg: #0b0b0b;
+    --tooltip-ink: #fcfcfb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --plane: #0d0d0d;
+      --surface: #1a1a19;
+      --ink: #ffffff;
+      --ink-2: #c3c2b7;
+      --ink-3: #898781;
+      --hairline: #2c2c2a;
+      --border: rgba(255, 255, 255, 0.10);
+      --accent: #3987e5;
+      --accent-track: #17324f;
+      --good: #0ca30c;
+      --good-text: #2fc42f;
+      --good-wash: rgba(12, 163, 12, 0.16);
+      --warn: #fab219;
+      --warn-text: #fab219;
+      --warn-wash: rgba(250, 178, 25, 0.14);
+      --crit: #d03b3b;
+      --crit-text: #e66767;
+      --crit-wash: rgba(208, 59, 59, 0.16);
+      --empty-cell: #30302d;
+      --group-wash: #211f1e;
+      --tooltip-bg: #fcfcfb;
+      --tooltip-ink: #0b0b0b;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 24px 72px;
+    background: var(--plane);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  header { padding: 44px 0 20px; border-bottom: 1px solid var(--hairline); margin-bottom: 24px; }
+  .eyebrow {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent); margin: 0 0 8px;
+  }
+  h1 { font-size: 28px; font-weight: 650; letter-spacing: -0.01em; margin: 0 0 6px; text-wrap: balance; }
+  .dateline { color: var(--ink-2); font-size: 13px; margin: 0; }
+  .dateline .sep { color: var(--ink-3); margin: 0 6px; }
+
+  h2 { font-size: 16px; font-weight: 650; margin: 40px 0 2px; letter-spacing: -0.005em; }
+  .h2-sub { color: var(--ink-2); font-size: 13px; margin: 0 0 14px; max-width: 78ch; }
+
+  .error-card {
+    background: var(--crit-wash); border: 1px solid var(--border); border-radius: 6px;
+    padding: 16px 18px; margin-top: 24px; color: var(--ink); font-size: 14px;
+  }
+
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(215px, 1fr)); gap: 12px; margin-top: 20px; }
+  .tile {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+    padding: 14px 16px 13px; display: flex; flex-direction: column; gap: 2px;
+  }
+  .tile .label { font-size: 12px; color: var(--ink-2); }
+  .tile .value { font-size: 27px; font-weight: 650; line-height: 1.15; }
+  .tile .value small { font-size: 15px; font-weight: 500; color: var(--ink-3); }
+  .tile .note { font-size: 12px; color: var(--ink-3); }
+  .tile .note b { color: var(--ink-2); font-weight: 600; }
+  .meter { margin-top: 8px; height: 8px; border-radius: 4px; background: var(--accent-track); overflow: hidden; }
+  .meter > i { display: block; height: 100%; background: var(--accent); border-radius: 0 4px 4px 0; }
+
+  .table-scroll { overflow-x: auto; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; }
+  table { border-collapse: collapse; width: 100%; min-width: 940px; }
+  th {
+    text-align: left; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-3); padding: 12px 14px 9px; border-bottom: 1px solid var(--hairline); white-space: nowrap;
+  }
+  td { padding: 12px 14px; border-bottom: 1px solid var(--hairline); vertical-align: middle; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr.edition:hover { background: color-mix(in srgb, var(--accent) 4%, transparent); }
+  tbody tr.planned { opacity: 0.62; }
+
+  tr.group td {
+    background: var(--group-wash); padding: 9px 14px;
+    border-top: 1px solid var(--hairline);
+  }
+  tr.group .repo { font-weight: 650; font-size: 13.5px; }
+  tr.group .series-title { color: var(--ink-2); font-size: 12.5px; margin-left: 10px; }
+  tr.group .meta { float: right; color: var(--ink-3); font-size: 12px; font-variant-numeric: tabular-nums; }
+  tr.group .phase {
+    display: inline-block; margin-left: 10px; padding: 0 7px; border-radius: 999px;
+    border: 1px solid var(--border); color: var(--ink-3); font-size: 11px; font-weight: 600;
+  }
+
+  .lang-cell { white-space: nowrap; padding-left: 26px !important; }
+  .lang-cell .arrow { color: var(--ink-3); margin-right: 8px; }
+  .lang-cell .lang-name { font-weight: 600; }
+  .lang-cell .target { display: block; font-size: 12px; color: var(--ink-3); margin-left: 21px; }
+  .lang-cell .orphan-note { color: var(--warn-text); }
+
+  .cov { display: flex; align-items: center; gap: 10px; min-width: 185px; }
+  .cov .bar { flex: 1; height: 10px; border-radius: 5px; background: var(--accent-track); min-width: 85px; }
+  .cov .bar > i { display: block; height: 100%; background: var(--accent); border-radius: 0 5px 5px 0; }
+  .cov .n { font-variant-numeric: tabular-nums; font-size: 13px; white-space: nowrap; color: var(--ink); }
+  .cov .n small { color: var(--ink-3); }
+
+  .fresh { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .fresh .ok { color: var(--good-text); font-weight: 600; }
+  .fresh .sub { display: block; font-size: 12px; color: var(--ink-3); }
+  .badge { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+  .badge.warn { background: var(--warn-wash); color: var(--warn-text); }
+  .badge.crit { background: var(--crit-wash); color: var(--crit-text); }
+  .badge.good { background: var(--good-wash); color: var(--good-text); }
+
+  .auto { font-size: 13px; white-space: nowrap; }
+  .auto .sub, .note-sub { display: block; font-size: 12px; color: var(--ink-3); }
+
+  .chip {
+    display: inline-flex; align-items: center; gap: 7px; padding: 3px 10px; border-radius: 999px;
+    font-size: 12px; font-weight: 600; white-space: nowrap;
+  }
+  .chip::before { content: ""; width: 8px; height: 8px; border-radius: 50%; flex: none; }
+  .chip.healthy { background: var(--good-wash); color: var(--good-text); }
+  .chip.healthy::before { background: var(--good); }
+  .chip.drifting { background: var(--warn-wash); color: var(--warn-text); }
+  .chip.drifting::before { background: var(--warn); }
+  .chip.stalled { background: var(--crit-wash); color: var(--crit-text); }
+  .chip.stalled::before { background: var(--crit); }
+  .chip.planned { background: transparent; border: 1px solid var(--border); color: var(--ink-2); padding: 2px 9px; }
+  .chip.planned::before { background: var(--empty-cell); border: 1px solid var(--border); width: 7px; height: 7px; }
+
+  .strip-groups { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+  .strip-card { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px 15px; }
+  .strip-card .src {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-3); margin: 0 0 10px;
+  }
+  .strip-card .src b { color: var(--ink-2); }
+  .strip { padding: 6px 0 2px; }
+  .strip + .strip { border-top: 1px solid var(--hairline); margin-top: 10px; padding-top: 12px; }
+  .strip-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-bottom: 9px; }
+  .strip-head .name { font-weight: 600; font-size: 13.5px; }
+  .strip-head .name .arrow { color: var(--ink-3); font-weight: 400; }
+  .strip-head .counts { font-size: 12.5px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+  .strip-head .pending-note { font-size: 12px; color: var(--ink-3); }
+  .cells { display: flex; flex-wrap: wrap; gap: 2px; }
+  .cell { width: 15px; height: 18px; border-radius: 2px; background: var(--empty-cell); cursor: default; }
+  .cell.fresh { background: var(--good); }
+  .cell.stale { background: var(--warn); }
+  .cell:hover { box-shadow: 0 0 0 2px var(--surface), 0 0 0 3.5px var(--ink-3); }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 14px 0 0; padding: 0; list-style: none; font-size: 12.5px; color: var(--ink-2); }
+  .legend .sw { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+
+  .ladder { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 16px; }
+  .stage {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 13px 15px;
+    display: flex; flex-direction: column; gap: 7px;
+  }
+  .stage .stage-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .stage .stage-label .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--empty-cell); }
+  .stage.live .stage-label .dot { background: var(--good); }
+  .stage.pilot .stage-label .dot { background: var(--accent); }
+  .stage .langs { display: flex; flex-wrap: wrap; gap: 6px; }
+  .lang {
+    padding: 2px 9px; border-radius: 999px; border: 1px solid var(--border);
+    font-size: 12.5px; font-weight: 600; color: var(--ink);
+  }
+  .stage .ref { font-size: 12px; color: var(--ink-3); }
+
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--hairline); color: var(--ink-3); font-size: 12.5px; }
+  footer p { margin: 0 0 8px; max-width: 90ch; }
+  footer b { color: var(--ink-2); font-weight: 600; }
+
+  #tip {
+    position: fixed; z-index: 10; pointer-events: none; display: none; max-width: 280px;
+    background: var(--tooltip-bg); color: var(--tooltip-ink); border-radius: 5px;
+    padding: 6px 10px; font-size: 12px; line-height: 1.45; box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+  }
+  #tip b { font-weight: 650; }
+  #tip .dim { opacity: 0.72; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .meter > i, .cov .bar > i { transition: width 0.5s ease-out; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">QuantEcon · Internationalisation program</p>
+    <h1>Translation progress</h1>
+    <p class="dateline" id="dateline">Loading…</p>
+  </header>
+  <main id="main"></main>
+  <footer id="foot"></footer>
+</div>
+<div id="tip" role="presentation"></div>
+
+<script>
+"use strict";
+const esc = (s) => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const gh = (repo) => `https://github.com/QuantEcon/${repo}`;
+
+function render(DATA) {
+  const activeSources = DATA.sources.filter(s => !s.phase);
+  const activeEditions = activeSources.flatMap(s => s.editions.map(e => ({ ...e, src: s })));
+
+  document.getElementById("dateline").innerHTML =
+    `Data as of <b>${esc(DATA.generated_at)}</b><span class="sep">·</span>` +
+    `<a href="data/latest.json">data/latest.json</a><span class="sep">·</span>history since 2026-07-09`;
+
+  /* ---- tiles ---- */
+  const totTranslated = activeEditions.reduce((s, e) => s + e.lectures_translated, 0);
+  const totTarget = activeEditions.reduce((s, e) => s + e.src.lectures_total, 0);
+  const pct = Math.round(100 * totTranslated / totTarget);
+  const automated = activeEditions.filter(e => e.automation.wired).length;
+  const current = activeEditions.filter(e => e.drift_prs === 0).length;
+  const reviewOpen = activeEditions.reduce((s, e) => s + e.review.open, 0);
+  const langs = new Set(activeEditions.map(e => e.lang)).size;
+
+  const tiles = `<section aria-label="Program summary"><div class="tiles">
+    <div class="tile">
+      <span class="label">Lectures live in translation</span>
+      <span class="value">${totTranslated} <small>/ ${totTarget} · ${pct}%</small></span>
+      <span class="note"><b>${activeEditions.length} editions</b> across <b>${activeSources.length} source series</b> · ${langs} languages</span>
+      <div class="meter" role="img" aria-label="${pct}% of active-edition lectures translated"><i style="width:${pct}%"></i></div>
+    </div>
+    <div class="tile">
+      <span class="label">Pairs fully automated</span>
+      <span class="value">${automated} <small>/ ${activeEditions.length}</small></span>
+      <span class="note">sync + AI review + rebase, end to end</span>
+    </div>
+    <div class="tile">
+      <span class="label">Editions current with source</span>
+      <span class="value">${current} <small>/ ${activeEditions.length}</small></span>
+      <span class="note">automated pairs sync <b>same day</b></span>
+    </div>
+    <div class="tile">
+      <span class="label">Human review backlog</span>
+      <span class="value">${reviewOpen}</span>
+      <span class="note">open translation-review issues</span>
+    </div>
+  </div></section>`;
+
+  /* ---- series table ---- */
+  const covCell = (n, total) => {
+    const p = Math.round(100 * n / total);
+    return `<div class="cov">
+      <div class="bar" role="img" aria-label="${p}% coverage"><i style="width:${p}%"></i></div>
+      <span class="n">${n}<small>/${total}</small></span></div>`;
+  };
+  const groupRow = (s) => `<tr class="group"><td colspan="7">
+      <a class="repo" href="${gh(s.repo)}">${esc(s.repo)}</a>
+      <span class="series-title">${esc(s.title)}</span>
+      ${s.phase ? `<span class="phase">${esc(s.phase)}</span>` : ""}
+      <span class="meta">${s.lectures_total} lectures · en source</span>
+    </td></tr>`;
+  const editionRow = (s, e) => {
+    const orphanNote = (e.orphans && e.orphans.length)
+      ? ` · <span class="orphan-note">${e.orphans.length} orphan files</span>` : "";
+    const langCell = `<span class="arrow">↳</span><span class="lang-name">${esc(e.lang_label)} · ${esc(e.lang)}</span>` +
+      (e.planned ? "" : `<span class="target"><a href="${gh(e.target_repo)}">${esc(e.target_repo)}</a>${orphanNote}</span>`);
+    if (e.planned) {
+      return `<tr class="edition planned">
+        <td class="lang-cell">${langCell}</td>
+        <td>${covCell(0, s.lectures_total)}</td>
+        <td class="fresh"><span class="sub">—</span></td>
+        <td><span class="note-sub">—</span></td>
+        <td class="auto"><span class="sub">not scaffolded</span></td>
+        <td><span class="note-sub">—</span></td>
+        <td><span class="chip planned">Planned</span></td>
+      </tr>`;
+    }
+    const fresh = e.drift_prs === 0
+      ? `${esc(e.last_sync.date)}<span class="sub"><span class="ok">✓ ${esc(e.last_sync.lag)}</span></span>`
+      : `${esc(e.last_sync.date)}<span class="sub">${esc(e.last_sync.lag)}</span>`;
+    const drift = e.drift_prs === 0
+      ? `<span class="badge good">none</span>`
+      : (e.status === "stalled"
+          ? `<span class="badge crit">${e.drift_prs}${e.drift_plus ? "+" : ""} source PRs</span>`
+          : `<span class="badge warn">~${e.drift_prs} source PRs</span>`);
+    const auto = e.automation.wired
+      ? `Full<span class="sub">${esc(e.automation.parts)}</span>`
+      : `Not wired<span class="sub">${esc(e.automation.parts)}</span>`;
+    const review = e.review.open > 0
+      ? `<span class="badge warn">${e.review.open} open</span><span class="note-sub">${esc(e.review.note)}</span>`
+      : `<span style="font-size:13px">—</span><span class="note-sub">${esc(e.review.note)}</span>`;
+    const chipCls = { healthy: "healthy", drifting: "drifting", stalled: "stalled" }[e.status] || "planned";
+    return `<tr class="edition">
+      <td class="lang-cell">${langCell}</td>
+      <td>${covCell(e.lectures_translated, s.lectures_total)}</td>
+      <td class="fresh">${fresh}</td>
+      <td>${drift}</td>
+      <td class="auto">${auto}</td>
+      <td>${review}</td>
+      <td><span class="chip ${chipCls}">${esc(e.status_label)}</span></td>
+    </tr>`;
+  };
+  const table = `<section aria-label="Series and editions">
+    <h2>Series &amp; editions</h2>
+    <p class="h2-sub">Grouped by English source series — each edition is a synced subrepo of its source. Coverage says how much of the series is translated; last sync and drift say how current it is — an edition can be complete yet stale. Rollout order follows the <a href="https://github.com/QuantEcon/action-translation/issues/74">Phase 0–3 plan</a>.</p>
+    <div class="table-scroll"><table>
+      <thead><tr>
+        <th scope="col">Edition</th><th scope="col">Coverage</th><th scope="col">Last sync</th>
+        <th scope="col">Upstream drift</th><th scope="col">Automation</th>
+        <th scope="col">Human review</th><th scope="col">Status</th>
+      </tr></thead>
+      <tbody>${DATA.sources.map(s => groupRow(s) + s.editions.map(e => editionRow(s, e)).join("")).join("")}</tbody>
+    </table></div></section>`;
+
+  /* ---- strips ---- */
+  const stateWord = {
+    fresh: "Translated · current", freshPending: "Translated (staleness pending)",
+    stale: "Translated · source changed since last sync", missing: "Not yet translated"
+  };
+  const strips = `<section aria-label="Per-lecture detail">
+    <h2>Lecture-level detail</h2>
+    <p class="h2-sub">Each cell is one lecture in the source series. Green: translated. Amber: translated, but the source lecture changed since the last sync. Grey: not yet translated. Hover a cell for the lecture.</p>
+    <div class="strip-groups">${activeSources.map((s, si) => {
+      const inner = s.editions.map((e, ei) => {
+        const cells = (e.lectures || []).map((c, i) =>
+          `<span class="cell ${c.state === "missing" ? "" : c.state}" data-s="${si}" data-e="${ei}" data-i="${i}"></span>`).join("");
+        const freshN = (e.lectures || []).filter(c => c.state === "fresh").length;
+        const staleN = (e.lectures || []).filter(c => c.state === "stale").length;
+        const missN = (e.lectures || []).filter(c => c.state === "missing").length;
+        const counts = [`${freshN} translated`, staleN ? `${staleN} stale` : null, missN ? `${missN} missing` : null]
+          .filter(Boolean).join(" · ");
+        const pending = e.freshness === "pending"
+          ? `<span class="pending-note">staleness detection pending first collector run</span>` : "";
+        return `<div class="strip">
+          <div class="strip-head">
+            <span class="name"><span class="arrow">↳</span> ${esc(e.lang_label)} · ${esc(e.lang)}</span>
+            <span class="counts">${counts}</span>${pending}
+          </div>
+          <div class="cells" role="img" aria-label="${esc(s.repo)} ${esc(e.lang)}: ${counts}">${cells}</div>
+        </div>`;
+      }).join("");
+      return `<div class="strip-card"><p class="src"><b>${esc(s.repo)}</b> · ${s.lectures_total} lectures</p>${inner}</div>`;
+    }).join("")}</div>
+    <ul class="legend" aria-hidden="true">
+      <li><span class="sw" style="background: var(--good)"></span>Translated</li>
+      <li><span class="sw" style="background: var(--warn)"></span>Translated · source changed since sync</li>
+      <li><span class="sw" style="background: var(--empty-cell)"></span>Not yet translated</li>
+    </ul></section>`;
+
+  /* ---- ladder ---- */
+  const ladder = `<section aria-label="Language pipeline">
+    <h2>Language pipeline</h2>
+    <p class="h2-sub">The expansion ladder: each language advances research → glossary → pilot → production. Gate for launch: a committed human reviewer.</p>
+    <div class="ladder">${DATA.pipeline.map(st => `
+      <div class="stage ${st.cls || ""}">
+        <span class="stage-label"><span class="dot"></span>${esc(st.stage)}</span>
+        <span class="langs">${st.langs.map(l => `<span class="lang">${esc(l)}</span>`).join("")}</span>
+        <span class="ref">${esc(st.ref)}</span>
+      </div>`).join("")}</div></section>`;
+
+  document.getElementById("main").innerHTML = tiles + table + strips + ladder;
+
+  document.getElementById("foot").innerHTML = `
+    <p><b>How this page works.</b> Static HTML on GitHub Pages reading <a href="data/latest.json">data/latest.json</a>; a collector compares each source repo with its editions (file coverage, per-file last-commit dates, sync activity, workflow wiring, review labels) and appends dated snapshots to <b>data/history/</b>. ${esc(DATA.collected_by)}.</p>
+    <p><b>Counting rule.</b> ${esc(DATA.counting_rule)}</p>
+    <p>Engine: <a href="https://github.com/QuantEcon/action-translation">action-translation</a> · dashboard source: <a href="https://github.com/QuantEcon/status-translations">status-translations</a></p>`;
+
+  /* ---- tooltip ---- */
+  const tip = document.getElementById("tip");
+  document.addEventListener("mouseover", (ev) => {
+    const c = ev.target.closest(".cell");
+    if (!c) { tip.style.display = "none"; return; }
+    const src = activeSources[+c.dataset.s];
+    const e = src.editions[+c.dataset.e];
+    const cellData = e.lectures[+c.dataset.i];
+    const word = cellData.state === "fresh" && e.freshness === "pending" ? stateWord.freshPending : stateWord[cellData.state];
+    tip.innerHTML = `<b>${esc(cellData.slug)}</b><br>${word}<br><span class="dim">${esc(src.repo)} → ${esc(e.lang)}</span>`;
+    tip.style.display = "block";
+  });
+  document.addEventListener("mousemove", (ev) => {
+    if (tip.style.display !== "block") return;
+    const pad = 14;
+    let x = ev.clientX + pad, y = ev.clientY + pad;
+    const r = tip.getBoundingClientRect();
+    if (x + r.width > innerWidth - 8) x = ev.clientX - r.width - pad;
+    if (y + r.height > innerHeight - 8) y = ev.clientY - r.height - pad;
+    tip.style.left = x + "px"; tip.style.top = y + "px";
+  });
+}
+
+fetch("data/latest.json?v=" + Date.now())
+  .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+  .then(render)
+  .catch(err => {
+    document.getElementById("dateline").textContent = "Data unavailable";
+    document.getElementById("main").innerHTML =
+      `<div class="error-card"><b>Could not load data/latest.json</b> — ${esc(err.message)}. ` +
+      `The data file deploys with the site; if this persists, check the latest publish run in ` +
+      `<a href="https://github.com/QuantEcon/status-translations/actions">Actions</a>.</div>`;
+  });
+</script>
+</body>
+</html>
