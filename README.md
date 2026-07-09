@@ -49,6 +49,10 @@ A "lecture" is a top-level `lectures/*.md` file in the **source** repo, excludin
 - `data/latest.json` is currently a **manually seeded snapshot** (2026-07-09), verified against live GitHub state: file lists and set differences via the contents API, review-issue counts and last-sync commit dates via `gh`.
 - The collector is **v1 and unverified**: before enabling the cron in `collect.yml`, run it via *Actions → collect → Run workflow* (or locally: `python3 collector/collect.py`) and check the committed diff against the seed — coverage and orphans should reproduce exactly; staleness counts are new information; drift-PR counts are approximate by design (all merged source PRs since last sync, not only lecture-touching ones — the [translation-sync-metadata contract](https://github.com/QuantEcon/action-translation/issues/66) will make drift exact per-file).
 
+## Placement (provisional)
+
+This repo is the dashboard's **current** home, not a permanent commitment. How QuantEcon organises project and dashboard reporting is still being worked out (see the reporting-strategy discussions at [meta#332](https://github.com/QuantEcon/meta/issues/332) and [meta#321](https://github.com/QuantEcon/meta/issues/321)); if a central reporting hub emerges (e.g. under [QuantEcon/dashboard](https://github.com/QuantEcon/dashboard)), this dashboard is designed to relocate cheaply — the static site and the versioned data contract (`data/latest.json` + `data/history/`) are self-contained, so moving means moving files and updating one URL.
+
 ## Related repos
 
 - [action-translation](https://github.com/QuantEcon/action-translation) — the translation engine (sync / review / rebase); its sync metadata (#66) is this dashboard's upgrade path for exact drift.
