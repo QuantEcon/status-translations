@@ -412,16 +412,16 @@
           "review_state": "complete",
           "lectures_translated": 48,
           "freshness": "computed",
-          "stale": 35,
+          "stale": 0,
           "last_sync": {
             "date": "2026-07-18",
             "lag": "today"
           },
-          "drift_prs": 0,
+          "drift_prs": 1,
           "drift_approx": true,
           "automation": {
-            "wired": false,
-            "parts": "Phase 0 · Track A"
+            "wired": true,
+            "parts": "sync · AI review · rebase"
           },
           "review": {
             "open": 0,
@@ -437,7 +437,7 @@
             },
             {
               "slug": "ar1_processes",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "bayes_intro",
@@ -445,7 +445,7 @@
             },
             {
               "slug": "business_cycle",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "cagan_adaptive",
@@ -457,7 +457,7 @@
             },
             {
               "slug": "cobweb",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "commod_price",
@@ -465,39 +465,39 @@
             },
             {
               "slug": "complex_and_trig",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "cons_smooth",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "eigen_I",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "eigen_II",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "equalizing_difference",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "french_rev",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "geom_series",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "greek_square",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "heavy_tails",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "inequality",
@@ -505,7 +505,7 @@
             },
             {
               "slug": "inflation_history",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "input_output",
@@ -517,35 +517,35 @@
             },
             {
               "slug": "intro_supply_demand",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "laffer_adaptive",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "lake_model",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "linear_equations",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "lln_clt",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "long_run_growth",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "lp_intro",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "markov_chains_I",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "markov_chains_II",
@@ -561,11 +561,11 @@
             },
             {
               "slug": "money_inflation_nonlinear",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "monte_carlo",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "msy_fishery",
@@ -573,31 +573,31 @@
             },
             {
               "slug": "networks",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "olg",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "prob_dist",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "pv",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "scalar_dynam",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "schelling",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "short_path",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "simple_linear_regression",
@@ -609,11 +609,11 @@
             },
             {
               "slug": "supply_demand_heterogeneity",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "supply_demand_multiple_goods",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "tax_smooth",
@@ -621,15 +621,15 @@
             },
             {
               "slug": "time_series_with_matrices",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "troubleshooting",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "unpleasant",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "zreferences",
