@@ -276,12 +276,12 @@
           "review_state": "pending",
           "lectures_translated": 25,
           "freshness": "computed",
-          "stale": 1,
+          "stale": 0,
           "last_sync": {
-            "date": "2026-07-16",
-            "lag": "1 day ago"
+            "date": "2026-07-18",
+            "lag": "today"
           },
-          "drift_prs": 2,
+          "drift_prs": 0,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -291,8 +291,8 @@
             "open": 0,
             "note": "site live 2026-07-17 · seed awaiting native review"
           },
-          "status": "drifting",
-          "status_label": "Drifting",
+          "status": "healthy",
+          "status_label": "Published pilot",
           "orphans": [],
           "lectures": [
             {
@@ -357,7 +357,7 @@
             },
             {
               "slug": "pandas_panel",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "python_advanced_features",
