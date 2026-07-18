@@ -18,12 +18,12 @@
           "review_state": "active",
           "lectures_translated": 25,
           "freshness": "computed",
-          "stale": 2,
+          "stale": 0,
           "last_sync": {
-            "date": "2026-06-19",
-            "lag": "28 days ago"
+            "date": "2026-07-18",
+            "lag": "today"
           },
-          "drift_prs": 11,
+          "drift_prs": 0,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -33,8 +33,8 @@
             "open": 24,
             "note": "issues open since 2026-04-11"
           },
-          "status": "drifting",
-          "status_label": "Drifting",
+          "status": "healthy",
+          "status_label": "Reference model",
           "orphans": [],
           "lectures": [
             {
@@ -79,7 +79,7 @@
             },
             {
               "slug": "numba",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "numpy",
@@ -99,7 +99,7 @@
             },
             {
               "slug": "pandas_panel",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "python_advanced_features",
