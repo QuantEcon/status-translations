@@ -427,8 +427,8 @@
             "open": 0,
             "note": "campaign complete (Oct 2024 – Apr 2025)"
           },
-          "status": "drifting",
-          "status_label": "Drifting",
+          "status": "gaps",
+          "status_label": "Current · 3 to translate",
           "orphans": [],
           "lectures": [
             {
