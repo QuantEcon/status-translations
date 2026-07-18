@@ -1,6 +1,9 @@
 {
   "stalled_after_days": 180,
-  "exclude_files": ["README", "status"],
+  "exclude_files": [
+    "README",
+    "status"
+  ],
   "sources": [
     {
       "repo": "lecture-python-programming",
@@ -68,29 +71,85 @@
     {
       "repo": "lecture-jax",
       "title": "Quantitative Economics with JAX",
-      "lectures_total": 33,
       "phase": "Phase 3 · first in queue",
-      "editions": [{ "lang": "zh-cn", "lang_label": "Chinese", "planned": true }]
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "planned": true
+        }
+      ]
     },
     {
       "repo": "lecture-python-advanced.myst",
       "title": "Advanced Quantitative Economics with Python",
-      "lectures_total": 67,
       "phase": "Phase 3",
-      "editions": [{ "lang": "zh-cn", "lang_label": "Chinese", "planned": true }]
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "planned": true
+        }
+      ]
     },
     {
       "repo": "lecture-dp",
       "title": "Dynamic Programming",
-      "lectures_total": 52,
       "phase": "Phase 3 · ~75% overlaps catalogue",
-      "editions": [{ "lang": "zh-cn", "lang_label": "Chinese", "planned": true }]
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "planned": true
+        }
+      ]
+    },
+    {
+      "repo": "continuous_time_mcs",
+      "title": "Continuous Time Markov Chains",
+      "phase": "Queued · rename pending QEP",
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "planned": true
+        }
+      ]
     }
   ],
   "pipeline": [
-    { "stage": "Production", "cls": "live", "langs": ["Chinese · zh-cn"], "ref": "3 editions live" },
-    { "stage": "Pilot", "cls": "pilot", "langs": ["Farsi · fa", "French · fr"], "ref": "fa: RTL proving ground · fr: published 2026-07-17, awaiting native review" },
-    { "stage": "Glossary review", "cls": "", "langs": ["Japanese · ja"], "ref": "action-translation #69" },
-    { "stage": "Research", "cls": "", "langs": ["Malayalam · ml"], "ref": "action-translation #70 · draft #71" }
+    {
+      "stage": "Production",
+      "cls": "live",
+      "langs": [
+        "Chinese · zh-cn"
+      ],
+      "ref": "3 editions live"
+    },
+    {
+      "stage": "Pilot",
+      "cls": "pilot",
+      "langs": [
+        "Farsi · fa",
+        "French · fr"
+      ],
+      "ref": "fa: RTL proving ground · fr: published 2026-07-17, awaiting native review"
+    },
+    {
+      "stage": "Glossary review",
+      "cls": "",
+      "langs": [
+        "Japanese · ja"
+      ],
+      "ref": "action-translation #69"
+    },
+    {
+      "stage": "Research",
+      "cls": "",
+      "langs": [
+        "Malayalam · ml"
+      ],
+      "ref": "action-translation #70 · draft #71"
+    }
   ]
 }

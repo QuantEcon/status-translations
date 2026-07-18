@@ -27,9 +27,17 @@ function render(DATA) {
   const activeEditions = activeSources.flatMap(s => s.editions.map(e => ({ ...e, src: s })));
 
   /* ---- tiles ---- */
-  const totTranslated = activeEditions.reduce((s, e) => s + e.lectures_translated, 0);
-  const totTarget = activeEditions.reduce((s, e) => s + e.src.lectures_total, 0);
+  /* Headline is org-level: every edition (live or planned) targets its full
+     source series, so a lecture translated into three languages counts three
+     times — and the planned series widen the denominator. */
+  const totTranslated = DATA.sources.reduce((n, s) =>
+    n + s.editions.reduce((m, e) => m + (e.lectures_translated || 0), 0), 0);
+  const totTarget = DATA.sources.reduce((n, s) => n + s.lectures_total * s.editions.length, 0);
   const pct = Math.round(100 * totTranslated / totTarget);
+  const uniqTotal = DATA.sources.reduce((n, s) => n + s.lectures_total, 0);
+  const uniqAny = DATA.sources.reduce((n, s) =>
+    n + Math.max(0, ...s.editions.map(e => e.lectures_translated || 0)), 0);
+  const plannedN = DATA.sources.flatMap(s => s.editions).filter(e => e.planned).length;
   const automated = activeEditions.filter(e => e.automation.wired).length;
   const current = activeEditions.filter(e => e.stale === 0).length;
   const reviewOpen = activeEditions.reduce((s, e) => s + e.review.open, 0);
@@ -37,10 +45,10 @@ function render(DATA) {
 
   const tiles = `<section aria-label="Program summary"><div class="tiles">
     <div class="tile">
-      <span class="label">Lectures live in translation</span>
+      <span class="label">Lecture translations · whole catalogue</span>
       <span class="value">${totTranslated} <small>/ ${totTarget} · ${pct}%</small></span>
-      <span class="note"><b>${activeEditions.length} editions</b> across <b>${activeSources.length} source series</b> · ${langs} languages</span>
-      <div class="meter" role="img" aria-label="${pct}% of active-edition lectures translated"><i style="width:${pct}%"></i></div>
+      <span class="note"><b>${uniqAny} / ${uniqTotal}</b> source lectures have ≥ 1 translation · <b>${activeEditions.length} live</b> + ${plannedN} planned editions · ${langs} languages</span>
+      <div class="meter" role="img" aria-label="${pct}% of targeted lecture translations delivered, planned series included"><i style="width:${pct}%"></i></div>
     </div>
     <div class="tile">
       <span class="label">Pairs fully automated</span>

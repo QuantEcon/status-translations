@@ -162,8 +162,11 @@ def main():
     sources = []
     for cfg_src in config["sources"]:
         if cfg_src.get("phase"):
+            # Planned series count toward the org-level denominator, so their
+            # totals follow the same canonical rule as active ones.
+            src_dest = clone(cfg_src["repo"])
             sources.append({"repo": cfg_src["repo"], "title": cfg_src["title"],
-                            "lectures_total": cfg_src["lectures_total"],
+                            "lectures_total": len(lecture_slugs(src_dest, exclude)),
                             "phase": cfg_src["phase"], "editions": cfg_src["editions"]})
             continue
         src_dest = clone(cfg_src["repo"])

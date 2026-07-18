@@ -1167,7 +1167,7 @@
     {
       "repo": "lecture-jax",
       "title": "Quantitative Economics with JAX",
-      "lectures_total": 33,
+      "lectures_total": 32,
       "phase": "Phase 3 · first in queue",
       "editions": [
         {
@@ -1193,8 +1193,21 @@
     {
       "repo": "lecture-dp",
       "title": "Dynamic Programming",
-      "lectures_total": 52,
+      "lectures_total": 51,
       "phase": "Phase 3 · ~75% overlaps catalogue",
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "planned": true
+        }
+      ]
+    },
+    {
+      "repo": "continuous_time_mcs",
+      "title": "Continuous Time Markov Chains",
+      "lectures_total": 10,
+      "phase": "Queued · rename pending QEP",
       "editions": [
         {
           "lang": "zh-cn",
