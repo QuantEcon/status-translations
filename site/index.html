@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>QuantEcon Translations — program status</title>
-<meta name="description" content="Translation progress across the QuantEcon lecture series: coverage, freshness, automation and review state for every language edition.">
+<meta name="description" content="Translation progress across the QuantEcon lecture series: coverage, freshness and automation for every language edition.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 <script>try{var t=localStorage.getItem("st-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="stylesheet" href="style.css">
@@ -40,7 +40,6 @@ function render(DATA) {
   const plannedN = DATA.sources.flatMap(s => s.editions).filter(e => e.planned).length;
   const automated = activeEditions.filter(e => e.automation.wired).length;
   const current = activeEditions.filter(e => e.stale === 0).length;
-  const reviewOpen = activeEditions.reduce((s, e) => s + e.review.open, 0);
   const langs = new Set(activeEditions.map(e => e.lang)).size;
 
   const tiles = `<section aria-label="Program summary"><div class="tiles">
@@ -60,11 +59,6 @@ function render(DATA) {
       <span class="value">${current} <small>/ ${activeEditions.length}</small></span>
       <span class="note">no lecture changed upstream since its last sync</span>
     </div>
-    <div class="tile">
-      <span class="label">Human review backlog</span>
-      <span class="value">${reviewOpen}</span>
-      <span class="note">open translation-review issues</span>
-    </div>
   </div></section>`;
 
   /* ---- series table ---- */
@@ -74,7 +68,7 @@ function render(DATA) {
       <div class="bar" role="img" aria-label="${p}% coverage"><i style="width:${p}%"></i></div>
       <span class="n">${n}<small>/${total}</small></span></div>`;
   };
-  const groupRow = (s) => `<tr class="group"><td colspan="6"><div class="group-line">
+  const groupRow = (s) => `<tr class="group"><td colspan="5"><div class="group-line">
       <a class="repo" href="${gh(s.repo)}">${esc(s.repo)}</a>
       <span class="series-title">${esc(s.title)}</span>
       ${s.phase ? `<span class="phase">${esc(s.phase)}</span>` : ""}
@@ -92,7 +86,6 @@ function render(DATA) {
         <td>${covCell(0, s.lectures_total)}</td>
         <td class="fresh"><span class="sub">—</span></td>
         <td class="auto"><span class="sub">not scaffolded</span></td>
-        <td><span class="note-sub">—</span></td>
         <td><span class="chip planned">Planned</span></td>
       </tr>`;
     }
@@ -108,16 +101,12 @@ function render(DATA) {
     const auto = e.automation.wired
       ? `Full<span class="sub">${esc(e.automation.parts)}</span>`
       : `Not wired<span class="sub">${esc(e.automation.parts)}</span>`;
-    const review = e.review.open > 0
-      ? `<span class="badge warn">${e.review.open} open</span><span class="note-sub">${esc(e.review.note)}</span>`
-      : `<span style="font-size:13px">—</span><span class="note-sub">${esc(e.review.note)}</span>`;
     const chipCls = { healthy: "healthy", drifting: "drifting", stalled: "stalled" }[e.status] || "planned";
     return `<tr class="edition">
       <td class="lang-cell">${langCell}</td>
       <td>${covCell(e.lectures_translated, s.lectures_total)}</td>
       <td class="fresh">${fresh}</td>
       <td class="auto">${auto}</td>
-      <td>${review}</td>
       <td><span class="chip ${chipCls}">${esc(e.status_label)}</span></td>
     </tr>`;
   };
@@ -127,7 +116,7 @@ function render(DATA) {
     <div class="table-scroll"><table>
       <thead><tr>
         <th scope="col">Edition</th><th scope="col">Coverage</th><th scope="col">Activity · staleness</th>
-        <th scope="col">Automation</th><th scope="col">Human review</th><th scope="col">Status</th>
+        <th scope="col">Automation</th><th scope="col">Status</th>
       </tr></thead>
       <tbody>${DATA.sources.map(s => groupRow(s) + s.editions.map(e => editionRow(s, e)).join("")).join("")}</tbody>
     </table></div></section>`;
