@@ -650,14 +650,14 @@
           "target_repo": "lecture-python.zh-cn",
           "site": "https://quantecon.github.io/lecture-python.zh-cn/",
           "review_state": "stalled",
-          "lectures_translated": 78,
+          "lectures_translated": 83,
           "freshness": "computed",
-          "stale": 68,
+          "stale": 64,
           "last_sync": {
-            "date": "2025-10-15",
-            "lag": "275 days ago"
+            "date": "2026-07-19",
+            "lag": "today"
           },
-          "drift_prs": 176,
+          "drift_prs": 0,
           "drift_approx": true,
           "automation": {
             "wired": false,
@@ -667,18 +667,9 @@
             "open": 0,
             "note": "campaign stalled Oct 2025"
           },
-          "status": "stalled",
-          "status_label": "Stalled",
-          "orphans": [
-            "cake_eating_numerical",
-            "cake_eating_problem",
-            "coleman_policy_iter",
-            "egm_policy_iter",
-            "ifp",
-            "mccall_correlated",
-            "optgrowth",
-            "optgrowth_fast"
-          ],
+          "status": "drifting",
+          "status_label": "Drifting",
+          "orphans": [],
           "lectures": [
             {
               "slug": "affine_risk_prices",
@@ -794,7 +785,7 @@
             },
             {
               "slug": "ifp_advanced",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "ifp_discrete",
@@ -802,7 +793,7 @@
             },
             {
               "slug": "ifp_egm",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "ifp_egm_transient_shocks",
@@ -910,7 +901,7 @@
             },
             {
               "slug": "lqcontrol",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "ls_learning",
@@ -942,7 +933,7 @@
             },
             {
               "slug": "mccall_persist_trans",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "mccall_q",
@@ -962,7 +953,7 @@
             },
             {
               "slug": "mix_model",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "mle",
@@ -986,7 +977,7 @@
             },
             {
               "slug": "newton_method",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "odu",
@@ -1006,7 +997,7 @@
             },
             {
               "slug": "os",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "os_egm",
@@ -1018,11 +1009,11 @@
             },
             {
               "slug": "os_numerical",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "os_stochastic",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "os_time_iter",
@@ -1058,7 +1049,7 @@
             },
             {
               "slug": "rational_expectations",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "rational_learning_re",
@@ -1150,7 +1141,7 @@
             },
             {
               "slug": "wald_friedman_2",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "wealth_dynamics",
