@@ -239,6 +239,8 @@ tr.group .phase {
 .chip::before { content: ""; width: 8px; height: 8px; border-radius: 50%; flex: none; }
 .chip.healthy { background: var(--good-wash); color: var(--good-text); }
 .chip.healthy::before { background: var(--good); }
+.chip.gaps { background: var(--good-wash); color: var(--good-text); }
+.chip.gaps::before { background: var(--warn); }
 .chip.drifting { background: var(--warn-wash); color: var(--warn-text); }
 .chip.drifting::before { background: var(--warn); }
 .chip.stalled { background: var(--crit-wash); color: var(--crit-text); }

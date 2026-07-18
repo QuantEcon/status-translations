@@ -70,7 +70,7 @@ function stepperHTML(list) {
 }
 
 function render(DATA) {
-  const chipCls = { healthy: "healthy", drifting: "drifting", stalled: "stalled" };
+  const chipCls = { healthy: "healthy", gaps: "gaps", drifting: "drifting", stalled: "stalled" };
   const cards = DATA.sources.map(s => {
     const rows = s.editions.map(e => {
       const links = e.planned ? "" :

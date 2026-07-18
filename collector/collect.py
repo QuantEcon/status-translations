@@ -132,6 +132,10 @@ def collect_edition(cfg_src, cfg_ed, src_dest, exclude, stalled_after):
     days_since = (dt.datetime.now(dt.timezone.utc) - last_sync).days if last_sync else None
     if wired and stale == 0 and translated == len(src_slugs):
         status, label = "healthy", cfg_ed.get("status_label_healthy", "Healthy")
+    elif wired and stale == 0:
+        # In sync and automated; only untranslated lectures remain (gap-fill,
+        # not drift -- nothing here goes stale by itself).
+        status, label = "gaps", f"Current · {len(src_slugs) - translated} to translate"
     elif days_since is not None and days_since > stalled_after:
         status, label = "stalled", "Stalled"
     else:

@@ -101,7 +101,7 @@ function render(DATA) {
     const auto = e.automation.wired
       ? `Full<span class="sub">${esc(e.automation.parts)}</span>`
       : `Not wired<span class="sub">${esc(e.automation.parts)}</span>`;
-    const chipCls = { healthy: "healthy", drifting: "drifting", stalled: "stalled" }[e.status] || "planned";
+    const chipCls = { healthy: "healthy", gaps: "gaps", drifting: "drifting", stalled: "stalled" }[e.status] || "planned";
     return `<tr class="edition">
       <td class="lang-cell">${langCell}</td>
       <td>${covCell(e.lectures_translated, s.lectures_total)}</td>
