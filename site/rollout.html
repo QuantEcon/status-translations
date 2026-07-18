@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rollout tracker — QuantEcon Translations</title>
+<meta name="description" content="Edition-by-edition rollout lifecycle for the QuantEcon translation program: scaffolded, seeded, automated, published, reviewed.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+<script>try{var t=localStorage.getItem("st-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header id="chrome"></header>
+  <main id="main"></main>
+  <footer id="foot"></footer>
+</div>
+<div id="tip" role="presentation"></div>
+
+<script src="app.js"></script>
+<script>
+"use strict";
+const { esc, gh } = STDash;
+
+/* Lifecycle: scaffolded → seeded → automated → published → reviewed.
+   All but the last are computed by the collector; "reviewed" reflects the
+   editorial review_state (complete / active / pending / stalled). */
+function steps(s, e) {
+  if (e.planned) {
+    return [
+      { label: "Scaffolded", state: "pending" },
+      { label: "Seeded", state: "pending" },
+      { label: "Automated", state: "pending" },
+      { label: "Published", state: "pending" },
+      { label: "Reviewed", state: "pending" },
+    ];
+  }
+  const seeded = e.lectures_translated > 0;
+  const full = e.lectures_translated === s.lectures_total;
+  const reviewStep =
+    e.review_state === "complete" ? { label: "Reviewed", state: "done" } :
+    e.review_state === "active"   ? { label: "Reviewed", state: "now", sub: "review in progress" } :
+    e.review_state === "stalled"  ? { label: "Reviewed", state: "blocked", sub: "campaign stalled" } :
+                                    { label: "Reviewed", state: "pending", sub: "awaiting reviewer" };
+  const out = [
+    { label: "Scaffolded", state: "done" },
+    { label: "Seeded", state: seeded ? "done" : "now",
+      sub: seeded ? `${e.lectures_translated}/${s.lectures_total}${full ? "" : " translated"}` : "no lectures yet" },
+    { label: "Automated", state: e.automation.wired ? "done" : "now",
+      sub: e.automation.wired ? esc(e.automation.parts) : esc(e.automation.parts) },
+    { label: "Published", state: e.site ? "done" : "pending" },
+    reviewStep,
+  ];
+  /* mark the first not-done step "now" so every row shows where it stands */
+  const firstOpen = out.findIndex(st => st.state !== "done");
+  if (firstOpen >= 0 && out[firstOpen].state === "pending") out[firstOpen].state = "now";
+  return out;
+}
+
+function stepperHTML(list) {
+  return `<div class="stepper">${list.map((st, i) => {
+    const glyph = st.state === "done" ? "✓" : st.state === "blocked" ? "!" : String(i + 1);
+    const link = i < list.length - 1
+      ? `<span class="step-link${st.state === "done" ? " done" : ""}"></span>` : "";
+    return `<span class="step ${st.state}">
+        <span class="knob" aria-hidden="true">${glyph}</span>
+        <span><span class="step-label">${st.label}</span>${st.sub ? `<span class="step-sub">${st.sub}</span>` : ""}</span>
+      </span>${link}`;
+  }).join("")}</div>`;
+}
+
+function render(DATA) {
+  const chipCls = { healthy: "healthy", drifting: "drifting", stalled: "stalled" };
+  const cards = DATA.sources.map(s => {
+    const rows = s.editions.map(e => {
+      const links = e.planned ? "" :
+        `<span class="links"><a href="${gh(e.target_repo)}">${esc(e.target_repo)}</a>${e.site ? ` · <a href="${esc(e.site)}">published site</a>` : ""}</span>`;
+      const chip = e.planned
+        ? `<span class="chip planned">Planned${s.phase ? ` · ${esc(s.phase)}` : ""}</span>`
+        : `<span class="chip ${chipCls[e.status] || "planned"}">${esc(e.status_label)}</span>`;
+      return `<div class="step-row">
+        <div class="row-head">
+          <span class="name"><span class="arrow">↳</span> ${esc(e.lang_label)} · ${esc(e.lang)}</span>
+          ${links}${chip}
+        </div>
+        ${stepperHTML(steps(s, e))}
+      </div>`;
+    }).join("");
+    return `<div class="step-card">
+      <p class="src"><b>${esc(s.repo)}</b> · ${esc(s.title)} · ${s.lectures_total} lectures</p>
+      ${rows}
+    </div>`;
+  }).join("");
+
+  const ladder = `<section aria-label="Language pipeline">
+    <h2>Language pipeline</h2>
+    <p class="h2-sub">Languages advance research → glossary → pilot → production; the gate for launch is a committed human reviewer.</p>
+    <div class="ladder">${DATA.pipeline.map(st => `
+      <div class="stage ${st.cls || ""}">
+        <span class="stage-label"><span class="dot"></span>${esc(st.stage)}</span>
+        <span class="langs">${st.langs.map(l => `<span class="lang">${esc(l)}</span>`).join("")}</span>
+        <span class="ref">${esc(st.ref)}</span>
+      </div>`).join("")}</div></section>`;
+
+  const steppers = `<section aria-label="Edition lifecycle">
+    <h2>Edition lifecycle</h2>
+    <p class="h2-sub">Every language edition steps through <i>scaffolded → seeded → automated → published → reviewed</i>. The first four states are computed nightly by the collector (repo exists, lectures present, sync + review + rebase workflows wired, published site); the review state is curated. Rollout order follows the <a href="https://github.com/QuantEcon/action-translation/issues/74">Phase 0–3 plan</a>.</p>
+    <div class="step-cards">${cards}</div>
+  </section>`;
+
+  document.getElementById("main").innerHTML = ladder + steppers;
+}
+
+STDash.boot({ page: "rollout", render });
+</script>
+</body>
+</html>

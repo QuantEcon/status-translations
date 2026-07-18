@@ -20,7 +20,7 @@ Translation health is two-dimensional: **coverage** (how much of the source seri
 
 1. `collector/collect.py` blobless-clones each source repo and its editions, compares `lectures/*.md` file sets and per-file last-commit dates, checks workflow wiring, and counts sync-era PRs and review issues.
 2. It writes `data/latest.json` and a dated snapshot in `data/history/` — history accumulates from day one, so trend views come free later.
-3. `site/index.html` (static, no dependencies) fetches `data/latest.json` and renders the dashboard; the `publish` workflow deploys `site/` + `data/` to Pages on every push, and the `collect` workflow redeploys after committing fresh data.
+3. The site (static, no dependencies) fetches `data/latest.json` and renders three pages — **Overview** (stat tiles, series × edition table, language pipeline), **Rollout** (per-edition lifecycle steppers: scaffolded → seeded → automated → published → reviewed), and **Sync detail** (per-lecture cells + orphan files). The `publish` workflow deploys `site/` + `data/` to Pages on every push, and the `collect` workflow redeploys after committing fresh data. Every page carries a freshness badge (green ≤ 7 days since collection, orange past a week, red past two) and a light/dark theme toggle (system preference by default).
 
 Editorial facts the collector can't compute (series titles, phase labels, review-campaign notes, the language pipeline) live in `collector/config.json`. To add a language or series, extend that file.
 
@@ -31,13 +31,17 @@ data/
   latest.json         # current snapshot (the dashboard reads this)
   history/            # dated snapshots, append-only
 site/
-  index.html          # the dashboard (static, client-side rendering)
+  index.html          # Overview page (static, client-side rendering)
+  rollout.html        # Rollout tracker: per-edition lifecycle steppers
+  sync.html           # Sync detail: per-lecture cells + orphan files
+  style.css           # shared design system (light/dark themes)
+  app.js              # shared chrome: nav, freshness badge, theme toggle, data loading
 collector/
   collect.py          # computes the numbers (git + gh + python stdlib)
   config.json         # repo pairs + editorial fields
 .github/workflows/
   publish.yml         # deploy site + data to Pages on push
-  collect.yml         # data collection (manual until verified; then nightly cron)
+  collect.yml         # nightly data collection (cron, 03:17 UTC) + redeploy
 ```
 
 ## Counting rule
@@ -46,8 +50,8 @@ A "lecture" is a top-level `lectures/*.md` file in the **source** repo, excludin
 
 ## Status & verification
 
-- `data/latest.json` is currently a **manually seeded snapshot** (2026-07-09), verified against live GitHub state: file lists and set differences via the contents API, review-issue counts and last-sync commit dates via `gh`.
-- The collector is **v1 and unverified**: before enabling the cron in `collect.yml`, run it via *Actions → collect → Run workflow* (or locally: `python3 collector/collect.py`) and check the committed diff against the seed — coverage and orphans should reproduce exactly; staleness counts are new information; drift-PR counts are approximate by design (all merged source PRs since last sync, not only lecture-touching ones — the [translation-sync-metadata contract](https://github.com/QuantEcon/action-translation/issues/66) will make drift exact per-file).
+- The collector was **verified on 2026-07-18** against the hand-seeded 2026-07-09 snapshot: coverage and orphan lists reproduced exactly; the computed per-lecture staleness supersedes the seed's hand-set values. The nightly cron in `collect.yml` has been on since.
+- Two measurement caveats, stated in the data itself (`last_sync_note`, `drift_approx`): the per-edition **activity date** is the newest commit touching a matched lecture file in the edition, so edition-local maintenance moves it too (read it as activity, not sync — per-lecture staleness is the reliable currency signal); and **drift-PR counts** are approximate by design (all merged source PRs since last activity, not only lecture-touching ones). The [translation-sync-metadata contract](https://github.com/QuantEcon/action-translation/issues/66) is the upgrade path to exact per-file drift.
 
 ## Placement (provisional)
 

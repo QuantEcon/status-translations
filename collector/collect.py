@@ -140,6 +140,8 @@ def collect_edition(cfg_src, cfg_ed, src_dest, exclude, stalled_after):
     return {
         "lang": cfg_ed["lang"], "lang_label": cfg_ed["lang_label"],
         "target_repo": cfg_ed["target_repo"],
+        "site": cfg_ed.get("site"),
+        "review_state": cfg_ed.get("review_state", "pending"),
         "lectures_translated": translated, "freshness": "computed", "stale": stale,
         "last_sync": {"date": last_sync.date().isoformat() if last_sync else None,
                       "lag": age_label(last_sync) if last_sync else "never"},
@@ -174,7 +176,10 @@ def main():
     data = {
         "schema_version": 1,
         "generated_at": today,
-        "collected_by": "collector v1 (collect.py)",
+        "collected_by": "collector v1.1 (collect.py)",
+        "last_sync_note": ("last_sync is the newest commit touching a matched "
+                           "lecture file in the edition — edition-local maintenance "
+                           "moves it too, so read it as activity, not sync"),
         "counting_rule": ("lectures/*.md in the source repo, excluding "
                           + "/".join(sorted(exclude))
                           + "; coverage = files present in both source and edition"),

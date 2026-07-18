@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sync detail — QuantEcon Translations</title>
+<meta name="description" content="Per-lecture translation state for every QuantEcon language edition: current, stale against the English source, or not yet translated.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+<script>try{var t=localStorage.getItem("st-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header id="chrome"></header>
+  <main id="main"></main>
+  <footer id="foot"></footer>
+</div>
+<div id="tip" role="presentation"></div>
+
+<script src="app.js"></script>
+<script>
+"use strict";
+const { esc, gh } = STDash;
+
+const stateWord = {
+  fresh: "Translated · current",
+  stale: "Translated · source changed since last sync",
+  missing: "Not yet translated",
+};
+
+function render(DATA) {
+  const activeSources = DATA.sources.filter(s => !s.phase);
+
+  const strips = `<section aria-label="Per-lecture detail">
+    <h2>Lecture-level sync state</h2>
+    <p class="h2-sub">Each cell is one lecture in the English source series, computed nightly from per-file last-commit dates. Green: translated and current. Amber: translated, but the source lecture changed since the edition's copy last moved — it needs a re-sync. Grey: not yet translated. Hover a cell for the lecture.</p>
+    <div class="strip-groups">${activeSources.map(s => {
+      const inner = s.editions.map(e => {
+        const cells = (e.lectures || []).map(c => {
+          const tip = `<b>${esc(c.slug)}</b><br>${stateWord[c.state]}<br><span class="dim">${esc(s.repo)} → ${esc(e.lang)}</span>`;
+          return `<span class="cell ${c.state === "missing" ? "" : c.state}" data-tip="${esc(tip)}"></span>`;
+        }).join("");
+        const freshN = (e.lectures || []).filter(c => c.state === "fresh").length;
+        const staleN = (e.lectures || []).filter(c => c.state === "stale").length;
+        const missN = (e.lectures || []).filter(c => c.state === "missing").length;
+        const counts = [`${freshN} current`, staleN ? `${staleN} stale` : null, missN ? `${missN} missing` : null]
+          .filter(Boolean).join(" · ");
+        const orphans = (e.orphans && e.orphans.length)
+          ? `<span class="orphans">+ ${e.orphans.length} orphan file${e.orphans.length === 1 ? "" : "s"} with no source counterpart</span>` : "";
+        return `<div class="strip">
+          <div class="strip-head">
+            <span class="name"><span class="arrow">↳</span> ${esc(e.lang_label)} · ${esc(e.lang)}</span>
+            <span class="counts">${counts}</span>${orphans}
+          </div>
+          <div class="cells" role="img" aria-label="${esc(s.repo)} ${esc(e.lang)}: ${counts}">${cells}</div>
+        </div>`;
+      }).join("");
+      return `<div class="strip-card"><p class="src"><b>${esc(s.repo)}</b> · ${esc(s.title)} · ${s.lectures_total} lectures</p>${inner}</div>`;
+    }).join("")}</div>
+    <ul class="legend" aria-hidden="true">
+      <li><span class="sw" style="background: var(--good)"></span>Translated · current</li>
+      <li><span class="sw" style="background: var(--warn)"></span>Translated · source changed since sync</li>
+      <li><span class="sw" style="background: var(--empty-cell)"></span>Not yet translated</li>
+    </ul></section>`;
+
+  /* orphan files, listed once per edition that has them */
+  const orphanRows = activeSources.flatMap(s => s.editions
+    .filter(e => e.orphans && e.orphans.length)
+    .map(e => `<tr class="edition">
+      <td class="lang-cell"><span class="arrow">↳</span><span class="lang-name">${esc(e.lang_label)} · ${esc(e.lang)}</span>
+        <span class="target"><a href="${gh(e.target_repo)}">${esc(e.target_repo)}</a></span></td>
+      <td>${e.orphans.map(o => `<code>${esc(o)}</code>`).join(", ")}</td>
+    </tr>`));
+  const orphanSection = orphanRows.length ? `<section aria-label="Orphan files">
+    <h2>Orphan files</h2>
+    <p class="h2-sub">Files in an edition's <code>lectures/</code> with no counterpart in the source series — usually renamed or removed upstream after translation. They need a rename, a merge, or retirement.</p>
+    <div class="table-scroll"><table>
+      <thead><tr><th scope="col">Edition</th><th scope="col">Files</th></tr></thead>
+      <tbody>${orphanRows.join("")}</tbody>
+    </table></div></section>` : "";
+
+  document.getElementById("main").innerHTML = strips + orphanSection;
+}
+
+STDash.boot({
+  page: "sync",
+  render,
+  footExtra: (DATA) => DATA.last_sync_note
+    ? `<p><b>Activity date.</b> ${STDash.esc(DATA.last_sync_note)}.</p>` : "",
+});
+</script>
+</body>
+</html>

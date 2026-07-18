@@ -1,12 +1,12 @@
 name: collect
 
-# Nightly data collection. Cron stays disabled until the collector's first
-# run is verified against a hand audit (see README) — run manually via
-# workflow_dispatch until then.
+# Nightly data collection. Collector v1 was verified against the 2026-07-09
+# seed on 2026-07-18 — coverage and orphans reproduced exactly; computed
+# staleness/drift supersede the hand-set seed values (see README).
 on:
   workflow_dispatch:
-  # schedule:
-  #   - cron: "17 3 * * *"
+  schedule:
+    - cron: "17 3 * * *"
 
 permissions:
   contents: write

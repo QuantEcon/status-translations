@@ -10,15 +10,28 @@
           "lang": "zh-cn",
           "lang_label": "Chinese",
           "target_repo": "lecture-python-programming.zh-cn",
+          "site": "https://quantecon.github.io/lecture-python-programming.zh-cn/",
           "status_label_healthy": "Reference model",
+          "review_state": "active",
           "review_note": "issues open since 2026-04-11"
         },
         {
           "lang": "fa",
           "lang_label": "Farsi",
           "target_repo": "lecture-python-programming.fa",
+          "site": "https://quantecon.github.io/lecture-python-programming.fa/",
           "status_label_healthy": "Pilot healthy",
+          "review_state": "active",
           "review_note": "pilot reviewer · RTL questions open"
+        },
+        {
+          "lang": "fr",
+          "lang_label": "French",
+          "target_repo": "lecture-python-programming.fr",
+          "site": "https://quantecon.github.io/lecture-python-programming.fr/",
+          "status_label_healthy": "Published pilot",
+          "review_state": "pending",
+          "review_note": "site live 2026-07-17 · seed awaiting native review"
         }
       ]
     },
@@ -30,7 +43,9 @@
           "lang": "zh-cn",
           "lang_label": "Chinese",
           "target_repo": "lecture-intro.zh-cn",
+          "site": "https://quantecon.github.io/lecture-intro.zh-cn/",
           "automation_note": "Phase 0 · Track A",
+          "review_state": "complete",
           "review_note": "campaign complete (Oct 2024 – Apr 2025)"
         }
       ]
@@ -43,7 +58,9 @@
           "lang": "zh-cn",
           "lang_label": "Chinese",
           "target_repo": "lecture-python.zh-cn",
+          "site": "https://quantecon.github.io/lecture-python.zh-cn/",
           "automation_note": "Phase 0 · Track B",
+          "review_state": "stalled",
           "review_note": "campaign stalled Oct 2025"
         }
       ]
@@ -72,8 +89,8 @@
   ],
   "pipeline": [
     { "stage": "Production", "cls": "live", "langs": ["Chinese · zh-cn"], "ref": "3 editions live" },
-    { "stage": "Pilot", "cls": "pilot", "langs": ["Farsi · fa"], "ref": "RTL proving ground" },
-    { "stage": "Glossary review", "cls": "", "langs": ["French · fr", "Japanese · ja"], "ref": "action-translation #68 · #69" },
+    { "stage": "Pilot", "cls": "pilot", "langs": ["Farsi · fa", "French · fr"], "ref": "fa: RTL proving ground · fr: published 2026-07-17, awaiting native review" },
+    { "stage": "Glossary review", "cls": "", "langs": ["Japanese · ja"], "ref": "action-translation #69" },
     { "stage": "Research", "cls": "", "langs": ["Malayalam · ml"], "ref": "action-translation #70 · draft #71" }
   ]
 }
