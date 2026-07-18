@@ -412,12 +412,12 @@
           "review_state": "complete",
           "lectures_translated": 48,
           "freshness": "computed",
-          "stale": 39,
+          "stale": 35,
           "last_sync": {
-            "date": "2026-07-16",
-            "lag": "1 day ago"
+            "date": "2026-07-18",
+            "lag": "today"
           },
-          "drift_prs": 2,
+          "drift_prs": 0,
           "drift_approx": true,
           "automation": {
             "wired": false,
@@ -449,11 +449,11 @@
             },
             {
               "slug": "cagan_adaptive",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "cagan_ree",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "cobweb",
@@ -509,7 +509,7 @@
             },
             {
               "slug": "input_output",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "intro",
@@ -601,7 +601,7 @@
             },
             {
               "slug": "simple_linear_regression",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "solow",
