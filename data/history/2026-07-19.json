@@ -652,12 +652,12 @@
           "review_state": "stalled",
           "lectures_translated": 83,
           "freshness": "computed",
-          "stale": 48,
+          "stale": 38,
           "last_sync": {
             "date": "2026-07-19",
             "lag": "today"
           },
-          "drift_prs": 0,
+          "drift_prs": 2,
           "drift_approx": true,
           "automation": {
             "wired": false,
@@ -685,7 +685,7 @@
             },
             {
               "slug": "ak2",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "ak_aiyagari",
@@ -701,7 +701,7 @@
             },
             {
               "slug": "back_prop",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "bayes_nonconj",
@@ -757,7 +757,7 @@
             },
             {
               "slug": "finite_markov",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "ge_arrow",
@@ -829,7 +829,7 @@
             },
             {
               "slug": "kalman",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "kalman_2",
@@ -869,11 +869,11 @@
             },
             {
               "slug": "linear_algebra",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "linear_models",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "lln_clt",
@@ -937,7 +937,7 @@
             },
             {
               "slug": "mccall_q",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "measurement_models",
@@ -953,7 +953,7 @@
             },
             {
               "slug": "mix_model",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "mle",
@@ -973,7 +973,7 @@
             },
             {
               "slug": "navy_captain",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "newton_method",
@@ -985,7 +985,7 @@
             },
             {
               "slug": "ols",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "opt_transport",
@@ -1105,7 +1105,7 @@
             },
             {
               "slug": "two_auctions",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "two_computation",
@@ -1133,7 +1133,7 @@
             },
             {
               "slug": "von_neumann_model",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "wald_friedman",
