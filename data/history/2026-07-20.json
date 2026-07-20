@@ -412,12 +412,12 @@
           "review_state": "complete",
           "lectures_translated": 48,
           "freshness": "computed",
-          "stale": 1,
+          "stale": 0,
           "last_sync": {
-            "date": "2026-07-18",
-            "lag": "1 day ago"
+            "date": "2026-07-20",
+            "lag": "today"
           },
-          "drift_prs": 3,
+          "drift_prs": 1,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -427,8 +427,8 @@
             "open": 0,
             "note": "campaign complete (Oct 2024 – Apr 2025)"
           },
-          "status": "drifting",
-          "status_label": "Drifting",
+          "status": "gaps",
+          "status_label": "Current · 3 to translate",
           "orphans": [],
           "lectures": [
             {
@@ -521,7 +521,7 @@
             },
             {
               "slug": "laffer_adaptive",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "lake_model",
@@ -652,12 +652,12 @@
           "review_state": "stalled",
           "lectures_translated": 83,
           "freshness": "computed",
-          "stale": 10,
+          "stale": 11,
           "last_sync": {
             "date": "2026-07-20",
             "lag": "today"
           },
-          "drift_prs": 2,
+          "drift_prs": 3,
           "drift_approx": true,
           "automation": {
             "wired": false,
@@ -901,7 +901,7 @@
             },
             {
               "slug": "lqcontrol",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "ls_learning",
