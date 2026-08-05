@@ -20,7 +20,8 @@ Translation health is two-dimensional: **coverage** (how much of the source seri
 
 1. `collector/collect.py` blobless-clones each source repo and its editions, compares `lectures/*.md` file sets and per-file last-commit dates, checks workflow wiring, and counts sync-era PRs and review issues.
 2. It writes `data/latest.json` and a dated snapshot in `data/history/` — history accumulates from day one, so trend views come free later.
-3. The site (static, no dependencies) fetches `data/latest.json` and renders three pages — **Overview** (stat tiles, series × edition table, language pipeline), **Rollout** (per-edition lifecycle steppers: scaffolded → seeded → automated → published → reviewed), and **Sync detail** (per-lecture cells + orphan files). The `publish` workflow deploys `site/` + `data/` to Pages on every push, and the `collect` workflow redeploys after committing fresh data. Every page carries a freshness badge (green ≤ 7 days since collection, orange past a week, red past two) and a light/dark theme toggle (system preference by default).
+3. `collector/verdicts.py` (nightly, same workflow, separate step) captures `translation-review-verdict` blocks from review comments on translation PRs into `data/verdicts.jsonl` — an **append-only event store**, keyed `(repo, pr, reviewedHeadSha, timestamp)`, holding each verdict verbatim. Verdicts are events rather than state (the population includes merged/closed PRs; re-review edits the comment in place), so they don't belong in the snapshots. Parsing follows the engine's [metadata contract](https://github.com/QuantEcon/action-translation/blob/main/docs/user/metadata-contract.md) fail-closed: last block only, unparseable recorded as `no-verdict`, never defaulted. Superseded verdicts are recovered from GitHub comment edit history (`userContentEdits`) and flagged `superseded: true`. Routing analysis keys on `recommendation` (present on every verdict); `wouldAutoMerge` is shadow-only and stored as confirmation. This store is the input to the Stage 4 review lanes and the shadow-window analysis ([status-translations#1](https://github.com/QuantEcon/status-translations/issues/1)).
+4. The site (static, no dependencies) fetches `data/latest.json` and renders three pages — **Overview** (stat tiles, series × edition table, language pipeline), **Rollout** (per-edition lifecycle steppers: scaffolded → seeded → automated → published → reviewed), and **Sync detail** (per-lecture cells + orphan files). The `publish` workflow deploys `site/` + `data/` to Pages on every push, and the `collect` workflow redeploys after committing fresh data. Every page carries a freshness badge (green ≤ 7 days since collection, orange past a week, red past two) and a light/dark theme toggle (system preference by default).
 
 Editorial facts the collector can't compute (series titles, phase labels, review-campaign notes, the language pipeline) live in `collector/config.json`. To add a language or series, extend that file.
 
@@ -30,6 +31,7 @@ Editorial facts the collector can't compute (series titles, phase labels, review
 data/
   latest.json         # current snapshot (the dashboard reads this)
   history/            # dated snapshots, append-only
+  verdicts.jsonl      # review-verdict event store, append-only (one JSON event per line)
 site/
   index.html          # Overview page (static, client-side rendering)
   rollout.html        # Rollout tracker: per-edition lifecycle steppers
@@ -38,6 +40,7 @@ site/
   app.js              # shared chrome: nav, freshness badge, theme toggle, data loading
 collector/
   collect.py          # computes the numbers (git + gh + python stdlib)
+  verdicts.py         # captures review-verdict blocks into data/verdicts.jsonl
   config.json         # repo pairs + editorial fields
 .github/workflows/
   publish.yml         # deploy site + data to Pages on push

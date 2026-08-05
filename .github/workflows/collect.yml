@@ -26,6 +26,11 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run collector
         run: python3 collector/collect.py
+      # Separate step so a capture failure doesn't kill the snapshot (and
+      # vice versa). The 14-day default window overlaps night to night;
+      # dedupe in the script makes reruns idempotent.
+      - name: Capture review verdicts
+        run: python3 collector/verdicts.py
       - name: Commit data if changed
         run: |
           git config user.name "github-actions[bot]"
