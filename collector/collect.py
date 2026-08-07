@@ -26,6 +26,8 @@ import json
 import pathlib
 import subprocess
 
+import lanes
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 WORK = ROOT / "work"
 ORG = "QuantEcon"
@@ -154,6 +156,7 @@ def collect_edition(cfg_src, cfg_ed, src_dest, exclude, stalled_after):
         "review": {"open": open_review_issues(cfg_ed["target_repo"]),
                    "note": cfg_ed.get("review_note", "")},
         "status": status, "status_label": label,
+        "review_lanes": lanes.compute(cfg_ed["target_repo"], tgt_dest),
         "orphans": orphans, "lectures": lectures,
     }
 
@@ -180,10 +183,25 @@ def main():
         sources.append({"repo": cfg_src["repo"], "title": cfg_src["title"],
                         "lectures_total": total, "editions": editions})
 
+    lane_blocks = [e["review_lanes"] for s in sources if not s.get("phase")
+                   for e in s["editions"]]
+    fleet = {"auto_merge": sum(l["share"]["auto_merge"] for l in lane_blocks),
+             "editor": sum(l["share"]["editor"] for l in lane_blocks)}
+    routed_total = fleet["auto_merge"] + fleet["editor"]
+    fleet["pct_auto_merge"] = round(100 * fleet["auto_merge"] / routed_total) if routed_total else None
+
     data = {
-        "schema_version": 1,
+        # v2: adds per-edition review_lanes + fleet routing share (WS8
+        # render half, #3) and switches rollout's Reviewed step to
+        # computed data — the breaking change the bump belongs to.
+        "schema_version": 2,
         "generated_at": today,
-        "collected_by": "collector v1.1 (collect.py)",
+        "collected_by": "collector v1.2 (collect.py)",
+        "routing_fleet": fleet,
+        "routing_note": ("review_lanes derive from the verdict event store "
+                         "(data/verdicts.jsonl) keyed on recommendation; "
+                         "wouldAutoMerge is shadow-only and surfaced as "
+                         "confirmation, never as the routing signal"),
         "last_sync_note": ("last_sync is the newest commit touching a matched "
                            "lecture file in the edition — edition-local maintenance "
                            "moves it too, so read it as activity, not sync"),

@@ -24,15 +24,19 @@ jobs:
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
-      - name: Run collector
-        run: python3 collector/collect.py
+      # Verdict capture runs first so the review lanes computed by
+      # collect.py read tonight's events, not last night's.
       # continue-on-error so a capture failure can't block the snapshot
       # commit/deploy below; the failure still shows as a step annotation.
       # The 14-day default window overlaps night to night; dedupe in the
-      # script makes reruns idempotent.
+      # script makes reruns idempotent. If capture fails, collect.py
+      # computes lanes from the last committed store — a day stale,
+      # never absent.
       - name: Capture review verdicts
         continue-on-error: true
         run: python3 collector/verdicts.py
+      - name: Run collector
+        run: python3 collector/collect.py
       - name: Commit data if changed
         run: |
           git config user.name "github-actions[bot]"

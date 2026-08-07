@@ -33,17 +33,27 @@ function render(DATA) {
 
   const strips = `<section aria-label="Per-lecture detail">
     <h2>Lecture-level sync state</h2>
-    <p class="h2-sub">Each cell is one lecture in the English source series, computed nightly from per-file last-commit dates. Green: translated and current. Amber: translated, but the source lecture changed since the edition's copy last moved — it needs a re-sync. Grey: not yet translated. Hover a cell for the lecture.</p>
+    <p class="h2-sub">Each cell is one lecture in the English source series, computed nightly from per-file last-commit dates. Green: translated and current. Amber: translated, but the source lecture changed since the edition's copy last moved — it needs a re-sync. Grey: not yet translated. A ring marks a lecture touched by an open editor-routed PR (the audit dimension, from the verdict-derived review lanes). Hover a cell for the lecture.</p>
     <div class="strip-groups">${activeSources.map(s => {
       const inner = s.editions.map(e => {
+        /* audit dimension: lectures touched by an open editor-routed PR
+           (from the verdict-derived review lanes) get a ring overlay —
+           orthogonal to the fresh/stale fill, since a lecture can be
+           both stale and in review */
+        const inReview = new Set((e.review_lanes && e.review_lanes.in_review_slugs) || []);
         const cells = (e.lectures || []).map(c => {
-          const tip = `<b>${esc(c.slug)}</b><br>${stateWord[c.state]}<br><span class="dim">${esc(s.repo)} → ${esc(e.lang)}</span>`;
-          return `<span class="cell ${c.state === "missing" ? "" : c.state}" data-tip="${esc(tip)}"></span>`;
+          const rev = inReview.has(c.slug);
+          const tip = `<b>${esc(c.slug)}</b><br>${stateWord[c.state]}` +
+            (rev ? `<br>In editor-routed review` : "") +
+            `<br><span class="dim">${esc(s.repo)} → ${esc(e.lang)}</span>`;
+          return `<span class="cell ${c.state === "missing" ? "" : c.state}${rev ? " in-review" : ""}" data-tip="${esc(tip)}"></span>`;
         }).join("");
         const freshN = (e.lectures || []).filter(c => c.state === "fresh").length;
         const staleN = (e.lectures || []).filter(c => c.state === "stale").length;
         const missN = (e.lectures || []).filter(c => c.state === "missing").length;
-        const counts = [`${freshN} current`, staleN ? `${staleN} stale` : null, missN ? `${missN} missing` : null]
+        const revN = (e.lectures || []).filter(c => inReview.has(c.slug)).length;
+        const counts = [`${freshN} current`, staleN ? `${staleN} stale` : null, missN ? `${missN} missing` : null,
+          revN ? `${revN} in review` : null]
           .filter(Boolean).join(" · ");
         const orphans = (e.orphans && e.orphans.length)
           ? `<span class="orphans">+ ${e.orphans.length} orphan file${e.orphans.length === 1 ? "" : "s"} with no source counterpart</span>` : "";
@@ -61,6 +71,7 @@ function render(DATA) {
       <li><span class="sw" style="background: var(--good)"></span>Translated · current</li>
       <li><span class="sw" style="background: var(--warn)"></span>Translated · source changed since sync</li>
       <li><span class="sw" style="background: var(--empty-cell)"></span>Not yet translated</li>
+      <li><span class="sw in-review" style="background: var(--empty-cell)"></span>In editor-routed review (any state)</li>
     </ul></section>`;
 
   /* orphan files, listed once per edition that has them */

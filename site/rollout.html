@@ -23,8 +23,33 @@
 const { esc, gh } = STDash;
 
 /* Lifecycle: scaffolded → seeded → automated → published → reviewed.
-   All but the last are computed by the collector; "reviewed" reflects the
-   editorial review_state (complete / active / pending / stalled). */
+   All five are computed since schema v2: "reviewed" reads the verdict-
+   derived review lanes (routing queue + primary editor), replacing the
+   editorial review_state — an edition with routed-open PRs and no
+   assigned editor is blocked, whatever a curated field used to say. */
+function reviewedStep(e) {
+  const L = e.review_lanes;
+  if (!L) {
+    // pre-v2 data: fall back to the editorial field rather than guessing
+    return e.review_state === "complete" ? { label: "Reviewed", state: "done" } :
+      e.review_state === "active" ? { label: "Reviewed", state: "now", sub: "review in progress" } :
+      e.review_state === "stalled" ? { label: "Reviewed", state: "blocked", sub: "campaign stalled" } :
+      { label: "Reviewed", state: "pending", sub: "awaiting reviewer" };
+  }
+  const n = L.open_editor.count;
+  if (L.verdicts === 0) return { label: "Reviewed", state: "pending", sub: "no reviews yet" };
+  /* fail-closed: an unknown queue asserts neither done nor blocked */
+  if (n === null || n === undefined)
+    return { label: "Reviewed", state: "now", sub: "open-PR state unavailable" };
+  if (n > 0 && !L.primary_editor)
+    return { label: "Reviewed", state: "blocked", sub: `${n} routed · no editor` };
+  if (n > 0)
+    return { label: "Reviewed", state: "now", sub: `${n} in review · ${esc(L.primary_editor)}` };
+  if (L.primary_editor)
+    return { label: "Reviewed", state: "done", sub: `editor: ${esc(L.primary_editor)}` };
+  return { label: "Reviewed", state: "now", sub: "routing live · no editor assigned" };
+}
+
 function steps(s, e) {
   if (e.planned) {
     return [
@@ -37,11 +62,7 @@ function steps(s, e) {
   }
   const seeded = e.lectures_translated > 0;
   const full = e.lectures_translated === s.lectures_total;
-  const reviewStep =
-    e.review_state === "complete" ? { label: "Reviewed", state: "done" } :
-    e.review_state === "active"   ? { label: "Reviewed", state: "now", sub: "review in progress" } :
-    e.review_state === "stalled"  ? { label: "Reviewed", state: "blocked", sub: "campaign stalled" } :
-                                    { label: "Reviewed", state: "pending", sub: "awaiting reviewer" };
+  const reviewStep = reviewedStep(e);
   const out = [
     { label: "Scaffolded", state: "done" },
     { label: "Seeded", state: seeded ? "done" : "now",
@@ -104,7 +125,7 @@ function render(DATA) {
 
   const steppers = `<section aria-label="Edition lifecycle">
     <h2>Edition lifecycle</h2>
-    <p class="h2-sub">Every language edition steps through <i>scaffolded → seeded → automated → published → reviewed</i>. The first four states are computed nightly by the collector (repo exists, lectures present, sync + review + rebase workflows wired, published site); the review state is curated. Rollout order follows the <a href="https://github.com/QuantEcon/action-translation/issues/74">Phase 0–3 plan</a>.</p>
+    <p class="h2-sub">Every language edition steps through <i>scaffolded → seeded → automated → published → reviewed</i>. All five states are computed nightly by the collector (repo exists, lectures present, sync + review + rebase workflows wired, published site); <i>reviewed</i> reads the verdict-derived routing lanes — the queue of editor-routed PRs and the edition's primary editor. Rollout order follows the <a href="https://github.com/QuantEcon/action-translation/issues/74">Phase 0–3 plan</a>.</p>
     <div class="step-cards">${cards}</div>
   </section>`;
 
