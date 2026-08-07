@@ -26,10 +26,10 @@
           "freshness": "computed",
           "stale": 6,
           "last_sync": {
-            "date": "2026-07-31",
-            "lag": "7 days ago"
+            "date": "2026-08-07",
+            "lag": "today"
           },
-          "drift_prs": 8,
+          "drift_prs": 0,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -46,8 +46,8 @@
             "verdicts": 4,
             "open_editor": {
               "count": 1,
-              "median_age_days": 1,
-              "oldest_age_days": 1
+              "median_age_days": 2,
+              "oldest_age_days": 2
             },
             "auto_merge_recommended": {
               "d7": 2,
@@ -208,7 +208,7 @@
             "open_editor": {
               "count": 3,
               "median_age_days": 3,
-              "oldest_age_days": 3
+              "oldest_age_days": 4
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -370,8 +370,8 @@
             "verdicts": 4,
             "open_editor": {
               "count": 1,
-              "median_age_days": 1,
-              "oldest_age_days": 1
+              "median_age_days": 2,
+              "oldest_age_days": 2
             },
             "auto_merge_recommended": {
               "d7": 2,
@@ -515,12 +515,12 @@
           "review_state": "complete",
           "lectures_translated": 48,
           "freshness": "computed",
-          "stale": 8,
+          "stale": 5,
           "last_sync": {
-            "date": "2026-07-24",
-            "lag": "13 days ago"
+            "date": "2026-08-07",
+            "lag": "today"
           },
-          "drift_prs": 14,
+          "drift_prs": 1,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -536,7 +536,7 @@
             "mode": "shadow",
             "verdicts": 10,
             "open_editor": {
-              "count": 7,
+              "count": 4,
               "median_age_days": 3,
               "oldest_age_days": 3
             },
@@ -556,9 +556,6 @@
             "in_review_slugs": [
               "ar1_processes",
               "fitting_distributions",
-              "french_rev",
-              "inflation_history",
-              "long_run_growth",
               "mle",
               "observed_distributions"
             ]
@@ -623,7 +620,7 @@
             },
             {
               "slug": "french_rev",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "geom_series",
@@ -643,7 +640,7 @@
             },
             {
               "slug": "inflation_history",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "input_output",
@@ -675,7 +672,7 @@
             },
             {
               "slug": "long_run_growth",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "lp_intro",
@@ -792,14 +789,14 @@
           "target_repo": "lecture-python.zh-cn",
           "site": "https://quantecon.github.io/lecture-python.zh-cn/",
           "review_state": "stalled",
-          "lectures_translated": 137,
+          "lectures_translated": 142,
           "freshness": "computed",
-          "stale": 38,
+          "stale": 33,
           "last_sync": {
             "date": "2026-08-07",
             "lag": "today"
           },
-          "drift_prs": 0,
+          "drift_prs": 1,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -815,7 +812,7 @@
             "mode": "shadow",
             "verdicts": 36,
             "open_editor": {
-              "count": 25,
+              "count": 22,
               "median_age_days": 6,
               "oldest_age_days": 9
             },
@@ -828,47 +825,32 @@
               "editor": 30
             },
             "would_auto_merge": {
-              "n": 8,
-              "agree": 8
+              "n": 10,
+              "agree": 10
             },
             "primary_editor": null,
             "in_review_slugs": [
-              "ar1_turningpts",
-              "career",
               "exchangeable",
               "hansen_singleton_1983",
               "harrison_kreps",
               "imp_sample",
               "inventory_q",
-              "jv",
               "kalman_2",
-              "kalman_filter_var",
               "likelihood_bayes",
               "likelihood_ratio_process",
               "likelihood_ratio_process_2",
               "likelihood_var",
-              "lq_bewley_complete_markets",
-              "lq_permanent_income",
-              "lq_robust_bewley",
-              "lq_robust_smoothing",
-              "market_diffusion",
-              "mccall_persist_trans",
               "mccall_q",
-              "mccall_risk",
               "multi_hyper",
-              "odu",
               "organization_capital",
               "os_stochastic",
-              "pricing_information",
               "rational_expectations",
               "rs_inventory_q",
-              "sargent_surico",
               "svd_intro",
               "theil_2",
               "two_auctions",
               "uncertainty_traps",
-              "util_rand_resp",
-              "var_subsets"
+              "util_rand_resp"
             ]
           },
           "orphans": [],
@@ -899,7 +881,7 @@
             },
             {
               "slug": "ar1_turningpts",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "back_prop",
@@ -1051,7 +1033,7 @@
             },
             {
               "slug": "kalman_filter_var",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "kesten_processes",
@@ -1103,7 +1085,7 @@
             },
             {
               "slug": "lq_bewley_complete_markets",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "lq_inventories",
@@ -1111,15 +1093,15 @@
             },
             {
               "slug": "lq_permanent_income",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "lq_robust_bewley",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "lq_robust_smoothing",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "lqcontrol",
@@ -1135,7 +1117,7 @@
             },
             {
               "slug": "market_diffusion",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "markov_asset",
@@ -1315,7 +1297,7 @@
             },
             {
               "slug": "pricing_information",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "prob_matrix",
@@ -1367,7 +1349,7 @@
             },
             {
               "slug": "sargent_surico",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "sir_model",
@@ -1427,7 +1409,7 @@
             },
             {
               "slug": "var_subsets",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "von_neumann_model",
