@@ -223,11 +223,19 @@ tr.group .phase {
 .fresh { font-variant-numeric: tabular-nums; }
 .fresh .ok { color: var(--good-text); font-weight: 600; }
 .fresh .sub { display: block; font-size: 12px; color: var(--ink-3); }
+td.review { min-width: 150px; }
+td.review .sub { display: block; font-size: 12px; color: var(--ink-3); }
+td.review .review-head { display: block; margin-top: 3px; }
 .fresh .drift { display: block; margin-top: 5px; }
 .badge { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; }
 .badge.warn { background: var(--warn-wash); color: var(--warn-text); }
 .badge.crit { background: var(--crit-wash); color: var(--crit-text); }
 .badge.good { background: var(--good-wash); color: var(--good-text); }
+/* auto-merge mode, from the latest verdict observed per edition */
+.badge.mode-off { background: transparent; border: 1px solid var(--border); color: var(--ink-2); }
+.badge.mode-shadow { background: var(--accent-track); color: var(--accent); }
+.badge.mode-active { background: var(--good-wash); color: var(--good-text); }
+.badge.mode-tripped { background: var(--crit-wash); color: var(--crit-text); }
 
 .auto { font-size: 13px; }
 .auto .sub, .note-sub { display: block; font-size: 12px; color: var(--ink-3); }
@@ -267,6 +275,9 @@ tr.group .phase {
 .cell { width: 15px; height: 18px; border-radius: 2px; background: var(--empty-cell); cursor: default; }
 .cell.fresh { background: var(--good); }
 .cell.stale { background: var(--warn); }
+/* audit dimension (WS8): lecture is in an open editor-routed PR — a ring
+   so it composes with the fresh/stale/missing fill */
+.cell.in-review, .sw.in-review { box-shadow: inset 0 0 0 2px var(--accent); }
 .cell:hover { box-shadow: 0 0 0 2px var(--surface), 0 0 0 3.5px var(--ink-3); }
 
 .legend { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 14px 0 0; padding: 0; list-style: none; font-size: 12.5px; color: var(--ink-2); }

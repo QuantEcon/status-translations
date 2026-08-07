@@ -22,6 +22,20 @@
 "use strict";
 const { esc, gh } = STDash;
 
+/* Fleet routing share — the number Stage 4's rubric calibration turns on
+   (26% auto-merge at first capture; worth trending). */
+function routingTile(DATA, activeEditions) {
+  const F = DATA.routing_fleet;
+  if (!F || F.pct_auto_merge === null) return "";
+  const routedOpen = activeEditions.reduce((n, e) =>
+    n + ((e.review_lanes && e.review_lanes.open_editor.count) || 0), 0);
+  return `<div class="tile">
+      <span class="label">Review routing · fleet</span>
+      <span class="value">${F.pct_auto_merge}% <small>auto-merge (${F.auto_merge}/${F.auto_merge + F.editor})</small></span>
+      <span class="note"><b>${routedOpen}</b> open PRs awaiting an editor across the fleet · by verdict recommendation</span>
+    </div>`;
+}
+
 function render(DATA) {
   const activeSources = DATA.sources.filter(s => !s.phase);
   const activeEditions = activeSources.flatMap(s => s.editions.map(e => ({ ...e, src: s })));
@@ -59,6 +73,7 @@ function render(DATA) {
       <span class="value">${current} <small>/ ${activeEditions.length}</small></span>
       <span class="note">no lecture changed upstream since its last sync</span>
     </div>
+    ${routingTile(DATA, activeEditions)}
   </div></section>`;
 
   /* ---- series table ---- */
@@ -68,7 +83,7 @@ function render(DATA) {
       <div class="bar" role="img" aria-label="${p}% coverage"><i style="width:${p}%"></i></div>
       <span class="n">${n}<small>/${total}</small></span></div>`;
   };
-  const groupRow = (s) => `<tr class="group"><td colspan="5"><div class="group-line">
+  const groupRow = (s) => `<tr class="group"><td colspan="6"><div class="group-line">
       <a class="repo" href="${gh(s.repo)}">${esc(s.repo)}</a>
       <span class="series-title">${esc(s.title)}</span>
       ${s.phase ? `<span class="phase">${esc(s.phase)}</span>` : ""}
@@ -86,6 +101,7 @@ function render(DATA) {
         <td>${covCell(0, s.lectures_total)}</td>
         <td class="fresh"><span class="sub">—</span></td>
         <td class="auto"><span class="sub">not scaffolded</span></td>
+        <td class="review"><span class="sub">—</span></td>
         <td><span class="chip planned">Planned</span></td>
       </tr>`;
     }
@@ -107,8 +123,36 @@ function render(DATA) {
       <td>${covCell(e.lectures_translated, s.lectures_total)}</td>
       <td class="fresh">${fresh}</td>
       <td class="auto">${auto}</td>
+      <td class="review">${reviewCell(e)}</td>
       <td><span class="chip ${chipCls}">${esc(e.status_label)}</span></td>
     </tr>`;
+  };
+
+  /* Human review: the Stage 4 routing lane, keyed on the verdict block's
+     recommendation (wouldAutoMerge is shadow-only — confirmation, not
+     signal). Red "no editor" = routed-open PRs with no primary editor in
+     the edition's .translate/config.yml. */
+  const reviewCell = (e) => {
+    const L = e.review_lanes;
+    if (!L || L.verdicts === 0) return `<span class="sub">no verdicts yet</span>`;
+    const oe = L.open_editor || { count: 0 };
+    const total = L.share.auto_merge + L.share.editor;
+    const pct = total ? Math.round(100 * L.share.auto_merge / total) : 0;
+    const tip = `<b>Review routing · ${esc(e.lang)}</b><br>` +
+      `mode <b>${esc(L.mode)}</b> · ${L.verdicts} verdicts<br>` +
+      `auto-merge recommended: ${L.auto_merge_recommended.d7} in 7d · ${L.auto_merge_recommended.d30} in 30d<br>` +
+      (L.would_auto_merge.n
+        ? `shadow gate agrees on ${L.would_auto_merge.agree}/${L.would_auto_merge.n}<br>` : "") +
+      (L.primary_editor ? `primary editor: ${esc(L.primary_editor)}<br>` : "no primary editor assigned<br>") +
+      (e.review.open ? `<span class="dim">${e.review.open} legacy translation-review issues open</span>` : "");
+    const head = oe.count
+      ? `${oe.count} awaiting editor` +
+        `<span class="sub">median ${oe.median_age_days} d · oldest ${oe.oldest_age_days} d</span>`
+      : `queue clear`;
+    const noEd = oe.count > 0 && !L.primary_editor ? ` <span class="badge crit">no editor</span>` : "";
+    return `<span data-tip="${esc(tip)}"><span class="badge mode-${esc(L.mode)}">${esc(L.mode)}</span>${noEd}` +
+      `<span class="review-head">${head}</span>` +
+      `<span class="sub">${pct}% auto-merge (${L.share.auto_merge}/${total})</span></span>`;
   };
   const table = `<section aria-label="Series and editions">
     <h2>Series &amp; editions</h2>
@@ -116,7 +160,7 @@ function render(DATA) {
     <div class="table-scroll"><table>
       <thead><tr>
         <th scope="col">Edition</th><th scope="col">Coverage</th><th scope="col">Activity · staleness</th>
-        <th scope="col">Automation</th><th scope="col">Status</th>
+        <th scope="col">Automation</th><th scope="col">Human review</th><th scope="col">Status</th>
       </tr></thead>
       <tbody>${DATA.sources.map(s => groupRow(s) + s.editions.map(e => editionRow(s, e)).join("")).join("")}</tbody>
     </table></div></section>`;
