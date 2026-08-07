@@ -29,10 +29,12 @@ function routingTile(DATA, activeEditions) {
   if (!F || F.pct_auto_merge === null) return "";
   const routedOpen = activeEditions.reduce((n, e) =>
     n + ((e.review_lanes && e.review_lanes.open_editor.count) || 0), 0);
+  const unknown = activeEditions.some(e =>
+    e.review_lanes && e.review_lanes.open_editor && e.review_lanes.open_editor.count === null);
   return `<div class="tile">
       <span class="label">Review routing · fleet</span>
       <span class="value">${F.pct_auto_merge}% <small>auto-merge (${F.auto_merge}/${F.auto_merge + F.editor})</small></span>
-      <span class="note"><b>${routedOpen}</b> open PRs awaiting an editor across the fleet · by verdict recommendation</span>
+      <span class="note"><b>${routedOpen}${unknown ? "+?" : ""}</b> open PRs awaiting an editor across the fleet${unknown ? " · some editions unreported" : ""} · by verdict recommendation</span>
     </div>`;
 }
 
@@ -136,6 +138,7 @@ function render(DATA) {
     const L = e.review_lanes;
     if (!L || L.verdicts === 0) return `<span class="sub">no verdicts yet</span>`;
     const oe = L.open_editor || { count: 0 };
+    const unavailable = oe.count === null || oe.count === undefined;
     const total = L.share.auto_merge + L.share.editor;
     const pct = total ? Math.round(100 * L.share.auto_merge / total) : 0;
     const tip = `<b>Review routing · ${esc(e.lang)}</b><br>` +
@@ -145,11 +148,14 @@ function render(DATA) {
         ? `shadow gate agrees on ${L.would_auto_merge.agree}/${L.would_auto_merge.n}<br>` : "") +
       (L.primary_editor ? `primary editor: ${esc(L.primary_editor)}<br>` : "no primary editor assigned<br>") +
       (e.review.open ? `<span class="dim">${e.review.open} legacy translation-review issues open</span>` : "");
-    const head = oe.count
-      ? `${oe.count} awaiting editor` +
-        `<span class="sub">median ${oe.median_age_days} d · oldest ${oe.oldest_age_days} d</span>`
-      : `queue clear`;
-    const noEd = oe.count > 0 && !L.primary_editor ? ` <span class="badge crit">no editor</span>` : "";
+    /* fail-closed: an unknown queue renders as unknown, never as clear */
+    const head = unavailable
+      ? `open PRs unavailable`
+      : oe.count
+        ? `${oe.count} awaiting editor` +
+          `<span class="sub">median ${oe.median_age_days} d · oldest ${oe.oldest_age_days} d</span>`
+        : `queue clear`;
+    const noEd = !unavailable && oe.count > 0 && !L.primary_editor ? ` <span class="badge crit">no editor</span>` : "";
     return `<span data-tip="${esc(tip)}"><span class="badge mode-${esc(L.mode)}">${esc(L.mode)}</span>${noEd}` +
       `<span class="review-head">${head}</span>` +
       `<span class="sub">${pct}% auto-merge (${L.share.auto_merge}/${total})</span></span>`;

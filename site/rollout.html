@@ -38,6 +38,9 @@ function reviewedStep(e) {
   }
   const n = L.open_editor.count;
   if (L.verdicts === 0) return { label: "Reviewed", state: "pending", sub: "no reviews yet" };
+  /* fail-closed: an unknown queue asserts neither done nor blocked */
+  if (n === null || n === undefined)
+    return { label: "Reviewed", state: "now", sub: "open-PR state unavailable" };
   if (n > 0 && !L.primary_editor)
     return { label: "Reviewed", state: "blocked", sub: `${n} routed · no editor` };
   if (n > 0)

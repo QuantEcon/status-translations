@@ -66,12 +66,28 @@ def _load_events():
 
 
 def _open_prs(repo):
+    """Open PRs by number, or None when the listing failed.
+
+    None and {} are different answers: {} is a verified-empty queue, None
+    is a gh outage / auth / rate-limit failure. Callers must keep the
+    distinction — collapsing failure to 0 would render a false
+    "queue clear" (fail-closed, like the rest of the pipeline).
+    """
     out = sh("gh", "pr", "list", "-R", f"{ORG}/{repo}", "--state", "open",
              "--limit", "200", "--json", "number,createdAt,files", check=False)
     try:
         return {p["number"]: p for p in json.loads(out)}
     except (json.JSONDecodeError, TypeError):
-        return {}
+        return None
+
+
+def _effective_ts(ev):
+    """When the current verdict content landed. Re-review edits the
+    comment in place, so commentCreatedAt alone misdates re-reviewed
+    verdicts; the block's own timestamp is authoritative, the comment's
+    last edit is the fallback."""
+    return (ev["verdict"].get("timestamp") or ev.get("commentUpdatedAt")
+            or ev.get("commentCreatedAt") or "")
 
 
 def _primary_editor(work_dest):
@@ -123,14 +139,14 @@ def compute(target_repo, work_dest):
     # Mode: what the most recent verdict observed. `off` until the shadow
     # window opened; `active`/`tripped` pass through when the engine ships
     # them. Absence of the field reads as off, stated rather than guessed.
-    latest = max(current, key=lambda ev: ev.get("commentCreatedAt", ""))
+    latest = max(current, key=_effective_ts)
     mode = latest["verdict"].get("autoMergeMode") or "off"
 
     share = {"auto_merge": sum(1 for ev in current if rec(ev) == "auto-merge"),
              "editor": sum(1 for ev in current if rec(ev) == "editor")}
 
     def in_window(ev, days):
-        ts = ev.get("commentCreatedAt")
+        ts = _effective_ts(ev)
         if not ts:
             return False
         t = dt.datetime.fromisoformat(ts.replace("Z", "+00:00"))
@@ -145,19 +161,23 @@ def compute(target_repo, work_dest):
                           if ev["verdict"]["wouldAutoMerge"] == (rec(ev) == "auto-merge"))}
 
     open_prs = _open_prs(target_repo)
-    editor_open = [ev for ev in current if rec(ev) == "editor" and ev["pr"] in open_prs]
-    ages = sorted(_age_days(open_prs[ev["pr"]]["createdAt"]) for ev in editor_open)
-    open_editor = {"count": len(editor_open)}
-    if ages:
-        open_editor["median_age_days"] = round(statistics.median(ages))
-        open_editor["oldest_age_days"] = ages[-1]
-
     slugs = set()
-    for ev in editor_open:
-        for f in open_prs[ev["pr"]].get("files") or []:
-            p = pathlib.PurePosixPath(f["path"])
-            if len(p.parts) == 2 and p.parts[0] == "lectures" and p.suffix == ".md":
-                slugs.add(p.stem)
+    if open_prs is None:
+        # Fail closed: unknown is not zero. The pages render this as
+        # "open PRs unavailable", never as a clear queue.
+        open_editor = {"count": None, "error": "open-PR state unavailable"}
+    else:
+        editor_open = [ev for ev in current if rec(ev) == "editor" and ev["pr"] in open_prs]
+        ages = sorted(_age_days(open_prs[ev["pr"]]["createdAt"]) for ev in editor_open)
+        open_editor = {"count": len(editor_open)}
+        if ages:
+            open_editor["median_age_days"] = round(statistics.median(ages))
+            open_editor["oldest_age_days"] = ages[-1]
+        for ev in editor_open:
+            for f in open_prs[ev["pr"]].get("files") or []:
+                p = pathlib.PurePosixPath(f["path"])
+                if len(p.parts) == 2 and p.parts[0] == "lectures" and p.suffix == ".md":
+                    slugs.add(p.stem)
 
     return {"mode": mode, "verdicts": len(current), "open_editor": open_editor,
             "auto_merge_recommended": auto_counts, "share": share,
