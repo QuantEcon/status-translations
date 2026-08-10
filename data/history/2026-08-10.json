@@ -3,9 +3,9 @@
   "generated_at": "2026-08-10",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
-    "auto_merge": 12,
-    "editor": 46,
-    "pct_auto_merge": 21
+    "auto_merge": 10,
+    "editor": 48,
+    "pct_auto_merge": 17
   },
   "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
   "last_sync_note": "last_sync is the newest commit touching a matched lecture file in the edition — edition-local maintenance moves it too, so read it as activity, not sync",
@@ -36,7 +36,7 @@
             "parts": "sync · AI review · rebase"
           },
           "review": {
-            "open": 24,
+            "open": 1,
             "note": "issues open since 2026-04-11"
           },
           "status": "healthy",
@@ -492,6 +492,160 @@
               "state": "fresh"
             }
           ]
+        },
+        {
+          "lang": "ml",
+          "lang_label": "Malayalam",
+          "target_repo": "lecture-python-programming.ml",
+          "site": "https://quantecon.github.io/lecture-python-programming.ml/",
+          "review_state": "active",
+          "lectures_translated": 1,
+          "freshness": "computed",
+          "stale": 0,
+          "last_sync": {
+            "date": "2026-08-06",
+            "lag": "4 days ago"
+          },
+          "drift_prs": 0,
+          "drift_approx": true,
+          "automation": {
+            "wired": false,
+            "parts": "not wired"
+          },
+          "review": {
+            "open": 0,
+            "note": "scaffold site live 2026-08-06 · 5 calibration seeds in native-speaker review"
+          },
+          "status": "drifting",
+          "status_label": "Drifting",
+          "review_lanes": {
+            "mode": "off",
+            "verdicts": 0,
+            "open_editor": {
+              "count": 0
+            },
+            "auto_merge_recommended": {
+              "d7": 0,
+              "d30": 0
+            },
+            "share": {
+              "auto_merge": 0,
+              "editor": 0
+            },
+            "would_auto_merge": {
+              "n": 0,
+              "agree": 0
+            },
+            "primary_editor": null,
+            "in_review_slugs": []
+          },
+          "orphans": [],
+          "lectures": [
+            {
+              "slug": "about_py",
+              "state": "missing"
+            },
+            {
+              "slug": "autodiff",
+              "state": "missing"
+            },
+            {
+              "slug": "debugging",
+              "state": "missing"
+            },
+            {
+              "slug": "functions",
+              "state": "missing"
+            },
+            {
+              "slug": "getting_started",
+              "state": "missing"
+            },
+            {
+              "slug": "intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "jax_intro",
+              "state": "missing"
+            },
+            {
+              "slug": "matplotlib",
+              "state": "missing"
+            },
+            {
+              "slug": "names",
+              "state": "missing"
+            },
+            {
+              "slug": "need_for_speed",
+              "state": "missing"
+            },
+            {
+              "slug": "numba",
+              "state": "missing"
+            },
+            {
+              "slug": "numpy",
+              "state": "missing"
+            },
+            {
+              "slug": "numpy_vs_numba_vs_jax",
+              "state": "missing"
+            },
+            {
+              "slug": "oop_intro",
+              "state": "missing"
+            },
+            {
+              "slug": "pandas",
+              "state": "missing"
+            },
+            {
+              "slug": "pandas_panel",
+              "state": "missing"
+            },
+            {
+              "slug": "polars",
+              "state": "missing"
+            },
+            {
+              "slug": "python_advanced_features",
+              "state": "missing"
+            },
+            {
+              "slug": "python_by_example",
+              "state": "missing"
+            },
+            {
+              "slug": "python_essentials",
+              "state": "missing"
+            },
+            {
+              "slug": "python_oop",
+              "state": "missing"
+            },
+            {
+              "slug": "scipy",
+              "state": "missing"
+            },
+            {
+              "slug": "sympy",
+              "state": "missing"
+            },
+            {
+              "slug": "troubleshooting",
+              "state": "missing"
+            },
+            {
+              "slug": "workspace",
+              "state": "missing"
+            },
+            {
+              "slug": "writing_good_code",
+              "state": "missing"
+            }
+          ]
         }
       ]
     },
@@ -506,14 +660,14 @@
           "target_repo": "lecture-intro.zh-cn",
           "site": "https://quantecon.github.io/lecture-intro.zh-cn/",
           "review_state": "complete",
-          "lectures_translated": 48,
+          "lectures_translated": 50,
           "freshness": "computed",
-          "stale": 5,
+          "stale": 0,
           "last_sync": {
-            "date": "2026-08-07",
-            "lag": "3 days ago"
+            "date": "2026-08-10",
+            "lag": "today"
           },
-          "drift_prs": 3,
+          "drift_prs": 2,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -523,35 +677,28 @@
             "open": 0,
             "note": "campaign complete (Oct 2024 – Apr 2025)"
           },
-          "status": "drifting",
-          "status_label": "Drifting",
+          "status": "gaps",
+          "status_label": "Current · 3 to translate",
           "review_lanes": {
             "mode": "shadow",
             "verdicts": 10,
             "open_editor": {
-              "count": 4,
-              "median_age_days": 6,
-              "oldest_age_days": 6
+              "count": 0
             },
             "auto_merge_recommended": {
-              "d7": 2,
-              "d30": 2
+              "d7": 0,
+              "d30": 0
             },
             "share": {
-              "auto_merge": 2,
-              "editor": 8
+              "auto_merge": 0,
+              "editor": 10
             },
             "would_auto_merge": {
-              "n": 3,
-              "agree": 3
+              "n": 7,
+              "agree": 7
             },
             "primary_editor": null,
-            "in_review_slugs": [
-              "ar1_processes",
-              "fitting_distributions",
-              "mle",
-              "observed_distributions"
-            ]
+            "in_review_slugs": []
           },
           "orphans": [],
           "lectures": [
@@ -561,7 +708,7 @@
             },
             {
               "slug": "ar1_processes",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "bayes_intro",
@@ -609,7 +756,7 @@
             },
             {
               "slug": "fitting_distributions",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "french_rev",
@@ -625,7 +772,7 @@
             },
             {
               "slug": "heavy_tails",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "inequality",
@@ -661,7 +808,7 @@
             },
             {
               "slug": "lln_clt",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "long_run_growth",
@@ -681,7 +828,7 @@
             },
             {
               "slug": "mle",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "money_inflation",
@@ -705,7 +852,7 @@
             },
             {
               "slug": "observed_distributions",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "olg",
@@ -713,7 +860,7 @@
             },
             {
               "slug": "prob_dist",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "pv",
@@ -1508,12 +1655,12 @@
       "ref": "action-translation #69"
     },
     {
-      "stage": "Research",
+      "stage": "Calibration",
       "cls": "",
       "langs": [
         "Malayalam · ml"
       ],
-      "ref": "action-translation #70 · draft #71"
+      "ref": "action-translation #189 · 5 seeds in native review"
     }
   ]
 }
