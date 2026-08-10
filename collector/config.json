@@ -40,9 +40,10 @@
           "lang": "ml",
           "lang_label": "Malayalam",
           "target_repo": "lecture-python-programming.ml",
+          "site": "https://quantecon.github.io/lecture-python-programming.ml/",
           "status_label_healthy": "Calibration seed",
           "review_state": "active",
-          "review_note": "partial seed 5/21 · native calibration review in progress · not published"
+          "review_note": "scaffold site live 2026-08-06 · 5 calibration seeds in native-speaker review"
         }
       ]
     },
