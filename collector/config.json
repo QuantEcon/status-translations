@@ -153,12 +153,12 @@
       "ref": "action-translation #69"
     },
     {
-      "stage": "Research",
+      "stage": "Calibration",
       "cls": "",
       "langs": [
         "Malayalam · ml"
       ],
-      "ref": "action-translation #70 · draft #71"
+      "ref": "action-translation #189 · 5 seeds in native review"
     }
   ]
 }
