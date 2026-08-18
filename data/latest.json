@@ -4,7 +4,7 @@
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 13,
-    "editor": 58,
+    "editor": 61,
     "pct_auto_merge": 18
   },
   "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
@@ -24,12 +24,12 @@
           "review_state": "active",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 8,
+          "stale": 0,
           "last_sync": {
-            "date": "2026-08-10",
-            "lag": "7 days ago"
+            "date": "2026-08-18",
+            "lag": "today"
           },
-          "drift_prs": 3,
+          "drift_prs": 1,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -39,15 +39,13 @@
             "open": 1,
             "note": "issues open since 2026-04-11"
           },
-          "status": "drifting",
-          "status_label": "Drifting",
+          "status": "healthy",
+          "status_label": "Reference model",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 6,
+            "verdicts": 7,
             "open_editor": {
-              "count": 1,
-              "median_age_days": 5,
-              "oldest_age_days": 5
+              "count": 0
             },
             "auto_merge_recommended": {
               "d7": 1,
@@ -55,26 +53,24 @@
             },
             "share": {
               "auto_merge": 3,
-              "editor": 3
+              "editor": 4
             },
             "would_auto_merge": {
-              "n": 3,
-              "agree": 3
+              "n": 4,
+              "agree": 4
             },
             "primary_editor": "HumphreyYang",
-            "in_review_slugs": [
-              "numba"
-            ]
+            "in_review_slugs": []
           },
           "orphans": [],
           "lectures": [
             {
               "slug": "about_py",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "autodiff",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "debugging",
@@ -110,11 +106,11 @@
             },
             {
               "slug": "numba",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "numpy",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "numpy_vs_numba_vs_jax",
@@ -126,15 +122,15 @@
             },
             {
               "slug": "pandas",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "pandas_panel",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "polars",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "python_advanced_features",
@@ -142,7 +138,7 @@
             },
             {
               "slug": "python_by_example",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "python_essentials",
@@ -182,12 +178,12 @@
           "review_state": "active",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 10,
+          "stale": 3,
           "last_sync": {
-            "date": "2026-07-31",
-            "lag": "18 days ago"
+            "date": "2026-08-18",
+            "lag": "today"
           },
-          "drift_prs": 11,
+          "drift_prs": 1,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -201,11 +197,11 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 6,
+            "verdicts": 7,
             "open_editor": {
-              "count": 5,
-              "median_age_days": 12,
-              "oldest_age_days": 14
+              "count": 2,
+              "median_age_days": 3,
+              "oldest_age_days": 6
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -213,183 +209,16 @@
             },
             "share": {
               "auto_merge": 0,
-              "editor": 6
+              "editor": 7
             },
             "would_auto_merge": {
-              "n": 3,
-              "agree": 3
+              "n": 4,
+              "agree": 4
             },
             "primary_editor": "Zahra-khanzadeh",
             "in_review_slugs": [
               "autodiff",
-              "functions",
-              "numba",
               "numpy",
-              "pandas",
-              "pandas_panel",
-              "polars",
-              "python_by_example",
-              "workspace"
-            ]
-          },
-          "orphans": [],
-          "lectures": [
-            {
-              "slug": "about_py",
-              "state": "stale"
-            },
-            {
-              "slug": "autodiff",
-              "state": "stale"
-            },
-            {
-              "slug": "debugging",
-              "state": "fresh"
-            },
-            {
-              "slug": "functions",
-              "state": "stale"
-            },
-            {
-              "slug": "getting_started",
-              "state": "fresh"
-            },
-            {
-              "slug": "intro",
-              "state": "fresh"
-            },
-            {
-              "slug": "jax_intro",
-              "state": "fresh"
-            },
-            {
-              "slug": "matplotlib",
-              "state": "fresh"
-            },
-            {
-              "slug": "names",
-              "state": "fresh"
-            },
-            {
-              "slug": "need_for_speed",
-              "state": "fresh"
-            },
-            {
-              "slug": "numba",
-              "state": "stale"
-            },
-            {
-              "slug": "numpy",
-              "state": "stale"
-            },
-            {
-              "slug": "numpy_vs_numba_vs_jax",
-              "state": "fresh"
-            },
-            {
-              "slug": "oop_intro",
-              "state": "fresh"
-            },
-            {
-              "slug": "pandas",
-              "state": "stale"
-            },
-            {
-              "slug": "pandas_panel",
-              "state": "stale"
-            },
-            {
-              "slug": "polars",
-              "state": "stale"
-            },
-            {
-              "slug": "python_advanced_features",
-              "state": "fresh"
-            },
-            {
-              "slug": "python_by_example",
-              "state": "stale"
-            },
-            {
-              "slug": "python_essentials",
-              "state": "fresh"
-            },
-            {
-              "slug": "python_oop",
-              "state": "fresh"
-            },
-            {
-              "slug": "scipy",
-              "state": "fresh"
-            },
-            {
-              "slug": "sympy",
-              "state": "fresh"
-            },
-            {
-              "slug": "troubleshooting",
-              "state": "fresh"
-            },
-            {
-              "slug": "workspace",
-              "state": "stale"
-            },
-            {
-              "slug": "writing_good_code",
-              "state": "fresh"
-            }
-          ]
-        },
-        {
-          "lang": "fr",
-          "lang_label": "French",
-          "target_repo": "lecture-python-programming.fr",
-          "site": "https://quantecon.github.io/lecture-python-programming.fr/",
-          "review_state": "pending",
-          "lectures_translated": 26,
-          "freshness": "computed",
-          "stale": 10,
-          "last_sync": {
-            "date": "2026-08-04",
-            "lag": "14 days ago"
-          },
-          "drift_prs": 8,
-          "drift_approx": true,
-          "automation": {
-            "wired": true,
-            "parts": "sync · AI review · rebase"
-          },
-          "review": {
-            "open": 0,
-            "note": "site live 2026-07-17 · seed awaiting native review"
-          },
-          "status": "drifting",
-          "status_label": "Drifting",
-          "review_lanes": {
-            "mode": "shadow",
-            "verdicts": 6,
-            "open_editor": {
-              "count": 2,
-              "median_age_days": 9,
-              "oldest_age_days": 12
-            },
-            "auto_merge_recommended": {
-              "d7": 1,
-              "d30": 3
-            },
-            "share": {
-              "auto_merge": 3,
-              "editor": 3
-            },
-            "would_auto_merge": {
-              "n": 3,
-              "agree": 3
-            },
-            "primary_editor": "Honaminto",
-            "in_review_slugs": [
-              "about_py",
-              "autodiff",
-              "functions",
               "pandas",
               "pandas_panel",
               "polars",
@@ -412,7 +241,7 @@
             },
             {
               "slug": "functions",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "getting_started",
@@ -440,11 +269,11 @@
             },
             {
               "slug": "numba",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "numpy",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "numpy_vs_numba_vs_jax",
@@ -456,7 +285,7 @@
             },
             {
               "slug": "pandas",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "pandas_panel",
@@ -464,7 +293,7 @@
             },
             {
               "slug": "polars",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "python_advanced_features",
@@ -472,7 +301,7 @@
             },
             {
               "slug": "python_by_example",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "python_essentials",
@@ -496,7 +325,170 @@
             },
             {
               "slug": "workspace",
+              "state": "fresh"
+            },
+            {
+              "slug": "writing_good_code",
+              "state": "fresh"
+            }
+          ]
+        },
+        {
+          "lang": "fr",
+          "lang_label": "French",
+          "target_repo": "lecture-python-programming.fr",
+          "site": "https://quantecon.github.io/lecture-python-programming.fr/",
+          "review_state": "pending",
+          "lectures_translated": 26,
+          "freshness": "computed",
+          "stale": 3,
+          "last_sync": {
+            "date": "2026-08-18",
+            "lag": "today"
+          },
+          "drift_prs": 1,
+          "drift_approx": true,
+          "automation": {
+            "wired": true,
+            "parts": "sync · AI review · rebase"
+          },
+          "review": {
+            "open": 0,
+            "note": "site live 2026-07-17 · seed awaiting native review"
+          },
+          "status": "drifting",
+          "status_label": "Drifting",
+          "review_lanes": {
+            "mode": "shadow",
+            "verdicts": 7,
+            "open_editor": {
+              "count": 2,
+              "median_age_days": 3,
+              "oldest_age_days": 6
+            },
+            "auto_merge_recommended": {
+              "d7": 1,
+              "d30": 3
+            },
+            "share": {
+              "auto_merge": 3,
+              "editor": 4
+            },
+            "would_auto_merge": {
+              "n": 4,
+              "agree": 4
+            },
+            "primary_editor": "Honaminto",
+            "in_review_slugs": [
+              "about_py",
+              "autodiff",
+              "pandas",
+              "pandas_panel",
+              "polars",
+              "python_by_example"
+            ]
+          },
+          "orphans": [],
+          "lectures": [
+            {
+              "slug": "about_py",
               "state": "stale"
+            },
+            {
+              "slug": "autodiff",
+              "state": "stale"
+            },
+            {
+              "slug": "debugging",
+              "state": "fresh"
+            },
+            {
+              "slug": "functions",
+              "state": "fresh"
+            },
+            {
+              "slug": "getting_started",
+              "state": "fresh"
+            },
+            {
+              "slug": "intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "jax_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "matplotlib",
+              "state": "fresh"
+            },
+            {
+              "slug": "names",
+              "state": "fresh"
+            },
+            {
+              "slug": "need_for_speed",
+              "state": "fresh"
+            },
+            {
+              "slug": "numba",
+              "state": "fresh"
+            },
+            {
+              "slug": "numpy",
+              "state": "fresh"
+            },
+            {
+              "slug": "numpy_vs_numba_vs_jax",
+              "state": "fresh"
+            },
+            {
+              "slug": "oop_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "pandas",
+              "state": "fresh"
+            },
+            {
+              "slug": "pandas_panel",
+              "state": "stale"
+            },
+            {
+              "slug": "polars",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_advanced_features",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_by_example",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_essentials",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_oop",
+              "state": "fresh"
+            },
+            {
+              "slug": "scipy",
+              "state": "fresh"
+            },
+            {
+              "slug": "sympy",
+              "state": "fresh"
+            },
+            {
+              "slug": "troubleshooting",
+              "state": "fresh"
+            },
+            {
+              "slug": "workspace",
+              "state": "fresh"
             },
             {
               "slug": "writing_good_code",
@@ -515,9 +507,9 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-08-06",
-            "lag": "11 days ago"
+            "lag": "12 days ago"
           },
-          "drift_prs": 3,
+          "drift_prs": 4,
           "drift_approx": true,
           "automation": {
             "wired": false,
