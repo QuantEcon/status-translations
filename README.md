@@ -48,7 +48,7 @@ collector/
 .github/workflows/
   publish.yml         # deploy site + data to Pages on push
   collect.yml         # nightly data collection (cron, 03:17 UTC) + redeploy
-  textstrata.yml      # monthly lifecycle-metrics scan (needs PROJECT_TRANSLATION_READ secret)
+  textstrata.yml      # monthly lifecycle-metrics scan (needs QUANTECON_SERVICES_PAT secret)
 ```
 
 ## Counting rule

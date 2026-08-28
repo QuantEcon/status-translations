@@ -7,8 +7,8 @@ name: textstrata
 # regenerate deterministically from the HEAD sha each run.json records.
 #
 # The reviewer roster lives in the private project-translation repo, so this
-# workflow needs one secret beyond GITHUB_TOKEN: PROJECT_TRANSLATION_READ, a
-# fine-grained PAT with contents:read on QuantEcon/project-translation.
+# workflow needs one secret beyond GITHUB_TOKEN: QUANTECON_SERVICES_PAT, the
+# org service token, used here only to read team/reviewers.yml.
 # Scanning without the roster would silently collapse the human tiers, so the
 # run fails loudly when the secret is missing rather than record wrong numbers.
 #
@@ -54,10 +54,10 @@ jobs:
           done
       - name: Fetch the reviewer roster (private; read-only token)
         env:
-          ROSTER_TOKEN: ${{ secrets.PROJECT_TRANSLATION_READ }}
+          ROSTER_TOKEN: ${{ secrets.QUANTECON_SERVICES_PAT }}
         run: |
           if [ -z "$ROSTER_TOKEN" ]; then
-            echo "::error::PROJECT_TRANSLATION_READ secret is not set; refusing to scan without the roster"
+            echo "::error::QUANTECON_SERVICES_PAT secret is not available; refusing to scan without the roster"
             exit 1
           fi
           mkdir -p work/project-translation/team
