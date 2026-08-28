@@ -1,0 +1,6608 @@
+{
+  "lectures/_admonition/gpu.md": {
+    "path": "lectures/_admonition/gpu.md",
+    "translated": true,
+    "translation_sha": "8b4c90bc0128f36c41806cc783b7f04c7bfb2405",
+    "translation_date": "2026-07-19T09:16:44+10:00",
+    "n_commits": 1,
+    "lines_head": 11,
+    "prose_lines_head": 5,
+    "composition": {
+      "ai-initial": 5
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": null,
+      "model": null,
+      "synced_at": null,
+      "mode": null,
+      "tool_version": null,
+      "pending_commits": null
+    }
+  },
+  "lectures/affine_risk_prices.md": {
+    "path": "lectures/affine_risk_prices.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 1405,
+    "prose_lines_head": 417,
+    "composition": {
+      "ai-initial": 417
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 0.9989,
+    "commits_by_tier": {
+      "ai-assisted": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "d1a3cccb8617e053108374fbf821325ffc8e7904",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-22",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/aiyagari.md": {
+    "path": "lectures/aiyagari.md",
+    "translated": true,
+    "translation_sha": "85e02b6bafe6a3d6adeb587c1ba64608e52ef5ed",
+    "translation_date": "2025-03-16T21:42:36+11:00",
+    "n_commits": 7,
+    "lines_head": 886,
+    "prose_lines_head": 236,
+    "composition": {
+      "ai-sync": 171,
+      "ai-initial": 18,
+      "ai-assisted": 45,
+      "human-editor": 2
+    },
+    "composition_pct": {
+      "ai-sync": 72.5,
+      "ai-initial": 7.6,
+      "ai-assisted": 19.1,
+      "human-editor": 0.8
+    },
+    "baseline_survival_pct": 7.6,
+    "similarity_initial_head": 0.1278,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 2,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 201,
+      "human-editor": 16,
+      "ai-sync": 244
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 2911,
+      "human-editor": 16,
+      "ai-sync": 7010
+    },
+    "first_human_touch": "2025-04-28T21:59:27+10:00",
+    "last_human_touch": "2025-04-28T21:59:27+10:00",
+    "days_to_first_human_touch": 43,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "0bfcac8105ac8c11f06797579a9f4d565db7b53d",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/aiyagari_egm.md": {
+    "path": "lectures/aiyagari_egm.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 737,
+    "prose_lines_head": 241,
+    "composition": {
+      "ai-initial": 241
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 0.9959,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/ak2.md": {
+    "path": "lectures/ak2.md",
+    "translated": true,
+    "translation_sha": "85e02b6bafe6a3d6adeb587c1ba64608e52ef5ed",
+    "translation_date": "2025-03-16T21:42:36+11:00",
+    "n_commits": 7,
+    "lines_head": 1222,
+    "prose_lines_head": 350,
+    "composition": {
+      "ai-sync": 46,
+      "ai-assisted": 216,
+      "ai-initial": 88
+    },
+    "composition_pct": {
+      "ai-sync": 13.1,
+      "ai-assisted": 61.7,
+      "ai-initial": 25.1
+    },
+    "baseline_survival_pct": 25.1,
+    "similarity_initial_head": 0.6823,
+    "commits_by_tier": {
+      "human-editor": 2,
+      "ai-assisted": 1,
+      "human-translator": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 2,
+      "ai-assisted": 437,
+      "human-translator": 0,
+      "ai-sync": 70
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 5,
+      "ai-assisted": 5772,
+      "human-translator": 0,
+      "ai-sync": 1092
+    },
+    "first_human_touch": "2025-06-17T22:59:27+10:00",
+    "last_human_touch": "2025-06-17T22:59:27+10:00",
+    "days_to_first_human_touch": 93,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "a1cd90c5ef6d6f05277318f47fe21eda60fa5e6b",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/ak_aiyagari.md": {
+    "path": "lectures/ak_aiyagari.md",
+    "translated": true,
+    "translation_sha": "a6644817b5368f0e41b37bb9c1d70bf623c22577",
+    "translation_date": "2025-09-12T11:57:08+10:00",
+    "n_commits": 4,
+    "lines_head": 1464,
+    "prose_lines_head": 301,
+    "composition": {
+      "ai-assisted": 4,
+      "ai-sync": 21,
+      "ai-initial": 276
+    },
+    "composition_pct": {
+      "ai-assisted": 1.3,
+      "ai-sync": 7.0,
+      "ai-initial": 91.7
+    },
+    "baseline_survival_pct": 91.7,
+    "similarity_initial_head": 0.9855,
+    "commits_by_tier": {
+      "ai-sync": 1,
+      "ai-assisted": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 23,
+      "ai-assisted": 7
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 793,
+      "ai-assisted": 28
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "ce54324db280292a4456f1d4266f5cecb56f6b94",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 1,
+      "pending_subjects": [
+        "[ak_aiyagari] Refactor household variable references in functions (#706)"
+      ]
+    }
+  },
+  "lectures/ar1_bayes.md": {
+    "path": "lectures/ar1_bayes.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 7,
+    "lines_head": 600,
+    "prose_lines_head": 174,
+    "composition": {
+      "ai-sync": 157,
+      "ai-initial": 17
+    },
+    "composition_pct": {
+      "ai-sync": 90.2,
+      "ai-initial": 9.8
+    },
+    "baseline_survival_pct": 9.8,
+    "similarity_initial_head": 0.2686,
+    "commits_by_tier": {
+      "human-editor": 3,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 55,
+      "ai-sync": 242
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 1644,
+      "ai-sync": 8152
+    },
+    "first_human_touch": "2025-06-29T15:19:58+08:00",
+    "last_human_touch": "2025-06-29T15:53:29+08:00",
+    "days_to_first_human_touch": 103,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/ar1_turningpts.md": {
+    "path": "lectures/ar1_turningpts.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 10,
+    "lines_head": 805,
+    "prose_lines_head": 233,
+    "composition": {
+      "ai-sync": 175,
+      "ai-initial": 40,
+      "human-translator": 16,
+      "ai-assisted": 2
+    },
+    "composition_pct": {
+      "ai-sync": 75.1,
+      "ai-initial": 17.2,
+      "human-translator": 6.9,
+      "ai-assisted": 0.9
+    },
+    "baseline_survival_pct": 17.2,
+    "similarity_initial_head": 0.2195,
+    "commits_by_tier": {
+      "human-editor": 1,
+      "human-translator": 3,
+      "ai-sync": 2,
+      "ai-assisted": 2
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 0,
+      "human-translator": 68,
+      "ai-sync": 256,
+      "ai-assisted": 3
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 0,
+      "human-translator": 518,
+      "ai-sync": 9082,
+      "ai-assisted": 95
+    },
+    "first_human_touch": "2025-09-06T00:26:46+10:00",
+    "last_human_touch": "2025-09-06T22:57:30+10:00",
+    "days_to_first_human_touch": 172,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "f3fdcbcc564961a25c77a01f5e12638e70522552",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-01",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/back_prop.md": {
+    "path": "lectures/back_prop.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 5,
+    "lines_head": 598,
+    "prose_lines_head": 131,
+    "composition": {
+      "ai-sync": 20,
+      "ai-initial": 98,
+      "human-translator": 13
+    },
+    "composition_pct": {
+      "ai-sync": 15.3,
+      "ai-initial": 74.8,
+      "human-translator": 9.9
+    },
+    "baseline_survival_pct": 74.8,
+    "similarity_initial_head": 0.8554,
+    "commits_by_tier": {
+      "human-translator": 1,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "human-translator": 41,
+      "ai-sync": 32
+    },
+    "prose_char_churn_by_tier": {
+      "human-translator": 818,
+      "ai-sync": 890
+    },
+    "first_human_touch": "2025-08-20T00:25:57+10:00",
+    "last_human_touch": "2025-08-20T00:25:57+10:00",
+    "days_to_first_human_touch": 155,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/bayes_nonconj.md": {
+    "path": "lectures/bayes_nonconj.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 4,
+    "lines_head": 547,
+    "prose_lines_head": 180,
+    "composition": {
+      "ai-sync": 178,
+      "ai-initial": 2
+    },
+    "composition_pct": {
+      "ai-sync": 98.9,
+      "ai-initial": 1.1
+    },
+    "baseline_survival_pct": 1.1,
+    "similarity_initial_head": 0.0631,
+    "commits_by_tier": {
+      "human-editor": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 0,
+      "ai-sync": 344
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 0,
+      "ai-sync": 13654
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "b78fbcddae98a645bff0f01bb28a1e7955db5f53",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/blackwell_kihlstrom.md": {
+    "path": "lectures/blackwell_kihlstrom.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 1379,
+    "prose_lines_head": 410,
+    "composition": {
+      "ai-initial": 410
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "fea6b58cd64d8502f8e09821f63ae7a6f890cc44",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-21",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/bounded_rationality.md": {
+    "path": "lectures/bounded_rationality.md",
+    "translated": true,
+    "translation_sha": "bf8200ad65f37607df47c6040eb581a60a14ecbf",
+    "translation_date": "2026-07-27T21:18:08+10:00",
+    "n_commits": 3,
+    "lines_head": 908,
+    "prose_lines_head": 231,
+    "composition": {
+      "ai-sync": 230,
+      "ai-assisted": 1
+    },
+    "composition_pct": {
+      "ai-sync": 99.6,
+      "ai-assisted": 0.4
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.9994,
+    "commits_by_tier": {
+      "ai-assisted": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 3
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 133
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "NEW",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/career.md": {
+    "path": "lectures/career.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 13,
+    "lines_head": 556,
+    "prose_lines_head": 137,
+    "composition": {
+      "ai-assisted": 2,
+      "ai-sync": 70,
+      "ai-initial": 47,
+      "human-editor": 18
+    },
+    "composition_pct": {
+      "ai-assisted": 1.5,
+      "ai-sync": 51.1,
+      "ai-initial": 34.3,
+      "human-editor": 13.1
+    },
+    "baseline_survival_pct": 34.3,
+    "similarity_initial_head": 0.4605,
+    "commits_by_tier": {
+      "ai-assisted": 3,
+      "human-editor": 6,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 4,
+      "human-editor": 70,
+      "ai-sync": 128
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 504,
+      "ai-sync": 3686
+    },
+    "first_human_touch": "2025-04-25T08:57:13+10:00",
+    "last_human_touch": "2025-06-18T10:28:29+10:00",
+    "days_to_first_human_touch": 38,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "a4fbd8653600ac99163bfd5d4f7d98c1e613042e",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 1,
+      "pending_subjects": [
+        "Add Job Search V lecture on risk-sensitive preferences (#760)"
+      ]
+    }
+  },
+  "lectures/cass_fiscal.md": {
+    "path": "lectures/cass_fiscal.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 9,
+    "lines_head": 1807,
+    "prose_lines_head": 433,
+    "composition": {
+      "ai-sync": 68,
+      "ai-initial": 61,
+      "ai-assisted": 303,
+      "human-translator": 1
+    },
+    "composition_pct": {
+      "ai-sync": 15.7,
+      "ai-initial": 14.1,
+      "ai-assisted": 70.0,
+      "human-translator": 0.2
+    },
+    "baseline_survival_pct": 14.1,
+    "similarity_initial_head": 0.5298,
+    "commits_by_tier": {
+      "human-editor": 1,
+      "ai-assisted": 3,
+      "human-translator": 2,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 0,
+      "ai-assisted": 1109,
+      "human-translator": 1,
+      "ai-sync": 119
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 0,
+      "ai-assisted": 24019,
+      "human-translator": 23,
+      "ai-sync": 1789
+    },
+    "first_human_touch": "2025-10-05T23:22:41+11:00",
+    "last_human_touch": "2025-10-05T23:22:41+11:00",
+    "days_to_first_human_touch": 202,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "78030a3a27f6527046675bcd8a8d27995ca25af6",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/cass_fiscal_2.md": {
+    "path": "lectures/cass_fiscal_2.md",
+    "translated": true,
+    "translation_sha": "a6644817b5368f0e41b37bb9c1d70bf623c22577",
+    "translation_date": "2025-09-12T11:57:08+10:00",
+    "n_commits": 2,
+    "lines_head": 594,
+    "prose_lines_head": 123,
+    "composition": {
+      "ai-sync": 8,
+      "ai-initial": 115
+    },
+    "composition_pct": {
+      "ai-sync": 6.5,
+      "ai-initial": 93.5
+    },
+    "baseline_survival_pct": 93.5,
+    "similarity_initial_head": 0.9915,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 8
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 660
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "78030a3a27f6527046675bcd8a8d27995ca25af6",
+      "model": "unknown",
+      "synced_at": "2025-09-12",
+      "mode": "RESYNC",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/cass_koopmans_1.md": {
+    "path": "lectures/cass_koopmans_1.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 8,
+    "lines_head": 1086,
+    "prose_lines_head": 288,
+    "composition": {
+      "ai-sync": 19,
+      "ai-initial": 217,
+      "human-translator": 52
+    },
+    "composition_pct": {
+      "ai-sync": 6.6,
+      "ai-initial": 75.3,
+      "human-translator": 18.1
+    },
+    "baseline_survival_pct": 75.3,
+    "similarity_initial_head": 0.8552,
+    "commits_by_tier": {
+      "human-editor": 1,
+      "human-translator": 4,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 0,
+      "human-translator": 143,
+      "ai-sync": 23
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 0,
+      "human-translator": 1900,
+      "ai-sync": 703
+    },
+    "first_human_touch": "2025-09-05T23:39:36+10:00",
+    "last_human_touch": "2025-09-10T23:47:51+10:00",
+    "days_to_first_human_touch": 172,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "bce028b3121056e0bbb7b57e48b356aa8da050d2",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/cass_koopmans_2.md": {
+    "path": "lectures/cass_koopmans_2.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 6,
+    "lines_head": 926,
+    "prose_lines_head": 267,
+    "composition": {
+      "ai-sync": 18,
+      "ai-initial": 71,
+      "ai-assisted": 93,
+      "human-translator": 85
+    },
+    "composition_pct": {
+      "ai-sync": 6.7,
+      "ai-initial": 26.6,
+      "ai-assisted": 34.8,
+      "human-translator": 31.8
+    },
+    "baseline_survival_pct": 26.6,
+    "similarity_initial_head": 0.6744,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 1,
+      "human-translator": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 379,
+      "human-editor": 0,
+      "human-translator": 233,
+      "ai-sync": 18
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 5089,
+      "human-editor": 0,
+      "human-translator": 2262,
+      "ai-sync": 873
+    },
+    "first_human_touch": "2025-09-06T22:38:11+10:00",
+    "last_human_touch": "2025-09-06T22:38:11+10:00",
+    "days_to_first_human_touch": 173,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "a73ba0f7db0a6783ab5b9cca269a9f95f88106cb",
+      "model": "unknown",
+      "synced_at": "2025-09-06",
+      "mode": "RESYNC",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/chow_business_cycles.md": {
+    "path": "lectures/chow_business_cycles.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 1685,
+    "prose_lines_head": 452,
+    "composition": {
+      "ai-initial": 452
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "78030a3a27f6527046675bcd8a8d27995ca25af6",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-21",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/cross_product_trick.md": {
+    "path": "lectures/cross_product_trick.md",
+    "translated": true,
+    "translation_sha": "85e02b6bafe6a3d6adeb587c1ba64608e52ef5ed",
+    "translation_date": "2025-03-16T21:42:36+11:00",
+    "n_commits": 5,
+    "lines_head": 167,
+    "prose_lines_head": 46,
+    "composition": {
+      "ai-sync": 6,
+      "ai-initial": 30,
+      "human-translator": 10
+    },
+    "composition_pct": {
+      "ai-sync": 13.0,
+      "ai-initial": 65.2,
+      "human-translator": 21.7
+    },
+    "baseline_survival_pct": 65.2,
+    "similarity_initial_head": 0.7914,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-translator": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-translator": 23,
+      "ai-sync": 6
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-translator": 129,
+      "ai-sync": 163
+    },
+    "first_human_touch": "2025-10-15T12:06:29+11:00",
+    "last_human_touch": "2025-10-15T12:06:29+11:00",
+    "days_to_first_human_touch": 212,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "fb931c2909a59aa029986a5e6a6083811b5a3aed",
+      "model": "unknown",
+      "synced_at": "2025-10-15",
+      "mode": "RESYNC",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/divergence_measures.md": {
+    "path": "lectures/divergence_measures.md",
+    "translated": true,
+    "translation_sha": "a6644817b5368f0e41b37bb9c1d70bf623c22577",
+    "translation_date": "2025-09-12T11:57:08+10:00",
+    "n_commits": 4,
+    "lines_head": 559,
+    "prose_lines_head": 135,
+    "composition": {
+      "ai-sync": 10,
+      "ai-initial": 107,
+      "human-editor": 18
+    },
+    "composition_pct": {
+      "ai-sync": 7.4,
+      "ai-initial": 79.3,
+      "human-editor": 13.3
+    },
+    "baseline_survival_pct": 79.3,
+    "similarity_initial_head": 0.9197,
+    "commits_by_tier": {
+      "human-editor": 1,
+      "ai-sync": 1,
+      "ai-assisted": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 52,
+      "ai-sync": 10,
+      "ai-assisted": 0
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 256,
+      "ai-sync": 417,
+      "ai-assisted": 0
+    },
+    "first_human_touch": "2025-09-12T12:20:42+10:00",
+    "last_human_touch": "2025-09-12T12:20:42+10:00",
+    "days_to_first_human_touch": 0,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "18666c046942325003724125fae0cae91d8be7e7",
+      "model": "unknown",
+      "synced_at": "2025-09-12",
+      "mode": "RESYNC",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/eig_circulant.md": {
+    "path": "lectures/eig_circulant.md",
+    "translated": true,
+    "translation_sha": "678a876b3c37e891725160e8e5ba4b04c3c82cfe",
+    "translation_date": "2025-03-17T20:39:09+11:00",
+    "n_commits": 8,
+    "lines_head": 649,
+    "prose_lines_head": 113,
+    "composition": {
+      "ai-sync": 31,
+      "ai-initial": 77,
+      "human-editor": 5
+    },
+    "composition_pct": {
+      "ai-sync": 27.4,
+      "ai-initial": 68.1,
+      "human-editor": 4.4
+    },
+    "baseline_survival_pct": 68.1,
+    "similarity_initial_head": 0.8829,
+    "commits_by_tier": {
+      "human-editor": 4,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 36,
+      "ai-sync": 50
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 322,
+      "ai-sync": 985
+    },
+    "first_human_touch": "2025-07-11T21:00:44+07:00",
+    "last_human_touch": "2025-07-17T12:49:41+10:00",
+    "days_to_first_human_touch": 116,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "113d0e29192fc36877f1ab3f3596e2ae1db00b07",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-31",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/endogenous_lake.md": {
+    "path": "lectures/endogenous_lake.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 668,
+    "prose_lines_head": 161,
+    "composition": {
+      "ai-initial": 161
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "0bfcac8105ac8c11f06797579a9f4d565db7b53d",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-22",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/exchange_rate_learning.md": {
+    "path": "lectures/exchange_rate_learning.md",
+    "translated": true,
+    "translation_sha": "bf8200ad65f37607df47c6040eb581a60a14ecbf",
+    "translation_date": "2026-07-27T21:18:08+10:00",
+    "n_commits": 1,
+    "lines_head": 740,
+    "prose_lines_head": 188,
+    "composition": {
+      "ai-sync": 188
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "NEW",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/exchangeable.md": {
+    "path": "lectures/exchangeable.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 7,
+    "lines_head": 715,
+    "prose_lines_head": 209,
+    "composition": {
+      "ai-sync": 79,
+      "ai-initial": 130
+    },
+    "composition_pct": {
+      "ai-sync": 37.8,
+      "ai-initial": 62.2
+    },
+    "baseline_survival_pct": 62.2,
+    "similarity_initial_head": 0.6149,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 2,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 2,
+      "ai-sync": 140
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 5,
+      "ai-sync": 4393
+    },
+    "first_human_touch": "2025-04-28T21:59:27+10:00",
+    "last_human_touch": "2025-04-28T21:59:27+10:00",
+    "days_to_first_human_touch": 42,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "7e4c793ff2aec5aa1a73deac1c44b0d0f543fda9",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-03",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/finite_markov.md": {
+    "path": "lectures/finite_markov.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 12,
+    "lines_head": 1365,
+    "prose_lines_head": 408,
+    "composition": {
+      "ai-sync": 73,
+      "ai-assisted": 185,
+      "ai-initial": 132,
+      "human-editor": 18
+    },
+    "composition_pct": {
+      "ai-sync": 17.9,
+      "ai-assisted": 45.3,
+      "ai-initial": 32.4,
+      "human-editor": 4.4
+    },
+    "baseline_survival_pct": 32.4,
+    "similarity_initial_head": 0.6783,
+    "commits_by_tier": {
+      "ai-assisted": 4,
+      "human-editor": 5,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 488,
+      "human-editor": 66,
+      "ai-sync": 128
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 5355,
+      "human-editor": 787,
+      "ai-sync": 2435
+    },
+    "first_human_touch": "2025-04-11T14:37:58+10:00",
+    "last_human_touch": "2025-04-28T21:59:27+10:00",
+    "days_to_first_human_touch": 24,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "089e35ca27a9cdff6d341269f77d857f1c46dfd3",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/ge_arrow.md": {
+    "path": "lectures/ge_arrow.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 5,
+    "lines_head": 1303,
+    "prose_lines_head": 355,
+    "composition": {
+      "ai-sync": 27,
+      "ai-initial": 310,
+      "human-editor": 18
+    },
+    "composition_pct": {
+      "ai-sync": 7.6,
+      "ai-initial": 87.3,
+      "human-editor": 5.1
+    },
+    "baseline_survival_pct": 87.3,
+    "similarity_initial_head": 0.9677,
+    "commits_by_tier": {
+      "human-editor": 2,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 36,
+      "ai-sync": 27
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 100,
+      "ai-sync": 1105
+    },
+    "first_human_touch": "2025-06-17T22:59:27+10:00",
+    "last_human_touch": "2025-06-17T22:59:27+10:00",
+    "days_to_first_human_touch": 92,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "eb30e4fa25c462a5875670e623b2ec01b6f9c727",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/genetic_classifier.md": {
+    "path": "lectures/genetic_classifier.md",
+    "translated": true,
+    "translation_sha": "bf8200ad65f37607df47c6040eb581a60a14ecbf",
+    "translation_date": "2026-07-27T21:18:08+10:00",
+    "n_commits": 3,
+    "lines_head": 855,
+    "prose_lines_head": 190,
+    "composition": {
+      "ai-sync": 187,
+      "ai-assisted": 3
+    },
+    "composition_pct": {
+      "ai-sync": 98.4,
+      "ai-assisted": 1.6
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.9965,
+    "commits_by_tier": {
+      "ai-assisted": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 12
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 210
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "NEW",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/hansen_singleton_1982.md": {
+    "path": "lectures/hansen_singleton_1982.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 1135,
+    "prose_lines_head": 186,
+    "composition": {
+      "ai-initial": 181,
+      "ai-sync": 5
+    },
+    "composition_pct": {
+      "ai-initial": 97.3,
+      "ai-sync": 2.7
+    },
+    "baseline_survival_pct": 97.3,
+    "similarity_initial_head": 0.9912,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 12
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 285
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "a501f03230eed210adb9a8984842695dddd82018",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-13",
+      "mode": "UPDATE",
+      "tool_version": "0.25.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/hansen_singleton_1983.md": {
+    "path": "lectures/hansen_singleton_1983.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 3,
+    "lines_head": 1837,
+    "prose_lines_head": 283,
+    "composition": {
+      "ai-initial": 278,
+      "ai-sync": 5
+    },
+    "composition_pct": {
+      "ai-initial": 98.2,
+      "ai-sync": 1.8
+    },
+    "baseline_survival_pct": 98.2,
+    "similarity_initial_head": 0.9932,
+    "commits_by_tier": {
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 12
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 287
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "a501f03230eed210adb9a8984842695dddd82018",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-13",
+      "mode": "UPDATE",
+      "tool_version": "0.25.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/harrison_kreps.md": {
+    "path": "lectures/harrison_kreps.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 7,
+    "lines_head": 624,
+    "prose_lines_head": 187,
+    "composition": {
+      "ai-sync": 38,
+      "ai-initial": 145,
+      "human-editor": 4
+    },
+    "composition_pct": {
+      "ai-sync": 20.3,
+      "ai-initial": 77.5,
+      "human-editor": 2.1
+    },
+    "baseline_survival_pct": 77.5,
+    "similarity_initial_head": 0.8768,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 2,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 11,
+      "ai-sync": 86
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 63,
+      "ai-sync": 1443
+    },
+    "first_human_touch": "2025-03-20T21:50:53+11:00",
+    "last_human_touch": "2025-06-17T22:59:27+10:00",
+    "days_to_first_human_touch": 3,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "01e6f828d55d38d1ec82684b24fbb4e2a943de30",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-05",
+      "mode": "UPDATE",
+      "tool_version": "0.25.0",
+      "pending_commits": 1,
+      "pending_subjects": [
+        "Refactor price_single_beliefs function (#669)"
+      ]
+    }
+  },
+  "lectures/hoist_failure.md": {
+    "path": "lectures/hoist_failure.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 9,
+    "lines_head": 853,
+    "prose_lines_head": 287,
+    "composition": {
+      "ai-sync": 244,
+      "ai-initial": 36,
+      "human-translator": 7
+    },
+    "composition_pct": {
+      "ai-sync": 85.0,
+      "ai-initial": 12.5,
+      "human-translator": 2.4
+    },
+    "baseline_survival_pct": 12.5,
+    "similarity_initial_head": 0.1491,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 1,
+      "human-translator": 2,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 11,
+      "human-editor": 0,
+      "human-translator": 63,
+      "ai-sync": 414
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 393,
+      "human-editor": 0,
+      "human-translator": 398,
+      "ai-sync": 12104
+    },
+    "first_human_touch": "2025-08-18T21:30:35+10:00",
+    "last_human_touch": "2025-08-18T21:53:56+10:00",
+    "days_to_first_human_touch": 154,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "a7aafd5bf98d907596cc727a13872757292ce5e2",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-20",
+      "mode": "RESYNC",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/house_auction.md": {
+    "path": "lectures/house_auction.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 4,
+    "lines_head": 1414,
+    "prose_lines_head": 373,
+    "composition": {
+      "ai-sync": 21,
+      "ai-initial": 352
+    },
+    "composition_pct": {
+      "ai-sync": 5.6,
+      "ai-initial": 94.4
+    },
+    "baseline_survival_pct": 94.4,
+    "similarity_initial_head": 0.9843,
+    "commits_by_tier": {
+      "human-editor": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 5,
+      "ai-sync": 22
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 292,
+      "ai-sync": 693
+    },
+    "first_human_touch": "2025-03-20T21:50:53+11:00",
+    "last_human_touch": "2025-03-20T21:50:53+11:00",
+    "days_to_first_human_touch": 3,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "d1bebc33e0d3ad33ab870f219e018c3123538b0f",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/ifp_advanced.md": {
+    "path": "lectures/ifp_advanced.md",
+    "translated": true,
+    "translation_sha": "678a876b3c37e891725160e8e5ba4b04c3c82cfe",
+    "translation_date": "2025-03-17T20:39:09+11:00",
+    "n_commits": 10,
+    "lines_head": 817,
+    "prose_lines_head": 242,
+    "composition": {
+      "ai-sync": 183,
+      "ai-initial": 42,
+      "human-translator": 17
+    },
+    "composition_pct": {
+      "ai-sync": 75.6,
+      "ai-initial": 17.4,
+      "human-translator": 7.0
+    },
+    "baseline_survival_pct": 17.4,
+    "similarity_initial_head": 0.3238,
+    "commits_by_tier": {
+      "human-editor": 1,
+      "human-translator": 2,
+      "ai-sync": 4
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 0,
+      "human-translator": 142,
+      "ai-sync": 305
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 0,
+      "human-translator": 816,
+      "ai-sync": 8501
+    },
+    "first_human_touch": "2025-10-01T09:54:49+10:00",
+    "last_human_touch": "2025-10-01T09:54:49+10:00",
+    "days_to_first_human_touch": 197,
+    "syncs_since_last_human_touch": 4,
+    "review_state": "audit-stale",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/ifp_discrete.md": {
+    "path": "lectures/ifp_discrete.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 529,
+    "prose_lines_head": 135,
+    "composition": {
+      "ai-initial": 135
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "0bfcac8105ac8c11f06797579a9f4d565db7b53d",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-22",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/ifp_egm.md": {
+    "path": "lectures/ifp_egm.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 12,
+    "lines_head": 900,
+    "prose_lines_head": 255,
+    "composition": {
+      "ai-sync": 223,
+      "ai-initial": 17,
+      "human-translator": 15
+    },
+    "composition_pct": {
+      "ai-sync": 87.5,
+      "ai-initial": 6.7,
+      "human-translator": 5.9
+    },
+    "baseline_survival_pct": 6.7,
+    "similarity_initial_head": 0.1673,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 2,
+      "human-translator": 4,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 188,
+      "human-editor": 2,
+      "human-translator": 207,
+      "ai-sync": 385
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 6106,
+      "human-editor": 5,
+      "human-translator": 1985,
+      "ai-sync": 11241
+    },
+    "first_human_touch": "2025-06-17T22:59:27+10:00",
+    "last_human_touch": "2025-10-01T16:30:11+10:00",
+    "days_to_first_human_touch": 92,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/ifp_egm_transient_shocks.md": {
+    "path": "lectures/ifp_egm_transient_shocks.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 1045,
+    "prose_lines_head": 258,
+    "composition": {
+      "ai-initial": 258
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 0.99,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/ifp_opi.md": {
+    "path": "lectures/ifp_opi.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 487,
+    "prose_lines_head": 94,
+    "composition": {
+      "ai-initial": 94
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "0bfcac8105ac8c11f06797579a9f4d565db7b53d",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-22",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/imp_sample.md": {
+    "path": "lectures/imp_sample.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 7,
+    "lines_head": 628,
+    "prose_lines_head": 139,
+    "composition": {
+      "ai-sync": 87,
+      "human-editor": 30,
+      "ai-initial": 22
+    },
+    "composition_pct": {
+      "ai-sync": 62.6,
+      "human-editor": 21.6,
+      "ai-initial": 15.8
+    },
+    "baseline_survival_pct": 15.8,
+    "similarity_initial_head": 0.1579,
+    "commits_by_tier": {
+      "human-editor": 2,
+      "ai-assisted": 1,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 99,
+      "ai-assisted": 0,
+      "ai-sync": 161
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 811,
+      "ai-assisted": 0,
+      "ai-sync": 5520
+    },
+    "first_human_touch": "2025-09-12T12:20:42+10:00",
+    "last_human_touch": "2025-09-12T12:20:42+10:00",
+    "days_to_first_human_touch": 178,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "caf3ddca8b4308f2db50a7a6bda46625012d0b2f",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-02",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/information_market_equilibrium.md": {
+    "path": "lectures/information_market_equilibrium.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 1336,
+    "prose_lines_head": 352,
+    "composition": {
+      "ai-initial": 352
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "78030a3a27f6527046675bcd8a8d27995ca25af6",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-21",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/intro.md": {
+    "path": "lectures/intro.md",
+    "translated": true,
+    "translation_sha": "387e0840b8754eb34aac814ec71400be064a2358",
+    "translation_date": "2025-01-15T12:34:47+11:00",
+    "n_commits": 3,
+    "lines_head": 20,
+    "prose_lines_head": 3,
+    "composition": {
+      "ai-sync": 1,
+      "ai-assisted": 2
+    },
+    "composition_pct": {
+      "ai-sync": 33.3,
+      "ai-assisted": 66.7
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.8108,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 4,
+      "ai-sync": 1
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 4,
+      "ai-sync": 22
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "1064010d30e47b8b8597a496d5d4743a8c6fa9d0",
+      "model": "unknown",
+      "synced_at": "2025-03-17",
+      "mode": "RESYNC",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/inventory_dynamics.md": {
+    "path": "lectures/inventory_dynamics.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 11,
+    "lines_head": 504,
+    "prose_lines_head": 112,
+    "composition": {
+      "ai-sync": 63,
+      "ai-assisted": 4,
+      "ai-initial": 19,
+      "human-translator": 18,
+      "human-editor": 8
+    },
+    "composition_pct": {
+      "ai-sync": 56.2,
+      "ai-assisted": 3.6,
+      "ai-initial": 17.0,
+      "human-translator": 16.1,
+      "human-editor": 7.1
+    },
+    "baseline_survival_pct": 17.0,
+    "similarity_initial_head": 0.413,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 2,
+      "human-translator": 2,
+      "ai-sync": 3
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 8,
+      "human-editor": 43,
+      "human-translator": 78,
+      "ai-sync": 107
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 8,
+      "human-editor": 529,
+      "human-translator": 301,
+      "ai-sync": 2305
+    },
+    "first_human_touch": "2025-04-24T16:29:18+08:00",
+    "last_human_touch": "2025-04-28T12:04:02+10:00",
+    "days_to_first_human_touch": 37,
+    "syncs_since_last_human_touch": 3,
+    "review_state": "audit-stale",
+    "source": {
+      "source_sha": "a4fbd8653600ac99163bfd5d4f7d98c1e613042e",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/inventory_q.md": {
+    "path": "lectures/inventory_q.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 3,
+    "lines_head": 728,
+    "prose_lines_head": 211,
+    "composition": {
+      "ai-initial": 210,
+      "ai-assisted": 1
+    },
+    "composition_pct": {
+      "ai-initial": 99.5,
+      "ai-assisted": 0.5
+    },
+    "baseline_survival_pct": 99.5,
+    "similarity_initial_head": 0.972,
+    "commits_by_tier": {
+      "ai-sync": 1,
+      "ai-assisted": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 0,
+      "ai-assisted": 2
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 0,
+      "ai-assisted": 1
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "cbeb4b1a898aaa95fa7eca4a63e7f3e26b6a5569",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-31",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/jv.md": {
+    "path": "lectures/jv.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 14,
+    "lines_head": 573,
+    "prose_lines_head": 169,
+    "composition": {
+      "ai-assisted": 2,
+      "ai-sync": 74,
+      "ai-initial": 63,
+      "human-editor": 21,
+      "human-translator": 9
+    },
+    "composition_pct": {
+      "ai-assisted": 1.2,
+      "ai-sync": 43.8,
+      "ai-initial": 37.3,
+      "human-editor": 12.4,
+      "human-translator": 5.3
+    },
+    "baseline_survival_pct": 37.3,
+    "similarity_initial_head": 0.4729,
+    "commits_by_tier": {
+      "ai-assisted": 3,
+      "human-editor": 6,
+      "human-translator": 1,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 4,
+      "human-editor": 74,
+      "human-translator": 37,
+      "ai-sync": 121
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 3,
+      "human-editor": 359,
+      "human-translator": 258,
+      "ai-sync": 4053
+    },
+    "first_human_touch": "2025-04-25T08:57:13+10:00",
+    "last_human_touch": "2025-06-17T23:23:54+10:00",
+    "days_to_first_human_touch": 38,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "a4fbd8653600ac99163bfd5d4f7d98c1e613042e",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 1,
+      "pending_subjects": [
+        "Add Job Search V lecture on risk-sensitive preferences (#760)"
+      ]
+    }
+  },
+  "lectures/kalman.md": {
+    "path": "lectures/kalman.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 9,
+    "lines_head": 828,
+    "prose_lines_head": 219,
+    "composition": {
+      "ai-sync": 130,
+      "human-editor": 3,
+      "ai-initial": 69,
+      "human-translator": 17
+    },
+    "composition_pct": {
+      "ai-sync": 59.4,
+      "human-editor": 1.4,
+      "ai-initial": 31.5,
+      "human-translator": 7.8
+    },
+    "baseline_survival_pct": 31.5,
+    "similarity_initial_head": 0.5619,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 3,
+      "human-translator": 2,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 18,
+      "human-translator": 79,
+      "ai-sync": 233
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 336,
+      "human-translator": 197,
+      "ai-sync": 4457
+    },
+    "first_human_touch": "2025-06-05T16:10:00+08:00",
+    "last_human_touch": "2025-07-01T02:41:53+08:00",
+    "days_to_first_human_touch": 79,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "7c6396a0a24cd9b944750681b42519179e6bab58",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/kalman_2.md": {
+    "path": "lectures/kalman_2.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 14,
+    "lines_head": 673,
+    "prose_lines_head": 146,
+    "composition": {
+      "ai-sync": 86,
+      "human-editor": 12,
+      "ai-assisted": 39,
+      "ai-initial": 7,
+      "human-translator": 2
+    },
+    "composition_pct": {
+      "ai-sync": 58.9,
+      "human-editor": 8.2,
+      "ai-assisted": 26.7,
+      "ai-initial": 4.8,
+      "human-translator": 1.4
+    },
+    "baseline_survival_pct": 4.8,
+    "similarity_initial_head": 0.4113,
+    "commits_by_tier": {
+      "ai-assisted": 3,
+      "human-editor": 5,
+      "human-translator": 2,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 202,
+      "human-editor": 136,
+      "human-translator": 36,
+      "ai-sync": 147
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 1265,
+      "human-editor": 1008,
+      "human-translator": 111,
+      "ai-sync": 5041
+    },
+    "first_human_touch": "2025-03-19T10:59:03+11:00",
+    "last_human_touch": "2025-06-08T21:24:28+10:00",
+    "days_to_first_human_touch": 1,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "7c582bead416f6dbb1175449668a13ad8d5bd465",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-05",
+      "mode": "UPDATE",
+      "tool_version": "0.25.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/kalman_filter_var.md": {
+    "path": "lectures/kalman_filter_var.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 1039,
+    "prose_lines_head": 286,
+    "composition": {
+      "ai-initial": 264,
+      "ai-sync": 22
+    },
+    "composition_pct": {
+      "ai-initial": 92.3,
+      "ai-sync": 7.7
+    },
+    "baseline_survival_pct": 92.3,
+    "similarity_initial_head": 0.8301,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 98
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 3699
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "f3fdcbcc564961a25c77a01f5e12638e70522552",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-01",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/kesten_processes.md": {
+    "path": "lectures/kesten_processes.md",
+    "translated": true,
+    "translation_sha": "678a876b3c37e891725160e8e5ba4b04c3c82cfe",
+    "translation_date": "2025-03-17T20:39:09+11:00",
+    "n_commits": 10,
+    "lines_head": 708,
+    "prose_lines_head": 218,
+    "composition": {
+      "ai-sync": 30,
+      "ai-initial": 74,
+      "human-editor": 7,
+      "human-translator": 107
+    },
+    "composition_pct": {
+      "ai-sync": 13.8,
+      "ai-initial": 33.9,
+      "human-editor": 3.2,
+      "human-translator": 49.1
+    },
+    "baseline_survival_pct": 33.9,
+    "similarity_initial_head": 0.5884,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 2,
+      "human-translator": 1,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 18,
+      "human-translator": 235,
+      "ai-sync": 45
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 190,
+      "human-translator": 1078,
+      "ai-sync": 1014
+    },
+    "first_human_touch": "2025-05-20T15:07:43+08:00",
+    "last_human_touch": "2025-05-22T14:53:38+10:00",
+    "days_to_first_human_touch": 63,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "a4fbd8653600ac99163bfd5d4f7d98c1e613042e",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/lagrangian_lqdp.md": {
+    "path": "lectures/lagrangian_lqdp.md",
+    "translated": true,
+    "translation_sha": "678a876b3c37e891725160e8e5ba4b04c3c82cfe",
+    "translation_date": "2025-03-17T20:39:09+11:00",
+    "n_commits": 4,
+    "lines_head": 844,
+    "prose_lines_head": 209,
+    "composition": {
+      "ai-sync": 21,
+      "ai-initial": 111,
+      "human-translator": 77
+    },
+    "composition_pct": {
+      "ai-sync": 10.0,
+      "ai-initial": 53.1,
+      "human-translator": 36.8
+    },
+    "baseline_survival_pct": 53.1,
+    "similarity_initial_head": 0.7392,
+    "commits_by_tier": {
+      "human-translator": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "human-translator": 204,
+      "ai-sync": 30
+    },
+    "prose_char_churn_by_tier": {
+      "human-translator": 1915,
+      "ai-sync": 784
+    },
+    "first_human_touch": "2025-10-15T12:04:27+11:00",
+    "last_human_touch": "2025-10-15T12:04:27+11:00",
+    "days_to_first_human_touch": 211,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "78030a3a27f6527046675bcd8a8d27995ca25af6",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/lake_model.md": {
+    "path": "lectures/lake_model.md",
+    "translated": true,
+    "translation_sha": "678a876b3c37e891725160e8e5ba4b04c3c82cfe",
+    "translation_date": "2025-03-17T20:39:09+11:00",
+    "n_commits": 10,
+    "lines_head": 833,
+    "prose_lines_head": 236,
+    "composition": {
+      "ai-sync": 107,
+      "human-translator": 58,
+      "ai-initial": 65,
+      "human-editor": 5,
+      "ai-assisted": 1
+    },
+    "composition_pct": {
+      "ai-sync": 45.3,
+      "human-translator": 24.6,
+      "ai-initial": 27.5,
+      "human-editor": 2.1,
+      "ai-assisted": 0.4
+    },
+    "baseline_survival_pct": 27.5,
+    "similarity_initial_head": 0.2512,
+    "commits_by_tier": {
+      "human-editor": 3,
+      "human-translator": 1,
+      "ai-sync": 2,
+      "ai-assisted": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 69,
+      "human-translator": 241,
+      "ai-sync": 326,
+      "ai-assisted": 2
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 229,
+      "human-translator": 1780,
+      "ai-sync": 8608,
+      "ai-assisted": 2
+    },
+    "first_human_touch": "2025-04-28T21:59:27+10:00",
+    "last_human_touch": "2025-10-15T14:30:23+11:00",
+    "days_to_first_human_touch": 42,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/learning_approximation.md": {
+    "path": "lectures/learning_approximation.md",
+    "translated": true,
+    "translation_sha": "e0dd9b51b65375a47e42c614916e016352fb5631",
+    "translation_date": "2026-08-20T13:07:39+10:00",
+    "n_commits": 2,
+    "lines_head": 765,
+    "prose_lines_head": 234,
+    "composition": {
+      "ai-initial": 234
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 0.9987,
+    "commits_by_tier": {
+      "ai-assisted": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "a4fbd8653600ac99163bfd5d4f7d98c1e613042e",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-20",
+      "mode": "NEW",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/likelihood_bayes.md": {
+    "path": "lectures/likelihood_bayes.md",
+    "translated": true,
+    "translation_sha": "678a876b3c37e891725160e8e5ba4b04c3c82cfe",
+    "translation_date": "2025-03-17T20:39:09+11:00",
+    "n_commits": 11,
+    "lines_head": 956,
+    "prose_lines_head": 218,
+    "composition": {
+      "ai-sync": 54,
+      "ai-assisted": 164
+    },
+    "composition_pct": {
+      "ai-sync": 24.8,
+      "ai-assisted": 75.2
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.5139,
+    "commits_by_tier": {
+      "human-editor": 2,
+      "seed": 1,
+      "ai-assisted": 2,
+      "ai-sync": 3
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 22,
+      "seed": 157,
+      "ai-assisted": 209,
+      "ai-sync": 155
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 55,
+      "seed": 13654,
+      "ai-assisted": 19149,
+      "ai-sync": 1856
+    },
+    "first_human_touch": "2025-04-28T21:59:27+10:00",
+    "last_human_touch": "2025-04-28T21:59:27+10:00",
+    "days_to_first_human_touch": 42,
+    "syncs_since_last_human_touch": 3,
+    "review_state": "audit-stale",
+    "source": {
+      "source_sha": "07975d502f57b29b4aa331a71c0afa6809dee369",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-19",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 1,
+      "pending_subjects": [
+        "Update rng usage in likelihood_bayes.md (#977)"
+      ]
+    }
+  },
+  "lectures/likelihood_ratio_process.md": {
+    "path": "lectures/likelihood_ratio_process.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 11,
+    "lines_head": 1780,
+    "prose_lines_head": 424,
+    "composition": {
+      "ai-sync": 26,
+      "ai-initial": 39,
+      "human-editor": 59,
+      "seed": 299,
+      "ai-assisted": 1
+    },
+    "composition_pct": {
+      "ai-sync": 6.1,
+      "ai-initial": 9.2,
+      "human-editor": 13.9,
+      "seed": 70.5,
+      "ai-assisted": 0.2
+    },
+    "baseline_survival_pct": 9.2,
+    "similarity_initial_head": 0.1878,
+    "commits_by_tier": {
+      "ai-assisted": 3,
+      "human-editor": 2,
+      "seed": 1,
+      "ai-sync": 3
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 145,
+      "seed": 494,
+      "ai-sync": 80
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 4,
+      "human-editor": 1554,
+      "seed": 13956,
+      "ai-sync": 902
+    },
+    "first_human_touch": "2025-09-12T12:20:42+10:00",
+    "last_human_touch": "2025-09-12T12:20:42+10:00",
+    "days_to_first_human_touch": 178,
+    "syncs_since_last_human_touch": 3,
+    "review_state": "audit-stale",
+    "source": {
+      "source_sha": "07975d502f57b29b4aa331a71c0afa6809dee369",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/likelihood_ratio_process_2.md": {
+    "path": "lectures/likelihood_ratio_process_2.md",
+    "translated": true,
+    "translation_sha": "a6644817b5368f0e41b37bb9c1d70bf623c22577",
+    "translation_date": "2025-09-12T11:57:08+10:00",
+    "n_commits": 7,
+    "lines_head": 1736,
+    "prose_lines_head": 427,
+    "composition": {
+      "ai-sync": 33,
+      "ai-initial": 283,
+      "human-editor": 111
+    },
+    "composition_pct": {
+      "ai-sync": 7.7,
+      "ai-initial": 66.3,
+      "human-editor": 26.0
+    },
+    "baseline_survival_pct": 66.3,
+    "similarity_initial_head": 0.8681,
+    "commits_by_tier": {
+      "human-editor": 2,
+      "ai-assisted": 1,
+      "ai-sync": 3
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 241,
+      "ai-assisted": 0,
+      "ai-sync": 58
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 467,
+      "ai-assisted": 0,
+      "ai-sync": 1029
+    },
+    "first_human_touch": "2025-09-12T12:20:42+10:00",
+    "last_human_touch": "2025-09-12T12:20:42+10:00",
+    "days_to_first_human_touch": 0,
+    "syncs_since_last_human_touch": 3,
+    "review_state": "audit-stale",
+    "source": {
+      "source_sha": "07975d502f57b29b4aa331a71c0afa6809dee369",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/likelihood_var.md": {
+    "path": "lectures/likelihood_var.md",
+    "translated": true,
+    "translation_sha": "a6644817b5368f0e41b37bb9c1d70bf623c22577",
+    "translation_date": "2025-09-12T11:57:08+10:00",
+    "n_commits": 5,
+    "lines_head": 810,
+    "prose_lines_head": 161,
+    "composition": {
+      "ai-sync": 14,
+      "ai-initial": 137,
+      "human-editor": 10
+    },
+    "composition_pct": {
+      "ai-sync": 8.7,
+      "ai-initial": 85.1,
+      "human-editor": 6.2
+    },
+    "baseline_survival_pct": 85.1,
+    "similarity_initial_head": 0.936,
+    "commits_by_tier": {
+      "human-editor": 1,
+      "ai-assisted": 1,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 19,
+      "ai-assisted": 0,
+      "ai-sync": 20
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 182,
+      "ai-assisted": 0,
+      "ai-sync": 409
+    },
+    "first_human_touch": "2025-09-12T12:20:42+10:00",
+    "last_human_touch": "2025-09-12T12:20:42+10:00",
+    "days_to_first_human_touch": 0,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "aff1ee4613dfc79e79a578069473a5765fddc716",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-31",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/linear_algebra.md": {
+    "path": "lectures/linear_algebra.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 7,
+    "lines_head": 1367,
+    "prose_lines_head": 368,
+    "composition": {
+      "ai-sync": 62,
+      "ai-initial": 277,
+      "human-editor": 29
+    },
+    "composition_pct": {
+      "ai-sync": 16.8,
+      "ai-initial": 75.3,
+      "human-editor": 7.9
+    },
+    "baseline_survival_pct": 75.3,
+    "similarity_initial_head": 0.8994,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 3,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 106,
+      "ai-sync": 92
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 2345,
+      "ai-sync": 2848
+    },
+    "first_human_touch": "2025-07-11T20:42:02+07:00",
+    "last_human_touch": "2025-07-17T15:42:54+10:00",
+    "days_to_first_human_touch": 116,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "a1cd90c5ef6d6f05277318f47fe21eda60fa5e6b",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/linear_models.md": {
+    "path": "lectures/linear_models.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 8,
+    "lines_head": 1413,
+    "prose_lines_head": 370,
+    "composition": {
+      "ai-sync": 65,
+      "ai-initial": 271,
+      "human-translator": 26,
+      "human-editor": 8
+    },
+    "composition_pct": {
+      "ai-sync": 17.6,
+      "ai-initial": 73.2,
+      "human-translator": 7.0,
+      "human-editor": 2.2
+    },
+    "baseline_survival_pct": 73.2,
+    "similarity_initial_head": 0.9165,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 2,
+      "human-translator": 2,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 18,
+      "human-translator": 62,
+      "ai-sync": 95
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 237,
+      "human-translator": 456,
+      "ai-sync": 2138
+    },
+    "first_human_touch": "2025-06-03T12:51:12+08:00",
+    "last_human_touch": "2025-06-06T12:47:44+10:00",
+    "days_to_first_human_touch": 77,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "089e35ca27a9cdff6d341269f77d857f1c46dfd3",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/lln_clt.md": {
+    "path": "lectures/lln_clt.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 7,
+    "lines_head": 911,
+    "prose_lines_head": 242,
+    "composition": {
+      "ai-sync": 17,
+      "ai-initial": 224,
+      "human-translator": 1
+    },
+    "composition_pct": {
+      "ai-sync": 7.0,
+      "ai-initial": 92.6,
+      "human-translator": 0.4
+    },
+    "baseline_survival_pct": 92.6,
+    "similarity_initial_head": 0.9706,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 1,
+      "human-translator": 2,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 0,
+      "human-translator": 6,
+      "ai-sync": 24
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 0,
+      "human-translator": 185,
+      "ai-sync": 556
+    },
+    "first_human_touch": "2025-08-16T22:32:58+10:00",
+    "last_human_touch": "2025-08-17T20:46:49+10:00",
+    "days_to_first_human_touch": 152,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "5175665905f1ae181086fd55160cae4666de8ed2",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/long_run_risk_operator.md": {
+    "path": "lectures/long_run_risk_operator.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 2947,
+    "prose_lines_head": 717,
+    "composition": {
+      "ai-initial": 717
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "b8ed85c7e8b8c17f5f59c74b3cb829470363ca8b",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-22",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/lq_bewley_complete_markets.md": {
+    "path": "lectures/lq_bewley_complete_markets.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 606,
+    "prose_lines_head": 168,
+    "composition": {
+      "ai-initial": 165,
+      "ai-sync": 3
+    },
+    "composition_pct": {
+      "ai-initial": 98.2,
+      "ai-sync": 1.8
+    },
+    "baseline_survival_pct": 98.2,
+    "similarity_initial_head": 0.995,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 4
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 145
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "f3fdcbcc564961a25c77a01f5e12638e70522552",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-01",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/lq_inventories.md": {
+    "path": "lectures/lq_inventories.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 5,
+    "lines_head": 745,
+    "prose_lines_head": 186,
+    "composition": {
+      "ai-sync": 15,
+      "ai-initial": 171
+    },
+    "composition_pct": {
+      "ai-sync": 8.1,
+      "ai-initial": 91.9
+    },
+    "baseline_survival_pct": 91.9,
+    "similarity_initial_head": 0.9704,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 0,
+      "ai-sync": 23
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 0,
+      "ai-sync": 593
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "a73ba0f7db0a6783ab5b9cca269a9f95f88106cb",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/lq_permanent_income.md": {
+    "path": "lectures/lq_permanent_income.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 724,
+    "prose_lines_head": 227,
+    "composition": {
+      "ai-initial": 223,
+      "ai-sync": 4
+    },
+    "composition_pct": {
+      "ai-initial": 98.2,
+      "ai-sync": 1.8
+    },
+    "baseline_survival_pct": 98.2,
+    "similarity_initial_head": 0.9924,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 6
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 141
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "f3fdcbcc564961a25c77a01f5e12638e70522552",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-01",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/lq_robust_bewley.md": {
+    "path": "lectures/lq_robust_bewley.md",
+    "translated": true,
+    "translation_sha": "b26e250c2e4a60592c10f371d1fe052ba0bcbbae",
+    "translation_date": "2026-08-07T11:32:51+10:00",
+    "n_commits": 1,
+    "lines_head": 634,
+    "prose_lines_head": 160,
+    "composition": {
+      "ai-sync": 160
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "f3fdcbcc564961a25c77a01f5e12638e70522552",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-01",
+      "mode": "NEW",
+      "tool_version": "0.24.0",
+      "pending_commits": 1,
+      "pending_subjects": [
+        "[lq_robust_bewley] Verify observational equivalence, fix sigma normalization (#1040)"
+      ]
+    }
+  },
+  "lectures/lq_robust_smoothing.md": {
+    "path": "lectures/lq_robust_smoothing.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 1261,
+    "prose_lines_head": 331,
+    "composition": {
+      "ai-initial": 52,
+      "ai-sync": 279
+    },
+    "composition_pct": {
+      "ai-initial": 15.7,
+      "ai-sync": 84.3
+    },
+    "baseline_survival_pct": 15.7,
+    "similarity_initial_head": 0.2906,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 545
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 24532
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "f3fdcbcc564961a25c77a01f5e12638e70522552",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-01",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/lqcontrol.md": {
+    "path": "lectures/lqcontrol.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 14,
+    "lines_head": 1545,
+    "prose_lines_head": 436,
+    "composition": {
+      "ai-sync": 73,
+      "ai-initial": 229,
+      "human-translator": 132,
+      "human-editor": 2
+    },
+    "composition_pct": {
+      "ai-sync": 16.7,
+      "ai-initial": 52.5,
+      "human-translator": 30.3,
+      "human-editor": 0.5
+    },
+    "baseline_survival_pct": 52.5,
+    "similarity_initial_head": 0.6729,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 2,
+      "human-translator": 6,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 4,
+      "human-translator": 369,
+      "ai-sync": 168
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 30,
+      "human-translator": 3184,
+      "ai-sync": 3201
+    },
+    "first_human_touch": "2025-10-09T18:00:17+11:00",
+    "last_human_touch": "2025-10-15T22:11:42+11:00",
+    "days_to_first_human_touch": 205,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "a1353f03ea0ebc139377ce0a5d189126ddfb8f64",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-21",
+      "mode": "RESYNC",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/ls_learning.md": {
+    "path": "lectures/ls_learning.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 1543,
+    "prose_lines_head": 382,
+    "composition": {
+      "ai-initial": 382
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "b8ed85c7e8b8c17f5f59c74b3cb829470363ca8b",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-22",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/marimon_mcgrattan_sargent.md": {
+    "path": "lectures/marimon_mcgrattan_sargent.md",
+    "translated": true,
+    "translation_sha": "bf8200ad65f37607df47c6040eb581a60a14ecbf",
+    "translation_date": "2026-07-27T21:18:08+10:00",
+    "n_commits": 1,
+    "lines_head": 1842,
+    "prose_lines_head": 338,
+    "composition": {
+      "ai-sync": 338
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "NEW",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/market_diffusion.md": {
+    "path": "lectures/market_diffusion.md",
+    "translated": true,
+    "translation_sha": "081853d147fd3ca9d03bb711103c08aebfb6bba3",
+    "translation_date": "2026-08-07T13:49:39+10:00",
+    "n_commits": 1,
+    "lines_head": 909,
+    "prose_lines_head": 183,
+    "composition": {
+      "ai-sync": 183
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "e46fa7fc93bcdee2ed317811cf72e1645259dd4f",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-07",
+      "mode": "NEW",
+      "tool_version": "0.25.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/markov_asset.md": {
+    "path": "lectures/markov_asset.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 7,
+    "lines_head": 1143,
+    "prose_lines_head": 331,
+    "composition": {
+      "ai-sync": 23,
+      "ai-initial": 304,
+      "human-editor": 4
+    },
+    "composition_pct": {
+      "ai-sync": 6.9,
+      "ai-initial": 91.8,
+      "human-editor": 1.2
+    },
+    "baseline_survival_pct": 91.8,
+    "similarity_initial_head": 0.969,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 3,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 9,
+      "ai-sync": 23
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 35,
+      "ai-sync": 1479
+    },
+    "first_human_touch": "2025-03-20T21:50:53+11:00",
+    "last_human_touch": "2025-06-17T22:59:27+10:00",
+    "days_to_first_human_touch": 3,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "a1cd90c5ef6d6f05277318f47fe21eda60fa5e6b",
+      "model": "unknown",
+      "synced_at": "2025-06-17",
+      "mode": "RESYNC",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/markov_perf.md": {
+    "path": "lectures/markov_perf.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 5,
+    "lines_head": 879,
+    "prose_lines_head": 218,
+    "composition": {
+      "ai-sync": 22,
+      "ai-initial": 196
+    },
+    "composition_pct": {
+      "ai-sync": 10.1,
+      "ai-initial": 89.9
+    },
+    "baseline_survival_pct": 89.9,
+    "similarity_initial_head": 0.9412,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 0,
+      "ai-sync": 32
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 0,
+      "ai-sync": 933
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "c203658831b03939eb9168688cfb0e790bd0436a",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/mccall_fitted_vfi.md": {
+    "path": "lectures/mccall_fitted_vfi.md",
+    "translated": true,
+    "translation_sha": "85e02b6bafe6a3d6adeb587c1ba64608e52ef5ed",
+    "translation_date": "2025-03-16T21:42:36+11:00",
+    "n_commits": 12,
+    "lines_head": 877,
+    "prose_lines_head": 257,
+    "composition": {
+      "ai-sync": 229,
+      "ai-initial": 7,
+      "human-translator": 12,
+      "ai-assisted": 7,
+      "human-editor": 2
+    },
+    "composition_pct": {
+      "ai-sync": 89.1,
+      "ai-initial": 2.7,
+      "human-translator": 4.7,
+      "ai-assisted": 2.7,
+      "human-editor": 0.8
+    },
+    "baseline_survival_pct": 2.7,
+    "similarity_initial_head": 0.1607,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 5,
+      "human-translator": 1,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 150,
+      "human-editor": 36,
+      "human-translator": 112,
+      "ai-sync": 313
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 854,
+      "human-editor": 406,
+      "human-translator": 415,
+      "ai-sync": 9383
+    },
+    "first_human_touch": "2025-04-25T08:57:13+10:00",
+    "last_human_touch": "2025-06-17T23:22:54+10:00",
+    "days_to_first_human_touch": 39,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/mccall_model.md": {
+    "path": "lectures/mccall_model.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 12,
+    "lines_head": 1148,
+    "prose_lines_head": 314,
+    "composition": {
+      "ai-sync": 199,
+      "human-editor": 9,
+      "ai-initial": 91,
+      "human-translator": 15
+    },
+    "composition_pct": {
+      "ai-sync": 63.4,
+      "human-editor": 2.9,
+      "ai-initial": 29.0,
+      "human-translator": 4.8
+    },
+    "baseline_survival_pct": 29.0,
+    "similarity_initial_head": 0.3517,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 4,
+      "human-translator": 3,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 32,
+      "human-translator": 96,
+      "ai-sync": 294
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 322,
+      "human-translator": 772,
+      "ai-sync": 7738
+    },
+    "first_human_touch": "2025-03-25T15:14:54+11:00",
+    "last_human_touch": "2025-06-17T23:21:16+10:00",
+    "days_to_first_human_touch": 7,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/mccall_model_with_sep_markov.md": {
+    "path": "lectures/mccall_model_with_sep_markov.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 952,
+    "prose_lines_head": 274,
+    "composition": {
+      "ai-initial": 274
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 0.9927,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/mccall_model_with_separation.md": {
+    "path": "lectures/mccall_model_with_separation.md",
+    "translated": true,
+    "translation_sha": "678a876b3c37e891725160e8e5ba4b04c3c82cfe",
+    "translation_date": "2025-03-17T20:39:09+11:00",
+    "n_commits": 9,
+    "lines_head": 730,
+    "prose_lines_head": 208,
+    "composition": {
+      "ai-sync": 157,
+      "human-editor": 16,
+      "ai-initial": 35
+    },
+    "composition_pct": {
+      "ai-sync": 75.5,
+      "human-editor": 7.7,
+      "ai-initial": 16.8
+    },
+    "baseline_survival_pct": 16.8,
+    "similarity_initial_head": 0.2788,
+    "commits_by_tier": {
+      "human-editor": 5,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 126,
+      "ai-sync": 267
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 809,
+      "ai-sync": 7870
+    },
+    "first_human_touch": "2025-04-28T21:59:27+10:00",
+    "last_human_touch": "2025-06-18T10:48:49+10:00",
+    "days_to_first_human_touch": 42,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "0bfcac8105ac8c11f06797579a9f4d565db7b53d",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/mccall_persist_trans.md": {
+    "path": "lectures/mccall_persist_trans.md",
+    "translated": true,
+    "translation_sha": "678a876b3c37e891725160e8e5ba4b04c3c82cfe",
+    "translation_date": "2025-03-17T20:39:09+11:00",
+    "n_commits": 13,
+    "lines_head": 470,
+    "prose_lines_head": 111,
+    "composition": {
+      "ai-assisted": 2,
+      "ai-sync": 54,
+      "ai-initial": 33,
+      "human-translator": 20,
+      "human-editor": 2
+    },
+    "composition_pct": {
+      "ai-assisted": 1.8,
+      "ai-sync": 48.6,
+      "ai-initial": 29.7,
+      "human-translator": 18.0,
+      "human-editor": 1.8
+    },
+    "baseline_survival_pct": 29.7,
+    "similarity_initial_head": 0.4092,
+    "commits_by_tier": {
+      "human-editor": 5,
+      "human-translator": 1,
+      "ai-assisted": 2,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 26,
+      "human-translator": 77,
+      "ai-assisted": 107,
+      "ai-sync": 112
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 140,
+      "human-translator": 299,
+      "ai-assisted": 2968,
+      "ai-sync": 2587
+    },
+    "first_human_touch": "2025-04-28T21:59:27+10:00",
+    "last_human_touch": "2025-06-17T23:21:16+10:00",
+    "days_to_first_human_touch": 42,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/mccall_q.md": {
+    "path": "lectures/mccall_q.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 11,
+    "lines_head": 731,
+    "prose_lines_head": 188,
+    "composition": {
+      "ai-assisted": 2,
+      "ai-sync": 57,
+      "ai-initial": 83,
+      "human-editor": 46
+    },
+    "composition_pct": {
+      "ai-assisted": 1.1,
+      "ai-sync": 30.3,
+      "ai-initial": 44.1,
+      "human-editor": 24.5
+    },
+    "baseline_survival_pct": 44.1,
+    "similarity_initial_head": 0.7166,
+    "commits_by_tier": {
+      "human-editor": 5,
+      "ai-sync": 3,
+      "ai-assisted": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 205,
+      "ai-sync": 133,
+      "ai-assisted": 4
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 3170,
+      "ai-sync": 2982,
+      "ai-assisted": 2
+    },
+    "first_human_touch": "2025-04-25T08:57:13+10:00",
+    "last_human_touch": "2025-06-17T23:21:16+10:00",
+    "days_to_first_human_touch": 38,
+    "syncs_since_last_human_touch": 3,
+    "review_state": "audit-stale",
+    "source": {
+      "source_sha": "46cf999fa492255058c67e132b99735a7cb5fbaa",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-05",
+      "mode": "UPDATE",
+      "tool_version": "0.25.0",
+      "pending_commits": 1,
+      "pending_subjects": [
+        "Add Job Search V lecture on risk-sensitive preferences (#760)"
+      ]
+    }
+  },
+  "lectures/mccall_risk.md": {
+    "path": "lectures/mccall_risk.md",
+    "translated": true,
+    "translation_sha": "b136ab3823bacd2dd6ac15de02e7b54309c7186b",
+    "translation_date": "2026-08-21T10:28:08+10:00",
+    "n_commits": 1,
+    "lines_head": 762,
+    "prose_lines_head": 218,
+    "composition": {
+      "ai-initial": 218
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "0d8ef6103a5a1a5a340dc3bbddb8899a07645b09",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-20",
+      "mode": "NEW",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/measurement_models.md": {
+    "path": "lectures/measurement_models.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 1268,
+    "prose_lines_head": 277,
+    "composition": {
+      "ai-initial": 277
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "bb3310a3ed9e1346211f7daee56187883670b6f1",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-22",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/merging_of_opinions.md": {
+    "path": "lectures/merging_of_opinions.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 1342,
+    "prose_lines_head": 464,
+    "composition": {
+      "ai-initial": 464
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "a8966965b2649d470ea144150ca5fd5d520b5345",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-21",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/misspecified_recovery.md": {
+    "path": "lectures/misspecified_recovery.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 2088,
+    "prose_lines_head": 558,
+    "composition": {
+      "ai-initial": 558
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "b8ed85c7e8b8c17f5f59c74b3cb829470363ca8b",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-22",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/mix_model.md": {
+    "path": "lectures/mix_model.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 9,
+    "lines_head": 941,
+    "prose_lines_head": 177,
+    "composition": {
+      "ai-sync": 38,
+      "ai-assisted": 139
+    },
+    "composition_pct": {
+      "ai-sync": 21.5,
+      "ai-assisted": 78.5
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.3954,
+    "commits_by_tier": {
+      "human-editor": 2,
+      "seed": 1,
+      "ai-assisted": 3,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 20,
+      "seed": 165,
+      "ai-assisted": 184,
+      "ai-sync": 83
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 55,
+      "seed": 14116,
+      "ai-assisted": 17030,
+      "ai-sync": 2057
+    },
+    "first_human_touch": "2025-06-17T22:59:27+10:00",
+    "last_human_touch": "2025-06-17T22:59:27+10:00",
+    "days_to_first_human_touch": 92,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "ebb81e76e7138ac63f7cfde4142dd5a062d8004b",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-21",
+      "mode": "RESYNC",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/mle.md": {
+    "path": "lectures/mle.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 9,
+    "lines_head": 971,
+    "prose_lines_head": 197,
+    "composition": {
+      "ai-sync": 43,
+      "ai-initial": 135,
+      "human-editor": 18,
+      "ai-assisted": 1
+    },
+    "composition_pct": {
+      "ai-sync": 21.8,
+      "ai-initial": 68.5,
+      "human-editor": 9.1,
+      "ai-assisted": 0.5
+    },
+    "baseline_survival_pct": 68.5,
+    "similarity_initial_head": 0.6306,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 2,
+      "ai-sync": 3
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 50,
+      "ai-sync": 70
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 536,
+      "ai-sync": 1798
+    },
+    "first_human_touch": "2025-06-26T10:21:22+08:00",
+    "last_human_touch": "2025-06-26T10:21:22+08:00",
+    "days_to_first_human_touch": 100,
+    "syncs_since_last_human_touch": 3,
+    "review_state": "audit-stale",
+    "source": {
+      "source_sha": "e168c7de8b6b5446ca76ac49bc59781322444617",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-13",
+      "mode": "UPDATE",
+      "tool_version": "0.25.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/morris_learn.md": {
+    "path": "lectures/morris_learn.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 711,
+    "prose_lines_head": 196,
+    "composition": {
+      "ai-initial": 196
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "774202bff9a46fc56229fe2fb84f15f72772f667",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-22",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/multi_hyper.md": {
+    "path": "lectures/multi_hyper.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 9,
+    "lines_head": 459,
+    "prose_lines_head": 119,
+    "composition": {
+      "ai-sync": 16,
+      "ai-initial": 92,
+      "human-translator": 10,
+      "ai-assisted": 1
+    },
+    "composition_pct": {
+      "ai-sync": 13.4,
+      "ai-initial": 77.3,
+      "human-translator": 8.4,
+      "ai-assisted": 0.8
+    },
+    "baseline_survival_pct": 77.3,
+    "similarity_initial_head": 0.8527,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 1,
+      "human-translator": 2,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 0,
+      "human-translator": 34,
+      "ai-sync": 32
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 0,
+      "human-translator": 695,
+      "ai-sync": 827
+    },
+    "first_human_touch": "2025-08-16T22:35:03+10:00",
+    "last_human_touch": "2025-08-17T20:44:01+10:00",
+    "days_to_first_human_touch": 152,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "a65c025c2fd662c9c682f05f9aebdcdc6cef5dec",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-05",
+      "mode": "UPDATE",
+      "tool_version": "0.25.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/multivariate_normal.md": {
+    "path": "lectures/multivariate_normal.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 7,
+    "lines_head": 2640,
+    "prose_lines_head": 559,
+    "composition": {
+      "ai-sync": 184,
+      "ai-initial": 361,
+      "human-translator": 14
+    },
+    "composition_pct": {
+      "ai-sync": 32.9,
+      "ai-initial": 64.6,
+      "human-translator": 2.5
+    },
+    "baseline_survival_pct": 64.6,
+    "similarity_initial_head": 0.8107,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 2,
+      "human-translator": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 0,
+      "human-translator": 125,
+      "ai-sync": 214
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 0,
+      "human-translator": 361,
+      "ai-sync": 6516
+    },
+    "first_human_touch": "2025-08-17T22:46:47+10:00",
+    "last_human_touch": "2025-08-17T22:46:47+10:00",
+    "days_to_first_human_touch": 153,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "78030a3a27f6527046675bcd8a8d27995ca25af6",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/navy_captain.md": {
+    "path": "lectures/navy_captain.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 5,
+    "lines_head": 1031,
+    "prose_lines_head": 220,
+    "composition": {
+      "ai-sync": 69,
+      "ai-initial": 151
+    },
+    "composition_pct": {
+      "ai-sync": 31.4,
+      "ai-initial": 68.6
+    },
+    "baseline_survival_pct": 68.6,
+    "similarity_initial_head": 0.8235,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 0,
+      "ai-sync": 116
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 0,
+      "ai-sync": 2357
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "36bc72ea8fe852f84c63534cd0530c549c43c5cc",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/newton_method.md": {
+    "path": "lectures/newton_method.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 11,
+    "lines_head": 1076,
+    "prose_lines_head": 210,
+    "composition": {
+      "ai-sync": 44,
+      "ai-initial": 139,
+      "human-translator": 8,
+      "human-editor": 19
+    },
+    "composition_pct": {
+      "ai-sync": 21.0,
+      "ai-initial": 66.2,
+      "human-translator": 3.8,
+      "human-editor": 9.0
+    },
+    "baseline_survival_pct": 66.2,
+    "similarity_initial_head": 0.7187,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 4,
+      "human-translator": 1,
+      "ai-sync": 3
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 51,
+      "human-translator": 20,
+      "ai-sync": 74
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 602,
+      "human-translator": 879,
+      "ai-sync": 2702
+    },
+    "first_human_touch": "2025-03-18T13:32:03+11:00",
+    "last_human_touch": "2025-07-03T19:16:04+08:00",
+    "days_to_first_human_touch": 0,
+    "syncs_since_last_human_touch": 3,
+    "review_state": "audit-stale",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/odu.md": {
+    "path": "lectures/odu.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 9,
+    "lines_head": 1117,
+    "prose_lines_head": 281,
+    "composition": {
+      "ai-assisted": 2,
+      "ai-sync": 24,
+      "ai-initial": 222,
+      "human-editor": 33
+    },
+    "composition_pct": {
+      "ai-assisted": 0.7,
+      "ai-sync": 8.5,
+      "ai-initial": 79.0,
+      "human-editor": 11.7
+    },
+    "baseline_survival_pct": 79.0,
+    "similarity_initial_head": 0.9465,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 4,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 4,
+      "human-editor": 68,
+      "ai-sync": 29
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 8,
+      "human-editor": 181,
+      "ai-sync": 682
+    },
+    "first_human_touch": "2025-04-28T21:59:27+10:00",
+    "last_human_touch": "2025-06-17T23:21:16+10:00",
+    "days_to_first_human_touch": 42,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "78030a3a27f6527046675bcd8a8d27995ca25af6",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 1,
+      "pending_subjects": [
+        "Add Job Search V lecture on risk-sensitive preferences (#760)"
+      ]
+    }
+  },
+  "lectures/olg_adaptive_money.md": {
+    "path": "lectures/olg_adaptive_money.md",
+    "translated": true,
+    "translation_sha": "1ce6ce43c08cf2a9e6804d5187a3dfc6704fa290",
+    "translation_date": "2026-07-27T14:57:32+10:00",
+    "n_commits": 1,
+    "lines_head": 1263,
+    "prose_lines_head": 285,
+    "composition": {
+      "ai-sync": 285
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "a4fbd8653600ac99163bfd5d4f7d98c1e613042e",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "NEW",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/ols.md": {
+    "path": "lectures/ols.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 9,
+    "lines_head": 615,
+    "prose_lines_head": 179,
+    "composition": {
+      "ai-sync": 55,
+      "ai-initial": 107,
+      "human-editor": 16,
+      "ai-assisted": 1
+    },
+    "composition_pct": {
+      "ai-sync": 30.7,
+      "ai-initial": 59.8,
+      "human-editor": 8.9,
+      "ai-assisted": 0.6
+    },
+    "baseline_survival_pct": 59.8,
+    "similarity_initial_head": 0.8188,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 3,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 134,
+      "ai-sync": 108
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 91,
+      "human-editor": 2778,
+      "ai-sync": 2779
+    },
+    "first_human_touch": "2025-06-26T09:55:56+08:00",
+    "last_human_touch": "2025-06-26T09:55:56+08:00",
+    "days_to_first_human_touch": 100,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "e168c7de8b6b5446ca76ac49bc59781322444617",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-13",
+      "mode": "UPDATE",
+      "tool_version": "0.25.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/opt_transport.md": {
+    "path": "lectures/opt_transport.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 10,
+    "lines_head": 798,
+    "prose_lines_head": 196,
+    "composition": {
+      "ai-sync": 17,
+      "ai-initial": 128,
+      "human-translator": 51
+    },
+    "composition_pct": {
+      "ai-sync": 8.7,
+      "ai-initial": 65.3,
+      "human-translator": 26.0
+    },
+    "baseline_survival_pct": 65.3,
+    "similarity_initial_head": 0.7824,
+    "commits_by_tier": {
+      "human-editor": 3,
+      "human-translator": 4,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 5,
+      "human-translator": 135,
+      "ai-sync": 25
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 51,
+      "human-translator": 1799,
+      "ai-sync": 998
+    },
+    "first_human_touch": "2025-03-18T13:32:03+11:00",
+    "last_human_touch": "2025-09-10T23:55:13+10:00",
+    "days_to_first_human_touch": 0,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "07c9b68b68f4f1073673e53c9afcc78a26320344",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/organization_capital.md": {
+    "path": "lectures/organization_capital.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 837,
+    "prose_lines_head": 231,
+    "composition": {
+      "ai-initial": 231
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 0.9929,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 2
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "59f96370b647c4970f352931652c2fe2e496d2da",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-31",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/os.md": {
+    "path": "lectures/os.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 12,
+    "lines_head": 654,
+    "prose_lines_head": 185,
+    "composition": {
+      "ai-sync": 55,
+      "human-translator": 55,
+      "ai-initial": 75
+    },
+    "composition_pct": {
+      "ai-sync": 29.7,
+      "human-translator": 29.7,
+      "ai-initial": 40.5
+    },
+    "baseline_survival_pct": 40.5,
+    "similarity_initial_head": 0.6406,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 2,
+      "human-translator": 5,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 157,
+      "human-editor": 4,
+      "human-translator": 190,
+      "ai-sync": 84
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 4849,
+      "human-editor": 10,
+      "human-translator": 1859,
+      "ai-sync": 1589
+    },
+    "first_human_touch": "2025-06-17T22:59:27+10:00",
+    "last_human_touch": "2025-10-01T16:40:12+10:00",
+    "days_to_first_human_touch": 92,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "b27f1eb0ae52b5e20807d516a3d2f54a586e75fa",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/os_egm.md": {
+    "path": "lectures/os_egm.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 363,
+    "prose_lines_head": 110,
+    "composition": {
+      "ai-initial": 110
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 0.9918,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 2
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "6234f272c9d4fba80da267cb08c5c43bbbf40d67",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-31",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/os_egm_jax.md": {
+    "path": "lectures/os_egm_jax.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 427,
+    "prose_lines_head": 93,
+    "composition": {
+      "ai-initial": 93
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 0.9977,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/os_numerical.md": {
+    "path": "lectures/os_numerical.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 11,
+    "lines_head": 623,
+    "prose_lines_head": 180,
+    "composition": {
+      "ai-sync": 103,
+      "ai-initial": 34,
+      "human-translator": 43
+    },
+    "composition_pct": {
+      "ai-sync": 57.2,
+      "ai-initial": 18.9,
+      "human-translator": 23.9
+    },
+    "baseline_survival_pct": 18.9,
+    "similarity_initial_head": 0.2887,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 3,
+      "human-translator": 3,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 170,
+      "human-editor": 6,
+      "human-translator": 194,
+      "ai-sync": 224
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 5058,
+      "human-editor": 22,
+      "human-translator": 1896,
+      "ai-sync": 5840
+    },
+    "first_human_touch": "2025-06-17T23:19:46+10:00",
+    "last_human_touch": "2025-10-01T16:33:41+10:00",
+    "days_to_first_human_touch": 92,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "b6245397ef7e794a81e502af4fa03f3a2e30047e",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/os_stochastic.md": {
+    "path": "lectures/os_stochastic.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 10,
+    "lines_head": 853,
+    "prose_lines_head": 275,
+    "composition": {
+      "ai-sync": 197,
+      "ai-initial": 52,
+      "human-translator": 25,
+      "human-editor": 1
+    },
+    "composition_pct": {
+      "ai-sync": 71.6,
+      "ai-initial": 18.9,
+      "human-translator": 9.1,
+      "human-editor": 0.4
+    },
+    "baseline_survival_pct": 18.9,
+    "similarity_initial_head": 0.3588,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 3,
+      "human-translator": 1,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 240,
+      "human-editor": 12,
+      "human-translator": 279,
+      "ai-sync": 367
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 7888,
+      "human-editor": 40,
+      "human-translator": 2481,
+      "ai-sync": 8343
+    },
+    "first_human_touch": "2025-06-17T22:59:27+10:00",
+    "last_human_touch": "2025-09-23T23:17:25+10:00",
+    "days_to_first_human_touch": 92,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "77d3b9a42ad3d0073ad11dfce07689e9e5b06e36",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-31",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/os_time_iter.md": {
+    "path": "lectures/os_time_iter.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 558,
+    "prose_lines_head": 146,
+    "composition": {
+      "ai-initial": 146
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 0.9955,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "b2551d1fb20b5f846017a800a3b8106a4e644f0a",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-31",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/pandas_panel.md": {
+    "path": "lectures/pandas_panel.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 10,
+    "lines_head": 604,
+    "prose_lines_head": 155,
+    "composition": {
+      "ai-sync": 14,
+      "human-editor": 24,
+      "ai-initial": 70,
+      "human-translator": 47
+    },
+    "composition_pct": {
+      "ai-sync": 9.0,
+      "human-editor": 15.5,
+      "ai-initial": 45.2,
+      "human-translator": 30.3
+    },
+    "baseline_survival_pct": 45.2,
+    "similarity_initial_head": 0.6395,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 5,
+      "human-translator": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 50,
+      "human-translator": 99,
+      "ai-sync": 23
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 1037,
+      "human-translator": 404,
+      "ai-sync": 432
+    },
+    "first_human_touch": "2025-06-29T00:36:29+08:00",
+    "last_human_touch": "2025-07-05T08:47:43+08:00",
+    "days_to_first_human_touch": 103,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "6f473feea7a8ed66d6cbb1d138ce9b9a465e68c8",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/perm_income.md": {
+    "path": "lectures/perm_income.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 8,
+    "lines_head": 1028,
+    "prose_lines_head": 270,
+    "composition": {
+      "ai-sync": 22,
+      "ai-initial": 247,
+      "human-editor": 1
+    },
+    "composition_pct": {
+      "ai-sync": 8.1,
+      "ai-initial": 91.5,
+      "human-editor": 0.4
+    },
+    "baseline_survival_pct": 91.5,
+    "similarity_initial_head": 0.9763,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 2,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 2,
+      "ai-sync": 22
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 5,
+      "ai-sync": 1114
+    },
+    "first_human_touch": "2025-06-17T22:59:27+10:00",
+    "last_human_touch": "2025-06-17T22:59:27+10:00",
+    "days_to_first_human_touch": 92,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "ab687aad2134b4eee2835f896be4b956e73001bb",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-23",
+      "mode": "UPDATE",
+      "tool_version": "0.22.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/perm_income_cons.md": {
+    "path": "lectures/perm_income_cons.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 6,
+    "lines_head": 783,
+    "prose_lines_head": 238,
+    "composition": {
+      "ai-sync": 21,
+      "ai-initial": 216,
+      "human-editor": 1
+    },
+    "composition_pct": {
+      "ai-sync": 8.8,
+      "ai-initial": 90.8,
+      "human-editor": 0.4
+    },
+    "baseline_survival_pct": 90.8,
+    "similarity_initial_head": 0.9413,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 2,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 2,
+      "ai-sync": 27
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 5,
+      "ai-sync": 880
+    },
+    "first_human_touch": "2025-06-17T22:59:27+10:00",
+    "last_human_touch": "2025-06-17T22:59:27+10:00",
+    "days_to_first_human_touch": 92,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "089e35ca27a9cdff6d341269f77d857f1c46dfd3",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/phillips_adaptive.md": {
+    "path": "lectures/phillips_adaptive.md",
+    "translated": true,
+    "translation_sha": "84fbacab64a02ff0ad1014037a8051c08e5f2c7f",
+    "translation_date": "2026-07-24T14:09:05+10:00",
+    "n_commits": 2,
+    "lines_head": 499,
+    "prose_lines_head": 121,
+    "composition": {
+      "ai-sync": 121
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.9272,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 20
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 478
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/phillips_credibility.md": {
+    "path": "lectures/phillips_credibility.md",
+    "translated": true,
+    "translation_sha": "84fbacab64a02ff0ad1014037a8051c08e5f2c7f",
+    "translation_date": "2026-07-24T14:09:05+10:00",
+    "n_commits": 3,
+    "lines_head": 540,
+    "prose_lines_head": 130,
+    "composition": {
+      "ai-sync": 130
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.9581,
+    "commits_by_tier": {
+      "ai-sync": 1,
+      "ai-assisted": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 17,
+      "ai-assisted": 0
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 711,
+      "ai-assisted": 0
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/phillips_credible_policies.md": {
+    "path": "lectures/phillips_credible_policies.md",
+    "translated": true,
+    "translation_sha": "bf8200ad65f37607df47c6040eb581a60a14ecbf",
+    "translation_date": "2026-07-27T21:18:08+10:00",
+    "n_commits": 1,
+    "lines_head": 1016,
+    "prose_lines_head": 240,
+    "composition": {
+      "ai-sync": 240
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "NEW",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/phillips_drifts_volatilities.md": {
+    "path": "lectures/phillips_drifts_volatilities.md",
+    "translated": true,
+    "translation_sha": "84fbacab64a02ff0ad1014037a8051c08e5f2c7f",
+    "translation_date": "2026-07-24T14:09:05+10:00",
+    "n_commits": 3,
+    "lines_head": 3084,
+    "prose_lines_head": 383,
+    "composition": {
+      "ai-sync": 383
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.9903,
+    "commits_by_tier": {
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 8
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 35
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "e168c7de8b6b5446ca76ac49bc59781322444617",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-13",
+      "mode": "UPDATE",
+      "tool_version": "0.25.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/phillips_escaping_nash.md": {
+    "path": "lectures/phillips_escaping_nash.md",
+    "translated": true,
+    "translation_sha": "84fbacab64a02ff0ad1014037a8051c08e5f2c7f",
+    "translation_date": "2026-07-24T14:09:05+10:00",
+    "n_commits": 2,
+    "lines_head": 634,
+    "prose_lines_head": 141,
+    "composition": {
+      "ai-sync": 141
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.9357,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 22
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 757
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/phillips_learning.md": {
+    "path": "lectures/phillips_learning.md",
+    "translated": true,
+    "translation_sha": "84fbacab64a02ff0ad1014037a8051c08e5f2c7f",
+    "translation_date": "2026-07-24T14:09:05+10:00",
+    "n_commits": 2,
+    "lines_head": 861,
+    "prose_lines_head": 218,
+    "composition": {
+      "ai-sync": 218
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.906,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 62
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 3600
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/phillips_lost_conquest.md": {
+    "path": "lectures/phillips_lost_conquest.md",
+    "translated": true,
+    "translation_sha": "84fbacab64a02ff0ad1014037a8051c08e5f2c7f",
+    "translation_date": "2026-07-24T14:09:05+10:00",
+    "n_commits": 2,
+    "lines_head": 520,
+    "prose_lines_head": 144,
+    "composition": {
+      "ai-sync": 144
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.9149,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 31
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 1024
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/phillips_misspecified.md": {
+    "path": "lectures/phillips_misspecified.md",
+    "translated": true,
+    "translation_sha": "84fbacab64a02ff0ad1014037a8051c08e5f2c7f",
+    "translation_date": "2026-07-24T14:09:05+10:00",
+    "n_commits": 2,
+    "lines_head": 442,
+    "prose_lines_head": 94,
+    "composition": {
+      "ai-sync": 94
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.9617,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 5
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 277
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/phillips_priors.md": {
+    "path": "lectures/phillips_priors.md",
+    "translated": true,
+    "translation_sha": "84fbacab64a02ff0ad1014037a8051c08e5f2c7f",
+    "translation_date": "2026-07-24T14:09:05+10:00",
+    "n_commits": 2,
+    "lines_head": 708,
+    "prose_lines_head": 151,
+    "composition": {
+      "ai-sync": 151
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.8709,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 44
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 1890
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/phillips_self_confirming.md": {
+    "path": "lectures/phillips_self_confirming.md",
+    "translated": true,
+    "translation_sha": "84fbacab64a02ff0ad1014037a8051c08e5f2c7f",
+    "translation_date": "2026-07-24T14:09:05+10:00",
+    "n_commits": 2,
+    "lines_head": 608,
+    "prose_lines_head": 118,
+    "composition": {
+      "ai-sync": 118
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.9219,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 29
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 776
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/phillips_two_stories.md": {
+    "path": "lectures/phillips_two_stories.md",
+    "translated": true,
+    "translation_sha": "84fbacab64a02ff0ad1014037a8051c08e5f2c7f",
+    "translation_date": "2026-07-24T14:09:05+10:00",
+    "n_commits": 2,
+    "lines_head": 667,
+    "prose_lines_head": 224,
+    "composition": {
+      "ai-sync": 224
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 0.9139,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 39
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 2143
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/pricing_information.md": {
+    "path": "lectures/pricing_information.md",
+    "translated": true,
+    "translation_sha": "081853d147fd3ca9d03bb711103c08aebfb6bba3",
+    "translation_date": "2026-08-07T13:49:39+10:00",
+    "n_commits": 1,
+    "lines_head": 997,
+    "prose_lines_head": 205,
+    "composition": {
+      "ai-sync": 205
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "e46fa7fc93bcdee2ed317811cf72e1645259dd4f",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-07",
+      "mode": "NEW",
+      "tool_version": "0.25.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/prob_matrix.md": {
+    "path": "lectures/prob_matrix.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 7,
+    "lines_head": 1846,
+    "prose_lines_head": 461,
+    "composition": {
+      "ai-sync": 191,
+      "ai-assisted": 25,
+      "ai-initial": 174,
+      "human-translator": 64,
+      "seed": 7
+    },
+    "composition_pct": {
+      "ai-sync": 41.4,
+      "ai-assisted": 5.4,
+      "ai-initial": 37.7,
+      "human-translator": 13.9,
+      "seed": 1.5
+    },
+    "baseline_survival_pct": 37.7,
+    "similarity_initial_head": 0.5959,
+    "commits_by_tier": {
+      "human-editor": 1,
+      "human-translator": 1,
+      "seed": 1,
+      "ai-sync": 1,
+      "ai-assisted": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 0,
+      "human-translator": 319,
+      "seed": 68,
+      "ai-sync": 306,
+      "ai-assisted": 50
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 0,
+      "human-translator": 4536,
+      "seed": 349,
+      "ai-sync": 9641,
+      "ai-assisted": 50
+    },
+    "first_human_touch": "2025-08-14T22:15:22+10:00",
+    "last_human_touch": "2025-08-14T22:15:22+10:00",
+    "days_to_first_human_touch": 150,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "78030a3a27f6527046675bcd8a8d27995ca25af6",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/prob_meaning.md": {
+    "path": "lectures/prob_meaning.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 9,
+    "lines_head": 695,
+    "prose_lines_head": 192,
+    "composition": {
+      "ai-sync": 127,
+      "ai-initial": 31,
+      "human-editor": 24,
+      "human-translator": 10
+    },
+    "composition_pct": {
+      "ai-sync": 66.1,
+      "ai-initial": 16.1,
+      "human-editor": 12.5,
+      "human-translator": 5.2
+    },
+    "baseline_survival_pct": 16.1,
+    "similarity_initial_head": 0.2861,
+    "commits_by_tier": {
+      "human-editor": 2,
+      "human-translator": 4,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 180,
+      "human-translator": 104,
+      "ai-sync": 257
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 1594,
+      "human-translator": 1354,
+      "ai-sync": 8993
+    },
+    "first_human_touch": "2025-03-20T21:50:53+11:00",
+    "last_human_touch": "2025-10-01T17:23:27+10:00",
+    "days_to_first_human_touch": 3,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "1f153466dc86b0c703f4ecfc6ae1bd9e1841a7e5",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/prospects_bounded_rationality.md": {
+    "path": "lectures/prospects_bounded_rationality.md",
+    "translated": true,
+    "translation_sha": "bf8200ad65f37607df47c6040eb581a60a14ecbf",
+    "translation_date": "2026-07-27T21:18:08+10:00",
+    "n_commits": 1,
+    "lines_head": 558,
+    "prose_lines_head": 199,
+    "composition": {
+      "ai-sync": 199
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "3fc4e2ab19683daf8b9ff600a81681a2430dfecd",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-26",
+      "mode": "NEW",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/qr_decomp.md": {
+    "path": "lectures/qr_decomp.md",
+    "translated": true,
+    "translation_sha": "85e02b6bafe6a3d6adeb587c1ba64608e52ef5ed",
+    "translation_date": "2025-03-16T21:42:36+11:00",
+    "n_commits": 9,
+    "lines_head": 467,
+    "prose_lines_head": 117,
+    "composition": {
+      "ai-sync": 12,
+      "ai-initial": 34,
+      "ai-assisted": 45,
+      "human-translator": 14,
+      "human-editor": 12
+    },
+    "composition_pct": {
+      "ai-sync": 10.3,
+      "ai-initial": 29.1,
+      "ai-assisted": 38.5,
+      "human-translator": 12.0,
+      "human-editor": 10.3
+    },
+    "baseline_survival_pct": 29.1,
+    "similarity_initial_head": 0.6761,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-translator": 1,
+      "human-editor": 3,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 155,
+      "human-translator": 39,
+      "human-editor": 26,
+      "ai-sync": 13
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 716,
+      "human-translator": 218,
+      "human-editor": 200,
+      "ai-sync": 504
+    },
+    "first_human_touch": "2025-07-01T02:41:53+08:00",
+    "last_human_touch": "2025-07-05T10:23:25+08:00",
+    "days_to_first_human_touch": 106,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "6fcc2eb8a83a285ca8b0212412bb9930c492e446",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-31",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/rand_resp.md": {
+    "path": "lectures/rand_resp.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 4,
+    "lines_head": 323,
+    "prose_lines_head": 79,
+    "composition": {
+      "ai-sync": 7,
+      "ai-initial": 67,
+      "human-translator": 5
+    },
+    "composition_pct": {
+      "ai-sync": 8.9,
+      "ai-initial": 84.8,
+      "human-translator": 6.3
+    },
+    "baseline_survival_pct": 84.8,
+    "similarity_initial_head": 0.9346,
+    "commits_by_tier": {
+      "human-translator": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "human-translator": 19,
+      "ai-sync": 8
+    },
+    "prose_char_churn_by_tier": {
+      "human-translator": 168,
+      "ai-sync": 176
+    },
+    "first_human_touch": "2025-08-20T22:51:21+10:00",
+    "last_human_touch": "2025-08-20T22:51:21+10:00",
+    "days_to_first_human_touch": 156,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "d39b85fc089f59575047b7fc4a04a7561785c9ce",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/rational_expectations.md": {
+    "path": "lectures/rational_expectations.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 8,
+    "lines_head": 957,
+    "prose_lines_head": 277,
+    "composition": {
+      "ai-sync": 47,
+      "ai-initial": 137,
+      "human-translator": 92,
+      "human-editor": 1
+    },
+    "composition_pct": {
+      "ai-sync": 17.0,
+      "ai-initial": 49.5,
+      "human-translator": 33.2,
+      "human-editor": 0.4
+    },
+    "baseline_survival_pct": 49.5,
+    "similarity_initial_head": 0.7326,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 2,
+      "human-translator": 1,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 2,
+      "human-translator": 261,
+      "ai-sync": 116
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 5,
+      "human-translator": 1915,
+      "ai-sync": 2672
+    },
+    "first_human_touch": "2025-06-17T22:59:27+10:00",
+    "last_human_touch": "2026-07-18T19:58:28+10:00",
+    "days_to_first_human_touch": 92,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "d7cdb96bc7bc53ee15bf005885607da09967ef3e",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-06",
+      "mode": "UPDATE",
+      "tool_version": "0.25.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/rational_learning_re.md": {
+    "path": "lectures/rational_learning_re.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 1082,
+    "prose_lines_head": 293,
+    "composition": {
+      "ai-initial": 293
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "b8ed85c7e8b8c17f5f59c74b3cb829470363ca8b",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-22",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/re_with_feedback.md": {
+    "path": "lectures/re_with_feedback.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 6,
+    "lines_head": 1060,
+    "prose_lines_head": 265,
+    "composition": {
+      "ai-sync": 15,
+      "ai-initial": 250
+    },
+    "composition_pct": {
+      "ai-sync": 5.7,
+      "ai-initial": 94.3
+    },
+    "baseline_survival_pct": 94.3,
+    "similarity_initial_head": 0.9547,
+    "commits_by_tier": {
+      "ai-assisted": 2,
+      "human-editor": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 0,
+      "ai-sync": 15
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 0,
+      "ai-sync": 604
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "a1cd90c5ef6d6f05277318f47fe21eda60fa5e6b",
+      "model": "unknown",
+      "synced_at": "2025-03-19",
+      "mode": "RESYNC",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/robust_permanent_income.md": {
+    "path": "lectures/robust_permanent_income.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 1027,
+    "prose_lines_head": 308,
+    "composition": {
+      "ai-initial": 308
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "7c6396a0a24cd9b944750681b42519179e6bab58",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-22",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/ross_recovery.md": {
+    "path": "lectures/ross_recovery.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 1227,
+    "prose_lines_head": 334,
+    "composition": {
+      "ai-initial": 334
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "78030a3a27f6527046675bcd8a8d27995ca25af6",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-22",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/rs_inventory_q.md": {
+    "path": "lectures/rs_inventory_q.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 748,
+    "prose_lines_head": 190,
+    "composition": {
+      "ai-initial": 190
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 0.9773,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 2
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "2ab2056c815f58b228a7cea6e131d0927a98a86b",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-31",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/samuelson.md": {
+    "path": "lectures/samuelson.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 10,
+    "lines_head": 1357,
+    "prose_lines_head": 355,
+    "composition": {
+      "ai-sync": 155,
+      "ai-initial": 161,
+      "human-translator": 14,
+      "human-editor": 25
+    },
+    "composition_pct": {
+      "ai-sync": 43.7,
+      "ai-initial": 45.4,
+      "human-translator": 3.9,
+      "human-editor": 7.0
+    },
+    "baseline_survival_pct": 45.4,
+    "similarity_initial_head": 0.5111,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 3,
+      "human-translator": 2,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 74,
+      "human-translator": 46,
+      "ai-sync": 329
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 388,
+      "human-translator": 327,
+      "ai-sync": 6906
+    },
+    "first_human_touch": "2025-05-08T12:39:48+08:00",
+    "last_human_touch": "2025-05-15T12:22:50+10:00",
+    "days_to_first_human_touch": 51,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "e49ee52fb9a5209e678973ed8226c7ea0b4fc88e",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-31",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/sargent_surico.md": {
+    "path": "lectures/sargent_surico.md",
+    "translated": true,
+    "translation_sha": "b26e250c2e4a60592c10f371d1fe052ba0bcbbae",
+    "translation_date": "2026-08-07T11:32:51+10:00",
+    "n_commits": 1,
+    "lines_head": 2071,
+    "prose_lines_head": 375,
+    "composition": {
+      "ai-sync": 375
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "f3fdcbcc564961a25c77a01f5e12638e70522552",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-01",
+      "mode": "NEW",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/sir_model.md": {
+    "path": "lectures/sir_model.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 10,
+    "lines_head": 416,
+    "prose_lines_head": 114,
+    "composition": {
+      "ai-sync": 36,
+      "ai-initial": 62,
+      "human-translator": 8,
+      "human-editor": 8
+    },
+    "composition_pct": {
+      "ai-sync": 31.6,
+      "ai-initial": 54.4,
+      "human-translator": 7.0,
+      "human-editor": 7.0
+    },
+    "baseline_survival_pct": 54.4,
+    "similarity_initial_head": 0.8425,
+    "commits_by_tier": {
+      "human-editor": 4,
+      "human-translator": 2,
+      "ai-sync": 1,
+      "ai-assisted": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 62,
+      "human-translator": 33,
+      "ai-sync": 64,
+      "ai-assisted": 0
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 860,
+      "human-translator": 88,
+      "ai-sync": 967,
+      "ai-assisted": 0
+    },
+    "first_human_touch": "2025-06-29T17:35:51+08:00",
+    "last_human_touch": "2025-07-17T12:29:06+10:00",
+    "days_to_first_human_touch": 104,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "a1cd90c5ef6d6f05277318f47fe21eda60fa5e6b",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/stats_examples.md": {
+    "path": "lectures/stats_examples.md",
+    "translated": true,
+    "translation_sha": "a6644817b5368f0e41b37bb9c1d70bf623c22577",
+    "translation_date": "2025-09-12T11:57:08+10:00",
+    "n_commits": 2,
+    "lines_head": 550,
+    "prose_lines_head": 138,
+    "composition": {
+      "ai-sync": 15,
+      "ai-initial": 123
+    },
+    "composition_pct": {
+      "ai-sync": 10.9,
+      "ai-initial": 89.1
+    },
+    "baseline_survival_pct": 89.1,
+    "similarity_initial_head": 0.9502,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 15
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 630
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "2944402a4c4a3101e92e2824e10b0dc212265264",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/status.md": {
+    "path": "lectures/status.md",
+    "translated": true,
+    "translation_sha": "85e02b6bafe6a3d6adeb587c1ba64608e52ef5ed",
+    "translation_date": "2025-03-16T21:42:36+11:00",
+    "n_commits": 4,
+    "lines_head": 50,
+    "prose_lines_head": 9,
+    "composition": {
+      "ai-sync": 3,
+      "ai-initial": 3,
+      "ai-assisted": 3
+    },
+    "composition_pct": {
+      "ai-sync": 33.3,
+      "ai-initial": 33.3,
+      "ai-assisted": 33.3
+    },
+    "baseline_survival_pct": 33.3,
+    "similarity_initial_head": 0.8222,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 6,
+      "ai-sync": 3
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 12,
+      "ai-sync": 48
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "307c7f1c3c13d3d99f8e58dcf5215dfd84933c0d",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/survival_recursive_preferences.md": {
+    "path": "lectures/survival_recursive_preferences.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 1278,
+    "prose_lines_head": 353,
+    "composition": {
+      "ai-initial": 353
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "78030a3a27f6527046675bcd8a8d27995ca25af6",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-21",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/svd_intro.md": {
+    "path": "lectures/svd_intro.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 7,
+    "lines_head": 1015,
+    "prose_lines_head": 289,
+    "composition": {
+      "ai-sync": 55,
+      "human-editor": 26,
+      "ai-initial": 208
+    },
+    "composition_pct": {
+      "ai-sync": 19.0,
+      "human-editor": 9.0,
+      "ai-initial": 72.0
+    },
+    "baseline_survival_pct": 72.0,
+    "similarity_initial_head": 0.9077,
+    "commits_by_tier": {
+      "human-editor": 3,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 121,
+      "ai-sync": 95
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 1856,
+      "ai-sync": 1819
+    },
+    "first_human_touch": "2025-07-17T16:30:29+10:00",
+    "last_human_touch": "2025-07-17T16:31:44+10:00",
+    "days_to_first_human_touch": 121,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "228d317ac76cd0630f5f7a6ede30a0362f0a25f7",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-31",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/theil_1.md": {
+    "path": "lectures/theil_1.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 410,
+    "prose_lines_head": 136,
+    "composition": {
+      "ai-initial": 136
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "7c6396a0a24cd9b944750681b42519179e6bab58",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-22",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/theil_2.md": {
+    "path": "lectures/theil_2.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 3,
+    "lines_head": 772,
+    "prose_lines_head": 186,
+    "composition": {
+      "ai-initial": 182,
+      "ai-assisted": 4
+    },
+    "composition_pct": {
+      "ai-initial": 97.8,
+      "ai-assisted": 2.2
+    },
+    "baseline_survival_pct": 97.8,
+    "similarity_initial_head": 0.9865,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 4,
+      "ai-sync": 0
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 159,
+      "ai-sync": 0
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "7f05c342ae6b5261ee86b25f8ad2751104343526",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-31",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/troubleshooting.md": {
+    "path": "lectures/troubleshooting.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 3,
+    "lines_head": 74,
+    "prose_lines_head": 26,
+    "composition": {
+      "ai-sync": 5,
+      "ai-initial": 21
+    },
+    "composition_pct": {
+      "ai-sync": 19.2,
+      "ai-initial": 80.8
+    },
+    "baseline_survival_pct": 80.8,
+    "similarity_initial_head": 0.9178,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 8
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 142
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "d406800dd7c10924c709adc67913ea5cc54038c6",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/two_auctions.md": {
+    "path": "lectures/two_auctions.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 6,
+    "lines_head": 703,
+    "prose_lines_head": 205,
+    "composition": {
+      "ai-sync": 28,
+      "ai-initial": 177
+    },
+    "composition_pct": {
+      "ai-sync": 13.7,
+      "ai-initial": 86.3
+    },
+    "baseline_survival_pct": 86.3,
+    "similarity_initial_head": 0.8163,
+    "commits_by_tier": {
+      "human-editor": 2,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 0,
+      "ai-sync": 67
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 0,
+      "ai-sync": 1780
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "364f150b17587ab54aabb0445822640cbb4af0f2",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-28",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/two_computation.md": {
+    "path": "lectures/two_computation.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 1,
+    "lines_head": 3019,
+    "prose_lines_head": 661,
+    "composition": {
+      "ai-initial": 661
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "78030a3a27f6527046675bcd8a8d27995ca25af6",
+      "model": "claude-opus-4-8",
+      "synced_at": "2026-07-22",
+      "mode": "NEW",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/uncertainty_traps.md": {
+    "path": "lectures/uncertainty_traps.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 7,
+    "lines_head": 507,
+    "prose_lines_head": 146,
+    "composition": {
+      "ai-sync": 10,
+      "ai-initial": 135,
+      "human-editor": 1
+    },
+    "composition_pct": {
+      "ai-sync": 6.8,
+      "ai-initial": 92.5,
+      "human-editor": 0.7
+    },
+    "baseline_survival_pct": 92.5,
+    "similarity_initial_head": 0.9649,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 2,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 2,
+      "ai-sync": 10
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 5,
+      "ai-sync": 237
+    },
+    "first_human_touch": "2025-06-17T22:59:27+10:00",
+    "last_human_touch": "2025-06-17T22:59:27+10:00",
+    "days_to_first_human_touch": 92,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "b90d96d6aa7cda663577180e8e366aee5bb04a7e",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-31",
+      "mode": "UPDATE",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/unemployment_linear.md": {
+    "path": "lectures/unemployment_linear.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 586,
+    "prose_lines_head": 185,
+    "composition": {
+      "ai-initial": 185
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 0.9907,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/unemployment_shocks.md": {
+    "path": "lectures/unemployment_shocks.md",
+    "translated": true,
+    "translation_sha": "be4a8b21237a9ec4a931dc122d3a8d402fad35d2",
+    "translation_date": "2026-07-22T13:43:27+10:00",
+    "n_commits": 2,
+    "lines_head": 559,
+    "prose_lines_head": 161,
+    "composition": {
+      "ai-initial": 161
+    },
+    "composition_pct": {
+      "ai-initial": 100.0
+    },
+    "baseline_survival_pct": 100.0,
+    "similarity_initial_head": 0.9894,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 0
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "96ede29937a77fb0cb26b731e1eecce5e62f6726",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-18",
+      "mode": "UPDATE",
+      "tool_version": "0.26.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/util_rand_resp.md": {
+    "path": "lectures/util_rand_resp.md",
+    "translated": true,
+    "translation_sha": "86bda7c1da597ea133707adee5553f855dbf9e60",
+    "translation_date": "2025-03-24T14:34:31+11:00",
+    "n_commits": 8,
+    "lines_head": 738,
+    "prose_lines_head": 207,
+    "composition": {
+      "ai-sync": 99,
+      "ai-initial": 80,
+      "human-translator": 28
+    },
+    "composition_pct": {
+      "ai-sync": 47.8,
+      "ai-initial": 38.6,
+      "human-translator": 13.5
+    },
+    "baseline_survival_pct": 38.6,
+    "similarity_initial_head": 0.513,
+    "commits_by_tier": {
+      "human-translator": 3,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "human-translator": 207,
+      "ai-sync": 275
+    },
+    "prose_char_churn_by_tier": {
+      "human-translator": 1561,
+      "ai-sync": 6559
+    },
+    "first_human_touch": "2025-08-21T23:53:47+10:00",
+    "last_human_touch": "2025-09-18T23:19:03+10:00",
+    "days_to_first_human_touch": 150,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "ee80772d38fba57eca1e9fc4ffa84081017d7e15",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-05",
+      "mode": "UPDATE",
+      "tool_version": "0.25.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/var_dmd.md": {
+    "path": "lectures/var_dmd.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 7,
+    "lines_head": 755,
+    "prose_lines_head": 218,
+    "composition": {
+      "ai-sync": 26,
+      "ai-initial": 91,
+      "human-translator": 96,
+      "human-editor": 5
+    },
+    "composition_pct": {
+      "ai-sync": 11.9,
+      "ai-initial": 41.7,
+      "human-translator": 44.0,
+      "human-editor": 2.3
+    },
+    "baseline_survival_pct": 41.7,
+    "similarity_initial_head": 0.7335,
+    "commits_by_tier": {
+      "human-translator": 3,
+      "human-editor": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "human-translator": 224,
+      "human-editor": 32,
+      "ai-sync": 45
+    },
+    "prose_char_churn_by_tier": {
+      "human-translator": 1039,
+      "human-editor": 578,
+      "ai-sync": 1033
+    },
+    "first_human_touch": "2025-07-01T02:35:52+08:00",
+    "last_human_touch": "2025-07-03T15:29:42+08:00",
+    "days_to_first_human_touch": 105,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "78030a3a27f6527046675bcd8a8d27995ca25af6",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/var_subsets.md": {
+    "path": "lectures/var_subsets.md",
+    "translated": true,
+    "translation_sha": "b26e250c2e4a60592c10f371d1fe052ba0bcbbae",
+    "translation_date": "2026-08-07T11:32:51+10:00",
+    "n_commits": 1,
+    "lines_head": 1213,
+    "prose_lines_head": 283,
+    "composition": {
+      "ai-sync": 283
+    },
+    "composition_pct": {
+      "ai-sync": 100.0
+    },
+    "baseline_survival_pct": 0.0,
+    "similarity_initial_head": 1.0,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "f3fdcbcc564961a25c77a01f5e12638e70522552",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-08-01",
+      "mode": "NEW",
+      "tool_version": "0.24.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/von_neumann_model.md": {
+    "path": "lectures/von_neumann_model.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 9,
+    "lines_head": 886,
+    "prose_lines_head": 291,
+    "composition": {
+      "ai-sync": 68,
+      "ai-initial": 139,
+      "human-translator": 84
+    },
+    "composition_pct": {
+      "ai-sync": 23.4,
+      "ai-initial": 47.8,
+      "human-translator": 28.9
+    },
+    "baseline_survival_pct": 47.8,
+    "similarity_initial_head": 0.6466,
+    "commits_by_tier": {
+      "ai-assisted": 1,
+      "human-editor": 1,
+      "human-translator": 4,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 0,
+      "human-translator": 304,
+      "ai-sync": 131
+    },
+    "prose_char_churn_by_tier": {
+      "ai-assisted": 0,
+      "human-editor": 0,
+      "human-translator": 6923,
+      "ai-sync": 1804
+    },
+    "first_human_touch": "2025-09-09T22:12:33+10:00",
+    "last_human_touch": "2025-09-18T23:13:01+10:00",
+    "days_to_first_human_touch": 176,
+    "syncs_since_last_human_touch": 1,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "a1cd90c5ef6d6f05277318f47fe21eda60fa5e6b",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/wald_friedman.md": {
+    "path": "lectures/wald_friedman.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 5,
+    "lines_head": 1266,
+    "prose_lines_head": 319,
+    "composition": {
+      "ai-sync": 14,
+      "ai-initial": 11,
+      "ai-assisted": 294
+    },
+    "composition_pct": {
+      "ai-sync": 4.4,
+      "ai-initial": 3.4,
+      "ai-assisted": 92.2
+    },
+    "baseline_survival_pct": 3.4,
+    "similarity_initial_head": 0.0531,
+    "commits_by_tier": {
+      "human-editor": 1,
+      "ai-assisted": 1,
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 0,
+      "ai-assisted": 548,
+      "ai-sync": 20
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 0,
+      "ai-assisted": 20637,
+      "ai-sync": 789
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "709deec8b557a08f2f7b297215bb8473c8f207ff",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/wald_friedman_2.md": {
+    "path": "lectures/wald_friedman_2.md",
+    "translated": true,
+    "translation_sha": "44c06e3982621e52f393deaf46d89d46102f1d09",
+    "translation_date": "2025-09-13T12:01:31+10:00",
+    "n_commits": 2,
+    "lines_head": 743,
+    "prose_lines_head": 199,
+    "composition": {
+      "ai-sync": 13,
+      "ai-initial": 186
+    },
+    "composition_pct": {
+      "ai-sync": 6.5,
+      "ai-initial": 93.5
+    },
+    "baseline_survival_pct": 93.5,
+    "similarity_initial_head": 0.9858,
+    "commits_by_tier": {
+      "ai-sync": 1
+    },
+    "prose_churn_by_tier": {
+      "ai-sync": 14
+    },
+    "prose_char_churn_by_tier": {
+      "ai-sync": 511
+    },
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {
+      "source_sha": "b27f1eb0ae52b5e20807d516a3d2f54a586e75fa",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-18",
+      "mode": "RESYNC",
+      "tool_version": "0.17.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/wealth_dynamics.md": {
+    "path": "lectures/wealth_dynamics.md",
+    "translated": true,
+    "translation_sha": "ab0498b5298296bbf529b502fb887ec4e576ca42",
+    "translation_date": "2025-03-17T19:33:47+11:00",
+    "n_commits": 11,
+    "lines_head": 636,
+    "prose_lines_head": 191,
+    "composition": {
+      "ai-sync": 19,
+      "human-editor": 32,
+      "ai-initial": 114,
+      "human-translator": 26
+    },
+    "composition_pct": {
+      "ai-sync": 9.9,
+      "human-editor": 16.8,
+      "ai-initial": 59.7,
+      "human-translator": 13.6
+    },
+    "baseline_survival_pct": 59.7,
+    "similarity_initial_head": 0.8376,
+    "commits_by_tier": {
+      "human-editor": 5,
+      "human-translator": 2,
+      "ai-sync": 2
+    },
+    "prose_churn_by_tier": {
+      "human-editor": 146,
+      "human-translator": 138,
+      "ai-sync": 25
+    },
+    "prose_char_churn_by_tier": {
+      "human-editor": 710,
+      "human-translator": 679,
+      "ai-sync": 584
+    },
+    "first_human_touch": "2025-05-28T13:51:11+08:00",
+    "last_human_touch": "2025-06-08T21:21:28+10:00",
+    "days_to_first_human_touch": 71,
+    "syncs_since_last_human_touch": 2,
+    "review_state": "human-touched",
+    "source": {
+      "source_sha": "fccf5a9fd50129b3b03a4fd7b5d04976ac51e3a5",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-07-21",
+      "mode": "RESYNC",
+      "tool_version": "0.20.0",
+      "pending_commits": 0,
+      "pending_subjects": []
+    }
+  },
+  "lectures/zreferences.md": {
+    "path": "lectures/zreferences.md",
+    "translated": false,
+    "translation_sha": null,
+    "translation_date": null,
+    "n_commits": 3,
+    "lines_head": 0,
+    "prose_lines_head": 0,
+    "composition": {},
+    "composition_pct": {},
+    "baseline_survival_pct": null,
+    "similarity_initial_head": null,
+    "commits_by_tier": {},
+    "prose_churn_by_tier": {},
+    "prose_char_churn_by_tier": {},
+    "first_human_touch": null,
+    "last_human_touch": null,
+    "days_to_first_human_touch": null,
+    "syncs_since_last_human_touch": 0,
+    "review_state": "machine-only",
+    "source": {}
+  }
+}

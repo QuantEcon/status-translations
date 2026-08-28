@@ -1,0 +1,104 @@
+name: textstrata
+
+# Monthly lifecycle-metrics scan of the zh-cn editions (QuantEcon/textstrata#7).
+# Dated run-level artefacts accumulate under data/textstrata/ so trend views
+# come free later, following this repo's history convention. Heavy artefacts
+# (pairs.jsonl, commits.jsonl, overwrites.json) are NOT committed: they
+# regenerate deterministically from the HEAD sha each run.json records.
+#
+# The reviewer roster lives in the private project-translation repo, so this
+# workflow needs one secret beyond GITHUB_TOKEN: PROJECT_TRANSLATION_READ, a
+# fine-grained PAT with contents:read on QuantEcon/project-translation.
+# Scanning without the roster would silently collapse the human tiers, so the
+# run fails loudly when the secret is missing rather than record wrong numbers.
+#
+# Follow-up (not wired here): a repository_dispatch from action-translation
+# so a resync wave triggers an off-cycle scan.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 4 3 * *"   # monthly, on the 3rd
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: textstrata
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Clone and install textstrata; clone the editions
+        # One textstrata clone serves both the install and the reference
+        # configs, so code and configs come from the same commit by
+        # construction (add --branch <tag> once textstrata cuts a release).
+        # Edition clones are full, not blobless: the scan blames and walks
+        # whole histories. The directory shape mirrors what the configs'
+        # relative paths expect (../../../project-translation/repos/<name>).
+        run: |
+          git clone --quiet https://github.com/QuantEcon/textstrata work/textstrata
+          pip install --quiet ./work/textstrata
+          mkdir -p work/project-translation/repos
+          for r in lecture-intro.zh-cn lecture-python-intro \
+                   lecture-python.zh-cn lecture-python.myst \
+                   lecture-python-programming.zh-cn lecture-python-programming; do
+            git clone --quiet "https://github.com/QuantEcon/$r" "work/project-translation/repos/$r"
+          done
+      - name: Fetch the reviewer roster (private; read-only token)
+        env:
+          ROSTER_TOKEN: ${{ secrets.PROJECT_TRANSLATION_READ }}
+        run: |
+          if [ -z "$ROSTER_TOKEN" ]; then
+            echo "::error::PROJECT_TRANSLATION_READ secret is not set; refusing to scan without the roster"
+            exit 1
+          fi
+          mkdir -p work/project-translation/team
+          GH_TOKEN="$ROSTER_TOKEN" gh api \
+            repos/QuantEcon/project-translation/contents/team/reviewers.yml \
+            --jq .content | base64 -d > work/project-translation/team/reviewers.yml
+      - name: Scan the editions
+        run: |
+          for cfg in intro-zh-cn python-zh-cn programming-zh-cn; do
+            textstrata scan "work/textstrata/configs/quantecon/$cfg.yml" -o "work/out/$cfg" -q
+          done
+      - name: Record history
+        # run.json carries no per-person data; documents.json is committed with
+        # its human_ids (project-management fields, not for publication) removed.
+        run: python3 collector/textstrata_record.py
+      - name: Commit data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/textstrata
+          git diff --cached --quiet || git commit -m "data: textstrata scan $(date -u +%F)"
+          git push
+  # Pushes made with GITHUB_TOKEN don't trigger the publish workflow,
+  # so redeploy Pages here after committing fresh data (as collect.yml does).
+  deploy:
+    needs: scan
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Assemble site
+        run: |
+          mkdir dist
+          cp site/* dist/
+          cp -r data dist/data
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4
