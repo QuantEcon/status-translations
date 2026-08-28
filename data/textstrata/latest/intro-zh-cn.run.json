@@ -2,7 +2,7 @@
   "textstrata": "0.1.0.dev0",
   "config": "lecture-intro.zh-cn",
   "head": "d8ce61ec84ab8baa6fdd095acb5400d0f4bdb61b",
-  "scanned_at": "2026-08-28T00:15:18+00:00",
+  "scanned_at": "2026-08-28T06:50:17+00:00",
   "documents": 53,
   "translated": 51,
   "prose_lines": 9936,
@@ -27,16 +27,86 @@
   },
   "pairs": 4538,
   "pair_categories": {
-    "addition": 1037,
+    "code-or-markup": 431,
     "terminology": 1375,
     "fluency": 1238,
     "retranslation": 376,
-    "deletion": 244,
-    "code-or-markup": 135,
+    "deletion": 196,
+    "addition": 789,
     "localise-code-label": 90,
     "punctuation-width": 43
   },
   "recurring_substitutions": 224,
+  "engine_strata": [
+    {
+      "model": "claude-sonnet-5",
+      "tool_version": "0.17.0",
+      "sync_commits": 44,
+      "prose_churn": 3512,
+      "prose_char_churn": 87050,
+      "overwrote_prose_by_prior_tier": {
+        "human-editor": 613,
+        "ai-initial": 409,
+        "human-translator": 314
+      }
+    },
+    {
+      "model": "claude-sonnet-5",
+      "tool_version": "0.18.0",
+      "sync_commits": 1,
+      "prose_churn": 0,
+      "prose_char_churn": 0,
+      "overwrote_prose_by_prior_tier": {}
+    },
+    {
+      "model": "claude-sonnet-5",
+      "tool_version": "0.23.0",
+      "sync_commits": 1,
+      "prose_churn": 0,
+      "prose_char_churn": 0,
+      "overwrote_prose_by_prior_tier": {}
+    },
+    {
+      "model": "claude-sonnet-5",
+      "tool_version": "0.25.0",
+      "sync_commits": 7,
+      "prose_churn": 14,
+      "prose_char_churn": 319,
+      "overwrote_prose_by_prior_tier": {
+        "ai-assisted": 1,
+        "ai-sync": 2,
+        "human-translator": 1,
+        "ai-initial": 2
+      }
+    },
+    {
+      "model": "claude-sonnet-5",
+      "tool_version": "0.24.0",
+      "sync_commits": 3,
+      "prose_churn": 275,
+      "prose_char_churn": 1651,
+      "overwrote_prose_by_prior_tier": {
+        "ai-initial": 31,
+        "ai-assisted": 7,
+        "ai-sync": 169,
+        "human-editor": 2,
+        "human-translator": 1
+      }
+    },
+    {
+      "model": "claude-sonnet-5",
+      "tool_version": "0.26.0",
+      "sync_commits": 1,
+      "prose_churn": 119,
+      "prose_char_churn": 2641,
+      "overwrote_prose_by_prior_tier": {
+        "ai-assisted": 13,
+        "ai-initial": 14,
+        "ai-sync": 2,
+        "human-editor": 2
+      }
+    }
+  ],
   "tiers": [
     "ai-sync",
     "ai-initial",
