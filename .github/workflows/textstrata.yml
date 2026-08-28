@@ -36,15 +36,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install textstrata
-        # pin to a tag once textstrata cuts a release
-        run: pip install --quiet "git+https://github.com/QuantEcon/textstrata@main"
-      - name: Clone textstrata configs and the editions
-        # full clones, not blobless: the scan blames and walks whole histories.
-        # The directory shape mirrors what the reference configs' relative
-        # paths expect (../../../project-translation/repos/<name>).
+      - name: Clone and install textstrata; clone the editions
+        # One textstrata clone serves both the install and the reference
+        # configs, so code and configs come from the same commit by
+        # construction (add --branch <tag> once textstrata cuts a release).
+        # Edition clones are full, not blobless: the scan blames and walks
+        # whole histories. The directory shape mirrors what the configs'
+        # relative paths expect (../../../project-translation/repos/<name>).
         run: |
           git clone --quiet https://github.com/QuantEcon/textstrata work/textstrata
+          pip install --quiet ./work/textstrata
           mkdir -p work/project-translation/repos
           for r in lecture-intro.zh-cn lecture-python-intro \
                    lecture-python.zh-cn lecture-python.myst \

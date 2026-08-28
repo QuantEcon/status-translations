@@ -1,49 +1,48 @@
 {
- "textstrata": "0.1.0.dev0",
- "config": "lecture-intro.zh-cn",
- "repo": "/private/tmp/claude-501/-Users-mmcky-work-quantecon-textstrata/f0e9f25a-a27e-43b4-a6b1-6abaf63b238d/scratchpad/wt/lecture-intro.zh-cn",
- "head": "d8ce61ec84ab8baa6fdd095acb5400d0f4bdb61b",
- "scanned_at": "2026-08-28T00:15:18+00:00",
- "documents": 53,
- "translated": 51,
- "prose_lines": 9936,
- "composition": {
-  "ai-assisted": 590,
-  "ai-initial": 4878,
-  "human-editor": 597,
-  "ai-sync": 2428,
-  "human-translator": 1443
- },
- "composition_pct": {
-  "ai-assisted": 5.9,
-  "ai-initial": 49.1,
-  "human-editor": 6.0,
-  "ai-sync": 24.4,
-  "human-translator": 14.5
- },
- "review_state": {
-  "human-touched": 47,
-  "machine-only": 3,
-  "audit-stale": 1
- },
- "pairs": 4538,
- "pair_categories": {
-  "addition": 1037,
-  "terminology": 1375,
-  "fluency": 1238,
-  "retranslation": 376,
-  "deletion": 244,
-  "code-or-markup": 135,
-  "localise-code-label": 90,
-  "punctuation-width": 43
- },
- "recurring_substitutions": 224,
- "tiers": [
-  "ai-sync",
-  "ai-initial",
-  "ai-assisted",
-  "human-editor",
-  "human-translator",
-  "seed"
- ]
+  "textstrata": "0.1.0.dev0",
+  "config": "lecture-intro.zh-cn",
+  "head": "d8ce61ec84ab8baa6fdd095acb5400d0f4bdb61b",
+  "scanned_at": "2026-08-28T00:15:18+00:00",
+  "documents": 53,
+  "translated": 51,
+  "prose_lines": 9936,
+  "composition": {
+    "ai-assisted": 590,
+    "ai-initial": 4878,
+    "human-editor": 597,
+    "ai-sync": 2428,
+    "human-translator": 1443
+  },
+  "composition_pct": {
+    "ai-assisted": 5.9,
+    "ai-initial": 49.1,
+    "human-editor": 6.0,
+    "ai-sync": 24.4,
+    "human-translator": 14.5
+  },
+  "review_state": {
+    "human-touched": 47,
+    "machine-only": 3,
+    "audit-stale": 1
+  },
+  "pairs": 4538,
+  "pair_categories": {
+    "addition": 1037,
+    "terminology": 1375,
+    "fluency": 1238,
+    "retranslation": 376,
+    "deletion": 244,
+    "code-or-markup": 135,
+    "localise-code-label": 90,
+    "punctuation-width": 43
+  },
+  "recurring_substitutions": 224,
+  "tiers": [
+    "ai-sync",
+    "ai-initial",
+    "ai-assisted",
+    "human-editor",
+    "human-translator",
+    "seed"
+  ]
 }
