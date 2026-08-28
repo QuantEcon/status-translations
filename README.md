@@ -32,6 +32,8 @@ data/
   latest.json         # current snapshot (the dashboard reads this)
   history/            # dated snapshots, append-only
   verdicts.jsonl      # review-verdict event store, append-only (one JSON event per line)
+  textstrata/         # lifecycle metrics (QuantEcon/textstrata#7): latest/ + dated history/
+                      # per edition: run.json + documents.json (human_ids removed)
 site/
   index.html          # Overview page (static, client-side rendering)
   rollout.html        # Rollout tracker: per-edition lifecycle steppers
@@ -41,10 +43,12 @@ site/
 collector/
   collect.py          # computes the numbers (git + gh + python stdlib)
   verdicts.py         # captures review-verdict blocks into data/verdicts.jsonl
+  textstrata_record.py  # records a textstrata scan into data/textstrata/
   config.json         # repo pairs + editorial fields
 .github/workflows/
   publish.yml         # deploy site + data to Pages on push
   collect.yml         # nightly data collection (cron, 03:17 UTC) + redeploy
+  textstrata.yml      # monthly lifecycle-metrics scan (needs PROJECT_TRANSLATION_READ secret)
 ```
 
 ## Counting rule
