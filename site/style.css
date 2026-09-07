@@ -1,7 +1,19 @@
 /* Shared design system for the status-translations dashboard.
    Theme: light palette is the base; the dark palette applies via
    prefers-color-scheme, and an explicit data-theme attribute (set by the
-   toggle in app.js) wins over the system preference in both directions. */
+   toggle in app.js) wins over the system preference in both directions.
+
+   Three light-mode tokens were corrected on 2026-09-07 (status-projects#29,
+   ruled 2026-08-31: same design language across the status-* family, ported as
+   ordinary changes rather than a packaged theme). status-projects' accessibility
+   pass measured them on this palette, which it forked:
+     --ink-3   #898781 -> #6f6d67   3.4:1 -> 4.9:1 on the page (body text needs 4.5:1)
+     --accent  #2a78d6 -> #256ec8   4.2:1 -> 4.8:1 on the page (links are text)
+     --warn-mark, new: --warn (#fab219) measures 1.79:1 on the light surface —
+       legible as a wash or a border, close to invisible as an 8px dot. Marks
+       (the chip dots) use --warn-mark (3.26:1); washes, borders and the
+       stale cell fill keep --warn. In dark both are #fab219 (9.5:1).
+   The dark palette already passed and is untouched; hues are unchanged. */
 
 :root {
   color-scheme: light;
@@ -9,15 +21,16 @@
   --surface: #fcfcfb;
   --ink: #0b0b0b;
   --ink-2: #52514e;
-  --ink-3: #898781;
+  --ink-3: #6f6d67;
   --hairline: #e1e0d9;
   --border: rgba(11, 11, 11, 0.10);
-  --accent: #2a78d6;
+  --accent: #256ec8;
   --accent-track: #cde2fb;
   --good: #0ca30c;
   --good-text: #006300;
   --good-wash: rgba(12, 163, 12, 0.10);
   --warn: #fab219;
+  --warn-mark: #c07f00;
   --warn-text: #7a5200;
   --warn-wash: rgba(250, 178, 25, 0.14);
   --crit: #d03b3b;
@@ -44,6 +57,7 @@
     --good-text: #2fc42f;
     --good-wash: rgba(12, 163, 12, 0.16);
     --warn: #fab219;
+    --warn-mark: #fab219;
     --warn-text: #fab219;
     --warn-wash: rgba(250, 178, 25, 0.14);
     --crit: #d03b3b;
@@ -70,6 +84,7 @@
   --good-text: #2fc42f;
   --good-wash: rgba(12, 163, 12, 0.16);
   --warn: #fab219;
+  --warn-mark: #fab219;
   --warn-text: #fab219;
   --warn-wash: rgba(250, 178, 25, 0.14);
   --crit: #d03b3b;
@@ -86,15 +101,16 @@
   --surface: #fcfcfb;
   --ink: #0b0b0b;
   --ink-2: #52514e;
-  --ink-3: #898781;
+  --ink-3: #6f6d67;
   --hairline: #e1e0d9;
   --border: rgba(11, 11, 11, 0.10);
-  --accent: #2a78d6;
+  --accent: #256ec8;
   --accent-track: #cde2fb;
   --good: #0ca30c;
   --good-text: #006300;
   --good-wash: rgba(12, 163, 12, 0.10);
   --warn: #fab219;
+  --warn-mark: #c07f00;
   --warn-text: #7a5200;
   --warn-wash: rgba(250, 178, 25, 0.14);
   --crit: #d03b3b;
@@ -248,9 +264,9 @@ td.review .review-head { display: block; margin-top: 3px; }
 .chip.healthy { background: var(--good-wash); color: var(--good-text); }
 .chip.healthy::before { background: var(--good); }
 .chip.gaps { background: var(--good-wash); color: var(--good-text); }
-.chip.gaps::before { background: var(--warn); }
+.chip.gaps::before { background: var(--warn-mark); }
 .chip.drifting { background: var(--warn-wash); color: var(--warn-text); }
-.chip.drifting::before { background: var(--warn); }
+.chip.drifting::before { background: var(--warn-mark); }
 .chip.stalled { background: var(--crit-wash); color: var(--crit-text); }
 .chip.stalled::before { background: var(--crit); }
 .chip.planned { background: transparent; border: 1px solid var(--border); color: var(--ink-2); padding: 2px 9px; }
