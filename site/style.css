@@ -9,10 +9,11 @@
    pass measured them on this palette, which it forked:
      --ink-3   #898781 -> #6f6d67   3.4:1 -> 4.9:1 on the page (body text needs 4.5:1)
      --accent  #2a78d6 -> #256ec8   4.2:1 -> 4.8:1 on the page (links are text)
-     --warn-mark, new: --warn (#fab219) measures 1.79:1 on the light surface —
-       legible as a wash or a border, close to invisible as an 8px dot. Marks
-       (the chip dots) use --warn-mark (3.26:1); washes, borders and the
-       stale cell fill keep --warn. In dark both are #fab219 (9.5:1).
+     --warn      unchanged (#fab219). It measures 1.79:1 on the light surface:
+                 legible as a wash or a border, close to invisible as an 8px dot.
+     --warn-mark NEW (#c07f00, 3.26:1) for the small marks — the chip dots.
+                 Washes, borders and the stale cell fill keep --warn.
+                 In dark both are #fab219 (9.5:1).
    The dark palette already passed and is untouched; hues are unchanged. */
 
 :root {
