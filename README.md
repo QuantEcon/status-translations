@@ -4,7 +4,7 @@
 
 **Live dashboard:** <https://quantecon.github.io/status-translations/>
 
-This repo follows the org's `status-*` pattern (sibling of [status-lectures](https://github.com/QuantEcon/status-lectures), which tracks build/environment configuration): data lives in-repo as JSON, the dashboard is a static page on GitHub Pages, and no credentials beyond `GITHUB_TOKEN` are needed — every fact is computed from public GitHub state.
+This repo follows the org's `status-*` pattern (sibling of [status-lectures](https://github.com/QuantEcon/status-lectures), which tracks build/environment configuration, and of [status-projects](https://quantecon.github.io/status-projects/), which tracks what projects the org has and how each is going): data lives in-repo as JSON, the dashboard is a static page on GitHub Pages, and no credentials beyond `GITHUB_TOKEN` are needed — every fact is computed from public GitHub state. Every QuantEcon dashboard is listed in the operations manual's [Dashboards directory](https://manual.quantecon.org/stats/dashboards.html).
 
 ## What it answers
 
