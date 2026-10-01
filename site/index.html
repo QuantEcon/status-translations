@@ -174,7 +174,7 @@ function render(DATA) {
   /* ---- ladder ---- */
   const ladder = `<section aria-label="Language pipeline">
     <h2>Language pipeline</h2>
-    <p class="h2-sub">The expansion ladder: each language advances research → glossary → pilot → production. Gate for launch: a committed human reviewer. Edition-by-edition lifecycle detail is on the <a href="rollout.html">rollout tracker</a>.</p>
+    <p class="h2-sub">The expansion ladder: each language advances research → glossary → pilot → production. Gate for launch: a committed human reviewer. Edition-by-edition lifecycle detail is on the <a href="rollout.html">rollout tracker</a>, and the projects moving each language along are on the <a href="projects.html">Projects</a> page.</p>
     <div class="ladder">${DATA.pipeline.map(st => `
       <div class="stage ${st.cls || ""}">
         <span class="stage-label"><span class="dot"></span>${esc(st.stage)}</span>

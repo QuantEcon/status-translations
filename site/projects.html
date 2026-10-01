@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Translation projects — QuantEcon Translations</title>
+<meta name="description" content="Projects running in the QuantEcon translation programme, read live from the QuantEcon project registry: stage, health, progress and links for each.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+<script>try{var t=localStorage.getItem("st-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header id="chrome"></header>
+  <main id="main"></main>
+  <footer id="foot"></footer>
+</div>
+<div id="tip" role="presentation"></div>
+
+<script src="app.js"></script>
+<script>
+"use strict";
+const { esc } = STDash;
+
+/* The project list is not kept here. It is read from the QuantEcon project
+   registry that status-projects publishes (contract C3), filtered to the
+   translation programme, so a project appears on this page as soon as it is
+   registered there and no list in this repo can drift from it. Counts come
+   from the registry's own programme rollup, never from re-counting. */
+const REGISTRY = "https://quantecon.github.io/status-projects/data/latest.json";
+const SP = "https://quantecon.github.io/status-projects/";
+const PROGRAMME = "translation";
+const THIS_SITE = "https://quantecon.github.io/status-translations/";
+
+const STAGES = ["active", "proposed", "steady", "parked", "idea"];
+const CLOSED = ["done", "superseded", "dropped"];
+const STAGE_LABEL = { active: "Active", proposed: "Proposed", steady: "Steady", parked: "Parked", idea: "Idea",
+                      done: "Done", superseded: "Superseded", dropped: "Dropped" };
+const PRIORITY_RANK = { now: 0, next: 1, later: 2 };
+const HEALTH_CLS = { current: "good", aging: "warn", stale: "crit" };
+
+const cardUrl = (slug) => `${SP}project.html?slug=${encodeURIComponent(slug)}`;
+const repoUrl = (ref) => `https://github.com/${ref}`;
+const issueUrl = (ref) => {
+  const m = /^([^/]+\/[^#]+)#(\d+)$/.exec(ref || "");
+  return m ? `https://github.com/${m[1]}/issues/${m[2]}` : null;
+};
+const inPrivate = (url, priv) => (priv || []).some(r => (url || "").includes(`github.com/${r}/`) || url === r);
+const lock = (on) => on ? `<span class="lock" title="In a private repository: visible to members with access">private</span>` : "";
+
+function projectCard(p) {
+  const d = p.declared || {}, o = p.observed || {};
+  const links = d.links || {}, priv = o.private_repos || [];
+  const stage = STAGE_LABEL[d.stage] || d.stage || "—";
+  const stageChip = `<span class="chip planned">${esc(stage)}${d.priority ? ` · ${esc(d.priority)}` : ""}</span>`;
+  const health = o.health
+    ? `<span class="badge ${HEALTH_CLS[o.health] || ""}" title="Health from the newest signal on the tracker">${esc(o.health)}</span>` : "";
+
+  const pr = o.progress;
+  const progress = pr && pr.total
+    ? `<div class="progress"><div class="meter" role="img" aria-label="${pr.percent}% of work items complete"><i style="width:${pr.percent}%"></i></div>
+         <span><b>${pr.completed}</b> / ${pr.total} work items · ${pr.percent}%</span></div>`
+    : `<div class="progress"><span>No work items attached yet</span></div>`;
+
+  const deliv = (d.deliverables || []).length
+    ? `<ul class="deliv">${d.deliverables.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : "";
+
+  const t = o.tracker || {};
+  const trackerHref = t.url || issueUrl(d.tracker);
+  const bits = [`<a href="${esc(cardUrl(p.slug))}">project card</a>`];
+  if (trackerHref) bits.push(`<a href="${esc(trackerHref)}">tracker</a>${lock(t.private)}`);
+  if (links.plan) bits.push(`<a href="${esc(links.plan)}">plan</a>${lock(inPrivate(links.plan, priv))}`);
+  if (links.status_page && links.status_page !== THIS_SITE) bits.push(`<a href="${esc(links.status_page)}">status page</a>`);
+  if (links.ledger) bits.push(`<a href="${esc(links.ledger)}">ledger</a>${lock(inPrivate(links.ledger, priv))}`);
+  (links.repos || []).forEach(r => bits.push(`<a href="${esc(repoUrl(r))}"><code>${esc(r.replace(/^QuantEcon\//, ""))}</code></a>${lock(priv.includes(r))}`));
+
+  const meta = [];
+  if (d.owner) meta.push(`owner <a href="https://github.com/${esc(d.owner)}">@${esc(d.owner)}</a>`);
+  if (d.started) meta.push(`started ${esc(d.started)}`);
+  if (d.ended) meta.push(`ended ${esc(d.ended)}`);
+  if (o.last_signal) meta.push(`last activity ${esc(o.last_signal)}` +
+    (typeof o.last_signal_age_days === "number" ? ` (${o.last_signal_age_days} d ago)` : ""));
+  const flags = (o.flags || []).length
+    ? ` · <span class="flags" title="Findings from the registry's nightly checks">${o.flags.map(esc).join(", ")}</span>` : "";
+
+  return `<article class="proj-card">
+      <div class="proj-head"><h4><a href="${esc(cardUrl(p.slug))}">${esc(d.name || p.slug)}</a></h4>
+        <span class="proj-chips">${stageChip}${health}</span></div>
+      ${d.summary ? `<p class="summary">${esc(d.summary)}</p>` : ""}
+      ${progress}
+      ${deliv}
+      <p class="meta">${meta.join(" · ")}${flags}</p>
+      <p class="links">${bits.join('<span class="sep">·</span>')}</p>
+    </article>`;
+}
+
+function byPriority(a, b) {
+  const pa = PRIORITY_RANK[a.declared.priority] ?? 3, pb = PRIORITY_RANK[b.declared.priority] ?? 3;
+  return pa - pb || String(a.declared.name).localeCompare(String(b.declared.name));
+}
+
+function renderRegistry(REG) {
+  const prog = (REG.programmes || []).find(g => g.slug === PROGRAMME);
+  const projects = (REG.projects || []).filter(p => p.declared && p.declared.programme === PROGRAMME);
+  const r = (prog && prog.rollup) || {};
+
+  const tiles = `<div class="tiles">
+      <div class="tile"><span class="label">Registered projects</span>
+        <span class="value">${r.projects ?? projects.length}</span>
+        <span class="note"><b>${r.live ?? "—"}</b> live · <b>${r.completed ?? 0}</b> completed</span></div>
+      <div class="tile"><span class="label">Active</span>
+        <span class="value">${r.active ?? "—"}</span>
+        <span class="note"><b>${r.now ?? 0}</b> at priority now</span></div>
+      <div class="tile"><span class="label">Flagged by the registry</span>
+        <span class="value">${r.flagged ?? 0}</span>
+        <span class="note">nightly checks on each tracker</span></div>
+    </div>`;
+
+  const groups = STAGES.map(st => {
+    const ps = projects.filter(p => p.declared.stage === st).sort(byPriority);
+    if (!ps.length) return "";
+    return `<div class="proj-group"><h3>${esc(STAGE_LABEL[st])} <span class="count">${ps.length}</span></h3>
+      <div class="proj-grid">${ps.map(projectCard).join("")}</div></div>`;
+  }).join("");
+
+  const closed = projects.filter(p => CLOSED.includes(p.declared.stage))
+    .sort((a, b) => String(b.declared.ended || "").localeCompare(String(a.declared.ended || "")));
+  const closedBlock = closed.length
+    ? `<details class="proj-closed"><summary>Completed and closed projects (${closed.length})</summary>
+        <div class="proj-grid">${closed.map(projectCard).join("")}</div></details>` : "";
+
+  const when = String(REG.generated_at || "").replace("T", " ").replace(/:\d\dZ$/, " UTC");
+  document.getElementById("proj-when").innerHTML =
+    `Registry collected <b>${esc(when || "—")}</b><span class="sep">·</span><a href="${SP}">status-projects</a>`;
+  document.getElementById("proj-body").innerHTML = tiles + groups + closedBlock;
+}
+
+function render() {
+  document.getElementById("main").innerHTML = `<section aria-label="Translation projects">
+      <h2>Translation projects</h2>
+      <p class="h2-sub">Projects running in the translation programme, read live from the QuantEcon project registry. A project appears here once it is registered there. Each name opens its project card, with the full history, and a <span class="lock">private</span> marker means the link is in a private repository.</p>
+      <p class="dateline" id="proj-when">Loading the project registry…</p>
+      <div id="proj-body"></div>
+    </section>`;
+  fetch(REGISTRY, { cache: "no-store" })
+    .then(res => { if (!res.ok) throw new Error(`HTTP ${res.status}`); return res.json(); })
+    .then(renderRegistry)
+    .catch(err => {
+      document.getElementById("proj-when").textContent = "";
+      document.getElementById("proj-body").innerHTML =
+        `<div class="error-card"><b>Could not load the project registry</b> (${esc(err.message)}). ` +
+        `The same projects are listed on <a href="${SP}">status-projects</a>.</div>`;
+    });
+}
+
+STDash.boot({ page: "projects", render });
+</script>
+</body>
+</html>
