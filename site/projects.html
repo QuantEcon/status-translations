@@ -80,8 +80,8 @@ function projectCard(p) {
   if (d.ended) meta.push(`ended ${esc(d.ended)}`);
   if (o.last_signal) meta.push(`last activity ${esc(o.last_signal)}` +
     (typeof o.last_signal_age_days === "number" ? ` (${o.last_signal_age_days} d ago)` : ""));
-  const flags = (o.flags || []).length
-    ? ` · <span class="flags" title="Findings from the registry's nightly checks">${o.flags.map(esc).join(", ")}</span>` : "";
+  if ((o.flags || []).length)
+    meta.push(`<span class="flags" title="Findings from the registry's nightly checks">${o.flags.map(esc).join(", ")}</span>`);
 
   return `<article class="proj-card">
       <div class="proj-head"><h4><a href="${esc(cardUrl(p.slug))}">${esc(d.name || p.slug)}</a></h4>
@@ -89,7 +89,7 @@ function projectCard(p) {
       ${d.summary ? `<p class="summary">${esc(d.summary)}</p>` : ""}
       ${progress}
       ${deliv}
-      <p class="meta">${meta.join(" · ")}${flags}</p>
+      ${meta.length ? `<p class="meta">${meta.join(" · ")}</p>` : ""}
       <p class="links">${bits.join('<span class="sep">·</span>')}</p>
     </article>`;
 }
