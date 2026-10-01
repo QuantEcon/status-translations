@@ -42,6 +42,7 @@ const STDash = (() => {
     { id: "overview", href: "index.html", label: "Overview" },
     { id: "rollout", href: "rollout.html", label: "Rollout" },
     { id: "sync", href: "sync.html", label: "Sync detail" },
+    { id: "projects", href: "projects.html", label: "Projects" },
   ];
 
   function renderChrome(page, DATA) {
