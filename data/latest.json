@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-11",
+  "generated_at": "2026-10-12",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
-    "auto_merge": 16,
-    "editor": 85,
-    "pct_auto_merge": 16
+    "auto_merge": 19,
+    "editor": 90,
+    "pct_auto_merge": 17
   },
   "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
   "last_sync_note": "last_sync is the newest commit touching a matched lecture file in the edition — edition-local maintenance moves it too, so read it as activity, not sync",
@@ -24,12 +24,12 @@
           "review_state": "active",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 0,
+          "stale": 2,
           "last_sync": {
             "date": "2026-08-20",
-            "lag": "51 days ago"
+            "lag": "52 days ago"
           },
-          "drift_prs": 9,
+          "drift_prs": 11,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -39,25 +39,25 @@
             "open": 1,
             "note": "issues open since 2026-04-11"
           },
-          "status": "healthy",
-          "status_label": "Reference model",
+          "status": "drifting",
+          "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 10,
+            "verdicts": 12,
             "open_editor": {
               "count": 0
             },
             "auto_merge_recommended": {
-              "d7": 0,
-              "d30": 0
+              "d7": 2,
+              "d30": 2
             },
             "share": {
-              "auto_merge": 3,
+              "auto_merge": 5,
               "editor": 7
             },
             "would_auto_merge": {
-              "n": 7,
-              "agree": 7
+              "n": 9,
+              "agree": 9
             },
             "primary_editor": "HumphreyYang",
             "in_review_slugs": []
@@ -70,7 +70,7 @@
             },
             {
               "slug": "autodiff",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "debugging",
@@ -126,7 +126,7 @@
             },
             {
               "slug": "pandas_panel",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "polars",
@@ -178,12 +178,12 @@
           "review_state": "active",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 1,
+          "stale": 3,
           "last_sync": {
             "date": "2026-08-20",
-            "lag": "51 days ago"
+            "lag": "52 days ago"
           },
-          "drift_prs": 9,
+          "drift_prs": 11,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -197,24 +197,28 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 9,
+            "verdicts": 11,
             "open_editor": {
-              "count": 0
+              "count": 1,
+              "median_age_days": 0,
+              "oldest_age_days": 0
             },
             "auto_merge_recommended": {
-              "d7": 0,
-              "d30": 0
+              "d7": 1,
+              "d30": 1
             },
             "share": {
-              "auto_merge": 0,
-              "editor": 9
+              "auto_merge": 1,
+              "editor": 10
             },
             "would_auto_merge": {
-              "n": 6,
-              "agree": 6
+              "n": 8,
+              "agree": 8
             },
             "primary_editor": "Zahra-khanzadeh",
-            "in_review_slugs": []
+            "in_review_slugs": [
+              "pandas_panel"
+            ]
           },
           "orphans": [],
           "lectures": [
@@ -224,7 +228,7 @@
             },
             {
               "slug": "autodiff",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "debugging",
@@ -280,7 +284,7 @@
             },
             {
               "slug": "pandas_panel",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "polars",
@@ -332,12 +336,12 @@
           "review_state": "pending",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 0,
+          "stale": 2,
           "last_sync": {
             "date": "2026-10-06",
-            "lag": "4 days ago"
+            "lag": "5 days ago"
           },
-          "drift_prs": 0,
+          "drift_prs": 2,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -347,13 +351,15 @@
             "open": 0,
             "note": "site live 2026-07-17 · seed awaiting native review"
           },
-          "status": "healthy",
-          "status_label": "Published pilot",
+          "status": "drifting",
+          "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 11,
+            "verdicts": 13,
             "open_editor": {
-              "count": 0
+              "count": 2,
+              "median_age_days": 0,
+              "oldest_age_days": 0
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -361,14 +367,17 @@
             },
             "share": {
               "auto_merge": 4,
-              "editor": 7
+              "editor": 9
             },
             "would_auto_merge": {
-              "n": 8,
-              "agree": 8
+              "n": 10,
+              "agree": 10
             },
             "primary_editor": "Honaminto",
-            "in_review_slugs": []
+            "in_review_slugs": [
+              "autodiff",
+              "pandas_panel"
+            ]
           },
           "orphans": [],
           "lectures": [
@@ -378,7 +387,7 @@
             },
             {
               "slug": "autodiff",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "debugging",
@@ -434,7 +443,7 @@
             },
             {
               "slug": "pandas_panel",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "polars",
@@ -489,9 +498,9 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-06",
-            "lag": "4 days ago"
+            "lag": "5 days ago"
           },
-          "drift_prs": 0,
+          "drift_prs": 2,
           "drift_approx": true,
           "automation": {
             "wired": false,
@@ -650,7 +659,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "1 day ago"
+            "lag": "2 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -918,7 +927,7 @@
     {
       "repo": "lecture-python.myst",
       "title": "Intermediate Quantitative Economics with Python",
-      "lectures_total": 147,
+      "lectures_total": 148,
       "editions": [
         {
           "lang": "zh-cn",
@@ -928,12 +937,12 @@
           "review_state": "stalled",
           "lectures_translated": 144,
           "freshness": "computed",
-          "stale": 19,
+          "stale": 20,
           "last_sync": {
             "date": "2026-10-10",
-            "lag": "1 day ago"
+            "lag": "2 days ago"
           },
-          "drift_prs": 0,
+          "drift_prs": 2,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -947,11 +956,11 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 54,
+            "verdicts": 56,
             "open_editor": {
-              "count": 10,
+              "count": 12,
               "median_age_days": 14,
-              "oldest_age_days": 48
+              "oldest_age_days": 49
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -959,23 +968,25 @@
             },
             "share": {
               "auto_merge": 7,
-              "editor": 47
+              "editor": 49
             },
             "would_auto_merge": {
-              "n": 28,
-              "agree": 28
+              "n": 30,
+              "agree": 30
             },
             "primary_editor": "HumphreyYang",
             "in_review_slugs": [
               "affine_risk_prices",
               "ak2",
               "ak_aiyagari",
+              "gallant_tauchen",
               "house_auction",
               "linear_algebra",
               "long_run_risk_operator",
               "lq_mean_field_games",
               "lq_robust_bewley",
               "lucas_prescott_investment",
+              "pandas_panel",
               "qr_decomp",
               "rational_expectations",
               "ross_recovery",
@@ -1082,6 +1093,10 @@
             {
               "slug": "finite_markov",
               "state": "fresh"
+            },
+            {
+              "slug": "gallant_tauchen",
+              "state": "missing"
             },
             {
               "slug": "ge_arrow",
@@ -1385,7 +1400,7 @@
             },
             {
               "slug": "pandas_panel",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "perm_income",
