@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-12",
+  "generated_at": "2026-10-13",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 19,
@@ -24,12 +24,12 @@
           "review_state": "active",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 2,
+          "stale": 0,
           "last_sync": {
-            "date": "2026-08-20",
-            "lag": "52 days ago"
+            "date": "2026-10-13",
+            "lag": "today"
           },
-          "drift_prs": 11,
+          "drift_prs": 0,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -39,8 +39,8 @@
             "open": 1,
             "note": "issues open since 2026-04-11"
           },
-          "status": "drifting",
-          "status_label": "Drifting",
+          "status": "healthy",
+          "status_label": "Reference model",
           "review_lanes": {
             "mode": "shadow",
             "verdicts": 12,
@@ -70,7 +70,7 @@
             },
             {
               "slug": "autodiff",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "debugging",
@@ -126,7 +126,7 @@
             },
             {
               "slug": "pandas_panel",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "polars",
@@ -181,7 +181,7 @@
           "stale": 3,
           "last_sync": {
             "date": "2026-08-20",
-            "lag": "52 days ago"
+            "lag": "53 days ago"
           },
           "drift_prs": 11,
           "drift_approx": true,
@@ -200,8 +200,8 @@
             "verdicts": 11,
             "open_editor": {
               "count": 1,
-              "median_age_days": 0,
-              "oldest_age_days": 0
+              "median_age_days": 1,
+              "oldest_age_days": 1
             },
             "auto_merge_recommended": {
               "d7": 1,
@@ -339,7 +339,7 @@
           "stale": 2,
           "last_sync": {
             "date": "2026-10-06",
-            "lag": "5 days ago"
+            "lag": "6 days ago"
           },
           "drift_prs": 2,
           "drift_approx": true,
@@ -358,12 +358,12 @@
             "verdicts": 13,
             "open_editor": {
               "count": 2,
-              "median_age_days": 0,
-              "oldest_age_days": 0
+              "median_age_days": 1,
+              "oldest_age_days": 1
             },
             "auto_merge_recommended": {
               "d7": 0,
-              "d30": 1
+              "d30": 0
             },
             "share": {
               "auto_merge": 4,
@@ -498,7 +498,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-06",
-            "lag": "5 days ago"
+            "lag": "6 days ago"
           },
           "drift_prs": 2,
           "drift_approx": true,
@@ -659,7 +659,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "2 days ago"
+            "lag": "3 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -937,10 +937,10 @@
           "review_state": "stalled",
           "lectures_translated": 144,
           "freshness": "computed",
-          "stale": 20,
+          "stale": 18,
           "last_sync": {
-            "date": "2026-10-10",
-            "lag": "2 days ago"
+            "date": "2026-10-12",
+            "lag": "today"
           },
           "drift_prs": 2,
           "drift_approx": true,
@@ -958,9 +958,9 @@
             "mode": "shadow",
             "verdicts": 56,
             "open_editor": {
-              "count": 12,
-              "median_age_days": 14,
-              "oldest_age_days": 49
+              "count": 10,
+              "median_age_days": 16,
+              "oldest_age_days": 50
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -986,14 +986,12 @@
               "lq_mean_field_games",
               "lq_robust_bewley",
               "lucas_prescott_investment",
-              "pandas_panel",
               "qr_decomp",
               "rational_expectations",
               "ross_recovery",
               "samuelson",
               "two_auctions",
-              "two_computation",
-              "wealth_dynamics"
+              "two_computation"
             ]
           },
           "orphans": [],
@@ -1400,7 +1398,7 @@
             },
             {
               "slug": "pandas_panel",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "perm_income",
@@ -1584,7 +1582,7 @@
             },
             {
               "slug": "wealth_dynamics",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "zreferences",
@@ -1610,7 +1608,7 @@
     {
       "repo": "lecture-python-advanced.myst",
       "title": "Advanced Quantitative Economics with Python",
-      "lectures_total": 67,
+      "lectures_total": 68,
       "phase": "Phase 3",
       "editions": [
         {
