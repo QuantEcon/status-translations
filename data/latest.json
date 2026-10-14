@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-13",
+  "generated_at": "2026-10-14",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
-    "auto_merge": 19,
-    "editor": 90,
-    "pct_auto_merge": 17
+    "auto_merge": 20,
+    "editor": 92,
+    "pct_auto_merge": 18
   },
   "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
   "last_sync_note": "last_sync is the newest commit touching a matched lecture file in the edition — edition-local maintenance moves it too, so read it as activity, not sync",
@@ -29,7 +29,7 @@
             "date": "2026-10-13",
             "lag": "today"
           },
-          "drift_prs": 0,
+          "drift_prs": 1,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -43,21 +43,21 @@
           "status_label": "Reference model",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 12,
+            "verdicts": 13,
             "open_editor": {
               "count": 0
             },
             "auto_merge_recommended": {
-              "d7": 2,
-              "d30": 2
+              "d7": 3,
+              "d30": 3
             },
             "share": {
-              "auto_merge": 5,
+              "auto_merge": 6,
               "editor": 7
             },
             "would_auto_merge": {
-              "n": 9,
-              "agree": 9
+              "n": 10,
+              "agree": 10
             },
             "primary_editor": "HumphreyYang",
             "in_review_slugs": []
@@ -178,12 +178,12 @@
           "review_state": "active",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 3,
+          "stale": 4,
           "last_sync": {
             "date": "2026-08-20",
-            "lag": "53 days ago"
+            "lag": "54 days ago"
           },
-          "drift_prs": 11,
+          "drift_prs": 12,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -197,11 +197,11 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 11,
+            "verdicts": 12,
             "open_editor": {
-              "count": 1,
+              "count": 2,
               "median_age_days": 1,
-              "oldest_age_days": 1
+              "oldest_age_days": 2
             },
             "auto_merge_recommended": {
               "d7": 1,
@@ -209,15 +209,16 @@
             },
             "share": {
               "auto_merge": 1,
-              "editor": 10
+              "editor": 11
             },
             "would_auto_merge": {
-              "n": 8,
-              "agree": 8
+              "n": 9,
+              "agree": 9
             },
             "primary_editor": "Zahra-khanzadeh",
             "in_review_slugs": [
-              "pandas_panel"
+              "pandas_panel",
+              "polars"
             ]
           },
           "orphans": [],
@@ -288,7 +289,7 @@
             },
             {
               "slug": "polars",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "python_advanced_features",
@@ -336,12 +337,12 @@
           "review_state": "pending",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 2,
+          "stale": 3,
           "last_sync": {
             "date": "2026-10-06",
-            "lag": "6 days ago"
+            "lag": "7 days ago"
           },
-          "drift_prs": 2,
+          "drift_prs": 3,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -355,11 +356,11 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 13,
+            "verdicts": 14,
             "open_editor": {
-              "count": 2,
-              "median_age_days": 1,
-              "oldest_age_days": 1
+              "count": 3,
+              "median_age_days": 2,
+              "oldest_age_days": 2
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -367,16 +368,17 @@
             },
             "share": {
               "auto_merge": 4,
-              "editor": 9
+              "editor": 10
             },
             "would_auto_merge": {
-              "n": 10,
-              "agree": 10
+              "n": 11,
+              "agree": 11
             },
             "primary_editor": "Honaminto",
             "in_review_slugs": [
               "autodiff",
-              "pandas_panel"
+              "pandas_panel",
+              "polars"
             ]
           },
           "orphans": [],
@@ -447,7 +449,7 @@
             },
             {
               "slug": "polars",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "python_advanced_features",
@@ -498,9 +500,9 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-06",
-            "lag": "6 days ago"
+            "lag": "7 days ago"
           },
-          "drift_prs": 2,
+          "drift_prs": 3,
           "drift_approx": true,
           "automation": {
             "wired": false,
@@ -659,7 +661,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "3 days ago"
+            "lag": "4 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -940,7 +942,7 @@
           "stale": 18,
           "last_sync": {
             "date": "2026-10-12",
-            "lag": "today"
+            "lag": "1 day ago"
           },
           "drift_prs": 2,
           "drift_approx": true,
@@ -959,8 +961,8 @@
             "verdicts": 56,
             "open_editor": {
               "count": 10,
-              "median_age_days": 16,
-              "oldest_age_days": 50
+              "median_age_days": 17,
+              "oldest_age_days": 51
             },
             "auto_merge_recommended": {
               "d7": 0,
