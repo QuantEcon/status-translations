@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-14",
+  "generated_at": "2026-10-15",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 20,
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-13",
-            "lag": "today"
+            "lag": "1 day ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -181,7 +181,7 @@
           "stale": 4,
           "last_sync": {
             "date": "2026-08-20",
-            "lag": "54 days ago"
+            "lag": "55 days ago"
           },
           "drift_prs": 12,
           "drift_approx": true,
@@ -200,8 +200,8 @@
             "verdicts": 12,
             "open_editor": {
               "count": 2,
-              "median_age_days": 1,
-              "oldest_age_days": 2
+              "median_age_days": 2,
+              "oldest_age_days": 3
             },
             "auto_merge_recommended": {
               "d7": 1,
@@ -340,7 +340,7 @@
           "stale": 3,
           "last_sync": {
             "date": "2026-10-06",
-            "lag": "7 days ago"
+            "lag": "8 days ago"
           },
           "drift_prs": 3,
           "drift_approx": true,
@@ -359,8 +359,8 @@
             "verdicts": 14,
             "open_editor": {
               "count": 3,
-              "median_age_days": 2,
-              "oldest_age_days": 2
+              "median_age_days": 3,
+              "oldest_age_days": 3
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -500,7 +500,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-06",
-            "lag": "7 days ago"
+            "lag": "8 days ago"
           },
           "drift_prs": 3,
           "drift_approx": true,
@@ -661,7 +661,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "4 days ago"
+            "lag": "5 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -942,7 +942,7 @@
           "stale": 18,
           "last_sync": {
             "date": "2026-10-12",
-            "lag": "1 day ago"
+            "lag": "2 days ago"
           },
           "drift_prs": 2,
           "drift_approx": true,
@@ -961,8 +961,8 @@
             "verdicts": 56,
             "open_editor": {
               "count": 10,
-              "median_age_days": 17,
-              "oldest_age_days": 51
+              "median_age_days": 18,
+              "oldest_age_days": 52
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -1610,7 +1610,7 @@
     {
       "repo": "lecture-python-advanced.myst",
       "title": "Advanced Quantitative Economics with Python",
-      "lectures_total": 68,
+      "lectures_total": 70,
       "phase": "Phase 3",
       "editions": [
         {
