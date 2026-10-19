@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-18",
+  "generated_at": "2026-10-19",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
-    "auto_merge": 20,
-    "editor": 92,
-    "pct_auto_merge": 18
+    "auto_merge": 22,
+    "editor": 90,
+    "pct_auto_merge": 20
   },
   "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
   "last_sync_note": "last_sync is the newest commit touching a matched lecture file in the edition — edition-local maintenance moves it too, so read it as activity, not sync",
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-13",
-            "lag": "4 days ago"
+            "lag": "5 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -48,7 +48,7 @@
               "count": 0
             },
             "auto_merge_recommended": {
-              "d7": 3,
+              "d7": 1,
               "d30": 3
             },
             "share": {
@@ -178,12 +178,12 @@
           "review_state": "active",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 4,
+          "stale": 1,
           "last_sync": {
-            "date": "2026-08-20",
-            "lag": "58 days ago"
+            "date": "2026-10-18",
+            "lag": "today"
           },
-          "drift_prs": 12,
+          "drift_prs": 0,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -199,12 +199,10 @@
             "mode": "shadow",
             "verdicts": 12,
             "open_editor": {
-              "count": 2,
-              "median_age_days": 5,
-              "oldest_age_days": 6
+              "count": 0
             },
             "auto_merge_recommended": {
-              "d7": 1,
+              "d7": 0,
               "d30": 1
             },
             "share": {
@@ -216,10 +214,7 @@
               "agree": 9
             },
             "primary_editor": "Zahra-khanzadeh",
-            "in_review_slugs": [
-              "pandas_panel",
-              "polars"
-            ]
+            "in_review_slugs": []
           },
           "orphans": [],
           "lectures": [
@@ -229,7 +224,7 @@
             },
             {
               "slug": "autodiff",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "debugging",
@@ -285,11 +280,11 @@
             },
             {
               "slug": "pandas_panel",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "polars",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "python_advanced_features",
@@ -337,12 +332,12 @@
           "review_state": "pending",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 3,
+          "stale": 0,
           "last_sync": {
-            "date": "2026-10-06",
-            "lag": "11 days ago"
+            "date": "2026-10-18",
+            "lag": "today"
           },
-          "drift_prs": 3,
+          "drift_prs": 0,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -352,34 +347,28 @@
             "open": 0,
             "note": "site live 2026-07-17 · seed awaiting native review"
           },
-          "status": "drifting",
-          "status_label": "Drifting",
+          "status": "healthy",
+          "status_label": "Published pilot",
           "review_lanes": {
             "mode": "shadow",
             "verdicts": 14,
             "open_editor": {
-              "count": 3,
-              "median_age_days": 6,
-              "oldest_age_days": 6
+              "count": 0
             },
             "auto_merge_recommended": {
-              "d7": 0,
-              "d30": 0
+              "d7": 1,
+              "d30": 1
             },
             "share": {
-              "auto_merge": 4,
-              "editor": 10
+              "auto_merge": 5,
+              "editor": 9
             },
             "would_auto_merge": {
               "n": 11,
               "agree": 11
             },
             "primary_editor": "Honaminto",
-            "in_review_slugs": [
-              "autodiff",
-              "pandas_panel",
-              "polars"
-            ]
+            "in_review_slugs": []
           },
           "orphans": [],
           "lectures": [
@@ -389,7 +378,7 @@
             },
             {
               "slug": "autodiff",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "debugging",
@@ -445,11 +434,11 @@
             },
             {
               "slug": "pandas_panel",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "polars",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "python_advanced_features",
@@ -500,7 +489,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-06",
-            "lag": "11 days ago"
+            "lag": "12 days ago"
           },
           "drift_prs": 3,
           "drift_approx": true,
@@ -661,7 +650,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "8 days ago"
+            "lag": "9 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -939,12 +928,12 @@
           "review_state": "stalled",
           "lectures_translated": 144,
           "freshness": "computed",
-          "stale": 18,
+          "stale": 5,
           "last_sync": {
-            "date": "2026-10-12",
-            "lag": "5 days ago"
+            "date": "2026-10-18",
+            "lag": "today"
           },
-          "drift_prs": 3,
+          "drift_prs": 0,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -960,17 +949,17 @@
             "mode": "shadow",
             "verdicts": 56,
             "open_editor": {
-              "count": 10,
-              "median_age_days": 21,
-              "oldest_age_days": 55
+              "count": 2,
+              "median_age_days": 14,
+              "oldest_age_days": 21
             },
             "auto_merge_recommended": {
-              "d7": 0,
-              "d30": 1
+              "d7": 1,
+              "d30": 2
             },
             "share": {
-              "auto_merge": 7,
-              "editor": 49
+              "auto_merge": 8,
+              "editor": 48
             },
             "would_auto_merge": {
               "n": 30,
@@ -978,29 +967,17 @@
             },
             "primary_editor": "HumphreyYang",
             "in_review_slugs": [
-              "affine_risk_prices",
-              "ak2",
-              "ak_aiyagari",
               "gallant_tauchen",
-              "house_auction",
-              "linear_algebra",
-              "long_run_risk_operator",
               "lq_mean_field_games",
-              "lq_robust_bewley",
               "lucas_prescott_investment",
-              "qr_decomp",
-              "rational_expectations",
-              "ross_recovery",
-              "samuelson",
-              "two_auctions",
-              "two_computation"
+              "rational_expectations"
             ]
           },
           "orphans": [],
           "lectures": [
             {
               "slug": "affine_risk_prices",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "aiyagari",
@@ -1012,11 +989,11 @@
             },
             {
               "slug": "ak2",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "ak_aiyagari",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "ar1_bayes",
@@ -1120,11 +1097,11 @@
             },
             {
               "slug": "hoist_failure",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "house_auction",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "ifp_advanced",
@@ -1216,7 +1193,7 @@
             },
             {
               "slug": "linear_algebra",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "linear_models",
@@ -1228,7 +1205,7 @@
             },
             {
               "slug": "long_run_risk_operator",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "lq_bewley_complete_markets",
@@ -1248,7 +1225,7 @@
             },
             {
               "slug": "lq_robust_bewley",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "lq_robust_smoothing",
@@ -1472,7 +1449,7 @@
             },
             {
               "slug": "qr_decomp",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "rand_resp",
@@ -1496,7 +1473,7 @@
             },
             {
               "slug": "ross_recovery",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "rs_inventory_q",
@@ -1504,7 +1481,7 @@
             },
             {
               "slug": "samuelson",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "sargent_surico",
@@ -1544,11 +1521,11 @@
             },
             {
               "slug": "two_auctions",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "two_computation",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "uncertainty_traps",
