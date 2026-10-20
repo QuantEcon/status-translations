@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-19",
+  "generated_at": "2026-10-20",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 22,
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-13",
-            "lag": "5 days ago"
+            "lag": "6 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "today"
+            "lag": "1 day ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -335,7 +335,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "today"
+            "lag": "1 day ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -484,14 +484,14 @@
           "target_repo": "lecture-python-programming.ml",
           "site": "https://quantecon.github.io/lecture-python-programming.ml/",
           "review_state": "active",
-          "lectures_translated": 5,
+          "lectures_translated": 6,
           "freshness": "computed",
           "stale": 0,
           "last_sync": {
-            "date": "2026-10-06",
-            "lag": "12 days ago"
+            "date": "2026-10-19",
+            "lag": "today"
           },
-          "drift_prs": 3,
+          "drift_prs": 0,
           "drift_approx": true,
           "automation": {
             "wired": false,
@@ -584,7 +584,7 @@
             },
             {
               "slug": "pandas",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "pandas_panel",
@@ -650,7 +650,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "9 days ago"
+            "lag": "10 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -931,7 +931,7 @@
           "stale": 5,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "today"
+            "lag": "1 day ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -950,8 +950,8 @@
             "verdicts": 56,
             "open_editor": {
               "count": 2,
-              "median_age_days": 14,
-              "oldest_age_days": 21
+              "median_age_days": 15,
+              "oldest_age_days": 22
             },
             "auto_merge_recommended": {
               "d7": 1,
