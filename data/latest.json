@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-20",
+  "generated_at": "2026-10-21",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 22,
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-13",
-            "lag": "6 days ago"
+            "lag": "7 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -48,7 +48,7 @@
               "count": 0
             },
             "auto_merge_recommended": {
-              "d7": 1,
+              "d7": 0,
               "d30": 3
             },
             "share": {
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "1 day ago"
+            "lag": "2 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -335,7 +335,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "1 day ago"
+            "lag": "2 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -488,7 +488,7 @@
           "freshness": "computed",
           "stale": 0,
           "last_sync": {
-            "date": "2026-10-19",
+            "date": "2026-10-21",
             "lag": "today"
           },
           "drift_prs": 0,
@@ -650,7 +650,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "10 days ago"
+            "lag": "11 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -931,7 +931,7 @@
           "stale": 5,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "1 day ago"
+            "lag": "2 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -950,8 +950,8 @@
             "verdicts": 56,
             "open_editor": {
               "count": 2,
-              "median_age_days": 15,
-              "oldest_age_days": 22
+              "median_age_days": 16,
+              "oldest_age_days": 23
             },
             "auto_merge_recommended": {
               "d7": 1,
