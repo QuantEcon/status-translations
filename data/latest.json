@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-21",
+  "generated_at": "2026-10-22",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 22,
-    "editor": 90,
-    "pct_auto_merge": 20
+    "editor": 92,
+    "pct_auto_merge": 19
   },
   "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
   "last_sync_note": "last_sync is the newest commit touching a matched lecture file in the edition — edition-local maintenance moves it too, so read it as activity, not sync",
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-13",
-            "lag": "7 days ago"
+            "lag": "8 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "2 days ago"
+            "lag": "3 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -335,7 +335,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "2 days ago"
+            "lag": "3 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -489,7 +489,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-21",
-            "lag": "today"
+            "lag": "1 day ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -650,7 +650,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "11 days ago"
+            "lag": "12 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -926,12 +926,12 @@
           "target_repo": "lecture-python.zh-cn",
           "site": "https://quantecon.github.io/lecture-python.zh-cn/",
           "review_state": "stalled",
-          "lectures_translated": 144,
+          "lectures_translated": 149,
           "freshness": "computed",
-          "stale": 5,
+          "stale": 2,
           "last_sync": {
-            "date": "2026-10-18",
-            "lag": "2 days ago"
+            "date": "2026-10-22",
+            "lag": "today"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -947,11 +947,9 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 56,
+            "verdicts": 58,
             "open_editor": {
-              "count": 2,
-              "median_age_days": 16,
-              "oldest_age_days": 23
+              "count": 0
             },
             "auto_merge_recommended": {
               "d7": 1,
@@ -959,19 +957,14 @@
             },
             "share": {
               "auto_merge": 8,
-              "editor": 48
+              "editor": 50
             },
             "would_auto_merge": {
-              "n": 30,
-              "agree": 30
+              "n": 32,
+              "agree": 32
             },
             "primary_editor": "HumphreyYang",
-            "in_review_slugs": [
-              "gallant_tauchen",
-              "lq_mean_field_games",
-              "lucas_prescott_investment",
-              "rational_expectations"
-            ]
+            "in_review_slugs": []
           },
           "orphans": [],
           "lectures": [
@@ -1073,7 +1066,7 @@
             },
             {
               "slug": "gallant_tauchen",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "ge_arrow",
@@ -1217,7 +1210,7 @@
             },
             {
               "slug": "lq_mean_field_games",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "lq_permanent_income",
@@ -1241,7 +1234,7 @@
             },
             {
               "slug": "lucas_prescott_investment",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "marimon_mcgrattan_sargent",
@@ -1345,7 +1338,7 @@
             },
             {
               "slug": "optimal_growth_uncertainty",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "organization_capital",
@@ -1457,7 +1450,7 @@
             },
             {
               "slug": "rational_expectations",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "rational_learning_re",
@@ -1489,11 +1482,11 @@
             },
             {
               "slug": "sir_model",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "social_security_depletion",
-              "state": "missing"
+              "state": "fresh"
             },
             {
               "slug": "stats_examples",
@@ -1505,7 +1498,7 @@
             },
             {
               "slug": "svd_intro",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "theil_1",
