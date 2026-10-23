@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-22",
+  "generated_at": "2026-10-23",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 22,
-    "editor": 92,
+    "editor": 93,
     "pct_auto_merge": 19
   },
   "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-13",
-            "lag": "8 days ago"
+            "lag": "9 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "3 days ago"
+            "lag": "4 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -335,7 +335,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "3 days ago"
+            "lag": "4 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -489,7 +489,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-21",
-            "lag": "1 day ago"
+            "lag": "2 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -650,7 +650,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "12 days ago"
+            "lag": "13 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -928,7 +928,7 @@
           "review_state": "stalled",
           "lectures_translated": 149,
           "freshness": "computed",
-          "stale": 2,
+          "stale": 0,
           "last_sync": {
             "date": "2026-10-22",
             "lag": "today"
@@ -943,11 +943,11 @@
             "open": 0,
             "note": "campaign stalled Oct 2025"
           },
-          "status": "drifting",
-          "status_label": "Drifting",
+          "status": "healthy",
+          "status_label": "Healthy",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 58,
+            "verdicts": 59,
             "open_editor": {
               "count": 0
             },
@@ -957,11 +957,11 @@
             },
             "share": {
               "auto_merge": 8,
-              "editor": 50
+              "editor": 51
             },
             "would_auto_merge": {
-              "n": 32,
-              "agree": 32
+              "n": 33,
+              "agree": 33
             },
             "primary_editor": "HumphreyYang",
             "in_review_slugs": []
@@ -1282,7 +1282,7 @@
             },
             {
               "slug": "measurement_models",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "merging_of_opinions",
@@ -1538,7 +1538,7 @@
             },
             {
               "slug": "var_dmd",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "var_subsets",
