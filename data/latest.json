@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-23",
+  "generated_at": "2026-10-24",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 22,
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-13",
-            "lag": "9 days ago"
+            "lag": "10 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "4 days ago"
+            "lag": "5 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -335,7 +335,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "4 days ago"
+            "lag": "5 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -489,7 +489,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-21",
-            "lag": "2 days ago"
+            "lag": "3 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -650,7 +650,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "13 days ago"
+            "lag": "14 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -931,7 +931,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "today"
+            "lag": "1 day ago"
           },
           "drift_prs": 0,
           "drift_approx": true,

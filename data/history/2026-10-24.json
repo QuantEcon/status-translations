@@ -1,0 +1,1659 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-10-24",
+  "collected_by": "collector v1.2 (collect.py)",
+  "routing_fleet": {
+    "auto_merge": 22,
+    "editor": 93,
+    "pct_auto_merge": 19
+  },
+  "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
+  "last_sync_note": "last_sync is the newest commit touching a matched lecture file in the edition — edition-local maintenance moves it too, so read it as activity, not sync",
+  "counting_rule": "lectures/*.md in the source repo, excluding README/status; coverage = files present in both source and edition",
+  "sources": [
+    {
+      "repo": "lecture-python-programming",
+      "title": "Python Programming for Economics and Finance",
+      "lectures_total": 26,
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "target_repo": "lecture-python-programming.zh-cn",
+          "site": "https://quantecon.github.io/lecture-python-programming.zh-cn/",
+          "review_state": "active",
+          "lectures_translated": 26,
+          "freshness": "computed",
+          "stale": 0,
+          "last_sync": {
+            "date": "2026-10-13",
+            "lag": "10 days ago"
+          },
+          "drift_prs": 1,
+          "drift_approx": true,
+          "automation": {
+            "wired": true,
+            "parts": "sync · AI review · rebase"
+          },
+          "review": {
+            "open": 1,
+            "note": "issues open since 2026-04-11"
+          },
+          "status": "healthy",
+          "status_label": "Reference model",
+          "review_lanes": {
+            "mode": "shadow",
+            "verdicts": 13,
+            "open_editor": {
+              "count": 0
+            },
+            "auto_merge_recommended": {
+              "d7": 0,
+              "d30": 3
+            },
+            "share": {
+              "auto_merge": 6,
+              "editor": 7
+            },
+            "would_auto_merge": {
+              "n": 10,
+              "agree": 10
+            },
+            "primary_editor": "HumphreyYang",
+            "in_review_slugs": []
+          },
+          "orphans": [],
+          "lectures": [
+            {
+              "slug": "about_py",
+              "state": "fresh"
+            },
+            {
+              "slug": "autodiff",
+              "state": "fresh"
+            },
+            {
+              "slug": "debugging",
+              "state": "fresh"
+            },
+            {
+              "slug": "functions",
+              "state": "fresh"
+            },
+            {
+              "slug": "getting_started",
+              "state": "fresh"
+            },
+            {
+              "slug": "intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "jax_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "matplotlib",
+              "state": "fresh"
+            },
+            {
+              "slug": "names",
+              "state": "fresh"
+            },
+            {
+              "slug": "need_for_speed",
+              "state": "fresh"
+            },
+            {
+              "slug": "numba",
+              "state": "fresh"
+            },
+            {
+              "slug": "numpy",
+              "state": "fresh"
+            },
+            {
+              "slug": "numpy_vs_numba_vs_jax",
+              "state": "fresh"
+            },
+            {
+              "slug": "oop_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "pandas",
+              "state": "fresh"
+            },
+            {
+              "slug": "pandas_panel",
+              "state": "fresh"
+            },
+            {
+              "slug": "polars",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_advanced_features",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_by_example",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_essentials",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_oop",
+              "state": "fresh"
+            },
+            {
+              "slug": "scipy",
+              "state": "fresh"
+            },
+            {
+              "slug": "sympy",
+              "state": "fresh"
+            },
+            {
+              "slug": "troubleshooting",
+              "state": "fresh"
+            },
+            {
+              "slug": "workspace",
+              "state": "fresh"
+            },
+            {
+              "slug": "writing_good_code",
+              "state": "fresh"
+            }
+          ]
+        },
+        {
+          "lang": "fa",
+          "lang_label": "Farsi",
+          "target_repo": "lecture-python-programming.fa",
+          "site": "https://quantecon.github.io/lecture-python-programming.fa/",
+          "review_state": "active",
+          "lectures_translated": 26,
+          "freshness": "computed",
+          "stale": 1,
+          "last_sync": {
+            "date": "2026-10-18",
+            "lag": "5 days ago"
+          },
+          "drift_prs": 0,
+          "drift_approx": true,
+          "automation": {
+            "wired": true,
+            "parts": "sync · AI review · rebase"
+          },
+          "review": {
+            "open": 0,
+            "note": "pilot reviewer · RTL questions open"
+          },
+          "status": "drifting",
+          "status_label": "Drifting",
+          "review_lanes": {
+            "mode": "shadow",
+            "verdicts": 12,
+            "open_editor": {
+              "count": 0
+            },
+            "auto_merge_recommended": {
+              "d7": 0,
+              "d30": 1
+            },
+            "share": {
+              "auto_merge": 1,
+              "editor": 11
+            },
+            "would_auto_merge": {
+              "n": 9,
+              "agree": 9
+            },
+            "primary_editor": "Zahra-khanzadeh",
+            "in_review_slugs": []
+          },
+          "orphans": [],
+          "lectures": [
+            {
+              "slug": "about_py",
+              "state": "stale"
+            },
+            {
+              "slug": "autodiff",
+              "state": "fresh"
+            },
+            {
+              "slug": "debugging",
+              "state": "fresh"
+            },
+            {
+              "slug": "functions",
+              "state": "fresh"
+            },
+            {
+              "slug": "getting_started",
+              "state": "fresh"
+            },
+            {
+              "slug": "intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "jax_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "matplotlib",
+              "state": "fresh"
+            },
+            {
+              "slug": "names",
+              "state": "fresh"
+            },
+            {
+              "slug": "need_for_speed",
+              "state": "fresh"
+            },
+            {
+              "slug": "numba",
+              "state": "fresh"
+            },
+            {
+              "slug": "numpy",
+              "state": "fresh"
+            },
+            {
+              "slug": "numpy_vs_numba_vs_jax",
+              "state": "fresh"
+            },
+            {
+              "slug": "oop_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "pandas",
+              "state": "fresh"
+            },
+            {
+              "slug": "pandas_panel",
+              "state": "fresh"
+            },
+            {
+              "slug": "polars",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_advanced_features",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_by_example",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_essentials",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_oop",
+              "state": "fresh"
+            },
+            {
+              "slug": "scipy",
+              "state": "fresh"
+            },
+            {
+              "slug": "sympy",
+              "state": "fresh"
+            },
+            {
+              "slug": "troubleshooting",
+              "state": "fresh"
+            },
+            {
+              "slug": "workspace",
+              "state": "fresh"
+            },
+            {
+              "slug": "writing_good_code",
+              "state": "fresh"
+            }
+          ]
+        },
+        {
+          "lang": "fr",
+          "lang_label": "French",
+          "target_repo": "lecture-python-programming.fr",
+          "site": "https://quantecon.github.io/lecture-python-programming.fr/",
+          "review_state": "pending",
+          "lectures_translated": 26,
+          "freshness": "computed",
+          "stale": 0,
+          "last_sync": {
+            "date": "2026-10-18",
+            "lag": "5 days ago"
+          },
+          "drift_prs": 0,
+          "drift_approx": true,
+          "automation": {
+            "wired": true,
+            "parts": "sync · AI review · rebase"
+          },
+          "review": {
+            "open": 0,
+            "note": "site live 2026-07-17 · seed awaiting native review"
+          },
+          "status": "healthy",
+          "status_label": "Published pilot",
+          "review_lanes": {
+            "mode": "shadow",
+            "verdicts": 14,
+            "open_editor": {
+              "count": 0
+            },
+            "auto_merge_recommended": {
+              "d7": 1,
+              "d30": 1
+            },
+            "share": {
+              "auto_merge": 5,
+              "editor": 9
+            },
+            "would_auto_merge": {
+              "n": 11,
+              "agree": 11
+            },
+            "primary_editor": "Honaminto",
+            "in_review_slugs": []
+          },
+          "orphans": [],
+          "lectures": [
+            {
+              "slug": "about_py",
+              "state": "fresh"
+            },
+            {
+              "slug": "autodiff",
+              "state": "fresh"
+            },
+            {
+              "slug": "debugging",
+              "state": "fresh"
+            },
+            {
+              "slug": "functions",
+              "state": "fresh"
+            },
+            {
+              "slug": "getting_started",
+              "state": "fresh"
+            },
+            {
+              "slug": "intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "jax_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "matplotlib",
+              "state": "fresh"
+            },
+            {
+              "slug": "names",
+              "state": "fresh"
+            },
+            {
+              "slug": "need_for_speed",
+              "state": "fresh"
+            },
+            {
+              "slug": "numba",
+              "state": "fresh"
+            },
+            {
+              "slug": "numpy",
+              "state": "fresh"
+            },
+            {
+              "slug": "numpy_vs_numba_vs_jax",
+              "state": "fresh"
+            },
+            {
+              "slug": "oop_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "pandas",
+              "state": "fresh"
+            },
+            {
+              "slug": "pandas_panel",
+              "state": "fresh"
+            },
+            {
+              "slug": "polars",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_advanced_features",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_by_example",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_essentials",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_oop",
+              "state": "fresh"
+            },
+            {
+              "slug": "scipy",
+              "state": "fresh"
+            },
+            {
+              "slug": "sympy",
+              "state": "fresh"
+            },
+            {
+              "slug": "troubleshooting",
+              "state": "fresh"
+            },
+            {
+              "slug": "workspace",
+              "state": "fresh"
+            },
+            {
+              "slug": "writing_good_code",
+              "state": "fresh"
+            }
+          ]
+        },
+        {
+          "lang": "ml",
+          "lang_label": "Malayalam",
+          "target_repo": "lecture-python-programming.ml",
+          "site": "https://quantecon.github.io/lecture-python-programming.ml/",
+          "review_state": "active",
+          "lectures_translated": 6,
+          "freshness": "computed",
+          "stale": 0,
+          "last_sync": {
+            "date": "2026-10-21",
+            "lag": "3 days ago"
+          },
+          "drift_prs": 0,
+          "drift_approx": true,
+          "automation": {
+            "wired": false,
+            "parts": "not wired"
+          },
+          "review": {
+            "open": 0,
+            "note": "scaffold site live 2026-08-06 · 5 calibration seeds in native-speaker review"
+          },
+          "status": "drifting",
+          "status_label": "Drifting",
+          "review_lanes": {
+            "mode": "off",
+            "verdicts": 0,
+            "open_editor": {
+              "count": 0
+            },
+            "auto_merge_recommended": {
+              "d7": 0,
+              "d30": 0
+            },
+            "share": {
+              "auto_merge": 0,
+              "editor": 0
+            },
+            "would_auto_merge": {
+              "n": 0,
+              "agree": 0
+            },
+            "primary_editor": "adisankarmt",
+            "in_review_slugs": []
+          },
+          "orphans": [],
+          "lectures": [
+            {
+              "slug": "about_py",
+              "state": "missing"
+            },
+            {
+              "slug": "autodiff",
+              "state": "missing"
+            },
+            {
+              "slug": "debugging",
+              "state": "missing"
+            },
+            {
+              "slug": "functions",
+              "state": "fresh"
+            },
+            {
+              "slug": "getting_started",
+              "state": "missing"
+            },
+            {
+              "slug": "intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "jax_intro",
+              "state": "missing"
+            },
+            {
+              "slug": "matplotlib",
+              "state": "fresh"
+            },
+            {
+              "slug": "names",
+              "state": "missing"
+            },
+            {
+              "slug": "need_for_speed",
+              "state": "missing"
+            },
+            {
+              "slug": "numba",
+              "state": "missing"
+            },
+            {
+              "slug": "numpy",
+              "state": "fresh"
+            },
+            {
+              "slug": "numpy_vs_numba_vs_jax",
+              "state": "missing"
+            },
+            {
+              "slug": "oop_intro",
+              "state": "missing"
+            },
+            {
+              "slug": "pandas",
+              "state": "fresh"
+            },
+            {
+              "slug": "pandas_panel",
+              "state": "missing"
+            },
+            {
+              "slug": "polars",
+              "state": "missing"
+            },
+            {
+              "slug": "python_advanced_features",
+              "state": "missing"
+            },
+            {
+              "slug": "python_by_example",
+              "state": "fresh"
+            },
+            {
+              "slug": "python_essentials",
+              "state": "missing"
+            },
+            {
+              "slug": "python_oop",
+              "state": "missing"
+            },
+            {
+              "slug": "scipy",
+              "state": "missing"
+            },
+            {
+              "slug": "sympy",
+              "state": "missing"
+            },
+            {
+              "slug": "troubleshooting",
+              "state": "missing"
+            },
+            {
+              "slug": "workspace",
+              "state": "missing"
+            },
+            {
+              "slug": "writing_good_code",
+              "state": "missing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "lecture-python-intro",
+      "title": "A First Course in Quantitative Economics with Python",
+      "lectures_total": 56,
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "target_repo": "lecture-intro.zh-cn",
+          "site": "https://quantecon.github.io/lecture-intro.zh-cn/",
+          "review_state": "complete",
+          "lectures_translated": 52,
+          "freshness": "computed",
+          "stale": 7,
+          "last_sync": {
+            "date": "2026-10-09",
+            "lag": "14 days ago"
+          },
+          "drift_prs": 6,
+          "drift_approx": true,
+          "automation": {
+            "wired": true,
+            "parts": "sync · AI review · rebase"
+          },
+          "review": {
+            "open": 0,
+            "note": "campaign complete (Oct 2024 – Apr 2025)"
+          },
+          "status": "drifting",
+          "status_label": "Drifting",
+          "review_lanes": {
+            "mode": "shadow",
+            "verdicts": 17,
+            "open_editor": {
+              "count": 0
+            },
+            "auto_merge_recommended": {
+              "d7": 0,
+              "d30": 1
+            },
+            "share": {
+              "auto_merge": 2,
+              "editor": 15
+            },
+            "would_auto_merge": {
+              "n": 14,
+              "agree": 14
+            },
+            "primary_editor": "HumphreyYang",
+            "in_review_slugs": []
+          },
+          "orphans": [],
+          "lectures": [
+            {
+              "slug": "about",
+              "state": "fresh"
+            },
+            {
+              "slug": "ar1_processes",
+              "state": "fresh"
+            },
+            {
+              "slug": "bayes_intro",
+              "state": "missing"
+            },
+            {
+              "slug": "bivariate_dist",
+              "state": "missing"
+            },
+            {
+              "slug": "business_cycle",
+              "state": "fresh"
+            },
+            {
+              "slug": "cagan_adaptive",
+              "state": "fresh"
+            },
+            {
+              "slug": "cagan_ree",
+              "state": "fresh"
+            },
+            {
+              "slug": "cobweb",
+              "state": "fresh"
+            },
+            {
+              "slug": "commod_price",
+              "state": "fresh"
+            },
+            {
+              "slug": "complex_and_trig",
+              "state": "fresh"
+            },
+            {
+              "slug": "cons_smooth",
+              "state": "stale"
+            },
+            {
+              "slug": "eigen_I",
+              "state": "fresh"
+            },
+            {
+              "slug": "eigen_II",
+              "state": "fresh"
+            },
+            {
+              "slug": "equalizing_difference",
+              "state": "fresh"
+            },
+            {
+              "slug": "fitting_distributions",
+              "state": "fresh"
+            },
+            {
+              "slug": "french_rev",
+              "state": "stale"
+            },
+            {
+              "slug": "geom_series",
+              "state": "fresh"
+            },
+            {
+              "slug": "greek_square",
+              "state": "fresh"
+            },
+            {
+              "slug": "heavy_tails",
+              "state": "fresh"
+            },
+            {
+              "slug": "inequality",
+              "state": "stale"
+            },
+            {
+              "slug": "inflation_history",
+              "state": "fresh"
+            },
+            {
+              "slug": "input_output",
+              "state": "stale"
+            },
+            {
+              "slug": "intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "intro_supply_demand",
+              "state": "fresh"
+            },
+            {
+              "slug": "laffer_adaptive",
+              "state": "fresh"
+            },
+            {
+              "slug": "lake_model_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "linear_equations",
+              "state": "fresh"
+            },
+            {
+              "slug": "lln_clt_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "long_run_growth",
+              "state": "fresh"
+            },
+            {
+              "slug": "lp_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "markov_chains_I",
+              "state": "fresh"
+            },
+            {
+              "slug": "markov_chains_II",
+              "state": "fresh"
+            },
+            {
+              "slug": "mle_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "mobility",
+              "state": "fresh"
+            },
+            {
+              "slug": "money_inflation",
+              "state": "fresh"
+            },
+            {
+              "slug": "money_inflation_nonlinear",
+              "state": "fresh"
+            },
+            {
+              "slug": "monte_carlo",
+              "state": "fresh"
+            },
+            {
+              "slug": "msy_fishery",
+              "state": "missing"
+            },
+            {
+              "slug": "networks",
+              "state": "stale"
+            },
+            {
+              "slug": "observed_distributions",
+              "state": "fresh"
+            },
+            {
+              "slug": "olg",
+              "state": "fresh"
+            },
+            {
+              "slug": "prob_dist",
+              "state": "fresh"
+            },
+            {
+              "slug": "pv",
+              "state": "fresh"
+            },
+            {
+              "slug": "scalar_dynam",
+              "state": "fresh"
+            },
+            {
+              "slug": "schelling",
+              "state": "fresh"
+            },
+            {
+              "slug": "short_path",
+              "state": "fresh"
+            },
+            {
+              "slug": "simple_linear_regression",
+              "state": "fresh"
+            },
+            {
+              "slug": "solow",
+              "state": "fresh"
+            },
+            {
+              "slug": "supply_demand_heterogeneity",
+              "state": "stale"
+            },
+            {
+              "slug": "supply_demand_multiple_goods",
+              "state": "stale"
+            },
+            {
+              "slug": "tax_smooth",
+              "state": "missing"
+            },
+            {
+              "slug": "time_series_with_matrices",
+              "state": "fresh"
+            },
+            {
+              "slug": "troubleshooting",
+              "state": "fresh"
+            },
+            {
+              "slug": "unpleasant",
+              "state": "fresh"
+            },
+            {
+              "slug": "wealth_tax",
+              "state": "fresh"
+            },
+            {
+              "slug": "zreferences",
+              "state": "fresh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "lecture-python.myst",
+      "title": "Intermediate Quantitative Economics with Python",
+      "lectures_total": 149,
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "target_repo": "lecture-python.zh-cn",
+          "site": "https://quantecon.github.io/lecture-python.zh-cn/",
+          "review_state": "stalled",
+          "lectures_translated": 149,
+          "freshness": "computed",
+          "stale": 0,
+          "last_sync": {
+            "date": "2026-10-22",
+            "lag": "1 day ago"
+          },
+          "drift_prs": 0,
+          "drift_approx": true,
+          "automation": {
+            "wired": true,
+            "parts": "sync · AI review · rebase"
+          },
+          "review": {
+            "open": 0,
+            "note": "campaign stalled Oct 2025"
+          },
+          "status": "healthy",
+          "status_label": "Healthy",
+          "review_lanes": {
+            "mode": "shadow",
+            "verdicts": 59,
+            "open_editor": {
+              "count": 0
+            },
+            "auto_merge_recommended": {
+              "d7": 1,
+              "d30": 2
+            },
+            "share": {
+              "auto_merge": 8,
+              "editor": 51
+            },
+            "would_auto_merge": {
+              "n": 33,
+              "agree": 33
+            },
+            "primary_editor": "HumphreyYang",
+            "in_review_slugs": []
+          },
+          "orphans": [],
+          "lectures": [
+            {
+              "slug": "affine_risk_prices",
+              "state": "fresh"
+            },
+            {
+              "slug": "aiyagari",
+              "state": "fresh"
+            },
+            {
+              "slug": "aiyagari_egm",
+              "state": "fresh"
+            },
+            {
+              "slug": "ak2",
+              "state": "fresh"
+            },
+            {
+              "slug": "ak_aiyagari",
+              "state": "fresh"
+            },
+            {
+              "slug": "ar1_bayes",
+              "state": "fresh"
+            },
+            {
+              "slug": "ar1_turningpts",
+              "state": "fresh"
+            },
+            {
+              "slug": "back_prop",
+              "state": "fresh"
+            },
+            {
+              "slug": "bayes_nonconj",
+              "state": "fresh"
+            },
+            {
+              "slug": "blackwell_kihlstrom",
+              "state": "fresh"
+            },
+            {
+              "slug": "bounded_rationality",
+              "state": "fresh"
+            },
+            {
+              "slug": "career",
+              "state": "fresh"
+            },
+            {
+              "slug": "cass_fiscal",
+              "state": "fresh"
+            },
+            {
+              "slug": "cass_fiscal_2",
+              "state": "fresh"
+            },
+            {
+              "slug": "cass_koopmans_1",
+              "state": "fresh"
+            },
+            {
+              "slug": "cass_koopmans_2",
+              "state": "fresh"
+            },
+            {
+              "slug": "chow_business_cycles",
+              "state": "fresh"
+            },
+            {
+              "slug": "cross_product_trick",
+              "state": "fresh"
+            },
+            {
+              "slug": "divergence_measures",
+              "state": "fresh"
+            },
+            {
+              "slug": "eig_circulant",
+              "state": "fresh"
+            },
+            {
+              "slug": "endogenous_lake",
+              "state": "fresh"
+            },
+            {
+              "slug": "exchange_rate_learning",
+              "state": "fresh"
+            },
+            {
+              "slug": "exchangeable",
+              "state": "fresh"
+            },
+            {
+              "slug": "finite_markov",
+              "state": "fresh"
+            },
+            {
+              "slug": "gallant_tauchen",
+              "state": "fresh"
+            },
+            {
+              "slug": "ge_arrow",
+              "state": "fresh"
+            },
+            {
+              "slug": "genetic_classifier",
+              "state": "fresh"
+            },
+            {
+              "slug": "hansen_singleton_1982",
+              "state": "fresh"
+            },
+            {
+              "slug": "hansen_singleton_1983",
+              "state": "fresh"
+            },
+            {
+              "slug": "harrison_kreps",
+              "state": "fresh"
+            },
+            {
+              "slug": "hoist_failure",
+              "state": "fresh"
+            },
+            {
+              "slug": "house_auction",
+              "state": "fresh"
+            },
+            {
+              "slug": "ifp_advanced",
+              "state": "fresh"
+            },
+            {
+              "slug": "ifp_discrete",
+              "state": "fresh"
+            },
+            {
+              "slug": "ifp_egm",
+              "state": "fresh"
+            },
+            {
+              "slug": "ifp_egm_transient_shocks",
+              "state": "fresh"
+            },
+            {
+              "slug": "ifp_opi",
+              "state": "fresh"
+            },
+            {
+              "slug": "imp_sample",
+              "state": "fresh"
+            },
+            {
+              "slug": "information_market_equilibrium",
+              "state": "fresh"
+            },
+            {
+              "slug": "intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "inventory_dynamics",
+              "state": "fresh"
+            },
+            {
+              "slug": "inventory_q",
+              "state": "fresh"
+            },
+            {
+              "slug": "jv",
+              "state": "fresh"
+            },
+            {
+              "slug": "kalman",
+              "state": "fresh"
+            },
+            {
+              "slug": "kalman_2",
+              "state": "fresh"
+            },
+            {
+              "slug": "kalman_filter_var",
+              "state": "fresh"
+            },
+            {
+              "slug": "kesten_processes",
+              "state": "fresh"
+            },
+            {
+              "slug": "lagrangian_lqdp",
+              "state": "fresh"
+            },
+            {
+              "slug": "lake_model",
+              "state": "fresh"
+            },
+            {
+              "slug": "learning_approximation",
+              "state": "fresh"
+            },
+            {
+              "slug": "likelihood_bayes",
+              "state": "fresh"
+            },
+            {
+              "slug": "likelihood_ratio_process",
+              "state": "fresh"
+            },
+            {
+              "slug": "likelihood_ratio_process_2",
+              "state": "fresh"
+            },
+            {
+              "slug": "likelihood_var",
+              "state": "fresh"
+            },
+            {
+              "slug": "linear_algebra",
+              "state": "fresh"
+            },
+            {
+              "slug": "linear_models",
+              "state": "fresh"
+            },
+            {
+              "slug": "lln_clt",
+              "state": "fresh"
+            },
+            {
+              "slug": "long_run_risk_operator",
+              "state": "fresh"
+            },
+            {
+              "slug": "lq_bewley_complete_markets",
+              "state": "fresh"
+            },
+            {
+              "slug": "lq_inventories",
+              "state": "fresh"
+            },
+            {
+              "slug": "lq_mean_field_games",
+              "state": "fresh"
+            },
+            {
+              "slug": "lq_permanent_income",
+              "state": "fresh"
+            },
+            {
+              "slug": "lq_robust_bewley",
+              "state": "fresh"
+            },
+            {
+              "slug": "lq_robust_smoothing",
+              "state": "fresh"
+            },
+            {
+              "slug": "lqcontrol",
+              "state": "fresh"
+            },
+            {
+              "slug": "ls_learning",
+              "state": "fresh"
+            },
+            {
+              "slug": "lucas_prescott_investment",
+              "state": "fresh"
+            },
+            {
+              "slug": "marimon_mcgrattan_sargent",
+              "state": "fresh"
+            },
+            {
+              "slug": "market_diffusion",
+              "state": "fresh"
+            },
+            {
+              "slug": "markov_asset",
+              "state": "fresh"
+            },
+            {
+              "slug": "markov_perf",
+              "state": "fresh"
+            },
+            {
+              "slug": "mccall_fitted_vfi",
+              "state": "fresh"
+            },
+            {
+              "slug": "mccall_model",
+              "state": "fresh"
+            },
+            {
+              "slug": "mccall_model_with_sep_markov",
+              "state": "fresh"
+            },
+            {
+              "slug": "mccall_model_with_separation",
+              "state": "fresh"
+            },
+            {
+              "slug": "mccall_persist_trans",
+              "state": "fresh"
+            },
+            {
+              "slug": "mccall_q",
+              "state": "fresh"
+            },
+            {
+              "slug": "mccall_risk",
+              "state": "fresh"
+            },
+            {
+              "slug": "measurement_models",
+              "state": "fresh"
+            },
+            {
+              "slug": "merging_of_opinions",
+              "state": "fresh"
+            },
+            {
+              "slug": "misspecified_recovery",
+              "state": "fresh"
+            },
+            {
+              "slug": "mix_model",
+              "state": "fresh"
+            },
+            {
+              "slug": "mle",
+              "state": "fresh"
+            },
+            {
+              "slug": "morris_learn",
+              "state": "fresh"
+            },
+            {
+              "slug": "multi_hyper",
+              "state": "fresh"
+            },
+            {
+              "slug": "multivariate_normal",
+              "state": "fresh"
+            },
+            {
+              "slug": "navy_captain",
+              "state": "fresh"
+            },
+            {
+              "slug": "newton_method",
+              "state": "fresh"
+            },
+            {
+              "slug": "odu",
+              "state": "fresh"
+            },
+            {
+              "slug": "olg_adaptive_money",
+              "state": "fresh"
+            },
+            {
+              "slug": "ols",
+              "state": "fresh"
+            },
+            {
+              "slug": "opt_transport",
+              "state": "fresh"
+            },
+            {
+              "slug": "optimal_growth_uncertainty",
+              "state": "fresh"
+            },
+            {
+              "slug": "organization_capital",
+              "state": "fresh"
+            },
+            {
+              "slug": "os",
+              "state": "fresh"
+            },
+            {
+              "slug": "os_egm",
+              "state": "fresh"
+            },
+            {
+              "slug": "os_egm_jax",
+              "state": "fresh"
+            },
+            {
+              "slug": "os_numerical",
+              "state": "fresh"
+            },
+            {
+              "slug": "os_stochastic",
+              "state": "fresh"
+            },
+            {
+              "slug": "os_time_iter",
+              "state": "fresh"
+            },
+            {
+              "slug": "pandas_panel",
+              "state": "fresh"
+            },
+            {
+              "slug": "perm_income",
+              "state": "fresh"
+            },
+            {
+              "slug": "perm_income_cons",
+              "state": "fresh"
+            },
+            {
+              "slug": "phillips_adaptive",
+              "state": "fresh"
+            },
+            {
+              "slug": "phillips_credibility",
+              "state": "fresh"
+            },
+            {
+              "slug": "phillips_credible_policies",
+              "state": "fresh"
+            },
+            {
+              "slug": "phillips_drifts_volatilities",
+              "state": "fresh"
+            },
+            {
+              "slug": "phillips_escaping_nash",
+              "state": "fresh"
+            },
+            {
+              "slug": "phillips_learning",
+              "state": "fresh"
+            },
+            {
+              "slug": "phillips_lost_conquest",
+              "state": "fresh"
+            },
+            {
+              "slug": "phillips_misspecified",
+              "state": "fresh"
+            },
+            {
+              "slug": "phillips_priors",
+              "state": "fresh"
+            },
+            {
+              "slug": "phillips_self_confirming",
+              "state": "fresh"
+            },
+            {
+              "slug": "phillips_two_stories",
+              "state": "fresh"
+            },
+            {
+              "slug": "pricing_information",
+              "state": "fresh"
+            },
+            {
+              "slug": "prob_matrix",
+              "state": "fresh"
+            },
+            {
+              "slug": "prob_meaning",
+              "state": "fresh"
+            },
+            {
+              "slug": "prospects_bounded_rationality",
+              "state": "fresh"
+            },
+            {
+              "slug": "qr_decomp",
+              "state": "fresh"
+            },
+            {
+              "slug": "rand_resp",
+              "state": "fresh"
+            },
+            {
+              "slug": "rational_expectations",
+              "state": "fresh"
+            },
+            {
+              "slug": "rational_learning_re",
+              "state": "fresh"
+            },
+            {
+              "slug": "re_with_feedback",
+              "state": "fresh"
+            },
+            {
+              "slug": "robust_permanent_income",
+              "state": "fresh"
+            },
+            {
+              "slug": "ross_recovery",
+              "state": "fresh"
+            },
+            {
+              "slug": "rs_inventory_q",
+              "state": "fresh"
+            },
+            {
+              "slug": "samuelson",
+              "state": "fresh"
+            },
+            {
+              "slug": "sargent_surico",
+              "state": "fresh"
+            },
+            {
+              "slug": "sir_model",
+              "state": "fresh"
+            },
+            {
+              "slug": "social_security_depletion",
+              "state": "fresh"
+            },
+            {
+              "slug": "stats_examples",
+              "state": "fresh"
+            },
+            {
+              "slug": "survival_recursive_preferences",
+              "state": "fresh"
+            },
+            {
+              "slug": "svd_intro",
+              "state": "fresh"
+            },
+            {
+              "slug": "theil_1",
+              "state": "fresh"
+            },
+            {
+              "slug": "theil_2",
+              "state": "fresh"
+            },
+            {
+              "slug": "troubleshooting",
+              "state": "fresh"
+            },
+            {
+              "slug": "two_auctions",
+              "state": "fresh"
+            },
+            {
+              "slug": "two_computation",
+              "state": "fresh"
+            },
+            {
+              "slug": "uncertainty_traps",
+              "state": "fresh"
+            },
+            {
+              "slug": "unemployment_linear",
+              "state": "fresh"
+            },
+            {
+              "slug": "unemployment_shocks",
+              "state": "fresh"
+            },
+            {
+              "slug": "util_rand_resp",
+              "state": "fresh"
+            },
+            {
+              "slug": "var_dmd",
+              "state": "fresh"
+            },
+            {
+              "slug": "var_subsets",
+              "state": "fresh"
+            },
+            {
+              "slug": "von_neumann_model",
+              "state": "fresh"
+            },
+            {
+              "slug": "wald_friedman",
+              "state": "fresh"
+            },
+            {
+              "slug": "wald_friedman_2",
+              "state": "fresh"
+            },
+            {
+              "slug": "wealth_dynamics",
+              "state": "fresh"
+            },
+            {
+              "slug": "zreferences",
+              "state": "fresh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "lecture-jax",
+      "title": "Quantitative Economics with JAX",
+      "lectures_total": 32,
+      "phase": "Phase 3 · first in queue",
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "planned": true
+        }
+      ]
+    },
+    {
+      "repo": "lecture-python-advanced.myst",
+      "title": "Advanced Quantitative Economics with Python",
+      "lectures_total": 70,
+      "phase": "Phase 3",
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "planned": true
+        }
+      ]
+    },
+    {
+      "repo": "lecture-dp",
+      "title": "Dynamic Programming",
+      "lectures_total": 51,
+      "phase": "Phase 3 · ~75% overlaps catalogue",
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "planned": true
+        }
+      ]
+    },
+    {
+      "repo": "continuous_time_mcs",
+      "title": "Continuous Time Markov Chains",
+      "lectures_total": 10,
+      "phase": "Queued · rename pending QEP",
+      "editions": [
+        {
+          "lang": "zh-cn",
+          "lang_label": "Chinese",
+          "planned": true
+        }
+      ]
+    }
+  ],
+  "pipeline": [
+    {
+      "stage": "Production",
+      "cls": "live",
+      "langs": [
+        "Chinese · zh-cn"
+      ],
+      "ref": "3 editions live"
+    },
+    {
+      "stage": "Pilot",
+      "cls": "pilot",
+      "langs": [
+        "Farsi · fa",
+        "French · fr"
+      ],
+      "ref": "fa: RTL proving ground · fr: published 2026-07-17, awaiting native review"
+    },
+    {
+      "stage": "Glossary review",
+      "cls": "",
+      "langs": [
+        "Japanese · ja"
+      ],
+      "ref": "action-translation #69"
+    },
+    {
+      "stage": "Calibration",
+      "cls": "",
+      "langs": [
+        "Malayalam · ml"
+      ],
+      "ref": "action-translation #189 · 5 seeds in native review"
+    }
+  ]
+}
