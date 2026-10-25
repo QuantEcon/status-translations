@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-24",
+  "generated_at": "2026-10-25",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 22,
-    "editor": 93,
+    "editor": 94,
     "pct_auto_merge": 19
   },
   "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-13",
-            "lag": "10 days ago"
+            "lag": "11 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "5 days ago"
+            "lag": "6 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -335,7 +335,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "5 days ago"
+            "lag": "6 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -489,7 +489,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-21",
-            "lag": "3 days ago"
+            "lag": "4 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -650,7 +650,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "14 days ago"
+            "lag": "15 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -918,7 +918,7 @@
     {
       "repo": "lecture-python.myst",
       "title": "Intermediate Quantitative Economics with Python",
-      "lectures_total": 149,
+      "lectures_total": 150,
       "editions": [
         {
           "lang": "zh-cn",
@@ -928,12 +928,12 @@
           "review_state": "stalled",
           "lectures_translated": 149,
           "freshness": "computed",
-          "stale": 0,
+          "stale": 1,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "1 day ago"
+            "lag": "2 days ago"
           },
-          "drift_prs": 0,
+          "drift_prs": 1,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -943,13 +943,15 @@
             "open": 0,
             "note": "campaign stalled Oct 2025"
           },
-          "status": "healthy",
-          "status_label": "Healthy",
+          "status": "drifting",
+          "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 59,
+            "verdicts": 60,
             "open_editor": {
-              "count": 0
+              "count": 1,
+              "median_age_days": 0,
+              "oldest_age_days": 0
             },
             "auto_merge_recommended": {
               "d7": 1,
@@ -957,14 +959,16 @@
             },
             "share": {
               "auto_merge": 8,
-              "editor": 51
+              "editor": 52
             },
             "would_auto_merge": {
-              "n": 33,
-              "agree": 33
+              "n": 34,
+              "agree": 34
             },
             "primary_editor": "HumphreyYang",
-            "in_review_slugs": []
+            "in_review_slugs": [
+              "lq_mean_field_games_extensions"
+            ]
           },
           "orphans": [],
           "lectures": [
@@ -1210,7 +1214,11 @@
             },
             {
               "slug": "lq_mean_field_games",
-              "state": "fresh"
+              "state": "stale"
+            },
+            {
+              "slug": "lq_mean_field_games_extensions",
+              "state": "missing"
             },
             {
               "slug": "lq_permanent_income",
