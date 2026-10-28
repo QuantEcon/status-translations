@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-27",
+  "generated_at": "2026-10-28",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 22,
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-13",
-            "lag": "13 days ago"
+            "lag": "14 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "8 days ago"
+            "lag": "9 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -335,7 +335,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "8 days ago"
+            "lag": "9 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -489,7 +489,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-21",
-            "lag": "6 days ago"
+            "lag": "7 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -650,7 +650,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "17 days ago"
+            "lag": "18 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -931,7 +931,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "4 days ago"
+            "lag": "5 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -950,12 +950,12 @@
             "verdicts": 60,
             "open_editor": {
               "count": 1,
-              "median_age_days": 2,
-              "oldest_age_days": 2
+              "median_age_days": 3,
+              "oldest_age_days": 3
             },
             "auto_merge_recommended": {
               "d7": 0,
-              "d30": 2
+              "d30": 1
             },
             "share": {
               "auto_merge": 8,
@@ -1592,7 +1592,7 @@
     {
       "repo": "lecture-python-advanced.myst",
       "title": "Advanced Quantitative Economics with Python",
-      "lectures_total": 72,
+      "lectures_total": 74,
       "phase": "Phase 3",
       "editions": [
         {
