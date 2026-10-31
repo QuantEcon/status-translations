@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-30",
+  "generated_at": "2026-10-31",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 22,
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-13",
-            "lag": "16 days ago"
+            "lag": "17 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "11 days ago"
+            "lag": "12 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -335,7 +335,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "11 days ago"
+            "lag": "12 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -489,7 +489,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-21",
-            "lag": "9 days ago"
+            "lag": "10 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -650,7 +650,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "20 days ago"
+            "lag": "21 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -931,7 +931,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "7 days ago"
+            "lag": "8 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -950,8 +950,8 @@
             "verdicts": 60,
             "open_editor": {
               "count": 1,
-              "median_age_days": 5,
-              "oldest_age_days": 5
+              "median_age_days": 6,
+              "oldest_age_days": 6
             },
             "auto_merge_recommended": {
               "d7": 0,
