@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-31",
+  "generated_at": "2026-11-01",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 22,
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-13",
-            "lag": "17 days ago"
+            "lag": "18 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "12 days ago"
+            "lag": "13 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -335,7 +335,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-18",
-            "lag": "12 days ago"
+            "lag": "13 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -489,7 +489,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-10-21",
-            "lag": "10 days ago"
+            "lag": "11 days ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -650,7 +650,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "21 days ago"
+            "lag": "22 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -928,12 +928,12 @@
           "review_state": "stalled",
           "lectures_translated": 149,
           "freshness": "computed",
-          "stale": 1,
+          "stale": 19,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "8 days ago"
+            "lag": "9 days ago"
           },
-          "drift_prs": 1,
+          "drift_prs": 2,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -950,8 +950,8 @@
             "verdicts": 60,
             "open_editor": {
               "count": 1,
-              "median_age_days": 6,
-              "oldest_age_days": 6
+              "median_age_days": 7,
+              "oldest_age_days": 7
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -1010,7 +1010,7 @@
             },
             {
               "slug": "blackwell_kihlstrom",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "bounded_rationality",
@@ -1046,7 +1046,7 @@
             },
             {
               "slug": "divergence_measures",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "eig_circulant",
@@ -1062,7 +1062,7 @@
             },
             {
               "slug": "exchangeable",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "finite_markov",
@@ -1070,7 +1070,7 @@
             },
             {
               "slug": "gallant_tauchen",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "ge_arrow",
@@ -1122,11 +1122,11 @@
             },
             {
               "slug": "imp_sample",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "information_market_equilibrium",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "intro",
@@ -1174,19 +1174,19 @@
             },
             {
               "slug": "likelihood_bayes",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "likelihood_ratio_process",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "likelihood_ratio_process_2",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "likelihood_var",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "linear_algebra",
@@ -1250,7 +1250,7 @@
             },
             {
               "slug": "market_diffusion",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "markov_asset",
@@ -1294,7 +1294,7 @@
             },
             {
               "slug": "merging_of_opinions",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "misspecified_recovery",
@@ -1302,7 +1302,7 @@
             },
             {
               "slug": "mix_model",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "mle",
@@ -1322,7 +1322,7 @@
             },
             {
               "slug": "navy_captain",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "newton_method",
@@ -1434,7 +1434,7 @@
             },
             {
               "slug": "pricing_information",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "prob_matrix",
@@ -1502,7 +1502,7 @@
             },
             {
               "slug": "survival_recursive_preferences",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "svd_intro",
@@ -1558,11 +1558,11 @@
             },
             {
               "slug": "wald_friedman",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "wald_friedman_2",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "wealth_dynamics",
