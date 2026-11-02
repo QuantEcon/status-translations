@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-01",
+  "generated_at": "2026-11-02",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
-    "auto_merge": 22,
-    "editor": 94,
-    "pct_auto_merge": 19
+    "auto_merge": 26,
+    "editor": 98,
+    "pct_auto_merge": 21
   },
   "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
   "last_sync_note": "last_sync is the newest commit touching a matched lecture file in the edition — edition-local maintenance moves it too, so read it as activity, not sync",
@@ -26,10 +26,10 @@
           "freshness": "computed",
           "stale": 0,
           "last_sync": {
-            "date": "2026-10-13",
-            "lag": "18 days ago"
+            "date": "2026-11-02",
+            "lag": "today"
           },
-          "drift_prs": 1,
+          "drift_prs": 5,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -43,21 +43,21 @@
           "status_label": "Reference model",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 13,
+            "verdicts": 16,
             "open_editor": {
               "count": 0
             },
             "auto_merge_recommended": {
-              "d7": 0,
-              "d30": 3
+              "d7": 2,
+              "d30": 5
             },
             "share": {
-              "auto_merge": 6,
-              "editor": 7
+              "auto_merge": 8,
+              "editor": 8
             },
             "would_auto_merge": {
-              "n": 10,
-              "agree": 10
+              "n": 13,
+              "agree": 13
             },
             "primary_editor": "HumphreyYang",
             "in_review_slugs": []
@@ -178,12 +178,12 @@
           "review_state": "active",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 1,
+          "stale": 2,
           "last_sync": {
-            "date": "2026-10-18",
-            "lag": "13 days ago"
+            "date": "2026-11-02",
+            "lag": "today"
           },
-          "drift_prs": 0,
+          "drift_prs": 5,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -197,21 +197,21 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 12,
+            "verdicts": 15,
             "open_editor": {
               "count": 0
             },
             "auto_merge_recommended": {
-              "d7": 0,
-              "d30": 1
+              "d7": 1,
+              "d30": 2
             },
             "share": {
-              "auto_merge": 1,
-              "editor": 11
+              "auto_merge": 2,
+              "editor": 13
             },
             "would_auto_merge": {
-              "n": 9,
-              "agree": 9
+              "n": 12,
+              "agree": 12
             },
             "primary_editor": "Zahra-khanzadeh",
             "in_review_slugs": []
@@ -232,7 +232,7 @@
             },
             {
               "slug": "functions",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "getting_started",
@@ -332,12 +332,12 @@
           "review_state": "pending",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 0,
+          "stale": 3,
           "last_sync": {
-            "date": "2026-10-18",
-            "lag": "13 days ago"
+            "date": "2026-11-02",
+            "lag": "today"
           },
-          "drift_prs": 0,
+          "drift_prs": 5,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -347,28 +347,32 @@
             "open": 0,
             "note": "site live 2026-07-17 · seed awaiting native review"
           },
-          "status": "healthy",
-          "status_label": "Published pilot",
+          "status": "drifting",
+          "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 14,
+            "verdicts": 16,
             "open_editor": {
-              "count": 0
+              "count": 1,
+              "median_age_days": 0,
+              "oldest_age_days": 0
             },
             "auto_merge_recommended": {
-              "d7": 0,
-              "d30": 1
+              "d7": 1,
+              "d30": 2
             },
             "share": {
-              "auto_merge": 5,
-              "editor": 9
+              "auto_merge": 6,
+              "editor": 10
             },
             "would_auto_merge": {
-              "n": 11,
-              "agree": 11
+              "n": 13,
+              "agree": 13
             },
             "primary_editor": "Honaminto",
-            "in_review_slugs": []
+            "in_review_slugs": [
+              "numpy"
+            ]
           },
           "orphans": [],
           "lectures": [
@@ -406,7 +410,7 @@
             },
             {
               "slug": "names",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "need_for_speed",
@@ -418,7 +422,7 @@
             },
             {
               "slug": "numpy",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "numpy_vs_numba_vs_jax",
@@ -446,7 +450,7 @@
             },
             {
               "slug": "python_by_example",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "python_essentials",
@@ -488,10 +492,10 @@
           "freshness": "computed",
           "stale": 0,
           "last_sync": {
-            "date": "2026-10-21",
-            "lag": "11 days ago"
+            "date": "2026-11-02",
+            "lag": "today"
           },
-          "drift_prs": 0,
+          "drift_prs": 5,
           "drift_approx": true,
           "automation": {
             "wired": false,
@@ -650,7 +654,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "22 days ago"
+            "lag": "23 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -931,7 +935,7 @@
           "stale": 19,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "9 days ago"
+            "lag": "10 days ago"
           },
           "drift_prs": 2,
           "drift_approx": true,
@@ -950,8 +954,8 @@
             "verdicts": 60,
             "open_editor": {
               "count": 1,
-              "median_age_days": 7,
-              "oldest_age_days": 7
+              "median_age_days": 8,
+              "oldest_age_days": 8
             },
             "auto_merge_recommended": {
               "d7": 0,
