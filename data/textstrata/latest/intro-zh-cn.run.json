@@ -1,29 +1,29 @@
 {
   "textstrata": "0.1.0.dev0",
   "config": "lecture-intro.zh-cn",
-  "head": "009dfd4f30dac65805c76fde0f1dc58ef06df6b6",
-  "scanned_at": "2026-10-03T04:39:44+00:00",
-  "documents": 53,
-  "translated": 51,
-  "prose_lines": 9936,
+  "head": "47dfa51ba43ac5d5192cffda94a81bc189627c2d",
+  "scanned_at": "2026-11-03T04:27:22+00:00",
+  "documents": 54,
+  "translated": 52,
+  "prose_lines": 10082,
   "composition": {
     "ai-assisted": 590,
-    "ai-initial": 4878,
+    "ai-initial": 4876,
     "human-editor": 597,
-    "ai-sync": 2428,
+    "ai-sync": 2576,
     "human-translator": 1443
   },
   "composition_pct": {
     "ai-assisted": 5.9,
-    "ai-initial": 49.1,
-    "human-editor": 6.0,
-    "ai-sync": 24.4,
-    "human-translator": 14.5
+    "ai-initial": 48.4,
+    "human-editor": 5.9,
+    "ai-sync": 25.6,
+    "human-translator": 14.3
   },
   "review_state": {
-    "human-touched": 47,
-    "machine-only": 3,
-    "audit-stale": 1
+    "human-touched": 44,
+    "machine-only": 4,
+    "audit-stale": 4
   },
   "pairs": 4538,
   "pair_categories": {
@@ -41,13 +41,27 @@
     {
       "model": "claude-sonnet-5",
       "tool_version": "0.17.0",
-      "sync_commits": 44,
-      "prose_churn": 3512,
-      "prose_char_churn": 87050,
+      "sync_commits": 42,
+      "prose_churn": 3413,
+      "prose_char_churn": 85481,
       "overwrote_prose_by_prior_tier": {
-        "human-editor": 613,
-        "ai-initial": 409,
-        "human-translator": 314
+        "human-editor": 610,
+        "ai-initial": 388,
+        "human-translator": 289
+      }
+    },
+    {
+      "model": "unrecorded",
+      "tool_version": "unrecorded",
+      "sync_commits": 3,
+      "prose_churn": 101,
+      "prose_char_churn": 1630,
+      "overwrote_prose_by_prior_tier": {
+        "human-translator": 26,
+        "ai-initial": 52,
+        "human-editor": 5,
+        "ai-assisted": 7,
+        "ai-sync": 35
       }
     },
     {
@@ -69,9 +83,9 @@
     {
       "model": "claude-sonnet-5",
       "tool_version": "0.25.0",
-      "sync_commits": 7,
-      "prose_churn": 14,
-      "prose_char_churn": 319,
+      "sync_commits": 8,
+      "prose_churn": 142,
+      "prose_char_churn": 4896,
       "overwrote_prose_by_prior_tier": {
         "ai-assisted": 1,
         "ai-sync": 2,
@@ -83,14 +97,10 @@
       "model": "claude-sonnet-5",
       "tool_version": "0.24.0",
       "sync_commits": 3,
-      "prose_churn": 275,
-      "prose_char_churn": 1651,
+      "prose_churn": 273,
+      "prose_char_churn": 1590,
       "overwrote_prose_by_prior_tier": {
-        "ai-initial": 31,
-        "ai-assisted": 7,
-        "ai-sync": 169,
-        "human-editor": 2,
-        "human-translator": 1
+        "ai-sync": 134
       }
     },
     {
@@ -104,6 +114,27 @@
         "ai-initial": 14,
         "ai-sync": 2,
         "human-editor": 2
+      }
+    },
+    {
+      "model": "claude-sonnet-5",
+      "tool_version": "0.29.3",
+      "sync_commits": 1,
+      "prose_churn": 4,
+      "prose_char_churn": 95,
+      "overwrote_prose_by_prior_tier": {
+        "ai-sync": 2
+      }
+    },
+    {
+      "model": "claude-sonnet-5",
+      "tool_version": "0.29.4",
+      "sync_commits": 3,
+      "prose_churn": 395,
+      "prose_char_churn": 12371,
+      "overwrote_prose_by_prior_tier": {
+        "ai-sync": 8,
+        "ai-initial": 2
       }
     }
   ],

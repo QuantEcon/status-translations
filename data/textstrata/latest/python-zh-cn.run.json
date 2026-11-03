@@ -1,41 +1,41 @@
 {
   "textstrata": "0.1.0.dev0",
   "config": "lecture-python.zh-cn",
-  "head": "3f42356449e2bc2deb3c5c0c2e044e3414f05a5f",
-  "scanned_at": "2026-10-03T04:40:01+00:00",
-  "documents": 146,
-  "translated": 145,
-  "prose_lines": 34437,
+  "head": "86b86e5da462259c3616f2549357193768fca3ba",
+  "scanned_at": "2026-11-03T04:27:43+00:00",
+  "documents": 151,
+  "translated": 150,
+  "prose_lines": 37490,
   "composition": {
-    "ai-initial": 20072,
-    "ai-sync": 10347,
-    "ai-assisted": 1594,
-    "human-editor": 714,
-    "human-translator": 1404,
+    "ai-initial": 20168,
+    "ai-sync": 13481,
+    "ai-assisted": 1563,
+    "human-editor": 671,
+    "human-translator": 1301,
     "seed": 306
   },
   "composition_pct": {
-    "ai-initial": 58.3,
-    "ai-sync": 30.0,
-    "ai-assisted": 4.6,
-    "human-editor": 2.1,
-    "human-translator": 4.1,
-    "seed": 0.9
+    "ai-initial": 53.8,
+    "ai-sync": 36.0,
+    "ai-assisted": 4.2,
+    "human-editor": 1.8,
+    "human-translator": 3.5,
+    "seed": 0.8
   },
   "review_state": {
-    "machine-only": 76,
-    "human-touched": 61,
-    "audit-stale": 8
+    "machine-only": 81,
+    "human-touched": 55,
+    "audit-stale": 14
   },
-  "pairs": 12638,
+  "pairs": 12677,
   "pair_categories": {
-    "code-or-markup": 4559,
-    "terminology": 2590,
-    "fluency": 1761,
+    "code-or-markup": 4575,
+    "terminology": 2598,
+    "fluency": 1769,
     "retranslation": 990,
     "deletion": 593,
-    "addition": 1393,
-    "localise-code-label": 304,
+    "addition": 1394,
+    "localise-code-label": 310,
     "punctuation-width": 448
   },
   "recurring_substitutions": 219,
@@ -126,16 +126,90 @@
     {
       "model": "claude-sonnet-5",
       "tool_version": "0.26.0",
-      "sync_commits": 3,
-      "prose_churn": 516,
-      "prose_char_churn": 11872,
+      "sync_commits": 5,
+      "prose_churn": 662,
+      "prose_char_churn": 14833,
       "overwrote_prose_by_prior_tier": {
-        "ai-sync": 17,
-        "human-translator": 16,
-        "ai-initial": 113,
-        "ai-assisted": 52,
+        "ai-sync": 34,
+        "human-translator": 20,
+        "ai-initial": 120,
+        "ai-assisted": 76,
         "seed": 1,
-        "human-editor": 1
+        "human-editor": 8
+      }
+    },
+    {
+      "model": "claude-sonnet-5",
+      "tool_version": "0.29.3",
+      "sync_commits": 8,
+      "prose_churn": 1070,
+      "prose_char_churn": 32235,
+      "overwrote_prose_by_prior_tier": {
+        "ai-sync": 93,
+        "ai-assisted": 31,
+        "ai-initial": 199,
+        "human-translator": 1
+      }
+    },
+    {
+      "model": "claude-sonnet-5",
+      "tool_version": "0.29.4",
+      "sync_commits": 2,
+      "prose_churn": 1108,
+      "prose_char_churn": 42843,
+      "overwrote_prose_by_prior_tier": {
+        "ai-sync": 23,
+        "ai-initial": 337,
+        "human-editor": 18,
+        "human-translator": 1
+      }
+    },
+    {
+      "model": "claude-sonnet-5",
+      "tool_version": "0.28.0",
+      "sync_commits": 1,
+      "prose_churn": 118,
+      "prose_char_churn": 1367,
+      "overwrote_prose_by_prior_tier": {
+        "ai-sync": 26,
+        "human-editor": 3,
+        "ai-initial": 25
+      }
+    },
+    {
+      "model": "claude-sonnet-5",
+      "tool_version": "0.29.0",
+      "sync_commits": 1,
+      "prose_churn": 349,
+      "prose_char_churn": 14795,
+      "overwrote_prose_by_prior_tier": {
+        "ai-initial": 85
+      }
+    },
+    {
+      "model": "claude-sonnet-5",
+      "tool_version": "0.29.6",
+      "sync_commits": 3,
+      "prose_churn": 390,
+      "prose_char_churn": 9050,
+      "overwrote_prose_by_prior_tier": {
+        "ai-sync": 54,
+        "human-translator": 4,
+        "ai-initial": 87,
+        "human-editor": 13
+      }
+    },
+    {
+      "model": "claude-sonnet-5",
+      "tool_version": "0.30.0",
+      "sync_commits": 1,
+      "prose_churn": 626,
+      "prose_char_churn": 26575,
+      "overwrote_prose_by_prior_tier": {
+        "ai-initial": 117,
+        "ai-sync": 25,
+        "human-translator": 95,
+        "human-editor": 4
       }
     }
   ],

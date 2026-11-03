@@ -37,8 +37,8 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 5,
-    "lines_head": 497,
+    "n_commits": 6,
+    "lines_head": 499,
     "prose_lines_head": 183,
     "composition": {
       "ai-assisted": 1,
@@ -51,9 +51,9 @@
       "ai-sync": 0.5
     },
     "baseline_survival_pct": 98.9,
-    "similarity_initial_head": 0.9405,
+    "similarity_initial_head": 0.9386,
     "commits_by_tier": {
-      "ai-assisted": 2,
+      "ai-assisted": 3,
       "ai-sync": 2
     },
     "prose_churn_by_tier": {
@@ -84,7 +84,7 @@
     "translated": true,
     "translation_sha": "5ca0651c15adc0aac2e26d03720cbc0687a09f53",
     "translation_date": "2026-04-09T04:40:27+01:00",
-    "n_commits": 2,
+    "n_commits": 3,
     "lines_head": 523,
     "prose_lines_head": 90,
     "composition": {
@@ -94,15 +94,15 @@
       "ai-sync": 100.0
     },
     "baseline_survival_pct": 0.0,
-    "similarity_initial_head": 0.9933,
+    "similarity_initial_head": 0.9914,
     "commits_by_tier": {
-      "ai-sync": 1
+      "ai-sync": 2
     },
     "prose_churn_by_tier": {
-      "ai-sync": 0
+      "ai-sync": 2
     },
     "prose_char_churn_by_tier": {
-      "ai-sync": 0
+      "ai-sync": 37
     },
     "first_human_touch": null,
     "last_human_touch": null,
@@ -110,11 +110,11 @@
     "syncs_since_last_human_touch": 0,
     "review_state": "machine-only",
     "source": {
-      "source_sha": "d35eb831da23a763f43d403e96f20d43529cae53",
+      "source_sha": "fd78a021481db11a62406820e15a13f5770e63da",
       "model": "claude-sonnet-5",
-      "synced_at": "2026-08-12",
+      "synced_at": "2026-10-12",
       "mode": "UPDATE",
-      "tool_version": "0.25.0",
+      "tool_version": "0.29.4",
       "pending_commits": 0,
       "pending_subjects": []
     }
@@ -124,8 +124,8 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 3,
-    "lines_head": 555,
+    "n_commits": 4,
+    "lines_head": 557,
     "prose_lines_head": 117,
     "composition": {
       "ai-assisted": 1,
@@ -136,9 +136,9 @@
       "ai-initial": 99.1
     },
     "baseline_survival_pct": 99.1,
-    "similarity_initial_head": 0.9757,
+    "similarity_initial_head": 0.9739,
     "commits_by_tier": {
-      "ai-assisted": 2
+      "ai-assisted": 3
     },
     "prose_churn_by_tier": {
       "ai-assisted": 23
@@ -166,32 +166,32 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 5,
-    "lines_head": 708,
+    "n_commits": 8,
+    "lines_head": 711,
     "prose_lines_head": 174,
     "composition": {
       "ai-assisted": 1,
-      "ai-initial": 164,
-      "ai-sync": 9
+      "ai-initial": 161,
+      "ai-sync": 12
     },
     "composition_pct": {
       "ai-assisted": 0.6,
-      "ai-initial": 94.3,
-      "ai-sync": 5.2
+      "ai-initial": 92.5,
+      "ai-sync": 6.9
     },
-    "baseline_survival_pct": 94.3,
-    "similarity_initial_head": 0.9349,
+    "baseline_survival_pct": 92.5,
+    "similarity_initial_head": 0.9287,
     "commits_by_tier": {
-      "ai-assisted": 2,
-      "ai-sync": 2
+      "ai-assisted": 3,
+      "ai-sync": 4
     },
     "prose_churn_by_tier": {
       "ai-assisted": 33,
-      "ai-sync": 20
+      "ai-sync": 26
     },
     "prose_char_churn_by_tier": {
       "ai-assisted": 43,
-      "ai-sync": 317
+      "ai-sync": 325
     },
     "first_human_touch": null,
     "last_human_touch": null,
@@ -199,11 +199,11 @@
     "syncs_since_last_human_touch": 0,
     "review_state": "machine-only",
     "source": {
-      "source_sha": "aacff3815993e8bea8db7b63df72a0a038e220c1",
+      "source_sha": "e2d28d003d61f45bf75e790a94b8d478ed0902f2",
       "model": "claude-sonnet-5",
-      "synced_at": "2026-08-05",
+      "synced_at": "2026-11-02",
       "mode": "UPDATE",
-      "tool_version": "0.25.0",
+      "tool_version": "0.30.0",
       "pending_commits": 0,
       "pending_subjects": []
     }
@@ -297,8 +297,8 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 14,
-    "lines_head": 913,
+    "n_commits": 15,
+    "lines_head": 915,
     "prose_lines_head": 225,
     "composition": {
       "ai-initial": 96,
@@ -313,9 +313,9 @@
       "human-editor": 0.4
     },
     "baseline_survival_pct": 42.7,
-    "similarity_initial_head": 0.5067,
+    "similarity_initial_head": 0.5062,
     "commits_by_tier": {
-      "ai-assisted": 5,
+      "ai-assisted": 6,
       "ai-sync": 7,
       "human-editor": 1
     },
@@ -349,8 +349,8 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 4,
-    "lines_head": 510,
+    "n_commits": 5,
+    "lines_head": 512,
     "prose_lines_head": 126,
     "composition": {
       "ai-initial": 125,
@@ -361,9 +361,9 @@
       "ai-assisted": 0.8
     },
     "baseline_survival_pct": 99.2,
-    "similarity_initial_head": 0.9666,
+    "similarity_initial_head": 0.9647,
     "commits_by_tier": {
-      "ai-assisted": 3
+      "ai-assisted": 4
     },
     "prose_churn_by_tier": {
       "ai-assisted": 29
@@ -391,27 +391,32 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 2,
-    "lines_head": 572,
+    "n_commits": 3,
+    "lines_head": 573,
     "prose_lines_head": 165,
     "composition": {
       "ai-assisted": 2,
-      "ai-initial": 163
+      "ai-initial": 161,
+      "ai-sync": 2
     },
     "composition_pct": {
       "ai-assisted": 1.2,
-      "ai-initial": 98.8
+      "ai-initial": 97.6,
+      "ai-sync": 1.2
     },
-    "baseline_survival_pct": 98.8,
-    "similarity_initial_head": 0.979,
+    "baseline_survival_pct": 97.6,
+    "similarity_initial_head": 0.9755,
     "commits_by_tier": {
-      "ai-assisted": 1
+      "ai-assisted": 1,
+      "ai-sync": 1
     },
     "prose_churn_by_tier": {
-      "ai-assisted": 21
+      "ai-assisted": 21,
+      "ai-sync": 6
     },
     "prose_char_churn_by_tier": {
-      "ai-assisted": 152
+      "ai-assisted": 152,
+      "ai-sync": 18
     },
     "first_human_touch": null,
     "last_human_touch": null,
@@ -419,11 +424,11 @@
     "syncs_since_last_human_touch": 0,
     "review_state": "machine-only",
     "source": {
-      "source_sha": "fe42b933280691390a2a4741b7bcbccaa86a5c2b",
-      "model": "claude-sonnet-4-6",
-      "synced_at": "2026-03-20",
-      "mode": "NEW",
-      "tool_version": "0.13.1",
+      "source_sha": "3100228f5998460a1ef60aae46bb3263ff65501f",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-11-02",
+      "mode": "UPDATE",
+      "tool_version": "0.30.0",
       "pending_commits": 0,
       "pending_subjects": []
     }
@@ -433,8 +438,8 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 7,
-    "lines_head": 461,
+    "n_commits": 8,
+    "lines_head": 463,
     "prose_lines_head": 189,
     "composition": {
       "ai-assisted": 4,
@@ -447,9 +452,9 @@
       "ai-sync": 46.0
     },
     "baseline_survival_pct": 51.9,
-    "similarity_initial_head": 0.6061,
+    "similarity_initial_head": 0.6049,
     "commits_by_tier": {
-      "ai-assisted": 3,
+      "ai-assisted": 4,
       "ai-sync": 3
     },
     "prose_churn_by_tier": {
@@ -480,8 +485,8 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 13,
-    "lines_head": 1036,
+    "n_commits": 14,
+    "lines_head": 1038,
     "prose_lines_head": 242,
     "composition": {
       "ai-initial": 88,
@@ -494,9 +499,9 @@
       "ai-sync": 61.2
     },
     "baseline_survival_pct": 36.4,
-    "similarity_initial_head": 0.4923,
+    "similarity_initial_head": 0.4918,
     "commits_by_tier": {
-      "ai-assisted": 4,
+      "ai-assisted": 5,
       "ai-sync": 7,
       "human-editor": 1
     },
@@ -530,8 +535,8 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 6,
-    "lines_head": 1522,
+    "n_commits": 8,
+    "lines_head": 1521,
     "prose_lines_head": 301,
     "composition": {
       "ai-initial": 289,
@@ -542,10 +547,10 @@
       "ai-sync": 4.0
     },
     "baseline_survival_pct": 96.0,
-    "similarity_initial_head": 0.9502,
+    "similarity_initial_head": 0.9485,
     "commits_by_tier": {
-      "ai-assisted": 2,
-      "ai-sync": 3
+      "ai-assisted": 3,
+      "ai-sync": 4
     },
     "prose_churn_by_tier": {
       "ai-assisted": 38,
@@ -561,11 +566,11 @@
     "syncs_since_last_human_touch": 0,
     "review_state": "machine-only",
     "source": {
-      "source_sha": "d35eb831da23a763f43d403e96f20d43529cae53",
+      "source_sha": "ed3025d7f2b3710b4bfd622b9726999bbe5c78df",
       "model": "claude-sonnet-5",
-      "synced_at": "2026-08-12",
+      "synced_at": "2026-11-02",
       "mode": "UPDATE",
-      "tool_version": "0.25.0",
+      "tool_version": "0.30.0",
       "pending_commits": 0,
       "pending_subjects": []
     }
@@ -575,8 +580,8 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 13,
-    "lines_head": 586,
+    "n_commits": 14,
+    "lines_head": 588,
     "prose_lines_head": 141,
     "composition": {
       "ai-initial": 64,
@@ -589,9 +594,9 @@
       "ai-assisted": 0.7
     },
     "baseline_survival_pct": 45.4,
-    "similarity_initial_head": 0.4904,
+    "similarity_initial_head": 0.4895,
     "commits_by_tier": {
-      "ai-assisted": 4,
+      "ai-assisted": 5,
       "ai-sync": 8
     },
     "prose_churn_by_tier": {
@@ -622,27 +627,32 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 2,
-    "lines_head": 405,
+    "n_commits": 3,
+    "lines_head": 406,
     "prose_lines_head": 115,
     "composition": {
       "ai-assisted": 1,
-      "ai-initial": 114
+      "ai-initial": 113,
+      "ai-sync": 1
     },
     "composition_pct": {
       "ai-assisted": 0.9,
-      "ai-initial": 99.1
+      "ai-initial": 98.3,
+      "ai-sync": 0.9
     },
-    "baseline_survival_pct": 99.1,
-    "similarity_initial_head": 0.9704,
+    "baseline_survival_pct": 98.3,
+    "similarity_initial_head": 0.9679,
     "commits_by_tier": {
-      "ai-assisted": 1
+      "ai-assisted": 1,
+      "ai-sync": 1
     },
     "prose_churn_by_tier": {
-      "ai-assisted": 21
+      "ai-assisted": 21,
+      "ai-sync": 2
     },
     "prose_char_churn_by_tier": {
-      "ai-assisted": 40
+      "ai-assisted": 40,
+      "ai-sync": 4
     },
     "first_human_touch": null,
     "last_human_touch": null,
@@ -650,11 +660,11 @@
     "syncs_since_last_human_touch": 0,
     "review_state": "machine-only",
     "source": {
-      "source_sha": "126eb49056ad1b685638c1820ebb7b4c89cabf89",
-      "model": "claude-sonnet-4-6",
-      "synced_at": "2026-03-20",
-      "mode": "NEW",
-      "tool_version": "0.13.0",
+      "source_sha": "e2d28d003d61f45bf75e790a94b8d478ed0902f2",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-11-02",
+      "mode": "UPDATE",
+      "tool_version": "0.30.0",
       "pending_commits": 0,
       "pending_subjects": []
     }
@@ -664,8 +674,8 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 8,
-    "lines_head": 819,
+    "n_commits": 9,
+    "lines_head": 821,
     "prose_lines_head": 199,
     "composition": {
       "ai-initial": 193,
@@ -678,9 +688,9 @@
       "ai-sync": 2.0
     },
     "baseline_survival_pct": 97.0,
-    "similarity_initial_head": 0.9657,
+    "similarity_initial_head": 0.9645,
     "commits_by_tier": {
-      "ai-assisted": 2,
+      "ai-assisted": 3,
       "ai-sync": 5
     },
     "prose_churn_by_tier": {
@@ -711,32 +721,32 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 7,
-    "lines_head": 566,
+    "n_commits": 9,
+    "lines_head": 568,
     "prose_lines_head": 143,
     "composition": {
       "ai-assisted": 2,
-      "ai-initial": 140,
-      "ai-sync": 1
+      "ai-initial": 139,
+      "ai-sync": 2
     },
     "composition_pct": {
       "ai-assisted": 1.4,
-      "ai-initial": 97.9,
-      "ai-sync": 0.7
+      "ai-initial": 97.2,
+      "ai-sync": 1.4
     },
-    "baseline_survival_pct": 97.9,
-    "similarity_initial_head": 0.969,
+    "baseline_survival_pct": 97.2,
+    "similarity_initial_head": 0.9655,
     "commits_by_tier": {
-      "ai-assisted": 3,
-      "ai-sync": 3
+      "ai-assisted": 4,
+      "ai-sync": 4
     },
     "prose_churn_by_tier": {
       "ai-assisted": 14,
-      "ai-sync": 4
+      "ai-sync": 6
     },
     "prose_char_churn_by_tier": {
       "ai-assisted": 128,
-      "ai-sync": 121
+      "ai-sync": 128
     },
     "first_human_touch": null,
     "last_human_touch": null,
@@ -744,11 +754,11 @@
     "syncs_since_last_human_touch": 0,
     "review_state": "machine-only",
     "source": {
-      "source_sha": "d35eb831da23a763f43d403e96f20d43529cae53",
+      "source_sha": "85586e6dee83ed0f91df72d6f703dbd91cdb2e99",
       "model": "claude-sonnet-5",
-      "synced_at": "2026-08-12",
+      "synced_at": "2026-10-12",
       "mode": "UPDATE",
-      "tool_version": "0.25.0",
+      "tool_version": "0.29.4",
       "pending_commits": 0,
       "pending_subjects": []
     }
@@ -758,25 +768,25 @@
     "translated": true,
     "translation_sha": "2a7ab569e468c05138d0406d96f86406b5d7d794",
     "translation_date": "2026-07-31T08:54:16+10:00",
-    "n_commits": 4,
-    "lines_head": 813,
-    "prose_lines_head": 138,
+    "n_commits": 5,
+    "lines_head": 817,
+    "prose_lines_head": 139,
     "composition": {
-      "ai-sync": 138
+      "ai-sync": 139
     },
     "composition_pct": {
       "ai-sync": 100.0
     },
     "baseline_survival_pct": 0.0,
-    "similarity_initial_head": 0.9785,
+    "similarity_initial_head": 0.9737,
     "commits_by_tier": {
-      "ai-sync": 3
+      "ai-sync": 4
     },
     "prose_churn_by_tier": {
-      "ai-sync": 2
+      "ai-sync": 5
     },
     "prose_char_churn_by_tier": {
-      "ai-sync": 4
+      "ai-sync": 116
     },
     "first_human_touch": null,
     "last_human_touch": null,
@@ -784,11 +794,11 @@
     "syncs_since_last_human_touch": 0,
     "review_state": "machine-only",
     "source": {
-      "source_sha": "55c87c9fdbdb522866c5b6bbdc65c073941d7f16",
+      "source_sha": "b0c58ab96a9c537fcf766e4f2d9fd32f4a0fc2f7",
       "model": "claude-sonnet-5",
-      "synced_at": "2026-08-18",
+      "synced_at": "2026-10-13",
       "mode": "UPDATE",
-      "tool_version": "0.26.0",
+      "tool_version": "0.29.4",
       "pending_commits": 0,
       "pending_subjects": []
     }
@@ -798,8 +808,8 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 6,
-    "lines_head": 1252,
+    "n_commits": 7,
+    "lines_head": 1254,
     "prose_lines_head": 295,
     "composition": {
       "ai-assisted": 1,
@@ -812,10 +822,10 @@
       "ai-sync": 22.4
     },
     "baseline_survival_pct": 77.3,
-    "similarity_initial_head": 0.9294,
+    "similarity_initial_head": 0.9287,
     "commits_by_tier": {
       "ai-sync": 3,
-      "ai-assisted": 2
+      "ai-assisted": 3
     },
     "prose_churn_by_tier": {
       "ai-sync": 96,
@@ -847,32 +857,32 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 6,
-    "lines_head": 741,
+    "n_commits": 8,
+    "lines_head": 743,
     "prose_lines_head": 194,
     "composition": {
       "ai-assisted": 1,
-      "ai-initial": 186,
-      "ai-sync": 7
+      "ai-initial": 185,
+      "ai-sync": 8
     },
     "composition_pct": {
       "ai-assisted": 0.5,
-      "ai-initial": 95.9,
-      "ai-sync": 3.6
+      "ai-initial": 95.4,
+      "ai-sync": 4.1
     },
-    "baseline_survival_pct": 95.9,
-    "similarity_initial_head": 0.9369,
+    "baseline_survival_pct": 95.4,
+    "similarity_initial_head": 0.9342,
     "commits_by_tier": {
-      "ai-assisted": 2,
-      "ai-sync": 3
+      "ai-assisted": 3,
+      "ai-sync": 4
     },
     "prose_churn_by_tier": {
       "ai-assisted": 35,
-      "ai-sync": 15
+      "ai-sync": 17
     },
     "prose_char_churn_by_tier": {
       "ai-assisted": 47,
-      "ai-sync": 146
+      "ai-sync": 150
     },
     "first_human_touch": null,
     "last_human_touch": null,
@@ -880,11 +890,11 @@
     "syncs_since_last_human_touch": 0,
     "review_state": "machine-only",
     "source": {
-      "source_sha": "d35eb831da23a763f43d403e96f20d43529cae53",
+      "source_sha": "cadd911316d30a04f4bd518736088932b1c88790",
       "model": "claude-sonnet-5",
-      "synced_at": "2026-08-12",
+      "synced_at": "2026-11-02",
       "mode": "UPDATE",
-      "tool_version": "0.25.0",
+      "tool_version": "0.30.0",
       "pending_commits": 0,
       "pending_subjects": []
     }
@@ -939,27 +949,32 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 3,
-    "lines_head": 909,
+    "n_commits": 5,
+    "lines_head": 912,
     "prose_lines_head": 216,
     "composition": {
       "ai-assisted": 1,
-      "ai-initial": 215
+      "ai-initial": 213,
+      "ai-sync": 2
     },
     "composition_pct": {
       "ai-assisted": 0.5,
-      "ai-initial": 99.5
+      "ai-initial": 98.6,
+      "ai-sync": 0.9
     },
-    "baseline_survival_pct": 99.5,
-    "similarity_initial_head": 0.9818,
+    "baseline_survival_pct": 98.6,
+    "similarity_initial_head": 0.9764,
     "commits_by_tier": {
-      "ai-assisted": 2
+      "ai-assisted": 3,
+      "ai-sync": 1
     },
     "prose_churn_by_tier": {
-      "ai-assisted": 27
+      "ai-assisted": 27,
+      "ai-sync": 4
     },
     "prose_char_churn_by_tier": {
-      "ai-assisted": 45
+      "ai-assisted": 45,
+      "ai-sync": 5
     },
     "first_human_touch": null,
     "last_human_touch": null,
@@ -967,11 +982,11 @@
     "syncs_since_last_human_touch": 0,
     "review_state": "machine-only",
     "source": {
-      "source_sha": "8973c2e03fe820f44b841b2e13ed4107500a1226",
-      "model": "claude-sonnet-4-6",
-      "synced_at": "2026-03-20",
-      "mode": "NEW",
-      "tool_version": "0.13.0",
+      "source_sha": "e2d28d003d61f45bf75e790a94b8d478ed0902f2",
+      "model": "claude-sonnet-5",
+      "synced_at": "2026-11-02",
+      "mode": "UPDATE",
+      "tool_version": "0.30.0",
       "pending_commits": 0,
       "pending_subjects": []
     }
@@ -981,8 +996,8 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 4,
-    "lines_head": 652,
+    "n_commits": 5,
+    "lines_head": 654,
     "prose_lines_head": 175,
     "composition": {
       "ai-initial": 167,
@@ -995,9 +1010,9 @@
       "ai-sync": 0.6
     },
     "baseline_survival_pct": 95.4,
-    "similarity_initial_head": 0.9515,
+    "similarity_initial_head": 0.95,
     "commits_by_tier": {
-      "ai-assisted": 2,
+      "ai-assisted": 3,
       "ai-sync": 1
     },
     "prose_churn_by_tier": {
@@ -1070,8 +1085,8 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 3,
-    "lines_head": 739,
+    "n_commits": 4,
+    "lines_head": 741,
     "prose_lines_head": 155,
     "composition": {
       "ai-initial": 155
@@ -1080,9 +1095,9 @@
       "ai-initial": 100.0
     },
     "baseline_survival_pct": 100.0,
-    "similarity_initial_head": 0.9722,
+    "similarity_initial_head": 0.9709,
     "commits_by_tier": {
-      "ai-assisted": 2
+      "ai-assisted": 3
     },
     "prose_churn_by_tier": {
       "ai-assisted": 36
@@ -1152,8 +1167,8 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 4,
-    "lines_head": 395,
+    "n_commits": 5,
+    "lines_head": 397,
     "prose_lines_head": 139,
     "composition": {
       "ai-assisted": 1,
@@ -1166,9 +1181,9 @@
       "ai-sync": 0.7
     },
     "baseline_survival_pct": 98.6,
-    "similarity_initial_head": 0.9657,
+    "similarity_initial_head": 0.9632,
     "commits_by_tier": {
-      "ai-assisted": 2,
+      "ai-assisted": 3,
       "ai-sync": 1
     },
     "prose_churn_by_tier": {
@@ -1199,8 +1214,8 @@
     "translated": true,
     "translation_sha": "93dfab0b154a280a8e03c4d3fefde172b036be53",
     "translation_date": "2026-03-20T17:07:51+11:00",
-    "n_commits": 3,
-    "lines_head": 500,
+    "n_commits": 4,
+    "lines_head": 502,
     "prose_lines_head": 148,
     "composition": {
       "ai-assisted": 1,
@@ -1211,9 +1226,9 @@
       "ai-initial": 99.3
     },
     "baseline_survival_pct": 99.3,
-    "similarity_initial_head": 0.973,
+    "similarity_initial_head": 0.971,
     "commits_by_tier": {
-      "ai-assisted": 2
+      "ai-assisted": 3
     },
     "prose_churn_by_tier": {
       "ai-assisted": 23
