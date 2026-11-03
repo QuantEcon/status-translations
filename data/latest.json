@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-02",
+  "generated_at": "2026-11-03",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
-    "auto_merge": 26,
-    "editor": 98,
+    "auto_merge": 27,
+    "editor": 101,
     "pct_auto_merge": 21
   },
   "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
@@ -29,7 +29,7 @@
             "date": "2026-11-02",
             "lag": "today"
           },
-          "drift_prs": 5,
+          "drift_prs": 6,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -43,21 +43,21 @@
           "status_label": "Reference model",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 16,
+            "verdicts": 17,
             "open_editor": {
               "count": 0
             },
             "auto_merge_recommended": {
-              "d7": 2,
-              "d30": 5
+              "d7": 3,
+              "d30": 6
             },
             "share": {
-              "auto_merge": 8,
+              "auto_merge": 9,
               "editor": 8
             },
             "would_auto_merge": {
-              "n": 13,
-              "agree": 13
+              "n": 14,
+              "agree": 14
             },
             "primary_editor": "HumphreyYang",
             "in_review_slugs": []
@@ -178,12 +178,12 @@
           "review_state": "active",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 2,
+          "stale": 1,
           "last_sync": {
             "date": "2026-11-02",
             "lag": "today"
           },
-          "drift_prs": 5,
+          "drift_prs": 6,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -197,7 +197,7 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 15,
+            "verdicts": 16,
             "open_editor": {
               "count": 0
             },
@@ -207,11 +207,11 @@
             },
             "share": {
               "auto_merge": 2,
-              "editor": 13
+              "editor": 14
             },
             "would_auto_merge": {
-              "n": 12,
-              "agree": 12
+              "n": 13,
+              "agree": 13
             },
             "primary_editor": "Zahra-khanzadeh",
             "in_review_slugs": []
@@ -232,7 +232,7 @@
             },
             {
               "slug": "functions",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "getting_started",
@@ -332,12 +332,12 @@
           "review_state": "pending",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 3,
+          "stale": 6,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "today"
+            "lag": "1 day ago"
           },
-          "drift_prs": 5,
+          "drift_prs": 6,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -351,11 +351,11 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 16,
+            "verdicts": 17,
             "open_editor": {
-              "count": 1,
+              "count": 2,
               "median_age_days": 0,
-              "oldest_age_days": 0
+              "oldest_age_days": 1
             },
             "auto_merge_recommended": {
               "d7": 1,
@@ -363,15 +363,18 @@
             },
             "share": {
               "auto_merge": 6,
-              "editor": 10
+              "editor": 11
             },
             "would_auto_merge": {
-              "n": 13,
-              "agree": 13
+              "n": 14,
+              "agree": 14
             },
             "primary_editor": "Honaminto",
             "in_review_slugs": [
-              "numpy"
+              "functions",
+              "numpy",
+              "oop_intro",
+              "python_oop"
             ]
           },
           "orphans": [],
@@ -390,7 +393,7 @@
             },
             {
               "slug": "functions",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "getting_started",
@@ -430,7 +433,7 @@
             },
             {
               "slug": "oop_intro",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "pandas",
@@ -458,7 +461,7 @@
             },
             {
               "slug": "python_oop",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "scipy",
@@ -490,12 +493,12 @@
           "review_state": "active",
           "lectures_translated": 6,
           "freshness": "computed",
-          "stale": 0,
+          "stale": 1,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "today"
+            "lag": "1 day ago"
           },
-          "drift_prs": 5,
+          "drift_prs": 6,
           "drift_approx": true,
           "automation": {
             "wired": false,
@@ -544,7 +547,7 @@
             },
             {
               "slug": "functions",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "getting_started",
@@ -654,7 +657,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "23 days ago"
+            "lag": "24 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -932,12 +935,12 @@
           "review_state": "stalled",
           "lectures_translated": 149,
           "freshness": "computed",
-          "stale": 19,
+          "stale": 26,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "10 days ago"
+            "lag": "11 days ago"
           },
-          "drift_prs": 2,
+          "drift_prs": 3,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -951,11 +954,11 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 60,
+            "verdicts": 61,
             "open_editor": {
-              "count": 1,
-              "median_age_days": 8,
-              "oldest_age_days": 8
+              "count": 2,
+              "median_age_days": 4,
+              "oldest_age_days": 9
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -963,15 +966,22 @@
             },
             "share": {
               "auto_merge": 8,
-              "editor": 52
+              "editor": 53
             },
             "would_auto_merge": {
-              "n": 34,
-              "agree": 34
+              "n": 35,
+              "agree": 35
             },
             "primary_editor": "HumphreyYang",
             "in_review_slugs": [
-              "lq_mean_field_games_extensions"
+              "bounded_rationality",
+              "exchange_rate_learning",
+              "genetic_classifier",
+              "learning_approximation",
+              "lq_mean_field_games_extensions",
+              "marimon_mcgrattan_sargent",
+              "olg_adaptive_money",
+              "prospects_bounded_rationality"
             ]
           },
           "orphans": [],
@@ -1018,7 +1028,7 @@
             },
             {
               "slug": "bounded_rationality",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "career",
@@ -1062,7 +1072,7 @@
             },
             {
               "slug": "exchange_rate_learning",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "exchangeable",
@@ -1082,7 +1092,7 @@
             },
             {
               "slug": "genetic_classifier",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "hansen_singleton_1982",
@@ -1174,7 +1184,7 @@
             },
             {
               "slug": "learning_approximation",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "likelihood_bayes",
@@ -1250,7 +1260,7 @@
             },
             {
               "slug": "marimon_mcgrattan_sargent",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "market_diffusion",
@@ -1338,7 +1348,7 @@
             },
             {
               "slug": "olg_adaptive_money",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "ols",
@@ -1450,7 +1460,7 @@
             },
             {
               "slug": "prospects_bounded_rationality",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "qr_decomp",
