@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-03",
+  "generated_at": "2026-11-04",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 27,
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "today"
+            "lag": "1 day ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "today"
+            "lag": "1 day ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -335,7 +335,7 @@
           "stale": 6,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "1 day ago"
+            "lag": "2 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -354,8 +354,8 @@
             "verdicts": 17,
             "open_editor": {
               "count": 2,
-              "median_age_days": 0,
-              "oldest_age_days": 1
+              "median_age_days": 2,
+              "oldest_age_days": 2
             },
             "auto_merge_recommended": {
               "d7": 1,
@@ -493,12 +493,12 @@
           "review_state": "active",
           "lectures_translated": 6,
           "freshness": "computed",
-          "stale": 1,
+          "stale": 0,
           "last_sync": {
-            "date": "2026-11-02",
-            "lag": "1 day ago"
+            "date": "2026-11-03",
+            "lag": "today"
           },
-          "drift_prs": 6,
+          "drift_prs": 0,
           "drift_approx": true,
           "automation": {
             "wired": false,
@@ -547,7 +547,7 @@
             },
             {
               "slug": "functions",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "getting_started",
@@ -657,7 +657,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "24 days ago"
+            "lag": "25 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -925,7 +925,7 @@
     {
       "repo": "lecture-python.myst",
       "title": "Intermediate Quantitative Economics with Python",
-      "lectures_total": 150,
+      "lectures_total": 152,
       "editions": [
         {
           "lang": "zh-cn",
@@ -935,12 +935,12 @@
           "review_state": "stalled",
           "lectures_translated": 149,
           "freshness": "computed",
-          "stale": 26,
+          "stale": 40,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "11 days ago"
+            "lag": "12 days ago"
           },
-          "drift_prs": 3,
+          "drift_prs": 4,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -957,8 +957,8 @@
             "verdicts": 61,
             "open_editor": {
               "count": 2,
-              "median_age_days": 4,
-              "oldest_age_days": 9
+              "median_age_days": 6,
+              "oldest_age_days": 10
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -1160,7 +1160,7 @@
             },
             {
               "slug": "kalman",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "kalman_2",
@@ -1252,7 +1252,7 @@
             },
             {
               "slug": "ls_learning",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "lucas_prescott_investment",
@@ -1404,47 +1404,55 @@
             },
             {
               "slug": "phillips_adaptive",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "phillips_credibility",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "phillips_credible_policies",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "phillips_drifts_volatilities",
-              "state": "fresh"
+              "state": "stale"
+            },
+            {
+              "slug": "phillips_drifts_volatilities_2",
+              "state": "missing"
             },
             {
               "slug": "phillips_escaping_nash",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "phillips_learning",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "phillips_lost_conquest",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "phillips_misspecified",
-              "state": "fresh"
+              "state": "stale"
+            },
+            {
+              "slug": "phillips_policy_evaluation",
+              "state": "missing"
             },
             {
               "slug": "phillips_priors",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "phillips_self_confirming",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "phillips_two_stories",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "pricing_information",
@@ -1472,7 +1480,7 @@
             },
             {
               "slug": "rational_expectations",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "rational_learning_re",
