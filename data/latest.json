@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-06",
+  "generated_at": "2026-11-07",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 27,
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "3 days ago"
+            "lag": "4 days ago"
           },
           "drift_prs": 7,
           "drift_approx": true,
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "3 days ago"
+            "lag": "4 days ago"
           },
           "drift_prs": 7,
           "drift_approx": true,
@@ -335,7 +335,7 @@
           "stale": 6,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "4 days ago"
+            "lag": "5 days ago"
           },
           "drift_prs": 7,
           "drift_approx": true,
@@ -355,7 +355,7 @@
             "open_editor": {
               "count": 2,
               "median_age_days": 4,
-              "oldest_age_days": 4
+              "oldest_age_days": 5
             },
             "auto_merge_recommended": {
               "d7": 1,
@@ -496,7 +496,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-11-03",
-            "lag": "2 days ago"
+            "lag": "3 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -657,7 +657,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "27 days ago"
+            "lag": "28 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -938,7 +938,7 @@
           "stale": 40,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "14 days ago"
+            "lag": "15 days ago"
           },
           "drift_prs": 4,
           "drift_approx": true,
@@ -958,7 +958,7 @@
             "open_editor": {
               "count": 2,
               "median_age_days": 8,
-              "oldest_age_days": 12
+              "oldest_age_days": 13
             },
             "auto_merge_recommended": {
               "d7": 0,
