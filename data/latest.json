@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-08",
+  "generated_at": "2026-11-09",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 27,
-    "editor": 101,
+    "editor": 102,
     "pct_auto_merge": 21
   },
   "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "5 days ago"
+            "lag": "6 days ago"
           },
           "drift_prs": 7,
           "drift_approx": true,
@@ -48,7 +48,7 @@
               "count": 0
             },
             "auto_merge_recommended": {
-              "d7": 3,
+              "d7": 1,
               "d30": 6
             },
             "share": {
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "5 days ago"
+            "lag": "6 days ago"
           },
           "drift_prs": 7,
           "drift_approx": true,
@@ -202,7 +202,7 @@
               "count": 0
             },
             "auto_merge_recommended": {
-              "d7": 1,
+              "d7": 0,
               "d30": 2
             },
             "share": {
@@ -335,7 +335,7 @@
           "stale": 6,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "6 days ago"
+            "lag": "7 days ago"
           },
           "drift_prs": 7,
           "drift_approx": true,
@@ -355,10 +355,10 @@
             "open_editor": {
               "count": 2,
               "median_age_days": 6,
-              "oldest_age_days": 6
+              "oldest_age_days": 7
             },
             "auto_merge_recommended": {
-              "d7": 1,
+              "d7": 0,
               "d30": 2
             },
             "share": {
@@ -496,7 +496,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-11-03",
-            "lag": "4 days ago"
+            "lag": "5 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -657,7 +657,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "29 days ago"
+            "lag": "30 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -679,7 +679,7 @@
             },
             "auto_merge_recommended": {
               "d7": 0,
-              "d30": 1
+              "d30": 0
             },
             "share": {
               "auto_merge": 2,
@@ -935,12 +935,12 @@
           "review_state": "stalled",
           "lectures_translated": 149,
           "freshness": "computed",
-          "stale": 40,
+          "stale": 43,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "16 days ago"
+            "lag": "17 days ago"
           },
-          "drift_prs": 4,
+          "drift_prs": 8,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -954,11 +954,11 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 61,
+            "verdicts": 62,
             "open_editor": {
-              "count": 2,
-              "median_age_days": 10,
-              "oldest_age_days": 14
+              "count": 3,
+              "median_age_days": 6,
+              "oldest_age_days": 15
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -966,14 +966,16 @@
             },
             "share": {
               "auto_merge": 8,
-              "editor": 53
+              "editor": 54
             },
             "would_auto_merge": {
-              "n": 35,
-              "agree": 35
+              "n": 36,
+              "agree": 36
             },
             "primary_editor": "HumphreyYang",
             "in_review_slugs": [
+              "ak2",
+              "ak_aiyagari",
               "bounded_rationality",
               "exchange_rate_learning",
               "genetic_classifier",
@@ -981,7 +983,8 @@
               "lq_mean_field_games_extensions",
               "marimon_mcgrattan_sargent",
               "olg_adaptive_money",
-              "prospects_bounded_rationality"
+              "prospects_bounded_rationality",
+              "two_computation"
             ]
           },
           "orphans": [],
@@ -1000,11 +1003,11 @@
             },
             {
               "slug": "ak2",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "ak_aiyagari",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "ar1_bayes",
@@ -1548,7 +1551,7 @@
             },
             {
               "slug": "two_computation",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "uncertainty_traps",
