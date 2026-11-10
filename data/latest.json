@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-09",
+  "generated_at": "2026-11-10",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 27,
-    "editor": 102,
+    "editor": 103,
     "pct_auto_merge": 21
   },
   "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "6 days ago"
+            "lag": "7 days ago"
           },
           "drift_prs": 7,
           "drift_approx": true,
@@ -48,7 +48,7 @@
               "count": 0
             },
             "auto_merge_recommended": {
-              "d7": 1,
+              "d7": 0,
               "d30": 6
             },
             "share": {
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "6 days ago"
+            "lag": "7 days ago"
           },
           "drift_prs": 7,
           "drift_approx": true,
@@ -335,7 +335,7 @@
           "stale": 6,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "7 days ago"
+            "lag": "8 days ago"
           },
           "drift_prs": 7,
           "drift_approx": true,
@@ -354,8 +354,8 @@
             "verdicts": 17,
             "open_editor": {
               "count": 2,
-              "median_age_days": 6,
-              "oldest_age_days": 7
+              "median_age_days": 8,
+              "oldest_age_days": 8
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -496,7 +496,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-11-03",
-            "lag": "5 days ago"
+            "lag": "6 days ago"
           },
           "drift_prs": 1,
           "drift_approx": true,
@@ -657,7 +657,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "30 days ago"
+            "lag": "31 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -925,7 +925,7 @@
     {
       "repo": "lecture-python.myst",
       "title": "Intermediate Quantitative Economics with Python",
-      "lectures_total": 152,
+      "lectures_total": 153,
       "editions": [
         {
           "lang": "zh-cn",
@@ -938,9 +938,9 @@
           "stale": 43,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "17 days ago"
+            "lag": "18 days ago"
           },
-          "drift_prs": 8,
+          "drift_prs": 9,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -954,11 +954,11 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 62,
+            "verdicts": 63,
             "open_editor": {
-              "count": 3,
-              "median_age_days": 6,
-              "oldest_age_days": 15
+              "count": 4,
+              "median_age_days": 4,
+              "oldest_age_days": 16
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -966,11 +966,11 @@
             },
             "share": {
               "auto_merge": 8,
-              "editor": 54
+              "editor": 55
             },
             "would_auto_merge": {
-              "n": 36,
-              "agree": 36
+              "n": 37,
+              "agree": 37
             },
             "primary_editor": "HumphreyYang",
             "in_review_slugs": [
@@ -981,6 +981,7 @@
               "genetic_classifier",
               "learning_approximation",
               "lq_mean_field_games_extensions",
+              "lucas_prescott_search",
               "marimon_mcgrattan_sargent",
               "olg_adaptive_money",
               "prospects_bounded_rationality",
@@ -1260,6 +1261,10 @@
             {
               "slug": "lucas_prescott_investment",
               "state": "fresh"
+            },
+            {
+              "slug": "lucas_prescott_search",
+              "state": "missing"
             },
             {
               "slug": "marimon_mcgrattan_sargent",
