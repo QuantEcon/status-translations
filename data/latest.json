@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-12",
+  "generated_at": "2026-11-13",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 27,
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "9 days ago"
+            "lag": "10 days ago"
           },
           "drift_prs": 8,
           "drift_approx": true,
@@ -49,7 +49,7 @@
             },
             "auto_merge_recommended": {
               "d7": 0,
-              "d30": 4
+              "d30": 3
             },
             "share": {
               "auto_merge": 9,
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "9 days ago"
+            "lag": "10 days ago"
           },
           "drift_prs": 8,
           "drift_approx": true,
@@ -335,7 +335,7 @@
           "stale": 6,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "10 days ago"
+            "lag": "11 days ago"
           },
           "drift_prs": 8,
           "drift_approx": true,
@@ -355,7 +355,7 @@
             "open_editor": {
               "count": 2,
               "median_age_days": 10,
-              "oldest_age_days": 10
+              "oldest_age_days": 11
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -496,7 +496,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-11-03",
-            "lag": "8 days ago"
+            "lag": "9 days ago"
           },
           "drift_prs": 2,
           "drift_approx": true,
@@ -657,7 +657,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "33 days ago"
+            "lag": "34 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -938,7 +938,7 @@
           "stale": 47,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "20 days ago"
+            "lag": "21 days ago"
           },
           "drift_prs": 13,
           "drift_approx": true,
@@ -957,8 +957,8 @@
             "verdicts": 66,
             "open_editor": {
               "count": 7,
-              "median_age_days": 2,
-              "oldest_age_days": 18
+              "median_age_days": 3,
+              "oldest_age_days": 19
             },
             "auto_merge_recommended": {
               "d7": 0,
