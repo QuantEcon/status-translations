@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-17",
+  "generated_at": "2026-11-18",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
-    "auto_merge": 27,
-    "editor": 106,
-    "pct_auto_merge": 20
+    "auto_merge": 28,
+    "editor": 107,
+    "pct_auto_merge": 21
   },
   "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
   "last_sync_note": "last_sync is the newest commit touching a matched lecture file in the edition — edition-local maintenance moves it too, so read it as activity, not sync",
@@ -27,7 +27,7 @@
           "stale": 0,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "14 days ago"
+            "lag": "15 days ago"
           },
           "drift_prs": 8,
           "drift_approx": true,
@@ -181,7 +181,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "14 days ago"
+            "lag": "15 days ago"
           },
           "drift_prs": 8,
           "drift_approx": true,
@@ -335,7 +335,7 @@
           "stale": 6,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "15 days ago"
+            "lag": "16 days ago"
           },
           "drift_prs": 8,
           "drift_approx": true,
@@ -354,12 +354,12 @@
             "verdicts": 17,
             "open_editor": {
               "count": 2,
-              "median_age_days": 14,
-              "oldest_age_days": 15
+              "median_age_days": 16,
+              "oldest_age_days": 16
             },
             "auto_merge_recommended": {
               "d7": 0,
-              "d30": 2
+              "d30": 1
             },
             "share": {
               "auto_merge": 6,
@@ -495,10 +495,10 @@
           "freshness": "computed",
           "stale": 0,
           "last_sync": {
-            "date": "2026-11-03",
-            "lag": "13 days ago"
+            "date": "2026-11-17",
+            "lag": "today"
           },
-          "drift_prs": 2,
+          "drift_prs": 0,
           "drift_approx": true,
           "automation": {
             "wired": false,
@@ -657,7 +657,7 @@
           "stale": 7,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "38 days ago"
+            "lag": "39 days ago"
           },
           "drift_prs": 6,
           "drift_approx": true,
@@ -925,7 +925,7 @@
     {
       "repo": "lecture-python.myst",
       "title": "Intermediate Quantitative Economics with Python",
-      "lectures_total": 155,
+      "lectures_total": 157,
       "editions": [
         {
           "lang": "zh-cn",
@@ -935,12 +935,12 @@
           "review_state": "stalled",
           "lectures_translated": 149,
           "freshness": "computed",
-          "stale": 47,
+          "stale": 48,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "25 days ago"
+            "lag": "26 days ago"
           },
-          "drift_prs": 13,
+          "drift_prs": 15,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -954,23 +954,23 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 66,
+            "verdicts": 68,
             "open_editor": {
-              "count": 7,
-              "median_age_days": 7,
-              "oldest_age_days": 23
+              "count": 8,
+              "median_age_days": 8,
+              "oldest_age_days": 24
             },
             "auto_merge_recommended": {
-              "d7": 0,
+              "d7": 1,
               "d30": 1
             },
             "share": {
-              "auto_merge": 8,
-              "editor": 58
+              "auto_merge": 9,
+              "editor": 59
             },
             "would_auto_merge": {
-              "n": 40,
-              "agree": 40
+              "n": 42,
+              "agree": 42
             },
             "primary_editor": "HumphreyYang",
             "in_review_slugs": [
@@ -978,8 +978,10 @@
               "ak_aiyagari",
               "bounded_rationality",
               "exchange_rate_learning",
+              "exponential_families",
               "genetic_classifier",
               "houthakker_aggregation",
+              "information_projections",
               "information_transfer",
               "learning_approximation",
               "lq_mean_field_games_extensions",
@@ -1089,6 +1091,10 @@
               "state": "stale"
             },
             {
+              "slug": "exponential_families",
+              "state": "missing"
+            },
+            {
               "slug": "finite_markov",
               "state": "fresh"
             },
@@ -1157,6 +1163,10 @@
               "state": "stale"
             },
             {
+              "slug": "information_projections",
+              "state": "missing"
+            },
+            {
               "slug": "information_transfer",
               "state": "missing"
             },
@@ -1190,7 +1200,7 @@
             },
             {
               "slug": "kesten_processes",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "lagrangian_lqdp",
