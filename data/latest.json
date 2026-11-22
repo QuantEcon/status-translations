@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-21",
+  "generated_at": "2026-11-22",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 28,
@@ -27,7 +27,7 @@
           "stale": 5,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "18 days ago"
+            "lag": "19 days ago"
           },
           "drift_prs": 12,
           "drift_approx": true,
@@ -47,7 +47,7 @@
             "open_editor": {
               "count": 2,
               "median_age_days": 2,
-              "oldest_age_days": 2
+              "oldest_age_days": 3
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -189,7 +189,7 @@
           "stale": 6,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "18 days ago"
+            "lag": "19 days ago"
           },
           "drift_prs": 12,
           "drift_approx": true,
@@ -209,7 +209,7 @@
             "open_editor": {
               "count": 2,
               "median_age_days": 2,
-              "oldest_age_days": 2
+              "oldest_age_days": 3
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -351,7 +351,7 @@
           "stale": 11,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "19 days ago"
+            "lag": "20 days ago"
           },
           "drift_prs": 12,
           "drift_approx": true,
@@ -370,8 +370,8 @@
             "verdicts": 19,
             "open_editor": {
               "count": 4,
-              "median_age_days": 10,
-              "oldest_age_days": 19
+              "median_age_days": 11,
+              "oldest_age_days": 20
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -517,7 +517,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-11-17",
-            "lag": "3 days ago"
+            "lag": "4 days ago"
           },
           "drift_prs": 4,
           "drift_approx": true,
@@ -678,7 +678,7 @@
           "stale": 11,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "42 days ago"
+            "lag": "43 days ago"
           },
           "drift_prs": 7,
           "drift_approx": true,
@@ -697,8 +697,8 @@
             "verdicts": 18,
             "open_editor": {
               "count": 1,
-              "median_age_days": 2,
-              "oldest_age_days": 2
+              "median_age_days": 3,
+              "oldest_age_days": 3
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -953,7 +953,7 @@
     {
       "repo": "lecture-python.myst",
       "title": "Intermediate Quantitative Economics with Python",
-      "lectures_total": 157,
+      "lectures_total": 160,
       "editions": [
         {
           "lang": "zh-cn",
@@ -963,12 +963,12 @@
           "review_state": "stalled",
           "lectures_translated": 149,
           "freshness": "computed",
-          "stale": 51,
+          "stale": 56,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "29 days ago"
+            "lag": "30 days ago"
           },
-          "drift_prs": 17,
+          "drift_prs": 18,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -985,8 +985,8 @@
             "verdicts": 69,
             "open_editor": {
               "count": 9,
-              "median_age_days": 10,
-              "oldest_age_days": 27
+              "median_age_days": 11,
+              "oldest_age_days": 28
             },
             "auto_merge_recommended": {
               "d7": 1,
@@ -1049,6 +1049,10 @@
             {
               "slug": "ak_aiyagari",
               "state": "stale"
+            },
+            {
+              "slug": "approximation_errors",
+              "state": "missing"
             },
             {
               "slug": "ar1_bayes",
@@ -1148,7 +1152,7 @@
             },
             {
               "slug": "hansen_singleton_1983",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "harrison_kreps",
@@ -1296,7 +1300,7 @@
             },
             {
               "slug": "lq_permanent_income",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "lq_robust_bewley",
@@ -1352,7 +1356,7 @@
             },
             {
               "slug": "mccall_model_with_separation",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "mccall_persist_trans",
@@ -1416,7 +1420,7 @@
             },
             {
               "slug": "ols",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "opt_transport",
@@ -1572,7 +1576,7 @@
             },
             {
               "slug": "sargent_surico",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "sir_model",
@@ -1581,6 +1585,10 @@
             {
               "slug": "social_security_depletion",
               "state": "fresh"
+            },
+            {
+              "slug": "specification_tests",
+              "state": "missing"
             },
             {
               "slug": "stats_examples",
@@ -1605,6 +1613,10 @@
             {
               "slug": "troubleshooting",
               "state": "fresh"
+            },
+            {
+              "slug": "turbulence_inference",
+              "state": "missing"
             },
             {
               "slug": "two_auctions",
@@ -1678,7 +1690,7 @@
     {
       "repo": "lecture-python-advanced.myst",
       "title": "Advanced Quantitative Economics with Python",
-      "lectures_total": 77,
+      "lectures_total": 79,
       "phase": "Phase 3",
       "editions": [
         {
