@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-22",
+  "generated_at": "2026-11-23",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 28,
-    "editor": 115,
-    "pct_auto_merge": 20
+    "editor": 117,
+    "pct_auto_merge": 19
   },
   "routing_note": "review_lanes derive from the verdict event store (data/verdicts.jsonl) keyed on recommendation; wouldAutoMerge is shadow-only and surfaced as confirmation, never as the routing signal",
   "last_sync_note": "last_sync is the newest commit touching a matched lecture file in the edition — edition-local maintenance moves it too, so read it as activity, not sync",
@@ -27,7 +27,7 @@
           "stale": 5,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "19 days ago"
+            "lag": "20 days ago"
           },
           "drift_prs": 12,
           "drift_approx": true,
@@ -46,8 +46,8 @@
             "verdicts": 19,
             "open_editor": {
               "count": 2,
-              "median_age_days": 2,
-              "oldest_age_days": 3
+              "median_age_days": 4,
+              "oldest_age_days": 4
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -189,7 +189,7 @@
           "stale": 6,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "19 days ago"
+            "lag": "20 days ago"
           },
           "drift_prs": 12,
           "drift_approx": true,
@@ -208,8 +208,8 @@
             "verdicts": 18,
             "open_editor": {
               "count": 2,
-              "median_age_days": 2,
-              "oldest_age_days": 3
+              "median_age_days": 4,
+              "oldest_age_days": 4
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -351,7 +351,7 @@
           "stale": 11,
           "last_sync": {
             "date": "2026-11-02",
-            "lag": "20 days ago"
+            "lag": "21 days ago"
           },
           "drift_prs": 12,
           "drift_approx": true,
@@ -370,8 +370,8 @@
             "verdicts": 19,
             "open_editor": {
               "count": 4,
-              "median_age_days": 11,
-              "oldest_age_days": 20
+              "median_age_days": 12,
+              "oldest_age_days": 21
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -517,7 +517,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-11-17",
-            "lag": "4 days ago"
+            "lag": "5 days ago"
           },
           "drift_prs": 4,
           "drift_approx": true,
@@ -675,12 +675,12 @@
           "review_state": "complete",
           "lectures_translated": 52,
           "freshness": "computed",
-          "stale": 11,
+          "stale": 12,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "43 days ago"
+            "lag": "44 days ago"
           },
-          "drift_prs": 7,
+          "drift_prs": 9,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -694,11 +694,11 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 18,
+            "verdicts": 19,
             "open_editor": {
-              "count": 1,
-              "median_age_days": 3,
-              "oldest_age_days": 3
+              "count": 2,
+              "median_age_days": 2,
+              "oldest_age_days": 4
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -706,17 +706,18 @@
             },
             "share": {
               "auto_merge": 2,
-              "editor": 16
+              "editor": 17
             },
             "would_auto_merge": {
-              "n": 15,
-              "agree": 15
+              "n": 16,
+              "agree": 16
             },
             "primary_editor": "HumphreyYang",
             "in_review_slugs": [
               "bivariate_dist",
               "fitting_distributions",
               "heavy_tails",
+              "inflation_history",
               "observed_distributions"
             ]
           },
@@ -804,7 +805,7 @@
             },
             {
               "slug": "inflation_history",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "input_output",
@@ -963,12 +964,12 @@
           "review_state": "stalled",
           "lectures_translated": 149,
           "freshness": "computed",
-          "stale": 56,
+          "stale": 57,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "30 days ago"
+            "lag": "31 days ago"
           },
-          "drift_prs": 18,
+          "drift_prs": 23,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -982,11 +983,11 @@
           "status_label": "Drifting",
           "review_lanes": {
             "mode": "shadow",
-            "verdicts": 69,
+            "verdicts": 70,
             "open_editor": {
-              "count": 9,
-              "median_age_days": 11,
-              "oldest_age_days": 28
+              "count": 10,
+              "median_age_days": 12,
+              "oldest_age_days": 29
             },
             "auto_merge_recommended": {
               "d7": 1,
@@ -994,16 +995,17 @@
             },
             "share": {
               "auto_merge": 9,
-              "editor": 60
+              "editor": 61
             },
             "would_auto_merge": {
-              "n": 43,
-              "agree": 43
+              "n": 44,
+              "agree": 44
             },
             "primary_editor": "HumphreyYang",
             "in_review_slugs": [
               "ak2",
               "ak_aiyagari",
+              "approximation_errors",
               "back_prop",
               "bounded_rationality",
               "exchange_rate_learning",
@@ -1022,6 +1024,7 @@
               "pandas_panel",
               "prospects_bounded_rationality",
               "robust_permanent_income",
+              "turbulence_inference",
               "two_computation",
               "util_rand_resp",
               "von_neumann_model",
@@ -1104,7 +1107,7 @@
             },
             {
               "slug": "cross_product_trick",
-              "state": "fresh"
+              "state": "stale"
             },
             {
               "slug": "divergence_measures",
