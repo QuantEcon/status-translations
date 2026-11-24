@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-23",
+  "generated_at": "2026-11-24",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 28,
@@ -24,12 +24,12 @@
           "review_state": "active",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 5,
+          "stale": 4,
           "last_sync": {
-            "date": "2026-11-02",
-            "lag": "20 days ago"
+            "date": "2026-11-23",
+            "lag": "today"
           },
-          "drift_prs": 12,
+          "drift_prs": 1,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -45,9 +45,9 @@
             "mode": "shadow",
             "verdicts": 19,
             "open_editor": {
-              "count": 2,
-              "median_age_days": 4,
-              "oldest_age_days": 4
+              "count": 1,
+              "median_age_days": 5,
+              "oldest_age_days": 5
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -63,7 +63,6 @@
             },
             "primary_editor": "HumphreyYang",
             "in_review_slugs": [
-              "numpy_vs_numba_vs_jax",
               "pandas",
               "pandas_panel",
               "polars",
@@ -122,7 +121,7 @@
             },
             {
               "slug": "numpy_vs_numba_vs_jax",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "oop_intro",
@@ -186,12 +185,12 @@
           "review_state": "active",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 6,
+          "stale": 5,
           "last_sync": {
-            "date": "2026-11-02",
-            "lag": "20 days ago"
+            "date": "2026-11-23",
+            "lag": "today"
           },
-          "drift_prs": 12,
+          "drift_prs": 1,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -207,9 +206,9 @@
             "mode": "shadow",
             "verdicts": 18,
             "open_editor": {
-              "count": 2,
-              "median_age_days": 4,
-              "oldest_age_days": 4
+              "count": 1,
+              "median_age_days": 5,
+              "oldest_age_days": 5
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -225,7 +224,6 @@
             },
             "primary_editor": "Zahra-khanzadeh",
             "in_review_slugs": [
-              "numpy_vs_numba_vs_jax",
               "pandas",
               "pandas_panel",
               "polars",
@@ -284,7 +282,7 @@
             },
             {
               "slug": "numpy_vs_numba_vs_jax",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "oop_intro",
@@ -348,12 +346,12 @@
           "review_state": "pending",
           "lectures_translated": 26,
           "freshness": "computed",
-          "stale": 11,
+          "stale": 10,
           "last_sync": {
-            "date": "2026-11-02",
-            "lag": "21 days ago"
+            "date": "2026-11-23",
+            "lag": "today"
           },
-          "drift_prs": 12,
+          "drift_prs": 1,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -369,9 +367,9 @@
             "mode": "shadow",
             "verdicts": 19,
             "open_editor": {
-              "count": 4,
-              "median_age_days": 12,
-              "oldest_age_days": 21
+              "count": 3,
+              "median_age_days": 21,
+              "oldest_age_days": 22
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -389,7 +387,6 @@
             "in_review_slugs": [
               "functions",
               "numpy",
-              "numpy_vs_numba_vs_jax",
               "oop_intro",
               "pandas",
               "pandas_panel",
@@ -450,7 +447,7 @@
             },
             {
               "slug": "numpy_vs_numba_vs_jax",
-              "state": "stale"
+              "state": "fresh"
             },
             {
               "slug": "oop_intro",
@@ -517,9 +514,9 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-11-17",
-            "lag": "5 days ago"
+            "lag": "6 days ago"
           },
-          "drift_prs": 4,
+          "drift_prs": 5,
           "drift_approx": true,
           "automation": {
             "wired": false,
@@ -678,9 +675,9 @@
           "stale": 12,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "44 days ago"
+            "lag": "45 days ago"
           },
-          "drift_prs": 9,
+          "drift_prs": 10,
           "drift_approx": true,
           "automation": {
             "wired": true,
@@ -697,8 +694,8 @@
             "verdicts": 19,
             "open_editor": {
               "count": 2,
-              "median_age_days": 2,
-              "oldest_age_days": 4
+              "median_age_days": 3,
+              "oldest_age_days": 5
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -967,7 +964,7 @@
           "stale": 57,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "31 days ago"
+            "lag": "32 days ago"
           },
           "drift_prs": 23,
           "drift_approx": true,
@@ -986,8 +983,8 @@
             "verdicts": 70,
             "open_editor": {
               "count": 10,
-              "median_age_days": 12,
-              "oldest_age_days": 29
+              "median_age_days": 13,
+              "oldest_age_days": 30
             },
             "auto_merge_recommended": {
               "d7": 1,
