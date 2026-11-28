@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27",
+  "generated_at": "2026-11-28",
   "collected_by": "collector v1.2 (collect.py)",
   "routing_fleet": {
     "auto_merge": 30,
@@ -27,7 +27,7 @@
           "stale": 4,
           "last_sync": {
             "date": "2026-11-23",
-            "lag": "3 days ago"
+            "lag": "4 days ago"
           },
           "drift_prs": 3,
           "drift_approx": true,
@@ -46,8 +46,8 @@
             "verdicts": 19,
             "open_editor": {
               "count": 1,
-              "median_age_days": 8,
-              "oldest_age_days": 8
+              "median_age_days": 9,
+              "oldest_age_days": 9
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -188,7 +188,7 @@
           "stale": 5,
           "last_sync": {
             "date": "2026-11-23",
-            "lag": "3 days ago"
+            "lag": "4 days ago"
           },
           "drift_prs": 3,
           "drift_approx": true,
@@ -207,8 +207,8 @@
             "verdicts": 18,
             "open_editor": {
               "count": 1,
-              "median_age_days": 8,
-              "oldest_age_days": 8
+              "median_age_days": 9,
+              "oldest_age_days": 9
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -349,7 +349,7 @@
           "stale": 4,
           "last_sync": {
             "date": "2026-11-26",
-            "lag": "today"
+            "lag": "1 day ago"
           },
           "drift_prs": 0,
           "drift_approx": true,
@@ -368,8 +368,8 @@
             "verdicts": 19,
             "open_editor": {
               "count": 3,
-              "median_age_days": 24,
-              "oldest_age_days": 25
+              "median_age_days": 25,
+              "oldest_age_days": 26
             },
             "auto_merge_recommended": {
               "d7": 0,
@@ -514,7 +514,7 @@
           "stale": 1,
           "last_sync": {
             "date": "2026-11-17",
-            "lag": "9 days ago"
+            "lag": "10 days ago"
           },
           "drift_prs": 7,
           "drift_approx": true,
@@ -675,7 +675,7 @@
           "stale": 14,
           "last_sync": {
             "date": "2026-10-09",
-            "lag": "48 days ago"
+            "lag": "49 days ago"
           },
           "drift_prs": 14,
           "drift_approx": true,
@@ -694,8 +694,8 @@
             "verdicts": 21,
             "open_editor": {
               "count": 2,
-              "median_age_days": 6,
-              "oldest_age_days": 8
+              "median_age_days": 7,
+              "oldest_age_days": 9
             },
             "auto_merge_recommended": {
               "d7": 2,
@@ -964,7 +964,7 @@
           "stale": 57,
           "last_sync": {
             "date": "2026-10-22",
-            "lag": "35 days ago"
+            "lag": "36 days ago"
           },
           "drift_prs": 24,
           "drift_approx": true,
@@ -983,8 +983,8 @@
             "verdicts": 70,
             "open_editor": {
               "count": 10,
-              "median_age_days": 16,
-              "oldest_age_days": 33
+              "median_age_days": 17,
+              "oldest_age_days": 34
             },
             "auto_merge_recommended": {
               "d7": 0,
